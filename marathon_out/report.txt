@@ -1,1 +1,203 @@
+DORABELLA MARATHON REPORT
+written 2026-09-30 13:56:56   total compute time 19h 20m 59.5s   sessions 3
+settings: climb restarts 80, calibration 64 per variant, SA 16 restarts x 30,000 steps, seed 1897
+units done: main_shuffle 414/800, main_doublet 415/800, heldout_shuffle 104/200, heldout_doublet 104/200, controls 42/80, deep_1to1 42/80, deep_homo 42/80
 
+==============================================================================
+HEADLINE: does the real Dorabella beat each null? (p floor = 1/(n+1))
+==============================================================================
+  MAIN best matched z  vs shuffle    real     5.285   n=414   p=0.0024  notable: beats this null
+  MAIN best matched z  vs doublet    real     5.285   n=415   p=0.0865  no evidence against this null
+  MAIN words at best z vs shuffle    real    11.000   n=414   p=0.3904  no evidence against this null
+  MAIN max words (160) vs shuffle    real    29.000   n=414   p=0.1108  no evidence against this null
+  MAIN max words (160) vs doublet    real    29.000   n=415   p=0.1707  no evidence against this null
+  HELD-OUT max score   vs shuffle    real   -13.739   n=104   p=0.0190  weak: borderline against this null
+  HELD-OUT max score   vs doublet    real   -13.739   n=104   p=0.2667  no evidence against this null
+  DEEP 1to1  best raw   vs shuffle   real   -10.840   n=42    p=0.0233  weak: borderline against this null
+  DEEP homo  best raw   vs shuffle   real    -8.847   n=42    p=0.0233  weak: borderline against this null
+
+POSITIVE CONTROLS (known English through the identical pipeline):
+  control best matched z: median 14.27, min 8.97, max 28.51   (Dorabella: 5.28)
+  controls scoring above the Dorabella: 42 of 42
+  noise 0 misread symbols: n=21, median z 17.25, median recovery (forward, as transcribed) 99%, picked forward order 21/21, median words at best 58, held-out p at floor 18/21
+  noise 3 misread symbols: n=21, median z 12.04, median recovery (forward, as transcribed) 91%, picked forward order 21/21, median words at best 31, held-out p at floor 15/21
+  -> If controls sit far above the Dorabella and read as English, the Dorabella's score looks
+     like non-language structure, not a hidden message under this model.
+
+------------------------------------------------------------------------------
+1. MAIN SEARCH (your verify search, 160 configs, variant-matched z)
+------------------------------------------------------------------------------
+Real best matched z 5.28 at [fully reversed | 32=18], words there 11; highest raw score (any config) -10.8688, max words (any config) 29
+
+  vs shuffle null: best z n=414, mean 2.23, max 5.22
+     p = 0.0024  (0 of 414 nulls matched or beat it; floor 0.0024)  <- at the floor: no null matched it yet
+     raw best: p = 0.0024  (0 of 414 nulls matched or beat it; floor 0.0024)  <- at the floor: no null matched it yet
+     words at best z: p = 0.3904  (161 of 414 nulls matched or beat it; floor 0.0024)
+     max words over 160: p = 0.1108  (45 of 414 nulls matched or beat it; floor 0.0024)
+     reading order (mean z over 32 variants), real vs null:
+       forward              real +2.84   null mean -0.01   p = 0.0024  (0 of 414 nulls matched or beat it; floor 0.0024)  <- at the floor: no null matched it yet
+       fully reversed       real +3.25   null mean -0.01   p = 0.0024  (0 of 414 nulls matched or beat it; floor 0.0024)  <- at the floor: no null matched it yet
+       each line reversed   real +2.92   null mean -0.02   p = 0.0024  (0 of 414 nulls matched or beat it; floor 0.0024)  <- at the floor: no null matched it yet
+       boustrophedon A      real +1.36   null mean -0.02   p = 0.0361  (14 of 414 nulls matched or beat it; floor 0.0024)
+       boustrophedon B      real +1.29   null mean -0.02   p = 0.0434  (17 of 414 nulls matched or beat it; floor 0.0024)
+     alternate readings (mean z with it ON minus OFF), real vs null:
+       23=14  real +0.03   null mean -0.02   ON in null winners 45%   p = 0.4193  (173 of 414 nulls matched or beat it; floor 0.0024)
+       32=18  real +0.28   null mean -0.01   ON in null winners 46%   p = 0.0699  (28 of 414 nulls matched or beat it; floor 0.0024)
+       34=12  real +0.13   null mean -0.04   ON in null winners 47%   p = 0.1952  (80 of 414 nulls matched or beat it; floor 0.0024)
+       78=14  real +0.04   null mean -0.04   ON in null winners 46%   p = 0.3711  (153 of 414 nulls matched or beat it; floor 0.0024)
+       86=12  real +0.18   null mean -0.02   ON in null winners 50%   p = 0.1518  (62 of 414 nulls matched or beat it; floor 0.0024)
+
+  vs doublet null: best z n=415, mean 4.33, max 6.66
+     p = 0.0865  (35 of 415 nulls matched or beat it; floor 0.0024)
+     raw best: p = 0.0817  (33 of 415 nulls matched or beat it; floor 0.0024)
+     words at best z: p = 0.5072  (210 of 415 nulls matched or beat it; floor 0.0024)
+     max words over 160: p = 0.1707  (70 of 415 nulls matched or beat it; floor 0.0024)
+     reading order (mean z over 32 variants), real vs null:
+       forward              real +2.84   null mean +2.38   p = 0.1490  (61 of 415 nulls matched or beat it; floor 0.0024)
+       fully reversed       real +3.25   null mean +2.07   p = 0.0144  (5 of 415 nulls matched or beat it; floor 0.0024)
+       each line reversed   real +2.92   null mean +1.74   p = 0.0168  (6 of 415 nulls matched or beat it; floor 0.0024)
+       boustrophedon A      real +1.36   null mean +2.01   p = 0.8245  (342 of 415 nulls matched or beat it; floor 0.0024)
+       boustrophedon B      real +1.29   null mean +1.63   p = 0.6851  (284 of 415 nulls matched or beat it; floor 0.0024)
+     alternate readings (mean z with it ON minus OFF), real vs null:
+       23=14  real +0.03   null mean -0.06   ON in null winners 35%   p = 0.2548  (105 of 415 nulls matched or beat it; floor 0.0024)
+       32=18  real +0.28   null mean -0.09   ON in null winners 50%   p = 0.0072  (2 of 415 nulls matched or beat it; floor 0.0024)
+       34=12  real +0.13   null mean -0.18   ON in null winners 33%   p = 0.1514  (62 of 415 nulls matched or beat it; floor 0.0024)
+       78=14  real +0.04   null mean -0.07   ON in null winners 32%   p = 0.2163  (89 of 415 nulls matched or beat it; floor 0.0024)
+       86=12  real +0.18   null mean +0.05   ON in null winners 60%   p = 0.3317  (137 of 415 nulls matched or beat it; floor 0.0024)
+
+  Real top configs:
+
+  [fully reversed | 32=18]  z=5.28  raw=-11.0086  words=11
+     OCTOSANDONAHUSERANBUTRAUSARAY
+     ILLITHAUSEYEWHNSREEROFLOWSHEWAY
+     NIGINEDDSEEMETHEYGLOWSCORDP
+     octos AND onah USE ran BUT rausarayillithaus EYE uhnsreeroflou SHE UAY niginedd SEE me THEY glouscordp
+
+  [fully reversed | 23=14,78=14,86=12]  z=4.96  raw=-10.9235  words=7
+     AINATOFSANOBUTEDOFPUNDOUTODOR
+     ILLINBOUTEREWBFTDEEDAYLAWTWEWOR
+     FIGINESSTEEMENBERGLAWTHADSC
+     ainatofsano BUT edofpund OUT odorillinb OUT ereubftdee DAY LAU tueuorfiginessteemenberg LAU t HAD sc
+
+  [each line reversed | 32=18,86=12]  z=4.75  raw=-11.1183  words=9
+     OMNAYANEDDSEEPETHEMYFIRSWILDC
+     OMAFFATHOUSEMERHNSLEELIGFIRSHER
+     IATISONDINOHUSELONBUTLOUSOL
+     omnayanedd SEE pe THEM yfirsuildcomaffatho USE merhnsleeligfirs HER iatisondinoh USE lon BUT lousol
+
+  [each line reversed | 23=14,32=18,34=12,78=14,86=12]  z=4.62  raw=-10.8688  words=15
+     ORWAYATEDDSEEMETHERYLICSKINDF
+     ORALLATHOUSERECHWSNEENIPLIASHEC
+     IATISOWDITOHUSENOWBUTNOUSON
+     or UAY atedd SEE met HER ylics CIND FOR ALL atho USE rechusneeniplia SHE ciatisouditoh USE NOU BUT NOU son
+
+  [fully reversed | 23=14,32=18,78=14]  z=4.62  raw=-11.0147  words=12
+     APTASOFDATOHUSENOFBUTNOUSONOW
+     ILLITHOUSEWERHFSNEENAGLARSHEROW
+     FICITEDDSEEMETHEWCLARSPANDY
+     aptasofdatoh USE nof BUT NOU sono UILL itho USE uerhfsneenaglars HER ouficitedd SEE me THE uclarsp AND y
+
+  [forward | 23=14,34=12,78=14,86=12]  z=4.49  raw=-11.0103  words=29
+     ZLSAPTDAMYRENCEFEETLLECOYOURI
+     DEDTOAMWASEESTUNDERETHINCOMMORI
+     SITHISCHQUISETHNICALUITACOA
+     slsaptdamyrencefeetlleco YOU RIDE dtoamua SEE st UNDER e THINC ommorisi THIS chqui SET hnicaluitacoa
+
+------------------------------------------------------------------------------
+3. HELD-OUT (key learned on 2 lines, frozen, scored on the 3rd; mean of 3 folds)
+------------------------------------------------------------------------------
+Real best held-out score -13.7385 at [fully reversed | 23=14,34=12,78=14]
+  vs shuffle: max over 160 n=104, mean -14.8378, max -13.7162
+     p = 0.0190  (1 of 104 nulls matched or beat it; floor 0.0095)
+     pre-registered configs (no selection, so these p-values stand alone):
+       [each line reversed | 32=18,34=12,78=14,86=12] real -13.8362   p = 0.0095  (0 of 104 nulls matched or beat it; floor 0.0095)  <- at the floor: no null matched it yet
+       [forward | 32=18,34=12,78=14,86=12] real -14.6270   p = 0.0095  (0 of 104 nulls matched or beat it; floor 0.0095)  <- at the floor: no null matched it yet
+       [forward | as transcribed] real -14.9453   p = 0.0190  (1 of 104 nulls matched or beat it; floor 0.0095)
+       [fully reversed | as transcribed] real -15.7560   p = 0.1714  (17 of 104 nulls matched or beat it; floor 0.0095)
+  vs doublet: max over 160 n=104, mean -14.0031, max -12.4968
+     p = 0.2667  (27 of 104 nulls matched or beat it; floor 0.0095)
+     pre-registered configs (no selection, so these p-values stand alone):
+       [each line reversed | 32=18,34=12,78=14,86=12] real -13.8362   p = 0.0095  (0 of 104 nulls matched or beat it; floor 0.0095)  <- at the floor: no null matched it yet
+       [forward | 32=18,34=12,78=14,86=12] real -14.6270   p = 0.1333  (13 of 104 nulls matched or beat it; floor 0.0095)
+       [forward | as transcribed] real -14.9453   p = 0.1524  (15 of 104 nulls matched or beat it; floor 0.0095)
+       [fully reversed | as transcribed] real -15.7560   p = 0.5143  (53 of 104 nulls matched or beat it; floor 0.0095)
+  Controls: held-out p (forward, as transcribed; 39 own shuffles each) median 0.025. Near the floor = the test has power.
+
+------------------------------------------------------------------------------
+4. DEEP SEARCH (simulated annealing, max raw score over all 160 configs)
+------------------------------------------------------------------------------
+
+  1to1 (one symbol -> one letter): real best -10.8399 at [fully reversed | 23=14,34=12,78=14,86=12], 3/16 SA restarts reached it
+     null (shuffle) best: n=42, mean -11.3753, max -11.1008
+     p = 0.0233  (0 of 42 nulls matched or beat it; floor 0.0233)  <- at the floor: no null matched it yet
+     climb best for comparison: -10.8688 (if SA is much higher, the old climb was under-searching)
+     [fully reversed | 23=14,34=12,78=14,86=12] -10.8399  words=6
+        AINATOFSANOBUTEDOFPUNDOUTODOR
+        ILLINBOUTEREWBFTDEEDAYLAITWEWOR
+        FIGINESSTEEMENBERGLAWTHADSC
+     [each line reversed | 23=14,32=18,34=12,78=14,86=12] -10.8688  words=15
+        ORWAYATEDDSEEMETHERYLICSKINDF
+        ORALLATHOUSERECHWSNEENIPLIASHEC
+        IATISOWDITOHUSENOWBUTNOUSON
+     [fully reversed | 23=14,32=18,78=14] -10.8874  words=9
+        OCTOSAYDOTAHUSENAYBUTNAUSANAR
+        ILLITHAUSEREWHYSNEENOGLOWSHEWAR
+        YIFITEDDSEEMETHERFLOWSCONDP
+
+  homo (homophonic: letters may repeat): real best -8.8465 at [forward | 23=14,32=18,78=14,86=12], 2/16 SA restarts reached it
+     null (shuffle) best: n=42, mean -9.1036, max -8.8619
+     p = 0.0233  (0 of 42 nulls matched or beat it; floor 0.0233)  <- at the floor: no null matched it yet
+     climb best for comparison: -10.8688 (if SA is much higher, the old climb was under-searching)
+     [forward | 23=14,32=18,78=14,86=12] -8.8465  words=26
+        ESSEDTHETERERTEREETSSETHEHERE
+        HERTHETHESEESTERHERETHERTHTTHRE
+        SETHESTHREESETHRETESEETETHE
+     [forward | 23=14,32=18,34=12,78=14,86=12] -8.8465  words=26
+        ESSEDTHETERERTEREETSSETHEHERE
+        HERTHETHESEESTERHERETHERTHTTHRE
+        SETHESTHREESETHRETESEETETHE
+     [forward | 23=14,32=18,78=14] -8.8661  words=30
+        ESERTEEREATSHESASSESSSESASTTH
+        ESHEEREARESSEETHESTSETHHESEESTH
+        EHETHEETOTHESETHHERSTHERETR
+
+------------------------------------------------------------------------------
+2. CONTROLS (most recent 8)
+------------------------------------------------------------------------------
+  #35 text 2 noise 0: best z 12.51 [forward | 23=14,34=12,86=12], fwd z 6.67, recovery 43%, words 68, held-out p 0.025
+     planted: WEWALKEDUPTHEHILLAFTERLUNCHANDTHEUIEWOUERTHEUALLEYWASLOUELYTHOUGHTHEWINDWASRATHERCOLDAT
+     decoded: DEDOSPENLYTHEHISSOFTERSLUGHOUNTHELIEDALERTHELOSSEMDOWSALESMTHALCHTHEDIUNDOWROTHERGASNOT
+  #36 text 3 noise 3: best z 16.43 [forward | 32=18,86=12], fwd z 9.59, recovery 95%, words 43, held-out p 0.025
+     planted: PLEASETELLYOURAUNTTHATTHEPARCELWILLBESENTBYTHEEARLYTRAINANDTHATSHENEEDNOTTROUBLETOMEETI
+     decoded: PLEASETELLYOURAUNTTHATTHECARGELWILLBESENTBYTHEEARLYTRAINANDTHATSHENEEDNOTTROUBLEMOMENTI
+  #37 text 4 noise 0: best z 12.44 [forward | 32=18,78=14], fwd z 9.57, recovery 95%, words 33, held-out p 0.025
+     planted: IAMAFRAIDWECANNOTCOMETOTEAONSUNDAYASTHEDOCTORSAYSIMUSTKEEPINDOORSUNTILTHISWRETCHEDCOLDH
+     decoded: IAMAFRAIDBECANNOTCOMETOTEAONSUNDAYASTHEDOCTORSAYSIMUSTWEEKINDOORSUNTILTHISBRETCHEDCOLDH
+  #38 text 5 noise 3: best z 10.89 [forward | 34=12], fwd z 6.60, recovery 93%, words 14, held-out p 0.025
+     planted: THECHOIRSANGBETTERTHANIHADHOPEDANDTHEORGANWASINGOODORDERSOTHEWHOLEEUENINGWASAGREATSUCCE
+     decoded: THECHOIRSANGLETTERTHANIHAYHOMEDANDTHEORGANWASINOOODORDERSOTHEIHOPEEUENINGWASAGREATSUCCE
+  #39 text 6 noise 0: best z 18.77 [forward | 34=12], fwd z 10.67, recovery 100%, words 65, held-out p 0.025
+     planted: ITWASKINDOFYOUTOREMEMBERMYBIRTHDAYANDTHELITTLEBOOKYOUSENTISIUSTTHETHINGFORALONGRAILWAYI
+     decoded: ITWASKINDOFYOUTOREMEMBERMYBIRTHDAYANDTHELITTLEBOOKYOUSENTISIUSTTHETHINGFORALONGRAILWAYI
+  #40 text 7 noise 3: best z 12.71 [forward | 34=12,78=14,86=12], fwd z 11.53, recovery 95%, words 16, held-out p 0.025
+     planted: DOCOMEANDSTAYWITHUSINTHESUMMERWHENTHEGARDENISATITSBESTANDWECANSITOUTUNDERTHETREESINTHEE
+     decoded: DOCOMEANDSTAYWITHUSINTHESUMPERWHENTHEPARDENISATITSBESTANDWECANGINOUTUNDERTHETREESINTHEE
+  #41 text 8 noise 0: best z 18.11 [forward | 32=18,34=12,78=14,86=12], fwd z 14.22, recovery 100%, words 35, held-out p 0.025
+     planted: WEREACHEDTHESTATIONWITHONLYAMINUTETOSPAREANDHADTORUNFORTHETRAINWHICHMADEUSLAUGHFORTHERE
+     decoded: WEREACHEDTHESTATIONWITHONLYAMINUTETOSPAREANDHADTORUNFORTHETRAINWHICHMADEUSLAUGHFORTHERE
+  #42 text 9 noise 3: best z 13.78 [forward | 23=14,78=14], fwd z 11.61, recovery 97%, words 37, held-out p 0.025
+     planted: IHAUEBEENWORKINGHARDATTHENEWPIECEALLWEEKANDTHINKITISNEARLYFINISHEDBUTTHEREISONEPASSAGEI
+     decoded: IHAUEBEENWORKINGHARDATTHEFEWPIECEALLWEEKANDTHINKITISNEMRLYFINISHEDBUTTHEREISONEPASSAGER
+
+------------------------------------------------------------------------------
+HOW TO READ THIS
+------------------------------------------------------------------------------
+ * A p-value can never go below its floor 1/(n+1). 'At the floor' means no null has
+   matched the real data yet, so more replicates are needed to see how extreme it is.
+ * Beating the SHUFFLE null only shows the symbol order is not random. Beating the
+   DOUBLET null means structure beyond adjacent-pair habits, which is far more interesting.
+ * Word tests and held-out tests are not what the search optimises, so they are
+   independent checks. A real solution should pass them as well.
+ * Compare the Dorabella with the CONTROLS. A real English message under this model
+   should look like them: high z, a readable decode, held-out p at the floor.
+ * DEEP homophonic keys can make gibberish score well. Only its p-value counts, never the raw score.
