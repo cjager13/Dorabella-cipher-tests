@@ -1,0 +1,12 @@
+# Corpora: download from Project Gutenberg (see README)
+english.txt
+german.txt
+*_clean.txt
+# Run state and scratch
+marathon_out/state.json
+*.tmp
+__pycache__/
+keyword_out.txt
+keyword_keys.csv
+phrase_out.txt
+phrase_keys.csv
