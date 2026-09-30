@@ -18,11 +18,11 @@ same freedom. Two kinds of copy:
   shuffle - symbols in random order
   doublet - random order that keeps every adjacent symbol pair (the tougher test)
 
-  python dora_v2.py --selftest            # planted English with 10 fence symbols
-  python dora_v2.py                       # the real Dorabella (v2 transcription)
-  python dora_v2.py --nulls 200 --kind shuffle
-  python dora_v2.py --lang de --selftest   # German (needs german.txt)
-  python dora_v2.py --lang de              # German: the real Dorabella
+  python Dorabella_v2.py --selftest            # planted English with 10 fence symbols
+  python Dorabella_v2.py                       # the real Dorabella (v2 transcription)
+  python Dorabella_v2.py --nulls 200 --kind shuffle
+  python Dorabella_v2.py --lang de --selftest   # German (needs german.txt)
+  python Dorabella_v2.py --lang de              # German: the real Dorabella
 
 Needs Dorabella_hillclimb.py, Dorabella_tests.py and english.txt in the same folder.
 Output: screen + v2_out/log.txt + v2_out/nulls.csv
@@ -338,7 +338,7 @@ def main():
     os.makedirs(args.out, exist_ok=True)
     LOG = open(os.path.join(args.out, 'log.txt'), 'a', encoding='utf-8')
     t0 = time.time()
-    log(f"\n[{stamp()}] START dora_v2 {' '.join(sys.argv[1:]) or '(defaults)'}")
+    log(f"\n[{stamp()}] START Dorabella_v2 {' '.join(sys.argv[1:]) or '(defaults)'}")
     if not os.path.exists(args.corpus):
         raise SystemExit(f"corpus not found: {args.corpus}")
     corpus = prepare_corpus(args.corpus, args.lang, args.out)

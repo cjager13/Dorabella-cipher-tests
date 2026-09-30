@@ -19,9 +19,9 @@ Classic Victorian keyword method, applied to the 8 sets:
 Each phrase is also tried as: vowels dropped (first letter kept), and initials (for
 multi-word phrases).
 
-  python dora_phrase.py                          # built-in Elgar/Dora phrases
-  python dora_phrase.py --phrases myphrases.txt  # add your own, one per line
-  python dora_phrase.py --grouping standard      # or yours / both (default both)
+  python Dorabella_phrase.py                          # built-in Elgar/Dora phrases
+  python Dorabella_phrase.py --phrases myphrases.txt  # add your own, one per line
+  python Dorabella_phrase.py --grouping standard      # or yours / both (default both)
 
 Output: screen + phrase_out.txt (readable log) + phrase_keys.csv (every key, scored).
 

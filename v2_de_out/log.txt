@@ -1,1 +1,70 @@
 
+[2026-09-29 21:10:12] START dora_v2 --lang de
+language: de   scorer: quadgram from corpus (1,363,460 letters)   corpus: german.txt
+yardstick: a real German note of this length scores about -9.43
+v2 transcription: 87 symbols, fence positions [10, 23, 24, 25, 32, 34, 67, 78, 85, 86]
+[2026-09-29 21:10:23] search done in 11.12s
+
+Best per reading order (letters AND fence readings solved together):
+
+  [forward]  score -10.984  words 31
+     MFRAGSHALBDINWICIISFFIUOMOUDE
+     HINSHALKARIIRSUNHIDISTENWOLLODE
+     RESTERUTZUERISTNEWAFUESAUGA
+     mfrags HALB dinuiciisffi UOM oudeh INS halcariirsunhidi STEN UOLL ode RESTE ruts UER i STN EUA FUES AUG a
+
+  [each line reversed]  score -11.055  words 34
+     ALSOFOREMMTEEBERGELFHINTWIDMF
+     ALOHHORGAUTELENGSTDEEDICHINTGEN
+     IOSITASMISAGUTEDASZURDAUTAD
+     ALSO f ORE mm TEE BERGE lf HIN tuidmfalohhorg AUT el ENG stdee DICH int GEN IOS ITA smisa GUTE DASS urd AUT ad
+
+  [fully reversed]  score -11.097  words 31
+     AGRATERSAREHUTIDERWURDEUTEDEM
+     OLLOCHEUTIMINHRTDIIDABLANTHINEM
+     ROPORISSTIIFICHIMPLANTGADSP
+     ag RATE rsare HUT i DER UURDE ute DEM olloc HEUT i MIN hrtdiidablanth INE mropo RISS tiif ICH im PLAN tgadsp
+
+  [boustrophedon B]  score -11.305  words 44
+     SMOACHIEDDREEWEITEMPFUHRLUNDC
+     HETRAUFZUNEENROTHEMERBSTIAFFAMS
+     ULIURSODUISTBRENSOGBINSBRSN
+     smoac HIE ddree UEITE mp FUHR l UND c HET r AUFS un EEN ROTHEM erbstiaffamsu LIUR sodu IST bren SOG b INS brsn
+
+  [boustrophedon A]  score -11.495  words 26
+     FDTSPNUSHKRABLAMAANDDALOFOIRE
+     EROHHOLBEGNARAUBINTAATSCHSONBAU
+     TENGETIGWIETANGBEISDIENSIOS
+     fdtspnushcrablam AAN ddalofo IRE erohholbegna RAUB intaatschson BAUTEN getig UIE tangb EIS DIE ns IOS
+
+Fence readings chosen by the best solution [forward]:
+  10:22  23:15  24:12  25:23(alt)  32:18(alt)  34:11  67:15(alt)  78:14(alt)  85:15  86:13
+
+[2026-09-29 21:10:23] identical search on 200 shuffle copies...
+  [2026-09-29 21:13:55] 32/200: best copy so far -10.715, p = 0.1212  (~18m 32.4s left)
+  [2026-09-29 21:17:28] 64/200: best copy so far -10.715, p = 0.1077  (~15m 03.4s left)
+  [2026-09-29 21:21:02] 96/200: best copy so far -10.715, p = 0.0928  (~11m 32.6s left)
+  [2026-09-29 21:24:37] 128/200: best copy so far -10.715, p = 0.1163  (~8m 00.4s left)
+  [2026-09-29 21:28:10] 160/200: best copy so far -10.715, p = 0.1180  (~4m 26.8s left)
+  [2026-09-29 21:31:43] 192/200: best copy so far -10.715, p = 0.1088  (~53.33s left)
+  [2026-09-29 21:32:36] 200/200: best copy so far -10.715, p = 0.1045  (~0.00s left)
+
+RESULT vs shuffle: real best -10.984; copies mean -11.223, max -10.715; p = 0.1045 (floor 0.0050)
+   words at best: real 31; copies mean 32.0, max 63; p = 0.5174
+
+[2026-09-29 21:32:36] identical search on 200 doublet copies...
+  [2026-09-29 21:36:09] 32/200: best copy so far -10.792, p = 0.3636  (~18m 38.9s left)
+  [2026-09-29 21:39:41] 64/200: best copy so far -10.792, p = 0.2769  (~15m 04.1s left)
+  [2026-09-29 21:43:14] 96/200: best copy so far -10.718, p = 0.3196  (~11m 30.8s left)
+  [2026-09-29 21:46:45] 128/200: best copy so far -10.718, p = 0.3178  (~7m 57.6s left)
+  [2026-09-29 21:50:34] 160/200: best copy so far -10.718, p = 0.3230  (~4m 29.4s left)
+  [2026-09-29 21:54:08] 192/200: best copy so far -10.718, p = 0.3057  (~53.82s left)
+  [2026-09-29 21:55:01] 200/200: best copy so far -10.718, p = 0.3035  (~0.00s left)
+
+RESULT vs doublet: real best -10.984; copies mean -11.048, max -10.718; p = 0.3035 (floor 0.0050)
+   words at best: real 31; copies mean 33.0, max 66; p = 0.5522
+
+How to read: real text of this length scores about -9.4 (see yardstick above). A hit
+reads as English AND beats both kinds of copy on score and words. Beating only the
+'shuffle' copies means structure, not necessarily language (see the marathon).
+[2026-09-29 21:55:01] END   total 44m 49.5s

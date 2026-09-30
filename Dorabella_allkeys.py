@@ -14,10 +14,10 @@ Two letter groupings are tested:
 Needs Dorabella_hillclimb.py, Dorabella_tests.py, english.txt, and numpy
 (pip install numpy).
 
-  python allkeys.py                        # forward reading, 200 shuffled copies per grouping
-  python allkeys.py --all-configs          # all 5 reading orders x 32 alternate readings
-  python allkeys.py --all-configs --nulls 50
-  python allkeys.py --grouping yours       # only one grouping
+  python Dorabella_allkeys.py                        # forward reading, 200 shuffled copies per grouping
+  python Dorabella_allkeys.py --all-configs          # all 5 reading orders x 32 alternate readings
+  python Dorabella_allkeys.py --all-configs --nulls 50
+  python Dorabella_allkeys.py --grouping yours       # only one grouping
 
 Output goes to the screen and to allkeys_out/log.txt (appended), plus
 allkeys_out/top_keys.csv with the best keys found.

@@ -17,10 +17,10 @@ What it does:
   4. The IDENTICAL search is repeated on shuffled copies (shuffling keeps every symbol's
      count, so the same candidates are tried), so the p-value is fair.
 
-  python dora_numbers.py --selftest        # planted English with numbers: can it find them?
-  python dora_numbers.py                   # the real Dorabella
-  python dora_numbers.py --digit-codes 31 35      # test one specific digit set you suspect
-  python dora_numbers.py --max-count 3 --max-digits 4   # wider (slower)
+  python Dorabella_numbers.py --selftest        # planted English with numbers: can it find them?
+  python Dorabella_numbers.py                   # the real Dorabella
+  python Dorabella_numbers.py --digit-codes 31 35      # test one specific digit set you suspect
+  python Dorabella_numbers.py --max-count 3 --max-digits 4   # wider (slower)
 
 Needs Dorabella_hillclimb.py, Dorabella_tests.py and english.txt in the same folder.
 Output: screen + numbers_out/log.txt + numbers_out/results.csv
@@ -220,7 +220,7 @@ def main():
     os.makedirs(args.out, exist_ok=True)
     LOG = open(os.path.join(args.out, 'log.txt'), 'a', encoding='utf-8')
     t0 = time.time()
-    log(f"\n[{stamp()}] START dora_numbers {' '.join(sys.argv[1:]) or '(defaults)'}")
+    log(f"\n[{stamp()}] START Dorabella_numbers {' '.join(sys.argv[1:]) or '(defaults)'}")
     log(f"skip charge per broken window: {args.skip_charge}")
     H.build_scorer(args.corpus)
     build_display_words(args.corpus)
