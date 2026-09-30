@@ -1,1 +1,312 @@
 
+[2026-09-28 17:44:23] START allkeys  (defaults)
+workers 8, nulls 200, topk 50, forward reading only
+check: closest 'standard' key to the published decrypt agrees at 78/87 positions (the rest are ambiguous symbols)
+       ABCvd3 DEF^d5 GHIvd1 JKL^d7 MNO^d8 PQRvd6 STU^d4 WXYvd2
+
+==============================================================================
+GROUPING yours: ABC DEF GHI KLM NOP QRS TUW XYZ
+==============================================================================
+[2026-09-28 17:44:46] real search: 1 sequence(s) x 10,321,920 keys in 16.42s
+
+Top by n-gram score:
+
+  n-gram -14.423  words 1  [forward | as transcribed]
+  key ABCvd3 DEF^d8 GHIvd2 KLM^d4 NOP^d5 QRSvd1 TUW^d6 XYZ^d7
+     BZLACOSATHMEDKEPEEOZZENIHINMF
+     SESOSATUALEELONDSEMEORFDKITTIMF
+     LFORFLKRQNFLEORDFNAZNFOAKCA
+     bslacosathmedcepeeossenihinmfsesosatualeelondsemeorfdcittimfl FOR flcrqnfleordfnasnfoacca
+
+  n-gram -14.552  words 1  [forward | as transcribed]
+  key ABCvd3 DEF^d8 GHIvd2 KLM^d4 NOP^d5 QRSvd1 TUW^d6 XYZvd7
+     BXLACOSATHMEDKEPEEOXXENIHINMF
+     SESOSATUALEELONDSEMEORFDKITTIMF
+     LFORFLKRQNFLEORDFNAXNFOAKCA
+     bxlacosathmedcepeeoxxenihinmfsesosatualeelondsemeorfdcittimfl FOR flcrqnfleordfnaxnfoacca
+
+  n-gram -14.744  words 0  [forward | as transcribed]
+  key ABCvd3 DEF^d8 GHIvd2 KLM^d4 NOP^d5 QRSvd6 TUW^d1 XYZ^d7
+     BZLACOTASHMEDKEPEEOZZENIHINMF
+     TETOTASRALEELONDTEMEOUFDKISSIMF
+     LFOUFLKUWNFLEOUDFNAZNFOAKCA
+     bslacotashmedcepeeossenihinmftetotasraleelondtemeoufdcissimflfouflcuunfleoudfnasnfoacca
+
+  n-gram -14.756  words 1  [forward | as transcribed]
+  key ABCvd3 DEF^d8 GHIvd2 KLMvd4 NOP^d5 QRSvd1 TUW^d6 XYZ^d7
+     BZLACOSATHKEDMEPEEOZZENIHINKF
+     SESOSATUALEELONDSEKEORFDMITTIKF
+     LFORFLMRQNFLEORDFNAZNFOAMCA
+     bslacosathcedmepeeossenihincfsesosatualeelondseceorfdmitticfl FOR flmrqnfleordfnasnfoamca
+
+  n-gram -14.780  words 4  [forward | as transcribed]
+  key ABCvd3 DEF^d5 GHI^d4 KLMvd6 NOPvd7 QRSvd1 TUWvd8 XYZ^d2
+     BNHACESAMYIUWGUFUUENNUDXYXDIT
+     SUSESAMLAHUUHEDWSUIUERTWGXMMXIT
+     HTERTHGRQDTHUERWTDANDTEAGCA
+     bnhacesamyiuugufuuennudxyxd ITS USE samlahuuhedusuiuertugxmmxithterthgrqdthuerutd AND TEA gca
+
+Most words among the top 50 keys:
+  words 8  n-gram -14.840  [forward | as transcribed]  bmracotadyshgqhphhommhnxyxn SIT htota DEAR hhrongths HOU igqxddx SIR iouirquunir HOU ginamnioaqca
+  words 8  n-gram -14.895  [forward | as transcribed]  bmracotadyshgqhphhommhnsysn SIT htota DEAR hhrongths HOU igqsdds SIR iouirquunir HOU ginamnioaqca
+  words 8  n-gram -15.043  [forward | as transcribed]  bcracotadyshgqhphhocchnxyxn SIT htota DEAR hhrongths HOU igqxddx SIR iouirquunir HOU ginacnioaqca
+
+[2026-09-28 17:44:46] running the identical search on 200 shuffled copies...
+  [2026-09-28 17:45:13] 8/200 shuffles, best n-gram so far -14.017, p = 0.2222  (~10m 46.1s left)
+  [2026-09-28 17:45:40] 16/200 shuffles, best n-gram so far -14.017, p = 0.1765  (~10m 20.6s left)
+  [2026-09-28 17:46:08] 24/200 shuffles, best n-gram so far -14.017, p = 0.1600  (~10m 00.3s left)
+  [2026-09-28 17:46:36] 32/200 shuffles, best n-gram so far -14.017, p = 0.1515  (~9m 38.3s left)
+  [2026-09-28 17:47:04] 40/200 shuffles, best n-gram so far -14.017, p = 0.1463  (~9m 12.3s left)
+  [2026-09-28 17:47:33] 48/200 shuffles, best n-gram so far -14.017, p = 0.1429  (~8m 47.9s left)
+  [2026-09-28 17:48:01] 56/200 shuffles, best n-gram so far -14.017, p = 0.1404  (~8m 20.2s left)
+  [2026-09-28 17:48:28] 64/200 shuffles, best n-gram so far -14.017, p = 0.1385  (~7m 52.1s left)
+  [2026-09-28 17:48:57] 72/200 shuffles, best n-gram so far -14.017, p = 0.1370  (~7m 26.1s left)
+  [2026-09-28 17:49:27] 80/200 shuffles, best n-gram so far -14.017, p = 0.1358  (~7m 01.1s left)
+  [2026-09-28 17:49:56] 88/200 shuffles, best n-gram so far -14.017, p = 0.1348  (~6m 35.1s left)
+  [2026-09-28 17:50:25] 96/200 shuffles, best n-gram so far -14.017, p = 0.1443  (~6m 07.2s left)
+  [2026-09-28 17:50:52] 104/200 shuffles, best n-gram so far -14.017, p = 0.1524  (~5m 37.8s left)
+  [2026-09-28 17:51:19] 112/200 shuffles, best n-gram so far -14.017, p = 0.1416  (~5m 09.0s left)
+  [2026-09-28 17:51:47] 120/200 shuffles, best n-gram so far -14.017, p = 0.1488  (~4m 40.4s left)
+  [2026-09-28 17:52:14] 128/200 shuffles, best n-gram so far -14.017, p = 0.1550  (~4m 11.8s left)
+  [2026-09-28 17:52:41] 136/200 shuffles, best n-gram so far -14.017, p = 0.1460  (~3m 43.5s left)
+  [2026-09-28 17:53:08] 144/200 shuffles, best n-gram so far -14.017, p = 0.1379  (~3m 15.1s left)
+  [2026-09-28 17:53:35] 152/200 shuffles, best n-gram so far -14.017, p = 0.1307  (~2m 47.0s left)
+  [2026-09-28 17:54:02] 160/200 shuffles, best n-gram so far -14.017, p = 0.1242  (~2m 18.9s left)
+  [2026-09-28 17:54:28] 168/200 shuffles, best n-gram so far -14.017, p = 0.1243  (~1m 50.9s left)
+  [2026-09-28 17:54:55] 176/200 shuffles, best n-gram so far -14.017, p = 0.1186  (~1m 23.1s left)
+  [2026-09-28 17:55:22] 184/200 shuffles, best n-gram so far -14.017, p = 0.1135  (~55.30s left)
+  [2026-09-28 17:55:51] 192/200 shuffles, best n-gram so far -14.017, p = 0.1088  (~27.70s left)
+  [2026-09-28 17:56:18] 200/200 shuffles, best n-gram so far -14.017, p = 0.1045  (~0.00s left)
+
+RESULT for grouping yours:
+  best n-gram     real -14.423   shuffles mean -14.800, max -14.017   p = 0.1045
+  words at best   real 1   shuffles mean 3.9, max 14   p = 0.9652
+  max words (top 50)  real 8   shuffles mean 8.8, max 19   p = 0.6617
+  (p floor with 200 shuffles = 0.0050; real English of this length scores about -9.2)
+
+==============================================================================
+GROUPING standard: ABC DEF GHI JKL MNO PQR STU WXY
+==============================================================================
+[2026-09-28 17:56:35] real search: 1 sequence(s) x 10,321,920 keys in 16.71s
+
+Top by n-gram score:
+
+  n-gram -13.961  words 6  [forward | as transcribed]
+  key ABCvd3 DEFvd4 GHIvd1 JKL^d2 MNO^d8 PQRvd6 STU^d5 WXY^d7
+     BYEACTIARKDNMFNUNNTYYNSIKISDO
+     INITIARQAENNETSMINDNTHOMFIRRIDO
+     EOTHOEFHGSOENTHMOSAYSOTAFCA
+     byeactiarcdnmfnunntyynsicisdoinitiarqaen NET s MIND nthomfirridoeothoefhgsoenthmo SAY sotafca
+
+  n-gram -13.978  words 9  [forward | as transcribed]
+  key ABC^d2 DEF^d5 GHI^d8 JKLvd3 MNO^d1 PQRvd6 STUvd4 WXYvd7
+     KWTILEMIRBSHGUHFHHEWWHDABADSI
+     MHMEMIRQITHHTEDGMHSHENIGUARRASI
+     TIENITUNODITHENGIDIWDIEIULI
+     CUT ilemirbshguhfhheuuhda BAD simhmemirqithhtedgmh SHE nig UAR ra SIT ienitunodi THEN gidiudieiuli
+
+  n-gram -13.996  words 2  [forward | as transcribed]
+  key ABCvd3 DEFvd4 GHIvd1 JKL^d2 MNOvd8 PQRvd6 STU^d5 WXY^d7
+     BYEACTIARKDNOFNUNNTYYNSIKISDM
+     INITIARQAENNETSOINDNTHMOFIRRIDM
+     EMTHMEFHGSMENTHOMSAYSMTAFCA
+     byeactiarcdnofnunntyynsicisdminitiarqaen NET soindnthmofirridmemthmefhgsmenthom SAY smtafca
+
+  n-gram -14.043  words 8  [forward | as transcribed]
+  key ABC^d2 DEF^d5 GHI^d8 JKLvd3 MNO^d1 PQR^d7 STUvd4 WXY^d6
+     KRTILEMIWBSHGUHFHHERRHDABADSI
+     MHMEMIWXITHHTEDGMHSHENIGUAWWASI
+     TIENITUNODITHENGIDIRDIEIULI
+     crtilemiubshguhfh HER rhda BAD simhmemiuxithhtedgmh SHE niguauua SIT ienitunodi THEN gidirdieiuli
+
+  n-gram -14.044  words 1  [forward | as transcribed]
+  key ABC^d6 DEFvd4 GHIvd1 JKL^d3 MNOvd8 PQRvd2 STU^d5 WXY^d7
+     KYELITILAQDNOFNUNNTYYNSRQRSDM
+     INITILABLENNETSOINDNTHMOFRAARDM
+     EMTHMEFHGSMENTHOMSLYSMTLFIL
+     cyelitilaqdnofnunntyynsrqrsdminitilablen NET soindnthmofraardmemthmefhgsmenthomslysmtlfil
+
+Most words among the top 50 keys:
+  words 16  n-gram -14.290  [forward | as transcribed]  by TACE marcuhgshfhheyyhdiciduimhmemarqathhtedgmh UHEN ig SIR riuitien ITS nodi THEN gi DAY die ASC a
+  words 15  n-gram -14.284  [forward | as transcribed]  bu TACE marcuhgshfhheuuhdiciduimhmemarqathhtedgmh UHEN ig SIR riuitien ITS nodi THEN gidaudie ASC a
+  words 15  n-gram -14.291  [forward | as transcribed]  c UHILE SIR bgnminfn NEU unda BAD gosnse SIR qihnnhedmsng NET omiarragohoetohitudoh NET modiudoeiili
+
+[2026-09-28 17:56:36] running the identical search on 200 shuffled copies...
+  [2026-09-28 17:57:01] 8/200 shuffles, best n-gram so far -13.622, p = 0.4444  (~9m 60.0s left)
+  [2026-09-28 17:57:28] 16/200 shuffles, best n-gram so far -13.622, p = 0.2353  (~10m 02.1s left)
+  [2026-09-28 17:57:55] 24/200 shuffles, best n-gram so far -13.622, p = 0.2400  (~9m 44.5s left)
+  [2026-09-28 17:58:22] 32/200 shuffles, best n-gram so far -13.579, p = 0.3333  (~9m 17.8s left)
+  [2026-09-28 17:58:49] 40/200 shuffles, best n-gram so far -13.579, p = 0.3415  (~8m 52.5s left)
+  [2026-09-28 17:59:17] 48/200 shuffles, best n-gram so far -13.550, p = 0.3878  (~8m 31.0s left)
+  [2026-09-28 17:59:45] 56/200 shuffles, best n-gram so far -13.550, p = 0.4386  (~8m 05.7s left)
+  [2026-09-28 18:00:12] 64/200 shuffles, best n-gram so far -13.550, p = 0.3846  (~7m 39.6s left)
+  [2026-09-28 18:00:39] 72/200 shuffles, best n-gram so far -13.550, p = 0.3836  (~7m 13.2s left)
+  [2026-09-28 18:01:07] 80/200 shuffles, best n-gram so far -13.514, p = 0.3951  (~6m 46.3s left)
+  [2026-09-28 18:01:35] 88/200 shuffles, best n-gram so far -13.264, p = 0.3933  (~6m 21.5s left)
+  [2026-09-28 18:02:03] 96/200 shuffles, best n-gram so far -13.264, p = 0.4021  (~5m 54.7s left)
+  [2026-09-28 18:02:34] 104/200 shuffles, best n-gram so far -13.264, p = 0.4095  (~5m 30.6s left)
+  [2026-09-28 18:03:05] 112/200 shuffles, best n-gram so far -13.264, p = 0.4071  (~5m 05.7s left)
+  [2026-09-28 18:03:35] 120/200 shuffles, best n-gram so far -13.264, p = 0.3967  (~4m 39.6s left)
+  [2026-09-28 18:04:05] 128/200 shuffles, best n-gram so far -13.264, p = 0.4031  (~4m 13.0s left)
+  [2026-09-28 18:04:38] 136/200 shuffles, best n-gram so far -13.264, p = 0.3942  (~3m 47.0s left)
+  [2026-09-28 18:05:09] 144/200 shuffles, best n-gram so far -13.264, p = 0.3793  (~3m 19.5s left)
+  [2026-09-28 18:05:40] 152/200 shuffles, best n-gram so far -13.264, p = 0.3725  (~2m 51.8s left)
+  [2026-09-28 18:06:11] 160/200 shuffles, best n-gram so far -13.264, p = 0.3789  (~2m 23.9s left)
+  [2026-09-28 18:06:43] 168/200 shuffles, best n-gram so far -13.264, p = 0.3728  (~1m 55.6s left)
+  [2026-09-28 18:07:13] 176/200 shuffles, best n-gram so far -13.264, p = 0.3616  (~1m 26.9s left)
+  [2026-09-28 18:07:45] 184/200 shuffles, best n-gram so far -13.264, p = 0.3568  (~58.17s left)
+  [2026-09-28 18:08:17] 192/200 shuffles, best n-gram so far -13.264, p = 0.3420  (~29.21s left)
+  [2026-09-28 18:08:48] 200/200 shuffles, best n-gram so far -13.264, p = 0.3483  (~0.00s left)
+
+RESULT for grouping standard:
+  best n-gram     real -13.961   shuffles mean -14.063, max -13.264   p = 0.3483
+  words at best   real 6   shuffles mean 4.4, max 11   p = 0.3035
+  max words (top 50)  real 16   shuffles mean 9.5, max 18   p = 0.0299
+  (p floor with 200 shuffles = 0.0050; real English of this length scores about -9.2)
+
+HOW TO READ THIS
+ * A readable decrypt with n-gram near -9 to -10 would be a solution. Scores around
+   -13 to -15 are what 10 million tries squeeze out of random symbol order.
+ * Small p on n-gram alone: the symbol order fits these keys better than chance.
+   Small p on words too: stronger. Large p on both: no sets-of-three key reads it as English.
+
+[2026-09-28 18:08:48] END allkeys   total 24m 25.2s
+log: D:\personal\ciphers\allkeys_out\log.txt   keys: D:\personal\ciphers\allkeys_out\top_keys.csv
+
+[2026-09-28 18:52:28] START allkeys  --all-configs --nulls 50
+workers 8, nulls 50, topk 50, all 160 configs
+check: closest 'standard' key to the published decrypt agrees at 78/87 positions (the rest are ambiguous symbols)
+       ABCvd3 DEF^d5 GHIvd1 JKL^d7 MNO^d8 PQRvd6 STU^d4 WXYvd2
+
+==============================================================================
+GROUPING yours: ABC DEF GHI KLM NOP QRS TUW XYZ
+==============================================================================
+[2026-09-28 19:01:52] real search: 160 sequence(s) x 10,321,920 keys in 9m 19.0s
+
+Top by n-gram score:
+
+  n-gram -14.053  words 1  [forward | 23=14,78=14,86=12]
+  key ABC^d3 DEF^d4 GHI^d5 KLM^d6 NOP^d7 QRS^d8 TUW^d1 XYZ^d2
+     BPECAHTCKYFRQDRIRRHPPRDXYXGFS
+     TRTHTCKLCERREHGQTRFRHUSQDXKKXFS
+     ESHUSEDUWGSERHUQSDCPGSHCDXC
+     bpecahtccyfrqdrirrhpprdxyxgfstrthtcclcerrehgqtrfrhusqdxccxfsesh USE duugserhuqsdcpgshcdxc
+
+  n-gram -14.162  words 1  [forward | 23=14,78=14]
+  key ABC^d3 DEF^d4 GHI^d5 KLM^d6 NOP^d7 QRS^d8 TUW^d1 XYZ^d2
+     BPECAHTCKYFRQDRIRRHPPRDXYXGFS
+     TRTHTCKLCERREHGQTRFRHUSQDXKKXFS
+     ESHUSEDUWGSERHUQSDCPGSHCDAC
+     bpecahtccyfrqdrirrhpprdxyxgfstrthtcclcerrehgqtrfrhusqdxccxfsesh USE duugserhuqsdcpgshcdac
+
+  n-gram -14.182  words 3  [forward | 23=14,78=14]
+  key ABCvd3 DEF^d4 GHIvd5 KLM^d7 NOP^d6 QRS^d8 TUW^d1 XYZ^d2
+     BMEACHTANYFRQDRGRRHMMRDXYXIFS
+     TRTHTANOAERREHIQTRFRHUSQDXNNXFS
+     ESHUSEDUWISERHUQSDAMISHADCA
+     bmeacht ANY frqdrgrrhmmrdxyxifstrthtanoaerrehiqtrfrhusqdxnnxfsesh USE duuiserhuqsdamis HAD ca
+
+  n-gram -14.195  words 2  [forward | 23=14,78=14]
+  key ABCvd3 DEF^d4 GHI^d5 KLMvd6 NOPvd7 QRS^d8 TUW^d1 XYZ^d2
+     BNEACHTAMYFRQDRIRRHNNRDXYXGFS
+     TRTHTAMLAERREHGQTRFRHUSQDXMMXFS
+     ESHUSEDUWGSERHUQSDANGSHADCA
+     bneachtamyfrqdrirrhnnrdxyxgfstrthtamlaerrehgqtrfrhusqdxmmxfsesh USE duugserhuqsdangs HAD ca
+
+  n-gram -14.205  words 3  [forward | 23=14]
+  key ABCvd3 DEF^d4 GHIvd5 KLM^d7 NOP^d6 QRS^d8 TUW^d1 XYZ^d2
+     BMEACHTANYFRQDRGRRHMMRDXYXIFS
+     TRTHTANOAERREHIQTRFRHUSQDXNNXFS
+     ESHUSEDUWISERHUQSIAMISHADCA
+     bmeacht ANY frqdrgrrhmmrdxyxifstrthtanoaerrehiqtrfrhusqdxnnxfsesh USE duuiserhuqsiamis HAD ca
+
+Most words among the top 50 keys:
+  words 3  n-gram -14.182  [forward | 23=14,78=14]  bmeacht ANY frqdrgrrhmmrdxyxifstrthtanoaerrehiqtrfrhusqdxnnxfsesh USE duuiserhuqsdamis HAD ca
+  words 3  n-gram -14.205  [forward | 23=14]  bmeacht ANY frqdrgrrhmmrdxyxifstrthtanoaerrehiqtrfrhusqdxnnxfsesh USE duuiserhuqsiamis HAD ca
+  words 3  n-gram -14.236  [forward | 23=14,78=14]  bmeacht ANY frqdrirrhmmrdxyxgfstrthtanoaerrehgqtrfrhusqdxnnxfsesh USE duugserhuqsdamgs HAD ca
+
+[2026-09-28 19:01:53] running the identical search on 50 shuffled copies...
+  [2026-09-28 20:21:30] 8/50 shuffles, best n-gram so far -13.864, p = 0.2222  (~6h 57m 57.4s left)
+  [2026-09-28 21:47:35] 16/50 shuffles, best n-gram so far -13.859, p = 0.1765  (~5h 52m 06.2s left)
+  [2026-09-28 23:12:48] 24/50 shuffles, best n-gram so far -13.859, p = 0.1600  (~4h 31m 48.9s left)
+  [2026-09-29 00:28:18] 32/50 shuffles, best n-gram so far -13.642, p = 0.1818  (~3h 03m 36.3s left)
+  [2026-09-29 01:42:00] 40/50 shuffles, best n-gram so far -13.642, p = 0.1707  (~1h 40m 01.6s left)
+  [2026-09-29 02:56:41] 48/50 shuffles, best n-gram so far -13.642, p = 0.1429  (~19m 47.0s left)
+  [2026-09-29 03:14:48] 50/50 shuffles, best n-gram so far -13.642, p = 0.1373  (~0.00s left)
+
+RESULT for grouping yours:
+  best n-gram     real -14.053   shuffles mean -14.355, max -13.642   p = 0.1373
+  words at best   real 1   shuffles mean 4.5, max 14   p = 0.9804
+  max words (top 50)  real 3   shuffles mean 7.3, max 17   p = 1.0000
+  (p floor with 50 shuffles = 0.0196; real English of this length scores about -9.2)
+
+==============================================================================
+GROUPING standard: ABC DEF GHI JKL MNO PQR STU WXY
+==============================================================================
+[2026-09-29 03:23:56] real search: 160 sequence(s) x 10,321,920 keys in 9m 07.4s
+
+Top by n-gram score:
+
+  n-gram -13.836  words 6  [boustrophedon B | 34=12,86=12]
+  key ABC^d2 DEF^d5 GHI^d4 JKLvd3 MNO^d1 PQRvd6 STUvd8 WXY^d7
+     SIDABADTYYETTFTGUTIBRIMELIHYK
+     MTMEAIRQIHTTHEDUMTITENSUGARRAIS
+     IAGIESDYIDSUNETHSDONGHSNESH
+     sida BAD ty YET tftgutibrimelihycmtme AIR qiht THE dumti TEN sugarraisiagiesdyidsu NET hsdonghsnesh
+
+  n-gram -13.837  words 10  [forward | 23=14,86=12]
+  key ABCvd3 DEF^d5 GHI^d8 JKL^d2 MNO^d1 PQRvd6 STUvd4 WXYvd7
+     BWTACEMARKSHGUHFHHEWWHUIKIDSI
+     MHMEMARQATHHTEDGMHSHENIGUIRRISI
+     TIENITUNODITHENGIDAWDIEAUIA
+     bu TACE marcshguhfhheuuhuicidsimhmemarqathhtedgmh SHE niguirri SIT ienitunodi THEN gidaudieauia
+
+  n-gram -13.842  words 11  [forward | 23=14,86=12]
+  key ABCvd3 DEF^d5 GHI^d8 JKL^d2 MNO^d1 PQRvd6 STUvd4 WXY^d7
+     BYTACEMARKSHGUHFHHEYYHUIKIDSI
+     MHMEMARQATHHTEDGMHSHENIGUIRRISI
+     TIENITUNODITHENGIDAYDIEAUIA
+     by TACE marcshguhfhheyyhuicidsimhmemarqathhtedgmh SHE niguirri SIT ienitunodi THEN gi DAY dieauia
+
+  n-gram -13.854  words 8  [each line reversed | 78=14]
+  key ABC^d2 DEFvd8 GHIvd5 JKLvd3 MNOvd4 PQRvd6 STU^d1 WXYvd7
+     DMIABAIEWWHEEGEOFEMBRISHLINWK
+     DMARRAOFDTHEMESFIHNEENIQRISHSES
+     ILOIHDIWIODFTHENDIUTONDTHDN
+     dmiabaieuuheegeofembrishlinucdmarraofd THEM esfihneeniqrishsesiloihdiuiodf THEN diutondthdn
+
+  n-gram -13.856  words 6  [boustrophedon B | 32=18,34=12,86=12]
+  key ABC^d2 DEF^d5 GHI^d4 JKLvd3 MNO^d1 PQRvd6 STUvd8 WXY^d7
+     SIDABADTYYETTFTGUTIBRIMELIHYK
+     MTUEAIRQIHTTHEDUMTITENSUGARRAIS
+     IAGIESDYIDSUNETHSDONGHSNESH
+     sida BAD ty YET tftgutibrimelihycmtue AIR qiht THE dumti TEN sugarraisiagiesdyidsu NET hsdonghsnesh
+
+Most words among the top 50 keys:
+  words 11  n-gram -13.842  [forward | 23=14,86=12]  by TACE marcshguhfhheyyhuicidsimhmemarqathhtedgmh SHE niguirri SIT ienitunodi THEN gi DAY dieauia
+  words 11  n-gram -13.878  [forward | 23=14,32=18,86=12]  by TACE marcshguhfhheyyhuicidsimhgemarqathhtedgmh SHE niguirri SIT ienitunodi THEN gi DAY dieauia
+  words 11  n-gram -13.897  [forward | 23=14,34=12,86=12]  by TACE marcshguhfhheyyhuicidsimhmeiarqathhtedgmh SHE niguirri SIT ienitunodi THEN gi DAY dieauia
+
+[2026-09-29 03:23:56] running the identical search on 50 shuffled copies...
+  [2026-09-29 04:44:51] 8/50 shuffles, best n-gram so far -13.262, p = 0.7778  (~7h 04m 49.3s left)
+  [2026-09-29 06:05:55] 16/50 shuffles, best n-gram so far -13.262, p = 0.8235  (~5h 44m 11.4s left)
+  [2026-09-29 07:25:45] 24/50 shuffles, best n-gram so far -13.197, p = 0.8000  (~4h 21m 57.4s left)
+  [2026-09-29 08:42:59] 32/50 shuffles, best n-gram so far -13.119, p = 0.7879  (~2h 59m 27.9s left)
+  [2026-09-29 10:03:43] 40/50 shuffles, best n-gram so far -12.768, p = 0.8049  (~1h 39m 56.6s left)
+  [2026-09-29 11:21:56] 48/50 shuffles, best n-gram so far -12.768, p = 0.8367  (~19m 55.0s left)
+  [2026-09-29 11:39:58] 50/50 shuffles, best n-gram so far -12.768, p = 0.8431  (~0.00s left)
+
+RESULT for grouping standard:
+  best n-gram     real -13.836   shuffles mean -13.592, max -12.768   p = 0.8431
+  words at best   real 6   shuffles mean 4.7, max 12   p = 0.3137
+  max words (top 50)  real 11   shuffles mean 8.7, max 14   p = 0.2941
+  (p floor with 50 shuffles = 0.0196; real English of this length scores about -9.2)
+
+HOW TO READ THIS
+ * A readable decrypt with n-gram near -9 to -10 would be a solution. Scores around
+   -13 to -15 are what 10 million tries squeeze out of random symbol order.
+ * Small p on n-gram alone: the symbol order fits these keys better than chance.
+   Small p on words too: stronger. Large p on both: no sets-of-three key reads it as English.
+
+[2026-09-29 11:39:58] END allkeys   total 16h 47m 30.6s
+log: D:\personal\ciphers\allkeys_out\log.txt   keys: D:\personal\ciphers\allkeys_out\top_keys.csv
