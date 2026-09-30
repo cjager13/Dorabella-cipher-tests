@@ -1,1 +1,177 @@
 
+[2026-09-29 17:12:45] START dora_v2 --selftest --nulls 8
+scorer: quadgram from corpus (2,488,028 letters)
+SELF-TEST planted: MYDEARDORAIWASSOGLADOFYOURLETTERANDTHENEWSTHATYOUAREALLWELLATHOMEWESHALLCOMEOUERONTHURS
+10 fence symbols; the main reading is wrong at 5 of them
+[2026-09-29 17:12:57] search done in 11.81s
+
+Best per reading order (letters AND fence readings solved together):
+
+  [forward]  score -9.221  words 73
+     MYDEARDORAPWASSOGLADOFYOURLET
+     TERANDTHENEWSTHATYOUAREALLWELLA
+     THOMEWISHALLCOMEOUERONTHARS
+     my DEAR DORA p UAS so GLAD of YOUR LETTER AND THE NEUS THAT yo UARE ALL UELL at HOME ui SHALL COME OUER onthars
+
+  [fully reversed]  score -10.631  words 36
+     SEHINGERATEACEFOOTISAMACEINTO
+     OAMOOTARTHEUNTINSMAGAINDSTRANNA
+     ORTELLEDTOBESSTMYPREDRTADUC
+     sehinge RATE ace FOOT ISA MACE INTO oamoo TART heuntinsm AGAIN dstr ANN aor TELL edtobesstmyp RED rtaduc
+
+  [each line reversed]  score -10.633  words 41
+     DASHEOCCOMESPOTTERBEHOMHEAMIL
+     ESSARSSEAHEGOIDENDTRAYANDMYEHAD
+     THENDYOHAGOALOUSSENTARALOND
+     DASH eoc COMES POT terbehomhea MILES sars SEA hegoid END TRAY AND mye HAD THEN dyoh AGO a LOU s SENT aralond
+
+  [boustrophedon B]  score -10.649  words 44
+     ORSDETHWATESMANNEICEDATDERTHL
+     ORDENTOURFRINOUEOHAPEDRESSIRSSE
+     NDEUOFADREARLAYSSEUNGIRLAUO
+     orsdethu ATE sm ANNE ICE datderth LORD en TOUR frin OUE ohape DRESS IRS SEND euofa DREAR LAY s SEU n GIRL auo
+
+  [boustrophedon A]  score -10.725  words 40
+     NBUTARUERACIALLEDSAUEMBEARSTO
+     ASSTISSATRAGEBOAWOLITHTWOULARTO
+     OWENTITLWASSPENTEATREHOWARL
+     n BUT arueracial LED SAUE m BEARS toass TIS SAT RAGE boauo LIT htu OUL ar TOO UENT itl UAS SPENT ea TRE ho UAR l
+
+Fence readings chosen by the best solution [forward]:
+  10:28(alt)  23:13(alt)  24:18  25:21  32:11(alt)  34:32  67:37(alt)  78:21(alt)  85:28  86:11
+
+SELF-TEST: letters recovered 97%, fence readings right 8/10, order picked: forward
+
+[2026-09-29 17:12:57] identical search on 8 shuffle copies...
+  [2026-09-29 17:13:51] 8/8: best copy so far -10.697, p = 0.1111  (~0.00s left)
+
+RESULT vs shuffle: real best -9.221; copies mean -10.910, max -10.697; p = 0.1111 (floor 0.1111)
+   words at best: real 73; copies mean 34.8, max 48; p = 0.1111
+
+[2026-09-29 17:13:51] identical search on 8 doublet copies...
+  [2026-09-29 17:14:47] 8/8: best copy so far -10.344, p = 0.1111  (~0.00s left)
+
+RESULT vs doublet: real best -9.221; copies mean -10.590, max -10.344; p = 0.1111 (floor 0.1111)
+   words at best: real 73; copies mean 40.4, max 56; p = 0.1111
+
+How to read: real English of this length scores about -9.2 (-9.3 with fences). A hit
+reads as English AND beats both kinds of copy on score and words. Beating only the
+'shuffle' copies means structure, not necessarily language (see the marathon).
+[2026-09-29 17:14:47] END   total 2m 02.3s
+
+[2026-09-29 20:16:13] START dora_v2 (defaults)
+scorer: quadgram from corpus (2,488,028 letters)
+v2 transcription: 87 symbols, fence positions [10, 23, 24, 25, 32, 34, 67, 78, 85, 86]
+[2026-09-29 20:16:23] search done in 10.42s
+
+Best per reading order (letters AND fence readings solved together):
+
+  [each line reversed]  score -10.879  words 41
+     OWNIFINESSTEEPEMBEWCLARTHADSC
+     OWILLIMBOUTEWERBNTDEEDAYLARTBER
+     AINATONSANOBUTEDONGUNDOUTOD
+     OUN i FINE s STEEP embeucl ART HAD sc OUI l LIMB OUT e UERB nt DEED ayl ART be RAIN atonsano BUT e DON g UNDO utod
+
+  [fully reversed]  score -10.891  words 26
+     AINATOFSANOBUTEDOFPUNDOUTODOR
+     ILLINBOUTEREWBFTDEEDAYLAITWEWOR
+     FICINESSTEEMENBERCLAWTHADSC
+     AIN atofsano BUT edofp UNDO utodor ILL inb OUTER eubft DEED aylaitue UOR fi CIN es STE e MEN berc LAU t HAD sc
+
+  [forward]  score -10.999  words 29
+     WFHLYOULDPRESMEBEEOFFEMAPAIRT
+     UESOULDCLHEEHOISUEREONTSMADDART
+     HTONTHINGITHEONSTILFITOLIAL
+     ufhly OUL d PRE sme BEE OFF ema PAIR tue SOUL dclheehois UERE ontsm ADD ART hton THING i THE onstil FIT olial
+
+  [boustrophedon B]  score -11.171  words 32
+     IRNOWONELLSEEFECTERYMAPSHADLY
+     PETSOAMBADEEDSNTPERESUITCOMMORI
+     AONASINLANITUSEDINGUNDIUSID
+     ir NOU ONE ll SEE fectery MAPS HAD ly PETS oamba DEEDS ntp ERE SUIT commoriaona SIN lanit USED in GUN diusid
+
+  [boustrophedon A]  score -11.362  words 25
+     WNFABUDALWHESMEPEEUNNETIWITHO
+     OHILLIMSORUEHEDSTUFEEFACLAIUSED
+     FOUROFTRYTOFEURSOMANTOUATIA
+     unfa BUDA luhesmepeeun NET i UITH oo HILL imsoruehedstu FEE faclai USED FOUR of TRY to FEU rso MAN touatia
+
+Fence readings chosen by the best solution [each line reversed]:
+  10:23(alt)  23:15  24:12  25:22  32:18(alt)  34:11  67:15(alt)  78:15  85:15  86:12(alt)
+
+[2026-09-29 20:16:23] identical search on 200 shuffle copies...
+  [2026-09-29 20:19:53] 32/200: best copy so far -10.910, p = 0.0303  (~18m 20.2s left)
+  [2026-09-29 20:23:29] 64/200: best copy so far -10.910, p = 0.0154  (~15m 05.5s left)
+
+stopped by Ctrl+C
+[2026-09-29 20:23:35] END   total 7m 22.6s
+
+[2026-09-29 20:24:49] START dora_v2 (defaults)
+language: en   scorer: quadgram from corpus (2,488,028 letters)   corpus: english.txt
+yardstick: a real English note of this length scores about -9.23
+v2 transcription: 87 symbols, fence positions [10, 23, 24, 25, 32, 34, 67, 78, 85, 86]
+[2026-09-29 20:24:59] search done in 10.06s
+
+Best per reading order (letters AND fence readings solved together):
+
+  [each line reversed]  score -10.879  words 41
+     OWNIFINESSTEEPEMBEWCLARTHADSC
+     OWILLIMBOUTEWERBNTDEEDAYLARTBER
+     AINATONSANOBUTEDONGUNDOUTOD
+     OUN i FINE s STEEP embeucl ART HAD sc OUI l LIMB OUT e UERB nt DEED ayl ART be RAIN atonsano BUT e DON g UNDO utod
+
+  [fully reversed]  score -10.891  words 26
+     AINATOFSANOBUTEDOFPUNDOUTODOR
+     ILLINBOUTEREWBFTDEEDAYLAITWEWOR
+     FICINESSTEEMENBERCLAWTHADSC
+     AIN atofsano BUT edofp UNDO utodor ILL inb OUTER eubft DEED aylaitue UOR fi CIN es STE e MEN berc LAU t HAD sc
+
+  [forward]  score -10.999  words 29
+     WFHLYOULDPRESMEBEEOFFEMAPAIRT
+     UESOULDCLHEEHOISUEREONTSMADDART
+     HTONTHINGITHEONSTILFITOLIAL
+     ufhly OUL d PRE sme BEE OFF ema PAIR tue SOUL dclheehois UERE ontsm ADD ART hton THING i THE onstil FIT olial
+
+  [boustrophedon B]  score -11.171  words 32
+     IRNOWONELLSEEFECTERYMAPSHADLY
+     PETSOAMBADEEDSNTPERESUITCOMMORI
+     AONASINLANITUSEDINGUNDIUSID
+     ir NOU ONE ll SEE fectery MAPS HAD ly PETS oamba DEEDS ntp ERE SUIT commoriaona SIN lanit USED in GUN diusid
+
+  [boustrophedon A]  score -11.362  words 25
+     WNFABUDALWHESMEPEEUNNETIWITHO
+     OHILLIMSORUEHEDSTUFEEFACLAIUSED
+     FOUROFTRYTOFEURSOMANTOUATIA
+     unfa BUDA luhesmepeeun NET i UITH oo HILL imsoruehedstu FEE faclai USED FOUR of TRY to FEU rso MAN touatia
+
+Fence readings chosen by the best solution [each line reversed]:
+  10:23(alt)  23:15  24:12  25:22  32:18(alt)  34:11  67:15(alt)  78:15  85:15  86:12(alt)
+
+[2026-09-29 20:24:59] identical search on 200 shuffle copies...
+  [2026-09-29 20:28:40] 32/200: best copy so far -10.910, p = 0.0303  (~19m 19.5s left)
+  [2026-09-29 20:32:18] 64/200: best copy so far -10.910, p = 0.0154  (~15m 32.4s left)
+  [2026-09-29 20:35:48] 96/200: best copy so far -10.897, p = 0.0103  (~11m 43.3s left)
+  [2026-09-29 20:39:21] 128/200: best copy so far -10.855, p = 0.0155  (~8m 04.7s left)
+  [2026-09-29 20:42:51] 160/200: best copy so far -10.783, p = 0.0186  (~4m 28.1s left)
+  [2026-09-29 20:46:22] 192/200: best copy so far -10.783, p = 0.0207  (~53.45s left)
+  [2026-09-29 20:47:16] 200/200: best copy so far -10.783, p = 0.0199  (~0.00s left)
+
+RESULT vs shuffle: real best -10.879; copies mean -11.321, max -10.783; p = 0.0199 (floor 0.0050)
+   words at best: real 41; copies mean 31.5, max 77; p = 0.1642
+
+[2026-09-29 20:47:16] identical search on 200 doublet copies...
+  [2026-09-29 20:50:56] 32/200: best copy so far -10.572, p = 0.3636  (~19m 15.5s left)
+  [2026-09-29 20:54:36] 64/200: best copy so far -10.572, p = 0.2923  (~15m 34.6s left)
+  [2026-09-29 20:58:18] 96/200: best copy so far -10.405, p = 0.3093  (~11m 57.7s left)
+  [2026-09-29 21:02:03] 128/200: best copy so far -10.405, p = 0.3178  (~8m 18.8s left)
+  [2026-09-29 21:05:41] 160/200: best copy so far -10.405, p = 0.2981  (~4m 36.3s left)
+  [2026-09-29 21:09:18] 192/200: best copy so far -10.405, p = 0.3316  (~55.08s left)
+  [2026-09-29 21:10:11] 200/200: best copy so far -10.405, p = 0.3284  (~0.00s left)
+
+RESULT vs doublet: real best -10.879; copies mean -10.934, max -10.405; p = 0.3284 (floor 0.0050)
+   words at best: real 41; copies mean 33.8, max 70; p = 0.2289
+
+How to read: real text of this length scores about -9.2 (see yardstick above). A hit
+reads as English AND beats both kinds of copy on score and words. Beating only the
+'shuffle' copies means structure, not necessarily language (see the marathon).
+[2026-09-29 21:10:11] END   total 45m 22.6s
