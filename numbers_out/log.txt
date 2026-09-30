@@ -1,1 +1,564 @@
 
+[2026-09-29 12:58:05] START dora_numbers --selftest
+SELF-TEST planted: DEARDORAWECOMETOYOUONTHE14BYTHE3TRAINANDHOPETHATYOUWILLMEETUSATTHESTATIONIFITISFINEWESH
+digit symbols planted: [38, 13, 23]   symbol counts: {17: 1, 32: 2, 38: 1, 23: 1, 14: 1, 13: 1, 28: 1, 25: 2, 16: 2}
+digit sets tried: 130 (including 'no digits'), reading orders: 1, restarts: 80
+[2026-09-29 12:58:35] real search done in 30.00s
+
+Top results (# = a symbol treated as a digit):
+
+  score -10.186  words 14  [forward]  digits = [23, 28, 32]
+     CEARCORALEFO#ETOYOUONTHEW#BYT
+     HEDTRAINANCHO#ETHATYOULIPP#EETU
+     SATTHESTATIONIMITISMINELESH
+     c EAR coralefo # eto YOU on THE u # by THE dt RAIN ancho # e THAT YOU lipp # eetusat THE stationimitisminelesh
+
+  score -10.198  words 17  [forward]  digits = [13, 14, 25]
+     CEALCOLADEGOUETOFORONTHEYK#FT
+     HE#TLAINANCHOPETHATFORDI##UEETR
+     SATTHESTATIONIMITISMINEDESH
+     cealcoladego UET o FOR on THEY c # f THE # tlainanc HOPE THAT FOR di #  # ueetrsat THE stationimitisminedesh
+
+  score -10.206  words 19  [forward]  digits = [13, 16, 23]
+     CEARCORADEPOLETOYOUONTHEB#KYT
+     HE#TRAINANCHOMETHATYOUDIFFLEETU
+     SATTHESTATIONI#ITIS#INEDESH
+     c EAR coradepo LET o YOU on THE b # cy THE # t RAIN anc HOME THAT YOU diffleetusat THE stationi # itis # inedesh
+
+  score -10.207  words 18  [forward]  digits = [23, 25, 32]
+     YEARYORAUEBO#ETOCOLONTHEW#GCT
+     HEDTRAINANYHOMETHATCOLUI###EETL
+     SATTHESTATIONIFITISFINEUESH
+     y EAR yorauebo # etocolon THE u # gc THE dt RAIN ANY HOME THAT colui #  #  # eetlsat THE stationifitisfi NEU esh
+
+  score -10.261  words 19  [forward]  digits = [13, 14, 32]
+     CEARCORADEPO#ETOLOUONTHEYK#LT
+     HE#TRAINANCHOMETHATLOUDIBB#EETU
+     SATTHESTATIONIFITISFINEDESH
+     c EAR coradepo # etolouon THEY c # l THE # t RAIN anc HOME THAT loudibb # eetusat THE stationifitisfinedesh
+
+  score -10.265  words 18  [forward]  digits = [23, 25, 28]
+     FEARFORADECOMETOYOUOLTHEW#BYT
+     HESTRAILALFHO#ETHATYOUDI##MEETU
+     NATTHENTATIOLIGITINGILEDENH
+     f EAR FOR ade COME to YOU ol THE u # by THE strailalfho # e THAT YOU di #  # meetunat THEN tatioligitingiledenh
+
+  score -10.269  words 17  [forward]  digits = [14, 28, 32]
+     CEARCORADEPO#ETOYOUONTHEMW#YT
+     HELTRAINANCHO#ETHATYOUDIBB#EETU
+     SATTHESTATIONIFITISFINEDESH
+     c EAR coradepo # eto YOU on THEM u # y THE lt RAIN ancho # e THAT YOU dibb # eetusat THE stationifitisfinedesh
+
+  score -10.297  words 21  [forward]  digits = [14, 17, 25]
+     CEARCORAUE#OGETODOFONTHEYK#DT
+     HELTRAINANCHOPETHATDOFUI##GEETF
+     SATTHESTATIONIMITISMINEUESH
+     c EAR coraue # o GET odofon THEY c # d THE lt RAIN anc HOPE THAT dofui #  # geetfsat THE stationimitismi NEU esh
+
+For comparison, no digits: best -11.009
+Best score by number of digit symbols: 0: -11.009, 1: -10.432, 2: -10.317, 3: -10.186
+
+SELF-TEST: best digit set [23, 28, 32] (true [38, 13, 23]); letters recovered 83%
+
+[2026-09-29 12:58:35] identical search on 100 shuffled copies...
+  [2026-09-29 13:01:20] 5/100: null best so far -10.741, p = 0.1667  (~52m 10.7s left)
+  [2026-09-29 13:04:24] 10/100: null best so far -10.686, p = 0.0909  (~52m 19.1s left)
+  [2026-09-29 13:07:25] 15/100: null best so far -10.250, p = 0.0625  (~50m 05.3s left)
+  [2026-09-29 13:10:25] 20/100: null best so far -10.250, p = 0.0476  (~47m 20.8s left)
+  [2026-09-29 13:13:21] 25/100: null best so far -10.250, p = 0.0385  (~44m 19.6s left)
+  [2026-09-29 13:16:17] 30/100: null best so far -10.250, p = 0.0323  (~41m 17.1s left)
+  [2026-09-29 13:19:26] 35/100: null best so far -10.250, p = 0.0278  (~38m 43.3s left)
+  [2026-09-29 13:22:31] 40/100: null best so far -10.250, p = 0.0244  (~35m 54.6s left)
+  [2026-09-29 13:25:35] 45/100: null best so far -10.250, p = 0.0217  (~32m 59.7s left)
+  [2026-09-29 13:28:42] 50/100: null best so far -10.250, p = 0.0196  (~30m 06.8s left)
+  [2026-09-29 13:31:46] 55/100: null best so far -10.250, p = 0.0179  (~27m 09.3s left)
+  [2026-09-29 13:34:51] 60/100: null best so far -10.250, p = 0.0164  (~24m 10.5s left)
+  [2026-09-29 13:37:58] 65/100: null best so far -10.250, p = 0.0152  (~21m 12.7s left)
+  [2026-09-29 13:41:22] 70/100: null best so far -10.250, p = 0.0141  (~18m 20.3s left)
+
+[2026-09-29 13:41:51] START dora_numbers --digit-codes 31 35
+Dorabella symbol counts (rarest first): 23x1, 26x1, 31x1, 35x1, 13x2, 22x2, 12x4, 14x4, 16x4, 18x4, 21x4, 34x4, 37x4, 11x5, 15x6, 24x6, 33x7, 25x8, 38x8, 28x11
+digit sets tried: 1 (including 'no digits'), reading orders: 5, restarts: 80
+[2026-09-29 13:41:56] real search done in 4.15s
+
+Top results (# = a symbol treated as a digit):
+
+  score -11.121  words 3  [forward]  digits = [31, 35]
+     GTRIBSDIMPLENCE#EESTTEUOPOULA
+     DEDSDIMFIREERSUNDELESHANCOMMOLA
+     RASHARCH#UARESHNAUITUASICBI
+     gtribsdimplence # eestteuopouladedsdimfireer SUN deleshancommolarasharch # u ARE shnauit UAS icbi
+
+  score -11.140  words 8  [fully reversed]  digits = [31, 35]
+     IFOITALSILAUNTERAL#NORANTARAD
+     YHHYOUANTEDEMULTREERICHIMTMEMAD
+     LYWYLESSTEE#EOUEDWHIMTFIRSB
+     ifoitalsi LAU nteral # NOR antaradyhhyo UANT edemultreeric HIM tmemadlyuylesstee # eouedu HIM tfirsb
+
+  score -11.333  words 11  [boustrophedon B]  digits = [31, 35]
+     ENDIGIDOFFROO#OHSONGMAURCALFB
+     UOURUAMPALOOLRDSUONORTESHIMMINE
+     ACHAREDFADESTROLED#THLETREL
+     END igid OFF roo # oh SONG maurcalfbu OUR uampaloolrdsuo NOR tes HIM mineacha RED fadestroled # th LET rel
+
+  score -11.375  words 4  [boustrophedon A]  digits = [31, 35]
+     BLISHEDSTMANOPN#NNELLNUYMYUAR
+     RAYTTYPORCENANDOUEINNISFTSDEDND
+     IRECRIPC#URINECORUSLURESPHS
+     bli SHE dst MAN opn # nnellnuymy UAR rayttyporcen AND oueinnisftsdedndirecripc # urinecorusluresphs
+
+  score -11.420  words 11  [each line reversed]  digits = [31, 35]
+     ORNIGINEPPSEE#ETHERGLADSCAMPF
+     ORILLITHOUSEREDHNSMEEMAYLADSDED
+     ACTASONPANOHUSEMON#UTMOUSOM
+     orniginepp SEE # et HER GLAD scamp FOR illitho USE RED hnsmee MAY ladsdedactasonpanoh USE mon # utmousom
+Best score by number of digit symbols: 2: -11.121
+
+[2026-09-29 13:41:56] identical search on 100 shuffled copies...
+  [2026-09-29 13:42:11] 5/100: null best so far -11.268, p = 0.1667  (~4m 51.1s left)
+  [2026-09-29 13:42:27] 10/100: null best so far -11.268, p = 0.0909  (~4m 42.9s left)
+  [2026-09-29 13:42:43] 15/100: null best so far -11.268, p = 0.0625  (~4m 29.3s left)
+  [2026-09-29 13:42:59] 20/100: null best so far -11.164, p = 0.0476  (~4m 14.3s left)
+  [2026-09-29 13:43:15] 25/100: null best so far -11.164, p = 0.0385  (~3m 57.8s left)
+  [2026-09-29 13:43:31] 30/100: null best so far -11.105, p = 0.0645  (~3m 43.0s left)
+  [2026-09-29 13:43:47] 35/100: null best so far -11.105, p = 0.0556  (~3m 26.1s left)
+  [2026-09-29 13:44:03] 40/100: null best so far -11.105, p = 0.0488  (~3m 11.0s left)
+  [2026-09-29 13:44:18] 45/100: null best so far -11.092, p = 0.0652  (~2m 54.3s left)
+  [2026-09-29 13:44:34] 50/100: null best so far -11.092, p = 0.0588  (~2m 38.3s left)
+  [2026-09-29 13:44:50] 55/100: null best so far -10.925, p = 0.0714  (~2m 22.7s left)
+  [2026-09-29 13:45:06] 60/100: null best so far -10.925, p = 0.0656  (~2m 07.0s left)
+  [2026-09-29 13:45:22] 65/100: null best so far -10.925, p = 0.0606  (~1m 51.0s left)
+  [2026-09-29 13:45:37] 70/100: null best so far -10.925, p = 0.0563  (~1m 34.7s left)
+  [2026-09-29 13:45:55] 75/100: null best so far -10.925, p = 0.0526  (~1m 19.8s left)
+  [2026-09-29 13:46:14] 80/100: null best so far -10.925, p = 0.0494  (~1m 04.5s left)
+  [2026-09-29 13:46:26] 75/100: null best so far -10.250, p = 0.0132  (~15m 57.0s left)
+  [2026-09-29 13:46:31] 85/100: null best so far -10.925, p = 0.0465  (~48.68s left)
+  [2026-09-29 13:46:50] 90/100: null best so far -10.925, p = 0.0440  (~32.74s left)
+  [2026-09-29 13:47:09] 95/100: null best so far -10.925, p = 0.0417  (~16.51s left)
+  [2026-09-29 13:47:27] 100/100: null best so far -10.925, p = 0.0396  (~0.00s left)
+
+RESULT: best score real -11.121; shuffled mean -11.456, max -10.925; p = 0.0396 (floor 0.0099)
+        words at best: real 3; shuffled mean 6.2, max 17; p = 0.7822
+
+How to read: a hit is a decrypt that reads as English around the # marks, scores
+well above the shuffled copies, AND whose best digit set clearly beats 'no digits'.
+Removing symbols always helps a little (fewer awkward windows); the shuffled copies
+get the same help, so only the p-value tells you whether it is more than that.
+[2026-09-29 13:47:27] END   total 5m 35.8s
+  [2026-09-29 13:50:03] 80/100: null best so far -10.250, p = 0.0123  (~12m 52.0s left)
+  [2026-09-29 13:53:23] 85/100: null best so far -10.250, p = 0.0116  (~9m 40.3s left)
+  [2026-09-29 13:56:27] 90/100: null best so far -10.250, p = 0.0110  (~6m 25.8s left)
+  [2026-09-29 13:59:33] 95/100: null best so far -10.250, p = 0.0104  (~3m 12.5s left)
+  [2026-09-29 14:02:41] 100/100: null best so far -10.250, p = 0.0099  (~0.00s left)
+
+RESULT: best score real -10.186; shuffled mean -10.830, max -10.250; p = 0.0099 (floor 0.0099)
+        words at best: real 14; shuffled mean 5.5, max 16; p = 0.0396
+
+How to read: a hit is a decrypt that reads as English around the # marks, scores
+well above the shuffled copies, AND whose best digit set clearly beats 'no digits'.
+Removing symbols always helps a little (fewer awkward windows); the shuffled copies
+get the same help, so only the p-value tells you whether it is more than that.
+[2026-09-29 14:02:41] END   total 1h 04m 36.5s
+
+[2026-09-29 14:15:05] START dora_numbers --selftest
+SELF-TEST planted: DEARDORAWECOMETOYOUONTHE14BYTHE3TRAINANDHOPETHATYOUWILLMEETUSATTHESTATIONIFITISFINEWESH
+digit symbols planted: [38, 13, 23]   symbol counts: {17: 1, 32: 2, 38: 1, 23: 1, 14: 1, 13: 1, 28: 1, 25: 2, 16: 2}
+digit sets tried: 130 (including 'no digits'), reading orders: 1, restarts: 80
+[2026-09-29 14:15:43] real search done in 38.44s
+
+Top results (# = a symbol treated as a digit):
+
+  score -9.013  words 35  [forward]  digits = [13, 16, 23]
+     DEARDORAWECOMETOYOUONTHEF#BYT
+     HE#TRAINANDHOPETHATYOUWILLMEETU
+     SATTHESTATIONI#ITIS#INEWESH
+     DEAR DORA ue COME to YOU on THE f # by THE # t RAIN AND HOPE THAT YOU UILL meetusat THE stationi # itis # i NEU esh
+
+  score -9.036  words 27  [forward]  digits = [13, 23, 25]
+     DEARDORAWECOMETOYOUONTHEP#BYT
+     HE#TRAINANDHOLETHATYOUWI##MEETU
+     SATTHESTATIONIFITISFINEWESH
+     DEAR DORA ue COME to YOU on THE p # by THE # t RAIN AND hole THAT YOU ui #  # meetusat THE stationifitisfi NEU esh
+
+  score -9.041  words 27  [forward]  digits = [16, 23, 25]
+     DEARDORAWECOMETOYOUONTHEP#BYT
+     HEXTRAINANDHOLETHATYOUWI##MEETU
+     SATTHESTATIONI#ITIS#INEWESH
+     DEAR DORA ue COME to YOU on THE p # by THE xt RAIN AND hole THAT YOU ui #  # meetusat THE stationi # itis # i NEU esh
+
+  score -9.059  words 31  [forward]  digits = [13, 23, 28]
+     DEARDORAWECOMETOYOUONTHEP#BYT
+     HE#TRAINANDHO#ETHATYOUWILLMEETU
+     SATTHESTATIONIFITISFINEWESH
+     DEAR DORA ue COME to YOU on THE p # by THE # t RAIN AND ho # e THAT YOU UILL meetusat THE stationifitisfi NEU esh
+
+  score -9.060  words 31  [forward]  digits = [13, 17, 23]
+     DEARDORAWE#OMETOYOUONTHEC#BYT
+     HE#TRAINANDHOPETHATYOUWILLMEETU
+     SATTHESTATIONIFITISFINEWESH
+     DEAR DORA ue # ometo YOU on THE c # by THE # t RAIN AND HOPE THAT YOU UILL meetusat THE stationifitisfi NEU esh
+
+  score -9.065  words 31  [forward]  digits = [16, 23, 28]
+     DEARDORAWECOMETOYOUONTHEP#BYT
+     HEXTRAINANDHO#ETHATYOUWILLMEETU
+     SATTHESTATIONI#ITIS#INEWESH
+     DEAR DORA ue COME to YOU on THE p # by THE xt RAIN AND ho # e THAT YOU UILL meetusat THE stationi # itis # i NEU esh
+
+  score -9.072  words 35  [forward]  digits = [13, 16, 38]
+     DEARDORAWECOMETOYOUONTHE#GBYT
+     HE#TRAINANDHOPETHATYOUWILLMEETU
+     SATTHESTATIONI#ITIS#INEWESH
+     DEAR DORA ue COME to YOU on THE # gby THE # t RAIN AND HOPE THAT YOU UILL meetusat THE stationi # itis # i NEU esh
+
+  score -9.093  words 23  [forward]  digits = [17, 23, 25]
+     DEARDORAWE#OMETOYOUONTHEP#BYT
+     HECTRAINANDHOLETHATYOUWI##MEETU
+     SATTHESTATIONIFITISFINEWESH
+     DEAR DORA ue # ometo YOU on THE p # by THE ct RAIN AND hole THAT YOU ui #  # meetusat THE stationifitisfi NEU esh
+
+For comparison, no digits: best -9.568
+Best score by number of digit symbols: 0: -9.568, 1: -9.228, 2: -9.131, 3: -9.013
+
+SELF-TEST: best digit set [13, 16, 23] (true [38, 13, 23]); letters recovered 98%
+
+[2026-09-29 14:15:43] identical search on 100 shuffled copies...
+  [2026-09-29 14:19:04] 5/100: null best so far -10.877, p = 0.1667  (~1h 03m 36.5s left)
+  [2026-09-29 14:22:26] 10/100: null best so far -10.846, p = 0.0909  (~1h 00m 27.0s left)
+  [2026-09-29 14:25:50] 15/100: null best so far -10.542, p = 0.0625  (~57m 17.8s left)
+  [2026-09-29 14:29:14] 20/100: null best so far -10.444, p = 0.0476  (~54m 05.6s left)
+  [2026-09-29 14:32:37] 25/100: null best so far -10.444, p = 0.0385  (~50m 41.3s left)
+  [2026-09-29 14:36:02] 30/100: null best so far -10.444, p = 0.0323  (~47m 23.7s left)
+  [2026-09-29 14:39:28] 35/100: null best so far -10.444, p = 0.0278  (~44m 06.8s left)
+  [2026-09-29 14:42:52] 40/100: null best so far -10.444, p = 0.0244  (~40m 43.4s left)
+  [2026-09-29 14:46:27] 45/100: null best so far -10.444, p = 0.0217  (~37m 34.3s left)
+  [2026-09-29 14:50:14] 50/100: null best so far -10.444, p = 0.0196  (~34m 30.7s left)
+  [2026-09-29 14:54:05] 55/100: null best so far -10.444, p = 0.0179  (~31m 23.4s left)
+  [2026-09-29 14:57:49] 60/100: null best so far -10.444, p = 0.0164  (~28m 04.2s left)
+  [2026-09-29 15:01:29] 65/100: null best so far -10.378, p = 0.0152  (~24m 38.9s left)
+  [2026-09-29 15:05:04] 70/100: null best so far -10.378, p = 0.0141  (~21m 09.2s left)
+  [2026-09-29 15:08:42] 75/100: null best so far -10.378, p = 0.0132  (~17m 39.8s left)
+  [2026-09-29 15:12:28] 80/100: null best so far -10.378, p = 0.0123  (~14m 11.4s left)
+  [2026-09-29 15:16:13] 85/100: null best so far -10.378, p = 0.0116  (~10m 40.7s left)
+  [2026-09-29 15:19:52] 90/100: null best so far -10.378, p = 0.0110  (~7m 07.7s left)
+  [2026-09-29 15:23:23] 95/100: null best so far -10.378, p = 0.0104  (~3m 33.7s left)
+  [2026-09-29 15:27:02] 100/100: null best so far -10.378, p = 0.0099  (~0.00s left)
+
+RESULT: best score real -9.013; shuffled mean -10.943, max -10.378; p = 0.0099 (floor 0.0099)
+        words at best: real 35; shuffled mean 8.1, max 21; p = 0.0099
+
+How to read: a hit is a decrypt that reads as English around the # marks, scores
+well above the shuffled copies, AND whose best digit set clearly beats 'no digits'.
+Removing symbols always helps a little (fewer awkward windows); the shuffled copies
+get the same help, so only the p-value tells you whether it is more than that.
+[2026-09-29 15:27:02] END   total 1h 11m 57.5s
+
+[2026-09-29 15:50:48] START dora_numbers --selftest
+skip charge per broken window: -10.7
+
+[2026-09-29 15:58:34] START dora_numbers --selftest
+skip charge per broken window: -10.7
+SELF-TEST planted: DEARDORAWECOMETOYOUONTHE14BYTHE3TRAINANDHOPETHATYOUWILLMEETUSATTHESTATIONIFITISFINEWESH
+digit symbols planted: [38, 13, 23]   symbol counts: {17: 1, 32: 2, 38: 1, 23: 1, 14: 1, 13: 1, 28: 1, 25: 2, 16: 2}
+digit sets tried: 130 (including 'no digits'), reading orders: 1, restarts: 80
+[2026-09-29 15:59:12] real search done in 38.37s
+
+Top results (# = a symbol treated as a digit):
+
+  score -9.293  words 73  [forward]  digits = [13, 23, 28]
+     DEARDORAWECOMETOYOUONTHEP#BYT
+     HE#TRAINANDHO#ETHATYOUWILLMEETU
+     SATTHESTATIONIFITISFINEWESH
+     DEAR do RAUE COME TOY o UONT hep # by THE # TRAIN AND ho # e THAT YOU UILL MEET u SAT THE STATION ifi TIS FINE uesh
+
+  score -9.293  words 73  [forward]  digits = [13, 23, 25]
+     DEARDORAWECOMETOYOUONTHEP#BYT
+     HE#TRAINANDHOLETHATYOUWI##MEETU
+     SATTHESTATIONIFITISFINEWESH
+     DEAR do RAUE COME TOY o UONT hep # by THE # TRAIN AND HOLE THAT YOU ui #  # MEET u SAT THE STATION ifi TIS FINE uesh
+
+  score -9.294  words 74  [forward]  digits = [13, 17, 23]
+     DEARDORAWE#OMETOYOUONTHEC#BYT
+     HE#TRAINANDHOPETHATYOUWILLMEETU
+     SATTHESTATIONIFITISFINEWESH
+     DEAR do RAUE # OME TOY o UONT hec # by THE # TRAIN AND HOPE THAT YOU UILL MEET u SAT THE STATION ifi TIS FINE uesh
+
+  score -9.298  words 77  [forward]  digits = [23]
+     DEARDORAWECOMETOYOUONTHEG#BYT
+     HEXTRAINANDHOPETHATYOUWILLMEETU
+     SATTHESTATIONIFITISFINEWESH
+     DEAR do RAUE COME TOY o UONT heg # by THE x TRAIN AND HOPE THAT YOU UILL MEET u SAT THE STATION ifi TIS FINE uesh
+
+  score -9.303  words 77  [forward]  digits = [13, 14, 23]
+     DEARDORAWECOMETOYOUONTHEB##YT
+     HE#TRAINANDHOPETHATYOUWILLMEETU
+     SATTHESTATIONIFITISFINEWESH
+     DEAR do RAUE COME TOY o UONT heb #  # y THE # TRAIN AND HOPE THAT YOU UILL MEET u SAT THE STATION ifi TIS FINE uesh
+
+  score -9.311  words 77  [forward]  digits = [13, 23, 38]
+     DEARDORAWECOMETOYOUONTHE##BYT
+     HE#TRAINANDHOPETHATYOUWILLMEETU
+     SATTHESTATIONIFITISFINEWESH
+     DEAR do RAUE COME TOY o UONT he #  # by THE # TRAIN AND HOPE THAT YOU UILL MEET u SAT THE STATION ifi TIS FINE uesh
+
+  score -9.314  words 73  [forward]  digits = [23, 28]
+     DEARDORAWECOMETOYOUONTHEP#BYT
+     HEXTRAINANDHO#ETHATYOUWILLMEETU
+     SATTHESTATIONIFITISFINEWESH
+     DEAR do RAUE COME TOY o UONT hep # by THE x TRAIN AND ho # e THAT YOU UILL MEET u SAT THE STATION ifi TIS FINE uesh
+
+  score -9.314  words 73  [forward]  digits = [23, 25]
+     DEARDORAWECOMETOYOUONTHEP#BYT
+     HEXTRAINANDHOLETHATYOUWI##MEETU
+     SATTHESTATIONIFITISFINEWESH
+     DEAR do RAUE COME TOY o UONT hep # by THE x TRAIN AND HOLE THAT YOU ui #  # MEET u SAT THE STATION ifi TIS FINE uesh
+
+For comparison, no digits: best -9.568
+Best score by number of digit symbols: 0: -9.568, 1: -9.298, 2: -9.314, 3: -9.293
+
+SELF-TEST: best digit set [13, 23, 28] (true [38, 13, 23]); letters recovered 99%
+
+[2026-09-29 15:59:12] identical search on 100 shuffled copies...
+  [2026-09-29 16:02:20] 5/100: null best so far -10.826, p = 0.1667  (~59m 33.3s left)
+  [2026-09-29 16:05:26] 10/100: null best so far -10.815, p = 0.0909  (~56m 01.4s left)
+
+stopped by Ctrl+C
+[2026-09-29 16:07:43] END   total 9m 09.1s
+
+[2026-09-29 16:08:04] START dora_numbers --selftest --nulls 5
+skip charge per broken window: -10.7
+SELF-TEST planted: DEARDORAWECOMETOYOUONTHE14BYTHE3TRAINANDHOPETHATYOUWILLMEETUSATTHESTATIONIFITISFINEWESH
+digit symbols planted: [38, 13, 23]   symbol counts: {17: 1, 32: 2, 38: 1, 23: 1, 14: 1, 13: 1, 28: 1, 25: 2, 16: 2}
+digit sets tried: 130 (including 'no digits'), reading orders: 1, restarts: 80
+[2026-09-29 16:08:43] real search done in 38.72s
+
+Top results (# = a symbol treated as a digit):
+
+  score -9.293  words 73  [forward]  digits = [13, 23, 28]
+     DEARDORAWECOMETOYOUONTHEP#BYT
+     HE#TRAINANDHO#ETHATYOUWILLMEETU
+     SATTHESTATIONIFITISFINEWESH
+     DEAR do RAUE COME TOY o UONT hep # by THE # TRAIN AND ho # e THAT YOU UILL MEET u SAT THE STATION ifi TIS FINE uesh
+
+  score -9.293  words 73  [forward]  digits = [13, 23, 25]
+     DEARDORAWECOMETOYOUONTHEP#BYT
+     HE#TRAINANDHOLETHATYOUWI##MEETU
+     SATTHESTATIONIFITISFINEWESH
+     DEAR do RAUE COME TOY o UONT hep # by THE # TRAIN AND HOLE THAT YOU ui #  # MEET u SAT THE STATION ifi TIS FINE uesh
+
+  score -9.294  words 74  [forward]  digits = [13, 17, 23]
+     DEARDORAWE#OMETOYOUONTHEC#BYT
+     HE#TRAINANDHOPETHATYOUWILLMEETU
+     SATTHESTATIONIFITISFINEWESH
+     DEAR do RAUE # OME TOY o UONT hec # by THE # TRAIN AND HOPE THAT YOU UILL MEET u SAT THE STATION ifi TIS FINE uesh
+
+  score -9.298  words 77  [forward]  digits = [23]
+     DEARDORAWECOMETOYOUONTHEG#BYT
+     HEXTRAINANDHOPETHATYOUWILLMEETU
+     SATTHESTATIONIFITISFINEWESH
+     DEAR do RAUE COME TOY o UONT heg # by THE x TRAIN AND HOPE THAT YOU UILL MEET u SAT THE STATION ifi TIS FINE uesh
+
+  score -9.303  words 77  [forward]  digits = [13, 14, 23]
+     DEARDORAWECOMETOYOUONTHEB##YT
+     HE#TRAINANDHOPETHATYOUWILLMEETU
+     SATTHESTATIONIFITISFINEWESH
+     DEAR do RAUE COME TOY o UONT heb #  # y THE # TRAIN AND HOPE THAT YOU UILL MEET u SAT THE STATION ifi TIS FINE uesh
+
+  score -9.311  words 77  [forward]  digits = [13, 23, 38]
+     DEARDORAWECOMETOYOUONTHE##BYT
+     HE#TRAINANDHOPETHATYOUWILLMEETU
+     SATTHESTATIONIFITISFINEWESH
+     DEAR do RAUE COME TOY o UONT he #  # by THE # TRAIN AND HOPE THAT YOU UILL MEET u SAT THE STATION ifi TIS FINE uesh
+
+  score -9.314  words 73  [forward]  digits = [23, 28]
+     DEARDORAWECOMETOYOUONTHEP#BYT
+     HEXTRAINANDHO#ETHATYOUWILLMEETU
+     SATTHESTATIONIFITISFINEWESH
+     DEAR do RAUE COME TOY o UONT hep # by THE x TRAIN AND ho # e THAT YOU UILL MEET u SAT THE STATION ifi TIS FINE uesh
+
+  score -9.314  words 73  [forward]  digits = [23, 25]
+     DEARDORAWECOMETOYOUONTHEP#BYT
+     HEXTRAINANDHOLETHATYOUWI##MEETU
+     SATTHESTATIONIFITISFINEWESH
+     DEAR do RAUE COME TOY o UONT hep # by THE x TRAIN AND HOLE THAT YOU ui #  # MEET u SAT THE STATION ifi TIS FINE uesh
+
+For comparison, no digits: best -9.568
+Best score by number of digit symbols: 0: -9.568, 1: -9.298, 2: -9.314, 3: -9.293
+
+SELF-TEST: best digit set [13, 23, 28] (true [38, 13, 23]); letters recovered 99%
+
+[2026-09-29 16:08:43] identical search on 5 shuffled copies...
+  [2026-09-29 16:11:51] 5/5: null best so far -10.826, p = 0.1667  (~0.00s left)
+
+RESULT: best score real -9.293; shuffled mean -10.983, max -10.826; p = 0.1667 (floor 0.1667)
+        words at best: real 73; shuffled mean 23.4, max 30; p = 0.1667
+
+Note: on 87 symbols the exact digit symbols are often a near-tie (the top few results
+differ by ~0.001); what matters is whether the LETTERS read as English.
+
+How to read: a hit is a decrypt that reads as English around the # marks, scores
+well above the shuffled copies, AND whose best digit set clearly beats 'no digits'.
+Removing symbols always helps a little (fewer awkward windows); the shuffled copies
+get the same help, so only the p-value tells you whether it is more than that.
+[2026-09-29 16:11:51] END   total 3m 47.1s
+
+[2026-09-29 16:15:34] START dora_numbers (defaults)
+skip charge per broken window: -10.7
+Dorabella symbol counts (rarest first): 23x1, 26x1, 31x1, 35x1, 13x2, 22x2, 12x4, 14x4, 16x4, 18x4, 21x4, 34x4, 37x4, 11x5, 15x6, 24x6, 33x7, 25x8, 38x8, 28x11
+digit sets tried: 42 (including 'no digits'), reading orders: 5, restarts: 80
+[2026-09-29 16:16:30] real search done in 56.29s
+
+Top results (# = a symbol treated as a digit):
+
+  score -10.804  words 19  [forward]  digits = [13, 22, 26]
+     QFSD#ILDW#METHEBEEIFFERO#ORMA
+     LELILDW#DSEESIRTLEMEINATHOWWOMA
+     SAINASHNGRASEINTARDFRAIDH#D
+     qfsd # ildu # me THE BEE iffero # or MALE lildu # d SEES irtle MEIN at HOU uomas AIN ASH ngras EIN tardfr AID h # d
+
+  score -10.848  words 23  [fully reversed]  digits = [13, 23]
+     Y#DYHATLYTAINHEMATUNDMANHAMAS
+     ORRODIANHESEWITHMEEMYCRYWHWEWAS
+     TOGOTELLHEEPEDIESGRYWH#YML#
+     y # dy HAT lyt AIN he MAT und MAN hamasorro DIA nhese UITH meemy CRY u HUE UAST ogo TELL heepe DIES gryuh # yml # 
+
+  score -10.868  words 43  [forward]  digits = [13, 26, 31]
+     MYNA#SUALWHERDEFEESYYETIWITHO
+     UEUSUAL#ANEENSTRUEHESCORDILLIHO
+     NOSCONDC#TONESCROTAYTOSAD#A
+     myna # sualu HERD e FEES y YET i UITH OUE USUAL # aneens TRUE hes CORD ILL i HON oscondc # TONES crotayto SAD # a
+
+  score -10.869  words 32  [fully reversed]  digits = [22, 26]
+     OHNOTILSOLICATEDILYANDIATIDIP
+     UFFUNCIATEPERCLTDEEDO#FORTRERIP
+     LU#ULESSTEEMENCEP#FORTHODSW
+     oh NOT ilsoli CATE dilyan DIA tidi PUFF unci ATE PER clt DEED o # FOR TRE riplu # u LESS tee MEN cep # FORTH odsu
+
+  score -10.871  words 41  [fully reversed]  digits = [13, 22, 23]
+     A#TASONGANOHUSEDONBUTDOUSODOR
+     ILLITHOUSEREWHNSDEEDAYLAWSWEWOR
+     NI#INEGGSEEMETHER#LAWS#ADG#
+     a # ta SONG anoh USED on BUT dousodoril LIT HOUSE reuhns DEED ay LAUS ue UORN i # in EGG SEEM et HER # LAUS # adg # 
+
+  score -10.872  words 33  [fully reversed]  digits = [13, 22, 26]
+     I#TISONLINOHUSEDONBUTDOUSODOR
+     AFFATHOUSERECHNSDEEDI#FICSCECOR
+     NA#ANELLSEEMETHER#FICS#IDLY
+     i # ti SON linoh USED on BUT douso DORA f FAT HOUSE rechns DEED i # ficsce CORN a # anell SEEM et HER # fics # idly
+
+  score -10.873  words 39  [each line reversed]  digits = [13, 22, 31]
+     SCUA#AUELLNEEMETHEC#ROWN#ODLY
+     SCARRATHSINECEWHUNDEEDOFROWNWEW
+     O#TONSULOUSHINEDSU#ITDSINSD
+     scua # a UELL neeme THE c # r OUN # odly SCAR RAT h SIN eceuhun DEED o FROUN ueuo # tonsu LOU SHINE dsu # itd SINS d
+
+  score -10.879  words 65  [fully reversed]  digits = [13, 22, 35]
+     O#DOHATSOTAINHEMATUNDMANHAMAR
+     YLLYDIANHEREWITHMEEMOFLOWHWEWAR
+     TY#YTESSHEE#EDIER#LOWH#OMSB
+     o # do HATS ot AIN he MAT und MAN ha MARY l LYDIA n HEREUITH meemo FLOU HUE u ART y # ytes SHE e # e DIE r # LOU h # omsb
+
+For comparison, no digits: best -11.535
+Best score by number of digit symbols: 0: -11.535, 1: -11.083, 2: -10.848, 3: -10.804
+
+[2026-09-29 16:16:30] identical search on 100 shuffled copies...
+  [2026-09-29 16:21:19] 5/100: null best so far -10.777, p = 0.3333  (~1h 31m 25.0s left)
+  [2026-09-29 16:26:11] 10/100: null best so far -10.777, p = 0.1818  (~1h 27m 09.6s left)
+  [2026-09-29 16:30:52] 15/100: null best so far -10.777, p = 0.1875  (~1h 21m 22.4s left)
+  [2026-09-29 16:35:34] 20/100: null best so far -10.689, p = 0.1905  (~1h 16m 15.2s left)
+  [2026-09-29 16:40:33] 25/100: null best so far -10.689, p = 0.1923  (~1h 12m 08.9s left)
+
+stopped by Ctrl+C
+[2026-09-29 16:44:00] END   total 28m 25.7s
+
+[2026-09-29 17:16:29] START dora_numbers (defaults)
+skip charge per broken window: -10.7
+Dorabella symbol counts (rarest first): 23x1, 26x1, 31x1, 35x1, 13x2, 22x2, 12x4, 14x4, 16x4, 18x4, 21x4, 34x4, 37x4, 11x5, 15x6, 24x6, 33x7, 25x8, 38x8, 28x11
+digit sets tried: 42 (including 'no digits'), reading orders: 5, restarts: 80
+[2026-09-29 17:17:24] real search done in 55.28s
+
+Top results (# = a symbol treated as a digit):
+
+  score -10.804  words 19  [forward]  digits = [13, 22, 26]
+     QFSD#ILDW#METHEBEEIFFERO#ORMA
+     LELILDW#DSEESIRTLEMEINATHOWWOMA
+     SAINASHNGRASEINTARDFRAIDH#D
+     qfsd # ildu # me THE BEE iffero # or MALE lildu # d SEES irtle MEIN at HOU uomas AIN ASH ngras EIN tardfr AID h # d
+
+  score -10.848  words 23  [fully reversed]  digits = [13, 23]
+     Y#DYHATLYTAINHEMATUNDMANHAMAS
+     ORRODIANHESEWITHMEEMYCRYWHWEWAS
+     TOGOTELLHEEPEDIESGRYWH#YML#
+     y # dy HAT lyt AIN he MAT und MAN hamasorro DIA nhese UITH meemy CRY u HUE UAST ogo TELL heepe DIES gryuh # yml # 
+
+  score -10.868  words 43  [forward]  digits = [13, 26, 31]
+     MYNA#SUALWHERDEFEESYYETIWITHO
+     UEUSUAL#ANEENSTRUEHESCORDILLIHO
+     NOSCONDC#TONESCROTAYTOSAD#A
+     myna # sualu HERD e FEES y YET i UITH OUE USUAL # aneens TRUE hes CORD ILL i HON oscondc # TONES crotayto SAD # a
+
+  score -10.869  words 32  [fully reversed]  digits = [22, 26]
+     OHNOTILSOLICATEDILYANDIATIDIP
+     UFFUNCIATEPERCLTDEEDO#FORTRERIP
+     LU#ULESSTEEMENCEP#FORTHODSW
+     oh NOT ilsoli CATE dilyan DIA tidi PUFF unci ATE PER clt DEED o # FOR TRE riplu # u LESS tee MEN cep # FORTH odsu
+
+  score -10.871  words 41  [fully reversed]  digits = [13, 22, 23]
+     A#TASONGANOHUSEDONBUTDOUSODOR
+     ILLITHOUSEREWHNSDEEDAYLAWSWEWOR
+     NI#INEGGSEEMETHER#LAWS#ADG#
+     a # ta SONG anoh USED on BUT dousodoril LIT HOUSE reuhns DEED ay LAUS ue UORN i # in EGG SEEM et HER # LAUS # adg # 
+
+  score -10.872  words 33  [fully reversed]  digits = [13, 22, 26]
+     I#TISONLINOHUSEDONBUTDOUSODOR
+     AFFATHOUSERECHNSDEEDI#FICSCECOR
+     NA#ANELLSEEMETHER#FICS#IDLY
+     i # ti SON linoh USED on BUT douso DORA f FAT HOUSE rechns DEED i # ficsce CORN a # anell SEEM et HER # fics # idly
+
+  score -10.873  words 39  [each line reversed]  digits = [13, 22, 31]
+     SCUA#AUELLNEEMETHEC#ROWN#ODLY
+     SCARRATHSINECEWHUNDEEDOFROWNWEW
+     O#TONSULOUSHINEDSU#ITDSINSD
+     scua # a UELL neeme THE c # r OUN # odly SCAR RAT h SIN eceuhun DEED o FROUN ueuo # tonsu LOU SHINE dsu # itd SINS d
+
+  score -10.879  words 65  [fully reversed]  digits = [13, 22, 35]
+     O#DOHATSOTAINHEMATUNDMANHAMAR
+     YLLYDIANHEREWITHMEEMOFLOWHWEWAR
+     TY#YTESSHEE#EDIER#LOWH#OMSB
+     o # do HATS ot AIN he MAT und MAN ha MARY l LYDIA n HEREUITH meemo FLOU HUE u ART y # ytes SHE e # e DIE r # LOU h # omsb
+
+For comparison, no digits: best -11.535
+Best score by number of digit symbols: 0: -11.535, 1: -11.083, 2: -10.848, 3: -10.804
+
+[2026-09-29 17:17:24] identical search on 100 shuffled copies...
+  [2026-09-29 17:22:04] 5/100: null best so far -10.777, p = 0.3333  (~1h 28m 36.3s left)
+  [2026-09-29 17:26:52] 10/100: null best so far -10.777, p = 0.1818  (~1h 25m 10.0s left)
+  [2026-09-29 17:31:51] 15/100: null best so far -10.777, p = 0.1875  (~1h 21m 56.5s left)
+  [2026-09-29 17:36:32] 20/100: null best so far -10.689, p = 0.1905  (~1h 16m 32.1s left)
+  [2026-09-29 17:41:28] 25/100: null best so far -10.689, p = 0.1923  (~1h 12m 11.4s left)
+  [2026-09-29 17:46:25] 30/100: null best so far -10.670, p = 0.2258  (~1h 07m 42.3s left)
+  [2026-09-29 17:51:23] 35/100: null best so far -10.670, p = 0.1944  (~1h 03m 07.9s left)
+  [2026-09-29 17:56:33] 40/100: null best so far -10.670, p = 0.1951  (~58m 44.2s left)
+  [2026-09-29 18:01:40] 45/100: null best so far -10.670, p = 0.1739  (~54m 06.4s left)
+  [2026-09-29 18:06:41] 50/100: null best so far -10.670, p = 0.1569  (~49m 17.0s left)
+  [2026-09-29 18:11:27] 55/100: null best so far -10.670, p = 0.1607  (~44m 13.2s left)
+  [2026-09-29 18:16:14] 60/100: null best so far -10.670, p = 0.1639  (~39m 13.4s left)
+  [2026-09-29 18:20:56] 65/100: null best so far -10.670, p = 0.1515  (~34m 12.9s left)
+  [2026-09-29 18:25:38] 70/100: null best so far -10.670, p = 0.1408  (~29m 14.8s left)
+  [2026-09-29 18:30:21] 75/100: null best so far -10.670, p = 0.1579  (~24m 19.0s left)
+  [2026-09-29 18:34:59] 80/100: null best so far -10.670, p = 0.1605  (~19m 23.8s left)
+  [2026-09-29 18:39:32] 85/100: null best so far -10.670, p = 0.1628  (~14m 29.7s left)
+  [2026-09-29 18:44:05] 90/100: null best so far -10.560, p = 0.1758  (~9m 37.9s left)
+  [2026-09-29 18:48:34] 95/100: null best so far -10.560, p = 0.1667  (~4m 47.9s left)
+  [2026-09-29 18:53:05] 100/100: null best so far -10.560, p = 0.1584  (~0.00s left)
+
+RESULT: best score real -10.804; shuffled mean -10.987, max -10.560; p = 0.1584 (floor 0.0099)
+        words at best: real 19; shuffled mean 26.4, max 60; p = 0.8218
+
+Note: on 87 symbols the exact digit symbols are often a near-tie (the top few results
+differ by ~0.001); what matters is whether the LETTERS read as English.
+
+How to read: a hit is a decrypt that reads as English around the # marks, scores
+well above the shuffled copies, AND whose best digit set clearly beats 'no digits'.
+Removing symbols always helps a little (fewer awkward windows); the shuffled copies
+get the same help, so only the p-value tells you whether it is more than that.
+[2026-09-29 18:53:05] END   total 1h 36m 36.7s
