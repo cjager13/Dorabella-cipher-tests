@@ -1,0 +1,27 @@
+[2026-09-27 20:57:28] START dorabella_hillclimb
+[20:57:29] setup (scorer + word tables): 0.92s
+scoring: quadgram from corpus (2,488,028 letters)
+restarts: 100  shuffles: 30  workers: 8
+[20:57:29] worker pool created: 0.07s
+
+=== SELF-TEST: planted English message, 19 distinct symbols, random key ===
+[20:57:31] selftest climb: 1.66s  (122,460 score-evals -> 73,707 score-evals/s)
+true-key score -9.6576   best found -9.4489
+letters recovered correctly: 95%
+planted : DEARMISSPENNYWEARRIUEDHOMESAFELYAFTERAPLEASANTIOURNEYANDTHINKOFYOUOFTENPLEASECOMETOMALU
+decoded : DEARMISSBENNYWEARRIUEDHOMESAFELYAFTERABLEASANTIOURNEYANDTHINGOFYOUOFTENBLEASECOMETOMALU
+[20:57:38] selftest shuffle baseline: 7.16s  (2,407,970 score-evals -> 336,415 score-evals/s)
+shuffle p-value for the best score: 0.0476  (floor is 1/21)
+
+How to read this:
+ * Search adequate: the climb reached at least the true key's score.
+ * Objective strong: near-perfect recovery. Real-run results are meaningful.
+
+[2026-09-27 20:57:38] END dorabella_hillclimb
+Total elapsed: 9.83s
+Stage summary:
+  setup (scorer + word tables)                      0.92s   -
+  worker pool created                               0.07s   -
+  selftest climb                                    1.66s   73,707 score-evals/s
+  selftest shuffle baseline                         7.16s   336,415 score-evals/s
+Scaling guide (from 'selftest shuffle baseline'): 1,000,000 score-evals ~ 2.97s at this rate

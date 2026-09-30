@@ -1,0 +1,91 @@
+[2026-09-27 20:59:45] START dorabella_hillclimb
+[20:59:45] setup (scorer + word tables): 0.82s
+scoring: quadgram from corpus (2,488,028 letters)
+restarts: 200  shuffles: 100  workers: 8
+[20:59:46] worker pool created: 0.07s
+
+Cipher: 87 symbols, 20 distinct codes: [11, 12, 13, 14, 15, 16, 18, 21, 22, 23, 24, 25, 26, 28, 31, 33, 34, 35, 37, 38]
+[20:59:48] real ciphertext climb: 2.00s  (237,800 score-evals -> 118,872 score-evals/s)
+
+Restarts: 200   distinct final decryptions: 200   restarts reaching the best score: 1
+(Many restarts hitting one optimum suggests a sharp solution; a scatter suggests the data cannot pin one down.)
+
+#1 ngram score=-11.5577   word score=9
+   KSNOWTHOFGREDMEBEETSSEAUGUARI
+   HEHTHOFLONEENTADHERETYIDMUFFURI
+   NITYINMYPAINETYDIAOSAITOMWO
+   segmented (folded): csn OUT hofg RED mebeetsseaug UAR ihehthofl ONE entad HERE tyidmuffurinityinmypai NET ydiaosaitomuo
+
+#2 ngram score=-11.5890   word score=12
+   BYNACTRALUMEDWEFEETYYESIUISMO
+   RERTRALPANEENTSDREMETHODWILLIMO
+   NOTHONWHKSONETHDOSAYSOTAWCA
+   segmented (folded): bynactralumeduefeety YES iuis MORE rtralpaneentsdremethod UILL imo NOT honuhcso NET hdo SAY sotauca
+
+#3 ngram score=-11.5980   word score=10
+   KSNECTHEMPLORDOWOOTSSOUAPAULI
+   HOHTHEMBENOONTURHOLOTFIRDAMMALI
+   NITFINDFQUINOTFRIUESUITEDCE
+   segmented (folded): csnec THEM plordouootssouapaulihoh THEM benoonturho LOT firdammalinitfindfqui NOT friuesuitedce
+
+#4 ngram score=-11.6166   word score=11
+   PGNECTSELFWIMDIXIITGGIROFORWA
+   SISTSELYENIINTRMSIWITHAMDOLLOWA
+   NATHANDHURANITHMAREGRATEDCE
+   segmented (folded): pgnectselfuimdixiitggiro FOR UAS istselyeniintrmsi UITH amdollouana THAN dhuranithm ARE gratedce
+
+#5 ngram score=-11.6433   word score=13
+   GPRAYSMANWHELDEBEESPPETIWITHU
+   MEMSMANCAREERSTLMEHESOULDINNIHU
+   RUSOURDOFTURESOLUTAPTUSADYA
+   segmented (folded): gprays MAN uheldebeesppeti UITH umems MAN c ARE erstlmehe SOUL dinnihurus OUR dofturesolutaptu SAD ya
+
+#6 ngram score=-11.6701   word score=17
+   QGNAPTUALFWESCEMEETGGEROFORWI
+   UEUTUALDANEENTRSUEWETHISCOLLOWI
+   NITHINCHBRINETHSIRAGRITACPA
+   segmented (folded): qgnaptualfuescemeetggero FOR uiueutualdaneentrsueue THIS collo UIN i THINC hbri NET h SIR agritacpa
+
+#7 ngram score=-11.6892   word score=14
+   KMNOCTROLDWEGUEBEETMMESIDISWA
+   RERTROLFONEENTSGREWETHAGUILLIWA
+   NATHANUHYSANETHGASOMSATOUCO
+   segmented (folded): cmnoctr OLD ueguebeetmmesidisu ARE rtrolf ONE entsgre UET hag UILL iuana THAN UHY sa NET hgasomsatouco
+
+#8 ngram score=-11.7209   word score=14
+   QDUOWNFORMLESHEBEENDDEGAMAGLI
+   FEFNFORCOUEEUNGSFELENTISHARRALI
+   UINTIUHTYGIUENTSIGODGINOHWO
+   segmented (folded): qdu OUN FOR mle SHE BEEN ddegamag LIFE fn FOR coueeungsfelentisharrali UIN tiuhtygiuentsi GOD ginohuo
+
+Best key (code -> letter, symbol count):
+   11->H(5)  12->U(4)  13->W(2)  14->M(4)  15->A(6)  16->F(4)  18->D(4)  21->Y(4)  22->G(2)  23->K(1)  24->N(6)  25->T(8)  26->L(1)  28->E(11)  31->P(1)  33->O(7)  34->R(4)  35->B(1)  37->S(4)  38->I(8)
+[20:59:48] report: 0.00s
+
+Running 100 shuffled-ciphertext baselines (200 restarts each)...
+[21:01:10] shuffle baseline: 1m 22.4s  (23,659,040 score-evals -> 287,188 score-evals/s)
+
+=== BASELINE COMPARISON ===
+Real best n-gram score:      -11.5577
+Shuffled best n-gram (n=100): mean -11.9328, max -11.2542, z of real = 1.58
+  -> n-gram p-value: 0.0594
+Real word score of best decrypt: 9   shuffled: mean 8.3, max 34
+  -> word-score p-value (not optimised, so independent): 0.4059
+
+How to read this:
+ * Both p-values small (< ~0.02): the real symbol ORDER is more English-like than shuffles. Read the top hits by eye before believing anything.
+ * Only n-gram p small: likely overfitting to symbol frequencies, not language.
+ * Both large: nothing beyond chance under this model and scorer.
+ * If --selftest recovered little, a large p-value here is inconclusive, not a refutation.
+[21:01:10] statistics: 0.00s
+
+[2026-09-27 21:01:10] END dorabella_hillclimb
+Total elapsed: 1m 25.3s
+Stage summary:
+  setup (scorer + word tables)                      0.82s   -
+  worker pool created                               0.07s   -
+  real ciphertext climb                             2.00s   118,872 score-evals/s
+  report                                            0.00s   -
+  shuffle baseline                               1m 22.4s   287,188 score-evals/s
+  statistics                                        0.00s   -
+Scaling guide (from 'shuffle baseline'): 1,000,000 score-evals ~ 3.48s at this rate

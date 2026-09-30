@@ -1,0 +1,151 @@
+[2026-09-27 21:25:56] START dorabella_tests
+[21:25:57] setup: 0.83s
+[21:25:57] worker pool created: 0.07s
+
+=== PART C: KEYPAD-LAYOUT KEYS ===
+[21:25:57] level 1 scan: 0.01s  (288 keys -> 49,588 keys/s)
+
+Your recollected key (A,B,C = 13,23,33): score -17.7169, rank 66 of 287
+   BPECAHTCKYFRQDRIRRHPPRGXYXGFS
+   TRTHTCKLCERREHGQTRFRHUSQDXKKXFS
+   ESHUSEDUWGSERHUQSGCPGSHCDAC
+   segmented (folded): bpecahtccyfrqdrirrhpprgxyxgfstrthtcclcerrehgqtrfrhusqdxccxfsesh USE duugserhuqsgcpgshcdac
+
+Top 5 of 287 keys on the as-transcribed cipher:
+
+#1 ('affine', 19, 21)  score=-16.8357  words=0
+   RZBMXLDMAHWOTGOFOOLZZOQNHNQWI
+   DODLDMAUMBOOBLQTDOWOLYITGNAANWI
+   BILYIBGYSQIBOLYTIQMZQILMGXM
+   segmented (folded): rsbmxldmahuotgofoolssoqnhnquidodldmaumbooblqtdouolyitgnaanuibilyibgysqibolytiqmsqilmgxm
+
+#2 ('triplet', (2, 1, 0), 5, -1)  score=-16.8408  words=1
+   LXHKMESKCOGUWIUDUUEXXUFPOPFGT
+   SUSESKCBKHUUHEFWSUGUERTWIPCCPGT
+   HTERTHIRQFTHUERWTFKXFTEKIMK
+   segmented (folded): lxhcmesccoguuiuduuexxufpopfgts USE sccbchuuhefusuguertuipccpgthterthirqfthuerutfcxftecimc
+
+#3 ('affine', 23, 11)  score=-16.8408  words=1
+   LXHKMESKCOGUWIUDUUEXXUFPOPFGT
+   SUSESKCBKHUUHEFWSUGUERTWIPCCPGT
+   HTERTHIRQFTHUERWTFKXFTEKIMK
+   segmented (folded): lxhcmesccoguuiuduuexxufpopfgts USE sccbchuuhefusuguertuipccpgthterthirqfthuerutfcxftecimc
+
+#4 ('triplet', (0, 1, 2), 4, -1)  score=-16.8880  words=1
+   HWEIGBNIXLFRQDRCRRBWWRAKLKAFS
+   NRNBNIXYIERREBAQNRFRBOSQDKXXKFS
+   ESBOSEDOPASERBOQSAIWASBIDGI
+   segmented (folded): hueigbnixlfrqdrcrrbuuraclcafsnrnbnixyierrebaqnrfrbosqdcxxcfsesbosedopaserboqsai UAS bidgi
+
+#5 ('triplet', (2, 1, 0), 7, 1)  score=-16.9040  words=4
+   LXOKMRFKWHNBCPBQBBRXXBSIHISNA
+   FBFRFKWUKOBBORSCFBNBREACPIWWINA
+   OAREAOPEDSAOBRECASKXSARKPMK
+   segmented (folded): lxocmrfcuhnbcpbqbbrxxbsi HIS nafbfrfcuucobborscfbnbreacpiu UIN ao ARE aopedsaobrec ASC xsarcpmc
+[21:26:00] level 1 null: 2.91s  (574,000 keys -> 196,923 keys/s)
+
+LEVEL 1 (287 keys, as transcribed): best -16.8357; null mean -16.5657, max -15.4768; p = 0.8506 (n=2000)
+[21:26:00] level 2 scan: 0.75s  (45,920 key-decodes -> 61,356 key-decodes/s)
+
+Level 2: 160 sequences x 287 keys. Top 5:
+
+#1 boustrophedon A | 23=14,32=18,34=12,78=14  ('affine', 7, 3)  score=-16.2688  words=2
+   LFHSDEKSTOPUNAUMUUEFFUAGOGXPC
+   CPGTTGANCREUPUKNXEHUUHSBTSGENUK
+   HCERCHARZXCHUERNCASFXCESADS
+   segmented (folded): lfhsdecs TOP unaumuueffuagogxpccpgttgancreupucnxehuuhsbtsgenuchcercharsxchuerncasfxce SAD s
+
+#2 boustrophedon A | 23=14,32=18,34=12,78=14,86=12  ('affine', 7, 3)  score=-16.3418  words=1
+   LFHSDEKSTOPUNAUMUUEFFUAGOGXPC
+   CPGTTGANCREUPUKNXEHUUHSBTSGENUK
+   HCERCHARZXCHUERNCASFXCESAGS
+   segmented (folded): lfhsdecs TOP unaumuueffuagogxpccpgttgancreupucnxehuuhsbtsgenuchcercharsxchuerncasfxcesags
+
+#3 boustrophedon A | 23=14,32=18,78=14  ('affine', 7, 3)  score=-16.3719  words=2
+   LFHSDEKSTOPUNAUMUUEFFUAGOGXPC
+   CPGTTGANCREUPUKNXEHUUHSBTSKENUK
+   HCERCHARZXCHUERNCASFXCESADS
+   segmented (folded): lfhsdecs TOP unaumuueffuagogxpccpgttgancreupucnxehuuhsbtscenuchcercharsxchuerncasfxce SAD s
+
+#4 forward | 23=14,32=18,78=14  ('affine', 7, 3)  score=-16.3983  words=2
+   LFHSDEKSTOPUNAUMUUEFFUAGOGXPC
+   KUNEKSTBSHUUHEXNKUPUERCNAGTTGPC
+   HCERCHARZXCHUERNCASFXCESADS
+   segmented (folded): lfhsdecs TOP unaumuueffuagogxpccunecstbshuuhexncupuercnagttgpchcercharsxchuerncasfxce SAD s
+
+#5 forward | 23=14,32=18,34=12,78=14  ('affine', 7, 3)  score=-16.4044  words=2
+   LFHSDEKSTOPUNAUMUUEFFUAGOGXPC
+   KUNEGSTBSHUUHEXNKUPUERCNAGTTGPC
+   HCERCHARZXCHUERNCASFXCESADS
+   segmented (folded): lfhsdecs TOP unaumuueffuagogxpccunegstbshuuhexncupuercnagttgpchcercharsxchuerncasfxce SAD s
+[21:26:48] level 2 null: 47.25s  (13,776,000 key-decodes -> 291,563 key-decodes/s)
+
+LEVEL 2 (all orders, variants, keys): best -16.2688; null mean -16.0959, max -15.2508; p = 0.7209 (n=300)
+
+How to read Part C: p < ~0.02 at either level would be the first real signal so far; then read the decode by eye. The nulls repeat the identical search on shuffled symbols, so multiple looks are already corrected for.
+
+=== PART A: DOES THE SOLVER SURVIVE TRANSCRIPTION ERRORS? ===
+Planted English, random key; k symbols nudged one direction step.
+  k  mean recovery   worst    best  ceiling
+  0           68%     40%     95%     100%
+  2           87%     66%     95%      98%
+  4           48%     26%     92%      95%
+  6           51%     34%     68%      93%
+  8           30%     18%     48%      91%
+[21:26:56] Part A: 8.39s  (2,459,479 score-evals -> 293,276 score-evals/s)
+
+How to read: recovery near the ceiling means a few misread symbols can't explain a null result. Collapse at k=2-4 means our nulls say little about your transcription.
+
+=== PART B: HILL-CLIMB OVER AMBIGUOUS SYMBOLS x READING ORDERS ===
+[21:27:49] 160 real hill-climbs: 52.93s  (15,243,500 score-evals -> 287,981 score-evals/s)
+[21:28:23] Part B null: 34.61s  (9,353,510 score-evals -> 270,218 score-evals/s)
+
+Best config score -10.9956; single-search null mean -12.0926, sd 0.2202
+z = 4.98; normal-approx p = 3.165e-07; corrected for 160 configs: 5.064e-05
+z needed for corrected p = 0.02: 3.66
+
+#1 fully reversed | 32=18  score=-10.9956  words=9
+   IWRISANDINAHUSELANCURLAUSALAM
+   OFFORHAUSEMETHNSLEELIGFITSHETAM
+   NOYONEDDSEEPERHEMYFITSWILDB
+   segmented (folded): iuris AND inah USE lancur LAU salamof FOR ha USE methnsleeligfit SHE tamnoy ONE dd SEE perhemyf ITS uildb
+
+#2 forward | 23=14,34=12,78=14,86=12  score=-11.0103  words=29
+   GLSAPTDAMYRENCEFEETLLECOYOURI
+   DEDTOAMWASEESTUNDERETHINCOMMORI
+   SITHISCHQUISETHNICALUITACOA
+   segmented (folded): glsaptdamyrencefeetlleco YOU RIDE dtoamua SEE st UNDER e THINC ommorisi THIS chqui SET hnicaluitacoa
+
+#3 fully reversed | 32=18,34=12,86=12  score=-11.0361  words=16
+   AITASONGANOHUSERONBUTROUSOROW
+   ILLITHOUSEWEDHNSREERAPLAISHEDOW
+   NIFINEGGSEEMETHEWFLADSCARGY
+   segmented (folded): aita SONG anoh USE ron BUT rousoro UILL itho USE uedhnsreeraplai SHE d OUN ifinegg SEE me THE uflads CAR gy
+
+#4 fully reversed | 34=12  score=-11.0460  words=6
+   AHMATONSANOBUTEDONFUMDOUTODOR
+   ILLIMBOUTEREWBNTDEEDAYLAITWEWOR
+   NIGINESSTEEPEMBERGLAWTHADSC
+   segmented (folded): ahmatonsano BUT edonfumd OUT odorillimb OUT ereubntdee DAY laitueuorniginessteepemberg LAU t HAD sc
+
+#5 each line reversed | 23=14,32=18,78=14,86=12  score=-11.0646  words=14
+   ORFICITEDDSEEMETHERCLAWSPANDY
+   ORILLITHOUSEREWHFSNEENAGLAWSHEW
+   AITASOFDATOHUSENOFBUTNOUSON
+   segmented (folded): orficitedd SEE met HER c LAU sp AND yorillitho USE reuhfsneenag LAU SHE UAIT asofdatoh USE nof BUT NOU son
+
+How to read Part B: only a z above the 'needed' value counts as signal here.
+
+[2026-09-27 21:28:23] END dorabella_tests
+Total elapsed: 2m 27.8s
+Stage summary:
+  setup                                             0.83s   -
+  worker pool created                               0.07s   -
+  level 1 scan                                      0.01s   49,588 keys/s
+  level 1 null                                      2.91s   196,923 keys/s
+  level 2 scan                                      0.75s   61,356 key-decodes/s
+  level 2 null                                     47.25s   291,563 key-decodes/s
+  Part A                                            8.39s   293,276 score-evals/s
+  160 real hill-climbs                             52.93s   287,981 score-evals/s
+  Part B null                                      34.61s   270,218 score-evals/s
+Scaling guide (from 'Part A'): 1,000,000 score-evals ~ 3.41s at this rate

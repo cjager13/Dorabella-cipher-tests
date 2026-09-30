@@ -1,0 +1,13 @@
+
+[2026-09-30 20:50] Dorabella_loopgroups (first transcription; run in two parts, 200 copies each)
+keys: 24,576   reading configurations: 160
+real best -15.055 [each line reversed | readings (1, 1, 1, 1, 1)]  words 1
+key: 1 loop(s) = RSTUWXYZ rot 1, 2 loop(s) = ABCDEFGH reversed rot 4, 3 loop(s) = IKLMNOPQ reversed rot 0
+   INXTCTWEKKHEEMEWRENCYOSHUOAKB
+   INTYYTWRIDHENESRXHAEEAOGYOTHRES
+   OTWOHIXKOWIRDHEAIXQDWAIDHIA
+   inxtctueccheemeurencyoshuoacbintyyturidhenesrxhaeeaogyothreso TUO hixcouirdheaixqduaidhia
+forward reading, as transcribed only: best -15.812
+vs shuffle (200 copies): mean -15.101, max -14.193, p = 0.4030 | words mean 4.1, p = 0.975
+vs doublet (200 copies): mean -15.144, max -14.543, p = 0.3035 | words mean 3.3, p = 0.995
+Real English of this length scores about -9.2.

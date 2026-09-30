@@ -1,0 +1,104 @@
+[2026-09-27 21:38:07] START dorabella_verify
+[21:38:07] setup: 0.84s
+[21:38:07] worker pool created: 0.08s
+[21:38:55] real 160 configs: 47.31s  (15,233,780 score-evals -> 322,026 score-evals/s)
+[21:41:35] matched null calibration: 2m 40.7s  (48,584,800 score-evals -> 302,309 score-evals/s)
+
+=== REAL CONFIGS RANKED BY VARIANT-MATCHED z (top 6) ===
+
+#1 each line reversed | 32=18,34=12,78=14,86=12   raw=-11.0354   matched z=5.53   words=12
+   ORNIGINEYYSEEMETHERGLAWSCADYF
+   ORILLITHOUSEREWHNSDEEDAPLAISHEW
+   AITASONYATOHUSEDONBUTDOUSOD
+   segmented (folded): ornigineyy SEE met HER g LAU scady FOR illitho USE reuhnsdeedaplai SHE UAIT asonyatoh USE don BUT dousod
+
+#2 forward | 32=18,34=12,78=14,86=12   raw=-11.0579   matched z=5.39   words=29
+   PLSAFTDAMYRENCEBEETLLEUOYOURI
+   DENTOAMWASEESTUNDERETHINCOMMORI
+   SITHISCHQUISETHNICALUITACOA
+   segmented (folded): plsaftdamyrencebeetlleuo YOU RIDE ntoamua SEE st UNDER e THINC ommorisi THIS chqui SET hnicaluitacoa
+
+#3 forward | 23=14,32=18,34=12,78=14,86=12   raw=-10.9137   matched z=5.14   words=28
+   YLSAFTDAMPRENCEBEETLLECOPOURI
+   DENTOAMWASEESTUNDERETHINCOMMORI
+   SITHISCHQUISETHNICALUITACOA
+   segmented (folded): ylsaftdamprencebeetllecopou RIDE ntoamua SEE st UNDER e THINC ommorisi THIS chqui SET hnicaluitacoa
+
+#4 fully reversed | 23=14,78=14,86=12   raw=-10.9235   matched z=5.03   words=7
+   AINATOFSANOBUTEDOFPUNDOUTODOR
+   ILLINBOUTEREWBFTDEEDAYLAWTWEWOR
+   FIGINESSTEEMENBERGLAWTHADSC
+   segmented (folded): ainatofsano BUT edofpund OUT odorillinb OUT ereubftdee DAY LAU tueuorfiginessteemenberg LAU t HAD sc
+
+#5 forward | 78=14,86=12   raw=-11.1394   matched z=4.89   words=8
+   GSNACTUALFMERWEBEETSSEDIFIDMO
+   UEUTUALPANEENTDRUEMETHORWILLIMO
+   NOTHONWHYDONETHROWASDOTAWIA
+   segmented (folded): gsnactualfmeruebeetssedifidmoueutualpaneentdruemethor UILL imo NOT hon UHY do NET hro UAS dotauia
+
+#6 fully reversed | 32=18,34=12   raw=-11.0410   matched z=4.80   words=16
+   ACTASONGANOHUSERONBUTROUSOROW
+   ILLITHOUSEWEDHNSREERAPLAISHEDOW
+   NIFINEGGSEEMETHEWFLADSCARGY
+   segmented (folded): acta SONG anoh USE ron BUT rousoro UILL itho USE uedhnsreeraplai SHE d OUN ifinegg SEE me THE uflads CAR gy
+
+Mean matched z by reading order (real data, over the 32 variants):
+  forward              +3.03
+  fully reversed       +3.40
+  each line reversed   +3.03
+  boustrophedon A      +1.37
+  boustrophedon B      +1.17
+
+Real best matched z = 5.53   (Part B's unmatched z was 4.98)
+If this is below about 3, Part B was mostly a null-mismatch artifact; you can stop here (Ctrl+C) and skip the replicates.
+
+  replicate 1/20: best matched z = 2.13
+  replicate 2/20: best matched z = 2.92
+  replicate 3/20: best matched z = 0.73
+  replicate 4/20: best matched z = 3.16
+  replicate 5/20: best matched z = 3.20
+  replicate 6/20: best matched z = 4.46
+  replicate 7/20: best matched z = 0.49
+  replicate 8/20: best matched z = 3.52
+  replicate 9/20: best matched z = 2.15
+  replicate 10/20: best matched z = 3.53
+  replicate 11/20: best matched z = 2.38
+  replicate 12/20: best matched z = 1.89
+  replicate 13/20: best matched z = 2.34
+  replicate 14/20: best matched z = 2.50
+  replicate 15/20: best matched z = 2.83
+  replicate 16/20: best matched z = 1.59
+  replicate 17/20: best matched z = 1.11
+  replicate 18/20: best matched z = 2.13
+  replicate 19/20: best matched z = 3.05
+  replicate 20/20: best matched z = 3.18
+[21:58:18] replicates: 16m 42.2s  (302,148,400 score-evals -> 301,482 score-evals/s)
+
+=== REAL vs IDENTICAL SEARCH ON SHUFFLED DATA ===
+Real best matched z: 5.53
+Shuffled bests (n=20): mean 2.47, max 4.46
+  -> p = 0.0476  (0 of 20 shuffled searches matched or beat the real best; smallest possible p with this many replicates is 0.048)
+Raw check: real best raw -10.9137; shuffled bests mean -11.5208, max -11.1928; 0 matched or beat it
+Per-order mean z: real vs spread across shuffled replicates (sd):
+  forward              real +3.03   shuffled sd 1.09
+  fully reversed       real +3.40   shuffled sd 0.90
+  each line reversed   real +3.03   shuffled sd 0.85
+  boustrophedon A      real +1.37   shuffled sd 0.96
+  boustrophedon B      real +1.17   shuffled sd 0.71
+
+How to read this:
+ * Real best z far above every shuffled best, AND words score above shuffles: worth a much larger replication (50+ replicates) and a held-out test.
+ * Real best z inside the shuffled range: Part B was an artifact of the mismatched null.
+ * A reading order whose real mean z stands well outside its shuffled sd is a lead on direction, not proof of a solution.
+[21:58:18] report: 0.00s
+
+[2026-09-27 21:58:18] END dorabella_verify
+Total elapsed: 20m 11.2s
+Stage summary:
+  setup                                             0.84s   -
+  worker pool created                               0.08s   -
+  real 160 configs                                 47.31s   322,026 score-evals/s
+  matched null calibration                       2m 40.7s   302,309 score-evals/s
+  replicates                                    16m 42.2s   301,482 score-evals/s
+  report                                            0.00s   -
+Scaling guide (from 'real 160 configs'): 1,000,000 score-evals ~ 3.11s at this rate
