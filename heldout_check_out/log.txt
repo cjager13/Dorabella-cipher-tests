@@ -1,0 +1,8 @@
+
+[2026-10-01 23:48:57] START Dorabella_heldout_check  config [each line reversed | 32=18,34=12,78=14,86=12]  seeds=24 nulls=240
+Marathon's single real run of this config: -13.8362
+real cipher, 24 seeds: median -15.051, worst -16.466, best -13.768  (39.04s)
+   -16.47 -16.11 -15.90 -15.59 -15.50 -15.46 -15.41 -15.40 -15.40 -15.19 -15.12 -15.11 -14.99 -14.96 -14.94 -14.70 -14.61 -14.58 -14.51 -14.50 -14.11 -14.07 -13.95 -13.77
+vs shuffle (240 copies, median -16.348, max -14.241):  p at real median 0.0290 | at real best 0.0041 | at real worst 0.6100  (6m 04.0s)
+vs doublet (240 copies, median -15.682, max -14.032):  p at real median 0.1950 | at real best 0.0041 | at real worst 0.8880  (6m 03.0s)
+The p at the real MEDIAN is the fair one; the best-of-seeds p shows how a lucky run looks.

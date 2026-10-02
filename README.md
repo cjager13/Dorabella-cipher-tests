@@ -21,17 +21,18 @@ Each script also runs **planted text**: known English or German, enciphered with
 
 | Idea tested | Script | p vs pair-preserving copies | Verdict |
 | --- | --- | --- | --- |
-| Any one-symbol-one-letter key, 160 reading configurations | `Dorabella_marathon.py` | 0.085 (400 copies) | Pair habits explain it |
+| Any one-symbol-one-letter key, 160 reading configurations | `Dorabella_marathon.py` | 0.085 (1,016 copies) | Pair habits explain it |
 | Loop count picks the letter group (e.g. 1 loop = A-H), direction the letter: all 24,576 keys x 160 configs | `Dorabella_loopgroups.py` | 0.30 (200 copies); words 0.995 | Chance |
-| Known English through the same pipeline | `Dorabella_marathon.py` | 41 of 41 controls score above the Dorabella | Not English-like |
+| Known English through the same pipeline | `Dorabella_marathon.py` | 102 of 102 controls score above the Dorabella | Not English-like |
 | All 10,321,920 "sets of three" keys from Elgar's 1920 notebook, x 160 configs | `Dorabella_allkeys.py` | 0.84 and 0.14 (vs plain shuffles, 50 copies) | Chance |
 | Keypad-style keys: 287 triplet and affine layouts x 160 configs | `Dorabella_tests.py` (Part C) | 0.72 (vs plain shuffles, 300 copies) | Chance |
 | Keyword or phrase alphabets (DORABELLA, MISS PENNY, TOMORROW...) | `Dorabella_phrase.py`, `Dorabella_keyword.py` | chance-level hits only | Chance |
 | Rare symbols are digits (the 1896 Courage cards) | `Dorabella_numbers.py` | 0.16 (vs plain shuffles, 100 copies) | Chance |
 | Rechecked transcription, 10 uncertain symbols solved in the search, English | `Dorabella_v2.py` | 0.33 (200 copies) | Chance |
 | Same, German | `Dorabella_v2.py --lang de` | 0.30 (200 copies) | Chance |
+| Key learned on 2 lines, scored on the 3rd, one pre-registered config, typical of 24 seeds | `Dorabella_heldout_check.py` | 0.20 (240 copies) | Chance (see Open threads) |
 
-The Dorabella *does* beat plain shuffles (p = 0.0025 in 400), so its symbol order is not random. But pair-preserving shuffles match it, and it never finds more real words than chance.
+The Dorabella *does* beat plain shuffles (p = 0.0020 in 1,016), so its symbol order is not random. But pair-preserving shuffles match it, and it never finds more real words than chance.
 
 ## Files
 
@@ -49,6 +50,7 @@ The Dorabella *does* beat plain shuffles (p = 0.0025 in 400), so its symbol orde
 | `Dorabella_keyword.py` | 8-letter keywords using one letter from each set, plus near misses |
 | `Dorabella_numbers.py` | Rarest symbols treated as digits |
 | `Dorabella_v2.py` | Rechecked transcription with uncertain symbols solved inside the search; English or German |
+| `Dorabella_heldout_check.py` | Reruns one held-out configuration over many seeds and copies, to check a single lucky run |
 | `*_out/` | Logs and reports from the runs quoted in the write-up |
 | `early_runs/` | Outputs of the first day's scripts (27 September 2026), summarized below |
 
@@ -79,7 +81,8 @@ Put all scripts and the corpora in one folder. Run each script's self-test first
 | `python Dorabella_loopgroups.py` (needs numpy) | about 10 min |
 | `python Dorabella_phrase.py` / `python Dorabella_keyword.py` | 30 s / seconds |
 | `python Dorabella_allkeys.py --all-configs --nulls 50` | 16.8 h |
-| `python Dorabella_marathon.py` (Ctrl+C to stop; the same command resumes) | 18.6 h per pass |
+| `python Dorabella_heldout_check.py` | about 25 min |
+| `python Dorabella_marathon.py` (Ctrl+C to stop; the same command resumes) | 18.6 h first pass; stopped at 1,016 copies after 46.6 h |
 
 ## Earlier tests (27 September 2026)
 
@@ -99,14 +102,16 @@ The first day's scripts led to the tests above; their outputs are in `early_runs
 
 ## Notes on the logs
 
-- **Two transcriptions were used.** The marathon, allkeys, loopgroups, numbers, phrase and keyword runs used the first transcription: five uncertain symbols, and position 85 read as 14. The `Dorabella_v2.py` runs used the rechecked one in `Dorabella_transcription.csv`. That file's `first_transcription_code` column shows the only difference.
+- **Two transcriptions were used.** The marathon, allkeys, loopgroups, numbers, phrase and keyword runs used the first transcription: five uncertain symbols, and position 85 read as 14. The `Dorabella_v2.py` runs used the rechecked one in `Dorabella_transcription.csv`. That file's `first_transcription_code` column shows the differences.
+- **Position 32 was settled as 18 on 1 October 2026**, after a look at the highest-resolution scan; the CSV now marks it sure. Under Elgar's key that is M, where the published decrypt has I. The v2 logs were made before this, with 32 still open (11 or 18), so `Dorabella_v2.py` keeps it open to reproduce them.
 - **Some early entries in `numbers_out/log.txt` should be ignored.** The runs before 14:15 on 2026-09-29 used an `english.txt` that had extra notes appended. They are superseded by the later entries in the same log.
 - **The p-values have a floor.** A p-value can never go below 1 / (copies + 1). "At the floor" means no copy matched the real cipher yet.
 
 ## Open threads
 
-- **Position 32 read as 18.** This reading helps more than chance against pair-preserving shuffles (p = 0.0075), and both the English and German searches chose it independently. It is worth rechecking on the original first.
-- **Reversed reading orders** beat pair-preserving shuffles modestly (p about 0.015). That is expected by chance among the roughly ten such comparisons made.
+- **Position 32 is 18.** The search favored 18 more than chance allows (p = 0.0088 against pair-preserving shuffles, 8 of 1,016), both v2 searches chose it, and the high-resolution scan confirmed it. The recheck was made knowing what the statistics favored, so a blind second reading would make it airtight. Position 67 as 15 is next.
+- **Reversed reading orders** beat pair-preserving shuffles modestly (p = 0.018 and 0.021). That is expected by chance among the roughly ten such comparisons made.
+- **A held-out result that did not hold up.** In the marathon, one pre-registered configuration (each line reversed, with 32=18, 34=12, 78=14, 86=12) hit the floor on the held-out test (p = 0.0039, 254 copies). But that score depends on the climb's random seed. `Dorabella_heldout_check.py` reran it with 24 seeds: -16.5 to -13.8, median -15.05, so the marathon's one run (-13.84) was the luckiest draw. At the typical score, p = 0.20 against 240 pair-preserving copies, and the held-out lines decode to gibberish. See `heldout_check_out/log.txt`.
 - **A scorer for Elgar's playful spelling** (phonetic forms, abbreviations) is the natural next test.
 
 ## Sources
