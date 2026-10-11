@@ -562,3 +562,6 @@ well above the shuffled copies, AND whose best digit set clearly beats 'no digit
 Removing symbols always helps a little (fewer awkward windows); the shuffled copies
 get the same help, so only the p-value tells you whether it is more than that.
 [2026-09-29 18:53:05] END   total 1h 36m 36.7s
+[2026-10-09 22:17:55] START session 1, workers 8, cipher from Dorabella_transcription.csv
+[2026-10-10 05:41:53] all targets met; stopping (--stop-when-done)
+[2026-10-10 05:41:53] END session, 7h 23m 58.7s this session

@@ -1,0 +1,155 @@
+DORABELLA NUMBERS REPORT  (birthdays, ages, line lengths)
+written 2026-10-10 16:26:53   compute time 7h 23m 58.5s   sessions 1
+settings: real seeds 5 (median used), annealing 6 restarts x 10000 steps per setting
+cipher: Dorabella_transcription.csv
+Bonferroni line for one of 3 families: p < 0.0167
+
+========================================================================================================
+HEADLINE (statistic = best quadgram score over the family's date settings; real = median of seeds;
+          p_rand = real cipher with the DATE keys vs the real cipher with RANDOM keys of the same size;
+          power = planted controls above the 95th percentile of the pair-preserving copies)
+========================================================================================================
+fam  settings     real n_pair  p_pair n_shuf  p_shuf n_rand  p_rand  power  verdict
+DE        208  -14.912   5000  0.6321   5000  0.5975   5000  0.6953   100%  chance level
+DA        184  -11.296    600  0.0483    300  0.0133    300  0.3455    90%  below 0.05, not past Bonferroni (expected by chance in 3 families)
+DT         24  -11.437   1000  0.1219    500  0.1018    500  0.0918   100%  chance level
+
+A family matters only if the real cipher beats the pair-preserving copies AND the
+random-number keys past the Bonferroni line, its controls show it can find a message,
+and the decrypt reads as English.
+
+--------------------------------------------------------------------------------------------------------
+DE: Elgar's key + numbers-key shifts, turns and transpositions (no search)   (208 settings)
+--------------------------------------------------------------------------------------------------------
+real statistic per seed: -14.912   median -14.912
+  vs pair-preserving     n=5000, mean -14.806, 95th pct -14.338, max -13.220, p = 0.6321
+  vs plain shuffle       n=5000, mean -14.831, 95th pct -14.379, max -13.702, p = 0.5975
+  vs random-number keys  n=5000, mean -14.817, 95th pct -14.513, max -14.062, p = 0.6953
+best real decrypts (seed with the highest statistic):
+  [-14.912] 9101848 (Alice D M YYYY) | columnar width 7
+      TXNYNAMOUTNLALRFDIQDHYOTACAUN
+      XMTIMOSEDEMLDINUYOGMECNEYENNS
+      THHOISLUATNREDOABANNOREERHODD
+      words: txny NAM OUT nlalrfdiqdhyotacaunxm TIM ose DEM ldinuyogmecne YEN nsthhoisl UAT n RED oa BAN NOR eerh ODD
+  [-15.003] 261857 (Elgar D M YYYY) | columnar width 6 (inverse)
+      FMBENONILHMTNNTMEOEUAOIELNCDA
+      HLEEARONHILQTDOADASYMROTHXSXE
+      NGYYUANDDRNDTOURMCETOYSADNIUN
+      words: fm BEN o NIL hmtnntmeo EUA oielncdah LEE a RON hilqtdoa DAS ymrothxsx ENG yy UAN DDR nd TOUR mce TOYS adn IUN
+  [-15.086] 8274 (Dora D M YY) | columnar width 4 (inverse)
+      TBDDSLMYHTIXGANYDCUDOENUTIEON
+      AHIERONHXMMMUSEONYIDMRAASRRLN
+      YQDFUAONOTENTNAEONDLETCLHEANO
+      words: tbd DSL myhtixg ANY dcu DOE nu TIE onahie RON hxmmmu SEO nyidmraasrrlnyqdfuaono TENT naeondl ETC lheano
+  [-15.130] 020657 (Elgar DD MM YY) | columnar width 6 (inverse)
+      BNFOIELMNTNHTENOUMAIEENOCALHE
+      DERLOHAIQNTOLAADSMDRTYHSOXNXG
+      YEUNYDRANTDORDMEUTYCSDONUANMI
+      words: bnfoielmntnhte NOU MAI eeno CAL he DER lohaiqntola ADS mdrtyh SOX nxgyeunydr ANT dordmeutycs DON UAN mi
+  [-15.132] 2874 (Dora M D YY) | columnar width 4
+      BCRMNLXOEQNMNMRTOGNODDAANFLYU
+      MRNDUOROHHTMLATIUNEDDNATENHYU
+      ESOHAEALEXSNNYIIATIESYOTDEDOC
+      words: b CRM nlxoeqnmnmrtogn ODD aan FLY umrn DUO roh HTML at IUNE d DNA TEN hyuesohae ALEX snnyiia TIES yotde DOC
+controls, 0 misread symbols: n=20, median stat -9.283, true setting found 20/20, median letters right 100%, above null 95th pct 20/20
+controls, 2 misread symbols: n=20, median stat -9.883, true setting found 20/20, median letters right 98%, above null 95th pct 20/20
+  example control (100% right): planted MYDEARFRIENDIWASSOUERYGLADOFYOURLETTERANDTHENEWSTHATYOUA
+                                   found   MYDEARFRIENDIWASSOUERYGLADOFYOURLETTERANDTHENEWSTHATYOUA
+
+--------------------------------------------------------------------------------------------------------
+DA: any key + numbers-key letter shift / rotate / loop step   (184 settings)
+--------------------------------------------------------------------------------------------------------
+real statistic per seed: -11.614, -11.282, -11.282, -11.296, -11.580   median -11.296
+  vs pair-preserving     n=600, mean -11.560, 95th pct -11.298, max -10.805, p = 0.0483
+  vs plain shuffle       n=300, mean -11.720, 95th pct -11.464, max -11.189, p = 0.0133
+  vs random-number keys  n=300, mean -11.373, 95th pct -11.158, max -11.010, p = 0.3455
+best real decrypts (seed with the highest statistic):
+  [-11.282] 2874 (Dora M D YY) | loop step + | runs through
+      RPORCHURBLINNONHTTEMPTSFLYSID
+      ANDHARKWXONTIESNANITHATNOFKBY
+      ITIDEADIGAUETOTHADDERMEDERECR
+      words: r PORCH urblin NON ht TEMP ts FLY sid AND HARK wxon TIES nani THAT nofkbyiti DEAD i GAUE tot HAD DER MED e REC r
+  [-11.561] 29,31,27 (line lengths) | loop step - | restarts each line
+      AURBATMYFOREENEDIESUCKSGOODWE
+      MIISHALFANIENDDEHEWITHEIROFLO
+      NINETHERRZHTERKDMEEDBUDIDATAA
+      words: aurb ATM y FOR eene DIE SUCK s GOOD wemiis HALF ani END dehewi THEIR ofloni NETHER rzhterkdmeedbudi DATA a
+  [-11.684] 29,31,27 (line lengths) | letter shift - | restarts each line
+      DITCOWWALADINMISEITINGKRANOFS
+      WEPTTEIUEREIRRONTIFEWESPONLIN
+      HURSWESTOCAMSTGRGNSOCIOUREMOE
+      words: dit COW wa LAD inmiseit ING k RAN of SWEPT teiu ERE ir RON ti FEW esponlinhurs WEST o CAMS tgrgn SOC i OUR emoe
+  [-11.724] 9101848 (Alice D M YYYY) | loop step - | restarts each line
+      SLUSSINGMOUTTUDYDEALWDAPPOART
+      HEEINSFFSUETRAITHEREANDECOMFP
+      UTUDYHERUNNIDCEANTTABLYTIGASS
+      words: slus SING m OUT tudy DEAL wd APP oar THEE INS ff SUE trai THERE AND e COM f PUT udyhe RUN nidce ANT TAB lyti GAS s
+  [-11.827] 821874 (Dora D M YYYY) | loop step + | runs through
+      NFORREARYKISSOSUSSHFGTUCKWUPT
+      QTSEANYBROTSOHELASITHALLPWMYW
+      ITILEDTOODDETOTHASTURFULENEXN
+      words: n FOR REAR y KISS osusshfgtuckwuptqt SEAN ybrotsohela SIT HALL pwmywi TILE dto ODD etot HAS turfu LEN exn
+controls, 0 misread symbols: n=20, median stat -9.283, true setting found 16/20, median letters right 100%, above null 95th pct 18/20
+controls, 2 misread symbols: n=20, median stat -9.695, true setting found 18/20, median letters right 93%, above null 95th pct 18/20
+  example control (100% right): planted MYDEARFRIENDIWASSOUERYGLADOFYOURLETTERANDTHENEWSTHATYOUA
+                                   found   MYDEARFRIENDIWASSOUERYGLADOFYOURLETTERANDTHENEWSTHATYOUA
+
+--------------------------------------------------------------------------------------------------------
+DT: any key + numbers-key columnar transposition   (24 settings)
+--------------------------------------------------------------------------------------------------------
+real statistic per seed: -11.135, -11.135, -11.542, -11.437, -11.740   median -11.437
+  vs pair-preserving     n=1000, mean -11.614, 95th pct -11.334, max -11.042, p = 0.1219
+  vs plain shuffle       n=500, mean -11.627, 95th pct -11.383, max -11.001, p = 0.1018
+  vs random-number keys  n=500, mean -11.643, 95th pct -11.420, max -11.181, p = 0.0918
+best real decrypts (seed with the highest statistic):
+  [-11.135] 080274 (Dora DD MM YY) | columnar width 6 (inverse)
+      BEKENMUSEMOFTDESTERMSFONCOURS
+      ESAULDSFREGODRUARTOLAHTIMPOPE
+      DINSHEWHERATALMANSOLICOATHERF
+      words: be KEN m USE moft DES TERMS fon COURSES auldsfre GOD ru ART olah TIM POPE din SHE w HER ATA l MAN SOL i COAT HER f
+  [-11.551] 2874 (Dora M D YY) | columnar width 4
+      FMYBERWASCEBEBYUAGEATTOOEPRID
+      BYETDAYALLUBROUNDESTTEOUSELID
+      SHALOSORSWHEEINNOUNSHIAUTSTAM
+      words: fmyber WAS cebebyuag EAT TOO ep RID b YET DAY ALL ub ROUND EST te OUSE l IDS HALO sorswheein NOU nshiautstam
+  [-11.675] 821874 (Dora D M YYYY) | columnar width 6 (inverse)
+      HCKNEITIFUMEDIDEINTNOTHMNFYSI
+      OUFNONATIMFULDSOSTORWATEDUPPN
+      RIGWHOWISSISADTHEYANDTROWSIMI
+      words: hckneitifu MED IDE INT NOT hmnfysiouf NON a TIM fuldsostorwa TED uppnrigw HOW issi SAD THEY AND t ROWS imi
+  [-11.772] 6257 (Elgar M D YY) | columnar width 4
+      INGDEEPOORSONDPASTNTAMSOWENTT
+      ERSNELPWNDALRNRKMYHEIGANBEHEH
+      YSAUEATTRRECIPWHYETWAYALLSHIR
+      words: ING DEE POOR SON d PAST ntamso WENT tersnelpwndalrnrkmyheiganbehehy SAUE attr REC ipwh YET WAY ALL shir
+  [-11.812] 9101848 (Alice D M YYYY) | columnar width 7
+      ICTHTARESITYAYDWUNGUPHEIAMAST
+      CRINRELOUORYUNTSHEFROMTOHOTTL
+      IPPENLYSAITDOUEABATTEDOODPEUU
+      words: ICT ht ARE SIT yaydwungupheia MAS tcrinre LOU oryunt SHE FROM to HOT t LIP PEN lysaitdouea BAT t EDOO dpeuu
+controls, 0 misread symbols: n=20, median stat -9.411, true setting found 14/20, median letters right 99%, above null 95th pct 20/20
+controls, 2 misread symbols: n=20, median stat -9.686, true setting found 18/20, median letters right 95%, above null 95th pct 20/20
+  example control (100% right): planted MYDEARFRIENDIWASSOUERYGLADOFYOURLETTERANDTHENEWSTHATYOUA
+                                   found   MYDEARFRIENDIWASSOUERYGLADOFYOURLETTERANDTHENEWSTHATYOUA
+
+Run log (last 20):
+  DT doublet x1 in 2.33s  (995/1000)
+  DT randkey x1 in 2.35s  (498/500)
+  DT shuffle x1 in 2.31s  (498/500)
+  DA doublet x1 in 17.16s  (598/600)
+  DT doublet x1 in 2.29s  (996/1000)
+  DT doublet x1 in 2.32s  (997/1000)
+  DT randkey x1 in 2.33s  (499/500)
+  DT shuffle x1 in 2.32s  (499/500)
+  DA doublet x1 in 17.09s  (599/600)
+  DA randkey x1 in 17.25s  (300/300)
+  DA shuffle x1 in 17.50s  (300/300)
+  DT doublet x1 in 2.32s  (998/1000)
+  DT doublet x1 in 2.32s  (999/1000)
+  DT randkey x1 in 2.37s  (500/500)
+  DT shuffle x1 in 2.26s  (500/500)
+  DA doublet x1 in 16.99s  (600/600)
+  DE doublet x8 in 0.01s  (5000/5000)
+  DE randkey x8 in 0.01s  (5000/5000)
+  DE shuffle x8 in 0.01s  (5000/5000)
+  DT doublet x1 in 2.26s  (1000/1000)
