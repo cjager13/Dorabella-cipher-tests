@@ -122,12 +122,15 @@ The Dorabella *does* beat plain shuffles (p = 0.0020 in 1,016), so its symbol or
 | `Dorabella_numbers.py` | Rarest symbols treated as digits |
 | `Dorabella_v2.py` | Rechecked transcription with uncertain symbols solved inside the search; English or German |
 | `Dorabella_heldout_check.py` | Reruns one held-out configuration over many seeds and copies |
+| `Dorabella_keyword2.py` | Keyword test with direction order and up/down set by the keyword's first or third letters (output `keyword_out.txt`) |
+| `Dorabella_language.py` | "Is it language?": were the symbols chosen by a message or by the hand? Compares the cipher's statistics with English passages and hand-made fakes (output `language_out/`) |
+| `Dorabella_looptrits.py` | Do the loop counts alone, read three at a time, spell a message? (output `looptrits_out/`) |
 
 ### Outputs
 
 | Folder | Contents |
 | --- | --- |
-| `*_out/` | Each run's `report.txt`, `log.txt` and `state.json`. Final reports are also saved as `*_final_report.txt`. |
+| `*_out/` | Each run's `report.txt` and `log.txt`, with final reports also saved as `*_final_report.txt`. `state.json` (every copy's score, for auditing or resuming) is included where it fits GitHub's size limit. |
 | `*_final_report_old.txt` | Reports as first written, kept where a report was later regenerated (see Notes on the logs) |
 | `early_runs/` | Outputs of the first day's scripts (27 September 2026) |
 
@@ -143,7 +146,7 @@ Elgar's standard key, applied to these codes, reproduces the published decrypt (
 
 Put all scripts, `Dorabella_transcription.csv` and the corpora in one folder. **Run each script's `--selftest` first:** it checks the setup, runs one planted message through the full search, and estimates the run time. Every round-2 script can be stopped with Ctrl+C and resumed with the same command; `--stop-when-done` makes it end when its pre-set number of copies is reached, so runs can be chained; `--report-only` rewrites the report from saved state.
 
-### Corpora (not included)
+### Corpora and text folders (included)
 
 | File or folder | Used by | Source |
 | --- | --- | --- |
@@ -159,7 +162,7 @@ Put all scripts, `Dorabella_transcription.csv` and the corpora in one folder. **
 | `Bible_Psalter/`, `Bible_Psalter_Psalms/` | `Dorabella_quotes.py` | 1662 Book of Common Prayer and its Coverdale Psalter, from a scanned PDF repaired with `Dorabella_fixtext.py` |
 | `Day_14July1897/` | `Dorabella_quotes.py` | Built by `Dorabella_daytexts.py` |
 
-`Dorabella_languages.py` keeps every text between Project Gutenberg's START and END markers and drops the licence text. The English scorer reads `english.txt` as it is, so use the same file throughout.
+These are public-domain texts, included so every run can be reproduced exactly. `english.txt` is the exact file all round-2 scores came from. `Dorabella_languages.py` keeps every text between Project Gutenberg's START and END markers and drops the licence text. The English scorer reads `english.txt` as it is, so use the same file throughout.
 
 ### Commands and run times (8-core laptop)
 
@@ -196,12 +199,17 @@ Two round-2 tests used Elgar's own letters before 14 July 1897, transcribed from
 - **One `english.txt` for all of round 2.** Every round-2 report was scored with the same file, the current Gutenberg #345 release of *Dracula*. A different edition shifts raw scores by a few hundredths but not the p-values, since each run scores the cipher and its copies with the same file.
 - **Reports regenerated for display only.** On 10 October 2026 the reports were rewritten with `--report-only` so that every "words:" line uses the large display dictionary (about 11,700 words) instead of a 309-word list. The display never affects scores. Earlier versions are kept as `*_final_report_old.txt`, and every changed line was checked by eye: only the timestamp and word lines differ.
 - **Some early entries in `numbers_out/log.txt` should be ignored.** The runs before 14:15 on 2026-09-29 used an `english.txt` that had extra notes appended.
+- **`numbers_out/` holds two different tests.** Round 1's `Dorabella_numbers.py` (rare symbols as digits) and round 2's `Dorabella_scales.py --set numbers` (birthdays, ages, line lengths) both wrote to this folder; the log shows which entries are which, and the round-2 report is `numbers_out_final_report.txt`.
 
 ## Open threads
 
 - **Homophones and three alternating alphabets** cannot be ruled out by statistical search at this length (power 62-78% and 10%).
 - **A blind re-reading of the uncertain symbols**, by someone who has not seen these results, would settle positions 32 and 67.
 - **Not yet tested:** names of God and Jesus as cribs, street names and addresses as cribs, and the cipher's single dot as "&".
+
+## Images
+
+`Dorabella_cipher.jpg` is the 1897 cipher; `1920Notebook.gif` and `marco-elgar-cipher-enhanced.jpg` are images of other Elgar papers, reproduced from the sources credited below. The redrawings of the notebook page in the write-up are the investigator's own.
 
 ## Sources
 
