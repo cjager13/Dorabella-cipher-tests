@@ -1,12 +1,10 @@
-# Corpora: download from Project Gutenberg (see README)
-english.txt
-german.txt
-*_clean.txt
-# Run state and scratch
-marathon_out/state.json
+# Run scratch
 *.tmp
 __pycache__/
-keyword_out.txt
-keyword_keys.csv
-phrase_out.txt
+# Too large for GitHub (round 1 outputs; regenerate with Dorabella_phrase.py)
 phrase_keys.csv
+# Private: never commit the transcription of Elgar's letters or anything built from it
+Elgar_letters_to_1897.txt
+Elgar_letters_quotes/
+elgarquotes_out/state.json
+Moore*
