@@ -1,0 +1,111 @@
+DORABELLA QUOTATION TEST REPORT  (source folder: Bible_Psalter)
+written 2026-10-08 20:16:59   compute time 2h 44m 32.3s   sessions 1
+phrases of 14-30 letters: 647,520; eligible after the rule: 647,520
+
+source files (words, new phrases):  BCP_1662_fixed (169854, 647520)
+
+====================================================================================================
+HEADLINE (p vs PAIR-PRESERVING copies; line to beat p < 0.025)
+====================================================================================================
+Q1 best completion   real -12.267   pair n=1000 p=0.1948   shuffle n=1000 p=0.0330   power 95%
+Q2 long phrases fit  real 60   pair mean 70.13   p=0.4875
+
+----------------------------------------------------------------------------------------------------
+REAL CIPHER
+----------------------------------------------------------------------------------------------------
+Q1 per seed: -12.267 (GODANDWOULDNOT), -12.267 (GODANDWOULDNOT), -12.267 (GODANDWOULDNOT), -12.267 (GODANDWOULDNOT), -12.267 (GODANDWOULDNOT)
+placements tried: 117
+  [-12.267] phrase GODANDWOULDNOT (BCP_1662_fixed) in boustrophedon B
+      OGUACANELLWEEMENTEGIRDBWXDSLI
+      BETWADRYDSEESWUTBEGEWHOTNARRA
+      GODANDWOULDNOTHWESOUPHUSOHWOS
+      words: ogua CANE ll WEE MENT egirdbwx DSL i BET wa DRY d SEES wut BEG ew HOT narra GOD AND WOULDN othwe SOUP husohwos
+  [-12.528] phrase GODANDWOULDNOT (BCP_1662_fixed) in boustrophedon B
+      OGUISIUELLWEEPENTEGQMDBWADRLS
+      BETWIDMYDREERWUTBEGEWHOTNIMMI
+      GODANDWOULDNOTHWEROUCHUROHWOR
+      words: o GUI siuell WEE PENT egqmdbwadrls BET widmydreerwut BEG ew HOT nimmi GOD AND WOULDN othwerouchuroh WOR
+  [-12.874] phrase MANSAYILOUEGOD (BCP_1662_fixed) in each line reversed
+      TYHCKCHAPPEAAMANSAYILOUEGODPI
+      TYCLLCNSTREAYAUSHEDAADOFLOUES
+      AUOCHOETHPONTSREADTHWRNDTRETD
+      words: tyhck CHAP PEA a MAN SAY i LOUE GOD PITY c LLC ns TRE ayau SHED a ADO f LOUES auo CHO eth PON ts READ thwrnd TRE td
+  [-12.874] phrase AMANSAYILOUEGOD (BCP_1662_fixed) in each line reversed
+      TYHCKCHAPPEAAMANSAYILOUEGODPI
+      TYCLLCNSTREAYAUSHEDAADOFLOUES
+      AUOCHOETHPONTSREADTHWRNDTRETD
+      words: tyhck CHAP PEA a MAN SAY i LOUE GOD PITY c LLC ns TRE ayau SHED a ADO f LOUES auo CHO eth PON ts READ thwrnd TRE td
+  [-12.935] phrase OFTHESAMEBUTIF (BCP_1662_fixed) in each line reversed
+      IFLYTYROUUAOOKORNOFTHESAMEBUT
+      IFYHHYRNIGAOFOSNLABOOBECHESAN
+      OSEYREAILUERINGAOBILDGRBIGAIB
+      words: i FLY tyrouuaookornof THE SAME BUT ifyhhyrnigaofosn LAB oobe CHE SAN os EYRE ailue RING a OBI ldgr BIG aib
+
+long phrases (14+ letters) that fit the real cipher's pattern: 60
+  SIGHTANDFOLLOWED                 1 place(s)   from BCP_1662_fixed
+  ABIDEWITHYOUFOR                  2 place(s)   from BCP_1662_fixed
+  AMANSAYILOUEGOD                  3 place(s)   from BCP_1662_fixed
+  AMONGTHEPRINCES                  1 place(s)   from BCP_1662_fixed
+  COMPANIEDWITHUS                  1 place(s)   from BCP_1662_fixed
+  HOLYPLACEHAUING                  1 place(s)   from BCP_1662_fixed
+  HYMNFOLLOWINGBE                  1 place(s)   from BCP_1662_fixed
+  NOTHEARMEBUTGOD                  1 place(s)   from BCP_1662_fixed
+  OFTHYMERCIESAND                  1 place(s)   from BCP_1662_fixed
+  PSALBEATIQUORUM                  2 place(s)   from BCP_1662_fixed
+  SAFELYKEPTUNDER                  1 place(s)   from BCP_1662_fixed
+  SALUATIONWHENMY                  3 place(s)   from BCP_1662_fixed
+  AGAINBEFORETHY                   1 place(s)   from BCP_1662_fixed
+  ALMIGHTYGODFOR                   1 place(s)   from BCP_1662_fixed
+  ALMSDOINGOFTHE                   1 place(s)   from BCP_1662_fixed
+  AMONGYOULETHIM                   1 place(s)   from BCP_1662_fixed
+  AMTHYSALUATION                   1 place(s)   from BCP_1662_fixed
+  ANDBROUGHTTHEM                   1 place(s)   from BCP_1662_fixed
+  ANDFOLLOWEDHIM                   1 place(s)   from BCP_1662_fixed
+  ANDLABOURTRULY                   1 place(s)   from BCP_1662_fixed
+  ANDMOSTMERCIFU                   2 place(s)   from BCP_1662_fixed
+  ANDOFGREATPITY                   1 place(s)   from BCP_1662_fixed
+  ANDWALKNOTINMY                   1 place(s)   from BCP_1662_fixed
+  AYWEMTHEBURIAL                   1 place(s)   from BCP_1662_fixed
+  BACKNEITHEROUR                   1 place(s)   from BCP_1662_fixed
+  BEHOLDYOURKING                   2 place(s)   from BCP_1662_fixed
+  COLEGIUETHANKS                   2 place(s)   from BCP_1662_fixed
+  CREPTINAMONGST                   3 place(s)   from BCP_1662_fixed
+  DAYCAMEUPONHIM                   1 place(s)   from BCP_1662_fixed
+  DOWEGIUETHANKS                   2 place(s)   from BCP_1662_fixed
+  FROMTHEWISEAND                   3 place(s)   from BCP_1662_fixed
+  GODANDWOULDNOT                   1 place(s)   from BCP_1662_fixed
+  HISHOLYNAMEFOR                   1 place(s)   from BCP_1662_fixed
+  IACOBWHOTURNED                   2 place(s)   from BCP_1662_fixed
+  LMIGHTYGODWEBE                   1 place(s)   from BCP_1662_fixed
+  LORDHAUEIPUTMY                   3 place(s)   from BCP_1662_fixed
+  MANSAYILOUEGOD                   3 place(s)   from BCP_1662_fixed
+  MAYALSOINHEART                   1 place(s)   from BCP_1662_fixed
+  MAYITSOEXPOUND                   3 place(s)   from BCP_1662_fixed
+  MEANDFIGHTTHOU                   1 place(s)   from BCP_1662_fixed
+Q1 vs pair-preserving  n=1000, mean -12.540, 95th pct -11.967, max -11.513
+Q1 vs plain shuffle    n=1000, mean -12.863, 95th pct -12.324, max -11.618
+controls: n=60, median -9.774, planted phrase found 6/60, median letters right 97%
+  example: planted MYDEARFRIENDIWASSOUERYGLADOFYOURLEDESTINATIONTOLIFEISTTE
+           found   MYDEARFRIENDIWASSOUERYGLADOFYOURLEDESTINATIONTOLIFEISTTE
+
+Run log (last 20):
+  doublet in 5.93s  (991/1000)
+  shuffle in 6.11s  (991/1000)
+  doublet in 6.49s  (992/1000)
+  shuffle in 6.61s  (992/1000)
+  doublet in 4.10s  (993/1000)
+  shuffle in 6.42s  (993/1000)
+  doublet in 4.75s  (994/1000)
+  shuffle in 4.88s  (994/1000)
+  doublet in 5.69s  (995/1000)
+  shuffle in 5.31s  (995/1000)
+  doublet in 4.75s  (996/1000)
+  shuffle in 5.18s  (996/1000)
+  doublet in 4.01s  (997/1000)
+  shuffle in 5.24s  (997/1000)
+  doublet in 4.80s  (998/1000)
+  shuffle in 5.65s  (998/1000)
+  doublet in 4.18s  (999/1000)
+  shuffle in 4.33s  (999/1000)
+  doublet in 4.48s  (1000/1000)
+  shuffle in 5.25s  (1000/1000)
