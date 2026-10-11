@@ -1,0 +1,210 @@
+DORABELLA 'PRIVATE ENGLISH' STYLES REPORT
+written 2026-10-10 16:17:18   compute time 18h 30m 43.8s   sessions 4
+settings: real seeds 9 (median used), annealing 12 restarts x 20000 steps per reading order, 5 reading orders, 9 uncertain symbols solved in the search
+Bonferroni line for one of 6 styles: p < 0.0083
+
+========================================================================================================
+HEADLINE (statistic = best quadgram score in that style's own model; real = median over seeds;
+          p_words = word score vs pair-preserving copies; power = planted controls above the
+          95th percentile of the pair-preserving copies)
+========================================================================================================
+style                          real n_pair  p_pair n_shuf  p_shuf p_words  power ctrl med  verdict
+S0 standard spelling        -10.901   2000  0.3488   2000  0.0075   0.100   100%    -9.54  chance level
+S1 vowels dropped           -10.816   2000  0.8781   2000  0.3718   0.559    98%    -9.82  chance level
+S2 words spelled backwards  -10.864   2000  0.2599   2000  0.0060   0.353    96%    -9.48  chance level
+S3 phonetic spelling        -10.963   2000  0.6232   2000  0.0385   0.370   100%    -9.37  chance level
+S4 first letters of words   -10.805   2000  0.6582   2000  0.2454       -    92%   -10.41  chance level
+S5 pig Latin                -13.337   2000  0.3283   2000  0.0440   0.668   100%    -7.18  chance level
+
+A style matters only if the real cipher beats the PAIR-PRESERVING copies past the
+Bonferroni line, its controls show it can find a message (power near 100%), and the
+decrypt reads as English written in that style. Words are shown as STYLED[original].
+
+--------------------------------------------------------------------------------------------------------
+S0: standard spelling
+--------------------------------------------------------------------------------------------------------
+real statistic per seed: -10.933, -10.805, -10.945, -10.983, -10.805, -10.901, -10.861, -10.973, -10.853   median -10.901;  word score per seed: 37, 54, 71, 51, 54, 56, 57, 35, 52
+  vs pair-preserving  n=2000, mean -10.953, 95th pct -10.701, max -10.217, p = 0.3488
+  vs plain shuffle    n=2000, mean -11.411, 95th pct -11.071, max -10.669, p = 0.0075
+  word score vs pair-preserving: real median 54, copies mean 39.6, 95th pct 58, p = 0.1004
+best real decrypts (from the seed with the highest statistic, -10.805):
+  [-10.805] each line reversed  alternate readings used at [25, 34, 67, 86]
+      ORNIFINESSTEEPEMBERYLAWTHADSF
+      ORILLIMBOUTEREWBNTDEEDACLAITB
+      EWAINATONSANOBUTEDONGUNDOUTOD
+      words: orni FINE s STEEP embery LAW th ADS FOR ILL imb OUTER ewbnt DEE daclaitbewai NATO n SAN o BUT e DON g UNDO utod
+  [-11.067] fully reversed  alternate readings used at [10, 23, 25, 86]
+      IOTIHATLITANCHERATPCURACHARAD
+      OWWOUNACHEDESNTHREERIFWISHNES
+      ADTOYOUELLHEEMEUNEDYWISHGIRLY
+      words: ioti HAT li TAN CHE RAT pcura CHAR a DOW wo UNA CHE DES n THREE rif WISH ne SAD to YOU ellheeme UNE dy WISH GIRL y
+  [-11.101] forward  alternate readings used at [10, 23, 25, 34, 78, 85, 86]
+      GTLIPSUINGHERDEFEESTTEDOGOWHA
+      UERSOINMILEELSWRUEHESCARDONNO
+      HALASCALDCYWALESCRADITWASIDOI
+      words: gt LIPS u ING HER de FEES tte DOG ow HAUE rsoin MILE elswruehe SCAR DON noh ALAS CAL dcy WALES cradit WAS idoi
+controls, 0 misread symbols: n=50, median stat -9.232, right reading order 47/50, median letters right 99%, above null 95th pct 50/50
+controls, 2 misread symbols: n=50, median stat -9.709, right reading order 47/50, median letters right 93%, above null 95th pct 50/50
+  example control (100% right): planted MYDEARFRIENDIWASSOUERYGLADOFYOURLETTERANDTHE
+                                  found   MYDEARFRIENDIWASSOUERYGLADOFYOURLETTERANDTHE
+
+--------------------------------------------------------------------------------------------------------
+S1: vowels dropped
+--------------------------------------------------------------------------------------------------------
+real statistic per seed: -10.807, -10.726, -10.883, -10.736, -10.812, -10.877, -10.839, -10.816, -10.841   median -10.816;  word score per seed: 40, 43, 60, 44, 40, 40, 41, 46, 62
+  vs pair-preserving  n=2000, mean -10.717, 95th pct -10.559, max -10.296, p = 0.8781
+  vs plain shuffle    n=2000, mean -10.849, 95th pct -10.648, max -10.369, p = 0.3718
+  word score vs pair-preserving: real median 43, copies mean 44.6, 95th pct 60, p = 0.5592
+best real decrypts (from the seed with the highest statistic, -10.726):
+  [-10.726] fully reversed  alternate readings used at [10, 67]
+      YURYNSRMYRSFCNTDSRACRDSCNSDSH
+      WLLWOFSCNTHTIFRNDTTDYBLYINFTI
+      SHRWKWRTMMNTTGTOFTHPLYINUYDMP
+      words: yu RYN[ryan] sr MYRS[myers] f CNTD[counted] sr ACRD[acrid] SCNS[scenes] DSH[dish] WLLW[willow] of SCN[scene] THT[that] i FRND[friend] t TDY[today] BLY[bailey] INF[info] ti SHR[shore] wk WRT[write] MMNT[moment] tgto FTH[faith] PLY[play] i NUY[navy] DMP[damp]
+  [-10.864] forward  alternate readings used at [10, 24, 25, 67, 85, 86]
+      UPCYBTMYLUANDINGNNTPPNRMUFRAS
+      MNDTMYLKYCNNCTRDMNANTHSDIFLLF
+      ASCSTHSCRHWRSCNTHDSRYPRSTYIFY
+      words: UPC ybtmylu AND in GNN[gonna] tppn RMU[remove] fras MNDT[mandate] mylky CNNCTR[connector] DMN[demon] an THS[this] di FLL[full] f ASC[ascii] STH[south] SCR[scar] h WRS[worse] CNT[count] h DSR[desire] yp RSTY[rusty] ify
+  [-11.001] boustrophedon A  alternate readings used at [67]
+      KPCHISWHLAGRMYRFRRSPPRTBABTGN
+      NGBLLBYMNDSRGRWMTSCRRCHULHWSM
+      RWCNSDNCTDOTNCRSDMNTHPTNSHTIH
+      words: kpchis WHL[whole] AGR[agree] MYR[mayor] FRR[freer] SPPRT[support] b ABT[about] GNN[gonna] g BLL[bell] by MNDS[minds] r GRW[grew] mt SCR[scar] RCH[reach] ulhwsmrwcn SDN[sudan] CTD[cited] otn CRSD[cursed] MNTH[month] ptn SHT[shut] ih
+controls, 0 misread symbols: n=50, median stat -9.738, right reading order 48/50, median letters right 93%, above null 95th pct 49/50
+controls, 2 misread symbols: n=50, median stat -9.984, right reading order 40/50, median letters right 85%, above null 95th pct 49/50
+  example control (100% right): planted MYDRFRNDIWSSURYGLDOFYRLTTRANDTHNWSTHTYARALLW
+                                  found   MYDRFRNDIWSSURYGLDOFYRLTTRANDTHNWSTHTYARALLW
+
+--------------------------------------------------------------------------------------------------------
+S2: words spelled backwards
+--------------------------------------------------------------------------------------------------------
+real statistic per seed: -10.924, -10.811, -10.919, -10.864, -10.886, -10.838, -10.801, -10.900, -10.859   median -10.864;  word score per seed: 51, 37, 62, 35, 45, 29, 40, 43, 49
+  vs pair-preserving  n=2000, mean -10.953, 95th pct -10.715, max -10.384, p = 0.2599
+  vs plain shuffle    n=2000, mean -11.370, 95th pct -11.039, max -10.674, p = 0.0060
+  word score vs pair-preserving: real median 43, copies mean 40.0, 95th pct 58, p = 0.3533
+best real decrypts (from the seed with the highest statistic, -10.801):
+  [-10.801] forward  alternate readings used at [10, 34, 67, 86]
+      PSDABTCALPREHWEMEETSSENIFINRO
+      CEHTIALYADEEDTNHCERETUOHWILLI
+      RODOTUODNUGNODETUHONASNOTANIA
+      words: ps DAB[bad] TCA[act] lp REH[her] weme ETS[ste] s ENIF[fine] i NROC[corn] EHT[the] ial YAD[day] EED[dee] tnhce RETUO[outer] hwi LLI[ill] rodotu ODNU[undo] gno DET[ted] uhona SNOT[tons] a NIA[ain]
+  [-10.909] fully reversed  alternate readings used at [10, 23, 34, 78, 85, 86]
+      AOCATIULACINHTESIUQHCSIHTISIR
+      OMMOCNIHTEREDNUTSEESAWMAOTNED
+      IRUOYOCELLTEEBECNERPMADTFASLP
+      words: aocatiula CINHTE[ethnic] s IUQ[qui] hc SIHT[this] isiro MMOC[comm] NIHT[thin] e REDNU[under] t SEES awmaotn EDI[ide] RUOY[your] OCE[eco] llt EEB[bee] ecner PMAD[damp] tfaslp
+  [-11.058] each line reversed  alternate readings used at [10, 23, 24, 67, 78, 85]
+      TLIUYMRESSAEEWERDELPFOMACOHSP
+      TLUFFURDTNAELEMDIAHEEHOBFOMAD
+      EMOCROATISORTDNAEHTIGNIHTNATH
+      words: tliuym RES[ser] saee WERD[drew] elpfo MAC[cam] ohsptluffurd TNAEL[leant] em DIA[aid] heehobfo MAD[dam] EMOC[come] roa TIS[sit] ort DNA[and] EHT[the] i GNIHT[thing] NAT[tan] h
+controls, 0 misread symbols: n=50, median stat -9.156, right reading order 49/50, median letters right 99%, above null 95th pct 49/50
+controls, 2 misread symbols: n=50, median stat -9.667, right reading order 44/50, median letters right 93%, above null 95th pct 47/50
+  example control (100% right): planted TISAWDNIKFOUOYOTREBMEMERYMYADHTRIBDNAEHTELTT
+                                  found   TISAWDNIKFOUOYOTREBMEMERYMYADHTRIBDNAEHTELTT
+
+--------------------------------------------------------------------------------------------------------
+S3: phonetic spelling
+--------------------------------------------------------------------------------------------------------
+real statistic per seed: -10.724, -10.970, -10.724, -11.002, -10.763, -11.052, -10.965, -10.963, -10.938   median -10.963;  word score per seed: 61, 34, 61, 44, 61, 46, 49, 37, 44
+  vs pair-preserving  n=2000, mean -10.917, 95th pct -10.677, max -10.399, p = 0.6232
+  vs plain shuffle    n=2000, mean -11.424, 95th pct -10.994, max -10.482, p = 0.0385
+  word score vs pair-preserving: real median 46, copies mean 43.3, 95th pct 61, p = 0.3703
+best real decrypts (from the seed with the highest statistic, -10.724):
+  [-10.724] forward  alternate readings used at [25, 34, 67, 78]
+      YDRAWNKAMPLITHIFIINDDISEYESLO
+      KITNEAMBARIIRNSTKILINGOTHEMME
+      LORONGORSGUSORINGTOHADSONASWA
+      words: y DRAWN KAM[came] PLIT[plight] hifi IND DIS EYES lo KIT neam BARI[barry] irnst KILING[killing] o THEM MEL o RONG[wrong] orsguso RING to HAD SON[soon] aswa
+  [-10.970] fully reversed  alternate readings used at [34]
+      EPRESORBEROMUSITORFULTOUSOTON
+      AHHALMOUSINIKMRSTIITEDHEASMIK
+      ONRAGARIBBSIIWILMINGHEKSPETBY
+      words: e PRES[press] orbe ROM[room] usi TOR[tore] FUL[full] t OUS[ouse] o TON[tone] ah HAL[hall] MOUS[mouse] i NIK[nick] MRS tii TED h EAS[ease] m IKON[icon] ra GARI[gary] bbsii WIL[will] m ING h EKSP[exp] etby
+  [-10.984] each line reversed  alternate readings used at [10, 23, 25, 78, 85, 86]
+      OMFAKARISSTIIGIRDIMKWENTHELSK
+      OMAWWARDOUTIMINDFTLIILEYWENTD
+      INEARETOFSERODUTILOFBURLOUTOL
+      words: omfa KARIS[carice] stiigir DIM k WENT h ELS[else] KOM[come] aw WARD OUT i MIND ftl IIL[jill] ey WENT di NEAR etof SER o DUTI[duty] lofbur LOU[love] TOL[toll]
+controls, 0 misread symbols: n=50, median stat -9.114, right reading order 44/50, median letters right 99%, above null 95th pct 50/50
+controls, 2 misread symbols: n=50, median stat -9.556, right reading order 44/50, median letters right 92%, above null 95th pct 50/50
+  example control (100% right): planted MYDEARFRIENDIWASSOUERIGLADOFYOURLETERANDTHEN
+                                  found   MYDEARFRIENDIWASSOUERIGLADOFYOURLETERANDTHEN
+
+--------------------------------------------------------------------------------------------------------
+S4: first letters of words
+--------------------------------------------------------------------------------------------------------
+real statistic per seed: -10.817, -10.805, -10.794, -10.749, -10.807, -10.817, -10.800, -10.776, -10.829   median -10.805;  word score per seed: 0, 0, 0, 0, 0, 0, 0, 0, 0
+  vs pair-preserving  n=2000, mean -10.789, 95th pct -10.725, max -10.644, p = 0.6582
+  vs plain shuffle    n=2000, mean -10.839, 95th pct -10.748, max -10.630, p = 0.2454
+best real decrypts (from the seed with the highest statistic, -10.749):
+  [-10.749] fully reversed  alternate readings used at [10, 24, 25, 67, 86]
+      HNIHASICHISOMATWSIYMIWSMASWSD
+      NFFNPOSMATDTBOIAWTTWHRFHBAOTB
+      SDINLBITCCATTETPOTDLFHBAUHWCL
+      words: (no word check for initials)
+  [-10.810] each line reversed  alternate readings used at [25, 34, 67, 86]
+      ICWHRHWTBBSTTETPOTCYFALSUAMBR
+      ICHFFHPOIDSTCTLOWSMTTMAGFAHSO
+      TLAHWASIWBAWIODSTMIWNDWMIDSIM
+      words: (no word check for initials)
+  [-10.862] forward  alternate readings used at [10, 25, 34, 67, 86]
+      NFLWDSPWBNCAMRAGAASFFAIHNHICT
+      PAMSHWBUWLAALSIMPACASOTMRHBBH
+      CTLTSOTLIOYITLASOMTIWFITSWIHW
+      words: (no word check for initials)
+controls, 0 misread symbols: n=50, median stat -10.386, right reading order 10/50, median letters right 13%, above null 95th pct 44/50
+controls, 2 misread symbols: n=50, median stat -10.420, right reading order 16/50, median letters right 19%, above null 95th pct 48/50
+  example control (55% right): planted IWKOYTRMBATLBYSIITTFALRIWHAMPATRLNWGASADNGHU
+                                  found   IWNQSTRHBATMBSCIITTSAMRIWYAHPATRMBWFACAGDFYK
+
+--------------------------------------------------------------------------------------------------------
+S5: pig Latin
+--------------------------------------------------------------------------------------------------------
+real statistic per seed: -13.260, -13.415, -13.270, -13.136, -13.320, -13.368, -13.337, -13.374, -13.446   median -13.337;  word score per seed: 9, 0, 9, 4, 65, 4, 9, 9, 0
+  vs pair-preserving  n=2000, mean -13.416, 95th pct -13.063, max -12.504, p = 0.3283
+  vs plain shuffle    n=2000, mean -13.801, 95th pct -13.358, max -12.916, p = 0.0440
+  word score vs pair-preserving: real median 9, copies mean 12.8, 95th pct 34, p = 0.6677
+best real decrypts (from the seed with the highest statistic, -13.136):
+  [-13.136] forward  alternate readings used at [10, 23, 24, 67, 85]
+      BRYOWSCOMBLENDEPEESRREDCQUILA
+      CENSCOMFOYEEYSINCELESTANDUMMU
+      LAYASTAYITHIAYESTNAIORIASODWO
+      words: bryowscomblendepeesrredcquilacenscomfoyeeysincelestandummulaya STAY[st] ithiayestnaioriasodwo
+  [-13.399] each line reversed  alternate readings used at [10, 23, 24, 25, 67, 85, 86]
+      IYCDONGALLTAABAGMAYOUENTHERLO
+      IYDUUDGMISTAYANMCTRAAREQUENTM
+      ANEDGETICLECIMSTARICKSCRISTIR
+      words: iycdongalltaab AGMAY[mag] ouentherloiyduudgmi STAY[st] anmctraarequentmanedgeticlecimstarickscristir
+  [-13.531] fully reversed  alternate readings used at [23, 25, 78, 85, 86]
+      OINOUALSONACYUEDALBYNDAYUADAT
+      IFFINCAYUETERCLUDEEDOMFORUCER
+      ATLIGINESSUEEPENCETWFORUHODSG
+      words: oinoualsonacyuedalbyndayuadatiffincayuetercludeedomforuceratliginessueepencetwforuhodsg
+controls, 0 misread symbols: n=50, median stat -6.939, right reading order 44/50, median letters right 100%, above null 95th pct 50/50
+controls, 2 misread symbols: n=50, median stat -7.517, right reading order 47/50, median letters right 94%, above null 95th pct 50/50
+  example control (100% right): planted YMAYEARDAYIENDFRAYIWAYASWAYOSAYERYUAYADGLAYO
+                                  found   YMAYEARDAYIENDFRAYIWAYASWAYOSAYERYUAYADGLAYO
+
+Run log (last 20):
+  S2 doublet x4 in 9.97s  (1996/2000)
+  S2 shuffle x4 in 9.86s  (1996/2000)
+  S3 doublet x4 in 9.96s  (1996/2000)
+  S3 shuffle x4 in 10.03s  (1996/2000)
+  S4 doublet x4 in 10.87s  (1996/2000)
+  S4 shuffle x4 in 10.95s  (1996/2000)
+  S5 doublet x4 in 9.73s  (1996/2000)
+  S5 shuffle x4 in 9.84s  (1996/2000)
+  S0 doublet x4 in 10.07s  (2000/2000)
+  S0 shuffle x4 in 9.95s  (2000/2000)
+  S1 doublet x4 in 10.22s  (2000/2000)
+  S1 shuffle x4 in 10.39s  (2000/2000)
+  S2 doublet x4 in 10.25s  (2000/2000)
+  S2 shuffle x4 in 9.87s  (2000/2000)
+  S3 doublet x4 in 9.86s  (2000/2000)
+  S3 shuffle x4 in 10.47s  (2000/2000)
+  S4 doublet x4 in 10.84s  (2000/2000)
+  S4 shuffle x4 in 10.97s  (2000/2000)
+  S5 doublet x4 in 9.99s  (2000/2000)
+  S5 shuffle x4 in 9.81s  (2000/2000)

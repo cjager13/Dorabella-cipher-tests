@@ -1,0 +1,328 @@
+DORABELLA 'THREE' REPORT
+written 2026-10-05 03:04:37   compute time 77h 55m 34.5s   sessions 2
+settings: real seeds 5 (median used), annealing restarts x steps: any-key 8x15000, PC screen 4x10000 per shift pair (best 24 re-searched), PD top 30 turn settings, three alphabets 12x40000
+cipher: Dorabella_transcription.csv
+Bonferroni line for one of 8 families: p < 0.00625
+
+====================================================================================================
+HEADLINE  (statistic = best quadgram score in the family; real = median over seeds;
+           power = share of planted-English controls above the 95th percentile of the
+           pair-preserving copies; p floor = 1/(n+1))
+====================================================================================================
+fam  members     real n_pair  p_pair n_shuf  p_shuf p_words  power ctrl med  verdict
+T3       210  -10.974   1036  0.3472   1036  0.0280   0.018    98%    -9.43  chance level
+TB       546  -11.214    311  0.8365    311  0.6410   0.949    98%    -9.46  chance level
+TE       756  -14.858   2080  0.9914   2080  0.9923   0.734   100%    -9.50  chance level
+PA        10  -15.020   2080  0.4565   2080  0.4599   0.848   100%   -10.17  chance level
+PB        10  -14.211   1048  0.4728   1048  0.3794   0.890   100%    -9.45  chance level
+PC         2  -11.087    262  0.4106    262  0.0494   0.703    85%    -9.71  chance level
+PD        10  -11.086    521  0.6437    521  0.2778   0.977    85%    -9.53  chance level
+PE        10   -9.317   1039  0.8654   1036  0.4754   0.141    10%    -9.27  chance level, but controls show LOW POWER: inconclusive, not a refutation
+
+Reading it: a family only matters if the real cipher beats the PAIR-PRESERVING copies
+past the Bonferroni line, the controls show the family can find a real message (power
+near 100%), and the winning decrypt reads as English. Beating plain shuffles alone is
+expected (the Dorabella has strong pair habits).
+
+----------------------------------------------------------------------------------------------------
+T3: transpositions built on 3 + any key   (210 members)
+----------------------------------------------------------------------------------------------------
+real statistic per seed: -11.003, -10.974, -11.085, -10.932, -10.974   median -10.974
+  vs pair-preserving  n=1036, mean -11.013, 95th pct -10.800, max -10.617, p = 0.3472
+  vs plain shuffle    n=1036, mean -11.266, 95th pct -11.022, max -10.728, p = 0.0280
+best real decrypt (seed with the highest statistic): score -10.932, words 25
+  [-10.932] lines in order 3r 1 2 (inverse)
+      MECORTCALFANOONTSRCOMOTHERWIL
+      LIMENETHENWHYSENOTHRESADSETAS
+      UASIPISODDTOOGOWROMPLACTUANDB
+      segmented: mecortcalfanoontsrcom OTHER UILL imene THEN UHY se NOT hre SAD SET as UAS ipisodd TOO g OUR omplactu AND b
+  [-10.962] lines in order 3r 1 2
+      OWNOIANGONASTIERANDTHRATIARYG
+      ROWICOMPLESHEBEEIGGENUPUNLACE
+      SICOMFOREERINSCELEITASHUMMULA
+      segmented: OUN oiangonastier AND thratiarygrouicomple SHE beeiggenupunlacesicom FOR eerinsceleitashummula
+  [-11.016] lines in order 1r 2r 3
+      ADUIGIUELLSEEMECHEDGFORSPONLY
+      ADIFFICHATSEDERHUSNEENOWFORSH
+      ERNASTANCTQUANESTHAUOLUASOUPO
+      segmented: aduigi UELL SEE mechedg FOR sp ONLY adiffichatsederhusnee NOU FOR s HER nastanctquanesthauol UAS oupo
+  [-11.035] lines in order 3r 2 1 (inverse)
+      MENETHENWHYSENOTHRESADSETASUA
+      MECORTCALFANOONTSRCOMOTHERWIL
+      LISIPISODDTOOGOWROMPLACTUANDB
+      segmented: mene THEN UHY se NOT hre SAD SET asuamecortcalfanoontsrcom OTHER UILL isipisodd TOO g OUR omplactu AND b
+  [-11.048] lines in order 3r 2 1
+      OWNOIANDONASTIERANGTHRATIARCE
+      SICOMFOREERINSCELEITASHUMMULA
+      YDROWICOMPLESHEBEEIDDENUPUNLA
+      segmented: OUN oi AND onastierangthratiarcesicom FOR eerinsceleitashummulaydrouicomple SHE beeiddenupunla
+members most often winning in pair-preserving copies: lines in order 1 3 2 (inverse) (67x); lines in order 1 3 2 (63x); lines in order 1 2 3r (33x)
+controls, 0 misread symbols: n=20, median stat -9.211, true member found 15/20, median letters right 100%, above null 95th pct 20/20
+controls, 2 misread symbols: n=20, median stat -9.723, true member found 13/20, median letters right 89%, above null 95th pct 19/20
+  example control decrypt (100% right): MYDEARFRIENDIWASSOUERYGLADOFYOURLETTERANDTHENEWSTHATYOUAREAL...
+
+----------------------------------------------------------------------------------------------------
+TB: broad transpositions (widths 2-30 etc.) + any key   (546 members)
+----------------------------------------------------------------------------------------------------
+real statistic per seed: -11.061, -11.232, -11.214, -11.224, -11.178   median -11.214
+  vs pair-preserving  n=311, mean -11.097, 95th pct -10.893, max -10.733, p = 0.8365
+  vs plain shuffle    n=311, mean -11.160, 95th pct -10.943, max -10.635, p = 0.6410
+best real decrypt (seed with the highest statistic): score -11.061, words 5
+  [-11.061] 3x29 spiral, clockwise, corner 0
+      YGROWICOMPLESHEBEEIGGENUPUNLA
+      UOWNOIANGONASTIERANDTHRATIARA
+      LCESICOMFOREERINSCELEITASHUMM
+      segmented: ygrouicomple SHE beeiggenupun LAU OUN oiangonastier AND thratiaralcesicom FOR eerinsceleitashumm
+  [-11.224] 3x29 spiral, anticlockwise, corner 0
+      QRMANATHANWHYSANOTHCASEDSATES
+      BEIAMSIPISODDTOOGOWCOMPLERTBE
+      NDOCTRELUENOONTSCROMOTHACWILL
+      segmented: qr MAN a THAN UHY sa NOT hcasedsatesbeiamsipisodd TOO goucomplertb END octreluenoontscromothac UILL
+  [-11.249] width-5 columnar, column order 34215 (inverse)
+      NOWELUSHITBYTHESOOHISTMERBEIA
+      NGEDBLLTOCATISBOLACAHINGGARDE
+      LLLENDITGUEOUEENARIFIMPREDOAL
+      segmented: NOU elushitby THE SOO HIS tmerbeiangedblltocatisbolacahinggardelll END itgueoueenarifimp RED oal
+  [-11.252] 3x29 spiral, anticlockwise, corner 0 (inverse)
+      KIFELLEGRIMTOFOURSTNOONAPLAUT
+      HNITMINGMYSINOTMRISAHSITASCAR
+      NACTUALDFORGOWOOTHHOSEDESFIUO
+      segmented: cifellegrimtof OUR stnoonap LAU thnitmingmysi NOT mrisah SIT as CAR nactuald FOR gouoothhosedesfiuo
+  [-11.317] width-5 columnar, column order 31524 (inverse)
+      ANGIUECOMFORMASOUSEMAUYWATREN
+      ARDHIMLISTERMUSTTILONDEDTHIWA
+      IAHINEDAMCSANCATEEWBYWHPASIST
+      segmented: angiuecom FOR maso USE mauyuatrenard HIM lister MUST tilondedthiuaiahinedamcsancateeubyuhpasist
+members most often winning in pair-preserving copies: 3x29 spiral, anticlockwise, corner 0 (20x); 3x29 spiral, clockwise, corner 0 (19x); 3x29 spiral, anticlockwise, corner 0 (inverse) (17x)
+controls, 0 misread symbols: n=20, median stat -9.206, true member found 17/20, median letters right 100%, above null 95th pct 20/20
+controls, 2 misread symbols: n=20, median stat -9.708, true member found 17/20, median letters right 95%, above null 95th pct 19/20
+  example control decrypt (100% right): MYDEARFRIENDIWASSOUERYGLADOFYOURLETTERANDTHENEWSTHATYOUAREAL...
+
+----------------------------------------------------------------------------------------------------
+TE: Elgar's key through every transposition   (756 members)
+----------------------------------------------------------------------------------------------------
+real statistic per seed: -14.858   median -14.858
+  vs pair-preserving  n=2080, mean -14.427, 95th pct -14.036, max -13.402, p = 0.9914
+  vs plain shuffle    n=2080, mean -14.417, 95th pct -14.000, max -13.334, p = 0.9923
+best real decrypt (seed with the highest statistic): score -14.858, words 3
+  [-14.858] every 3rd symbol within each line (inverse)
+      BULLNNTMDASYCNXEFYINDANUREOXL
+      INHNTOMEMEDSIMYAIRRNRQUYANUTE
+      ONTDAOOLETDHNOOEETHASMDHOCGDA
+      segmented: bullnntmdasycnxefyindanureoxlinhntomemedsimy AIR rnrquyanuteontdaoo LET dhnooeet HAS mdhocgda
+  [-14.887] 4-rail fence, offset 0
+      BIMEXNQENYTSNADLEANSNLYYIMRAT
+      DUESROOTHTEDLACTCRUNNLDDOEATN
+      MNHMRUEOGOHODEAAXFNUINIOYHDMO
+      segmented: bimexnqenytsnadleansnlyyimratduesroothtedlactc RUN nlddo EAT nmnhmrueogohodeaaxfn UIN IOY hdmo
+  [-14.905] 3x29 spiral, clockwise, corner 0
+      BLTACEIARXUNMSNFNNELLNDYXYDUO
+      YACDAEODLADOMHENTODGHSTOHEOTO
+      UINMEIARQATNNTEDMINUNEHOMSYRR
+      segmented: bl TACE iarxunmsnfnnellndyxyduoyacdaeodladomhentodghstoheoto UIN meiarqatnntedminunehomsyrr
+  [-14.912] every 61th symbol, wrapping round
+      BORXOMELSULEQUTILDYOTHANNNLOR
+      IAOTMEUNERNCTNSHNDAYMESNNMEYD
+      UEIHTFOHXCOIAGENDOYATARDDNAMD
+      segmented: borxomelsulequtildyo THAN nnloriaotmeunernctnshn DAY mesnnmeydueihtfohxcoiag END oyatarddnamd
+  [-14.929] width-10 columnar, columns reversed (inverse)
+      ADTOEIXNRBLOOMDAYNXLDTESMRDEU
+      TONHYIQULNAEEORNAOLMCAHTRUTIN
+      SEDMSYNNNDNICOHUENMYFAADGOHTE
+      segmented: adtoeixnrbloom DAY nxldtesmrdeutonhyiqulnaeeornaolmcahtrutinsedmsynnndnicohuenmyfaadgohte
+members most often winning in pair-preserving copies: width-21 columnar, columns in order (15x); every 43th symbol, wrapping round (14x); ragged grid, anti-diagonals upward (12x)
+controls, 0 misread symbols: n=20, median stat -9.206, true member found 19/20, median letters right 100%, above null 95th pct 20/20
+controls, 2 misread symbols: n=20, median stat -9.795, true member found 15/20, median letters right 98%, above null 95th pct 20/20
+  example control decrypt (100% right): MYDEARFRIENDIWASSOUERYGLADOFYOURLETTERANDTHENEWSTHATYOUAREAL...
+
+----------------------------------------------------------------------------------------------------
+PA: Elgar's key + period-3 letter shift   (10 members)
+----------------------------------------------------------------------------------------------------
+real statistic per seed: -15.020   median -15.020
+  vs pair-preserving  n=2080, mean -15.021, 95th pct -14.605, max -14.036, p = 0.4565
+  vs plain shuffle    n=2080, mean -15.014, 95th pct -14.497, max -13.329, p = 0.4599
+best real decrypt (seed with the highest statistic): score -15.020, words 2
+  [-15.020] each line reversed, cycle runs through  shifts 0,15,0
+      OLDYNYDDLLUNNWNSCNUNRAZECQTLR
+      OUORROSMEHEDUNZMDUTNDTAGRAZEM
+      DIASDAUODBADEMHUNTEDGYSTEHEET
+      segmented: OLD ynyddllunnunscnunrasecqtlrouorrosmehedunsmdutndtagrasemdiasdauod BAD emhuntedgysteheet
+  [-15.185] forward, cycle restarts each line  shifts 1,0,1
+      CLUBCFKASYUONSOGNOFLMODZYYEWO
+      KNNFIBSQBUNOUEENIOWNFIONTYSSY
+      WPUOFIOUTHHEOUOEINOEBLEPEBECB
+      segmented: clubcfcasyuonsognoflmodsyyeuocnnfibsqbu NOU eeni OUN fiontyssyupuofi OUT hheouoeinoeblepebecb
+  [-15.267] boustrophedon B, cycle restarts each line  shifts 0,6,1
+      OBEYDZDTMLLONMOSSOUDSAPFCGULH
+      ITNEPBRXBTTOTLEMPOUTFHUNSESRE
+      WOAIEALPDRBDUNHLOTUEGOTTUIEUU
+      segmented: obeydsdtmllonmossoudsapfcgulhitnepbrxbttotlemp OUT fhunsesreuoaiealpdrbdunh LOT ue GOT tuieuu
+  [-15.277] boustrophedon B, cycle runs through  shifts 0,0,0
+      OUDYXYDNLLENNFNSMNUXRAIECATLB
+      INMEIARQATNNTEDMINUNEHOMSYRRY
+      UOACDAEODLADOMHENTODGHSTOHEOT
+      segmented: oudyxydnllennfnsmnuxraiecatlbinmeiarqatnntedminunehomsyrryuoacdaeodladomhentodghstoheot
+  [-15.389] fully reversed, cycle runs through  shifts 0,0,4
+      ACHAESDLEDOQHERTOHGHXTOMEOYOU
+      CRRCSMSHERUNNMDITNRTAURANEMRI
+      OZDYBYDRLLINNKNSQNUBRANECETLF
+      segmented: achaesdledoq HER tohghxtomeo YOU crrcsm SHE RUN nmditnrtauranemriosdybydrllinncnsqnubranecetlf
+members most often winning in pair-preserving copies: boustrophedon A, cycle runs through (294x); forward, cycle runs through (277x); fully reversed, cycle runs through (264x)
+controls, 0 misread symbols: n=20, median stat -9.988, true member found 20/20, median letters right 97%, above null 95th pct 20/20
+controls, 2 misread symbols: n=20, median stat -10.512, true member found 19/20, median letters right 94%, above null 95th pct 20/20
+  example control decrypt (100% right): MANYTHANKSFORTHEPHOTOGRAPHWHICHISAUERYGOODLIKENESSTHOUGHITHI...
+
+----------------------------------------------------------------------------------------------------
+PB: Elgar's key + period-3 symbol turns   (10 members)
+----------------------------------------------------------------------------------------------------
+real statistic per seed: -14.211   median -14.211
+  vs pair-preserving  n=1048, mean -14.203, 95th pct -13.791, max -13.317, p = 0.4728
+  vs plain shuffle    n=1048, mean -14.260, 95th pct -13.864, max -13.427, p = 0.3794
+best real decrypt (seed with the highest statistic): score -14.211, words 2
+  [-14.211] each line reversed, cycle runs through  turns rot4 | rot4+loop2 | mirror+rot2+loop2
+      UNLRRWISEAISTHSMUSORPLFIIKMAI
+      TOPPYPOSTCHSNTFUIIMTSMLYPLFIS
+      SALLLLITIBHITUEISNTLFDONTCHTM
+      segmented: unlrruiseaisthsmusorplfiicmai TOP pypostchsntfuiimtsmlyplfiss ALL llitibhitueisntlfdontchtm
+  [-14.316] fully reversed, cycle restarts each line  turns none | none | rot3+loop1
+      ACNAECDLRDOBHEATONGHKTOUEOLOU
+      ERRESMCHEAUNTMDOTNATAGRATEMAI
+      OUNYXEDNYLEANFASMAUXHAIOCALLB
+      segmented: acnaecdlrdobh EAT onghctoueol OUER resmcheauntmdotnatagratemai OUN yxednyleanfasmauxhaioc ALL b
+  [-14.402] fully reversed, cycle runs through  turns rot4 | rot5+loop2 | mirror+rot2+loop2
+      LOLLYTITHIEUEYSNELFRONECHEMUH
+      WYAWMFTEYSODASWINDSNNRYNAHFSD
+      ENILYRWSATITDKTGUTHYYNAHOHNTI
+      segmented: lollytithieueysnelfr ONE chemuhuyaumfteysodas UIN dsnnrynahfsdenilyrusatitdctguthyynahohnti
+  [-14.446] forward, cycle restarts each line  turns rot4 | none | rot4
+      KLNLCHDAYQUTSSTGNTHLATDRQYIOO
+      DNSHILYQLNNTNEISITONHEOSMYYYY
+      OUNOHEONMHFIONTEESOILLIUELICL
+      segmented: clnlch DAY qutsstgnthlatdrqyioodnshilyqlnntnei SIT onheosmyyyy OUN oheonmhfionteesoilliuelicl
+  [-14.464] each line reversed, cycle restarts each line  turns none | none | rot3+loop1
+      OUNYXEDNYLEANFASMAUXHAIOCALLB
+      OUERRESMCHEAUNTMDOTNATAGRATEM
+      AIACNAECDLRDOBHEATONGHKTOUEOL
+      segmented: OUN yxednyleanfasmauxhaioc ALL b OUER resmcheauntmdotnatagratemaiacnaecdlrdobh EAT onghctoueol
+members most often winning in pair-preserving copies: fully reversed, cycle runs through (148x); forward, cycle runs through (129x); forward, cycle restarts each line (127x)
+controls, 0 misread symbols: n=20, median stat -9.206, true member found 20/20, median letters right 100%, above null 95th pct 20/20
+controls, 2 misread symbols: n=20, median stat -9.767, true member found 20/20, median letters right 98%, above null 95th pct 20/20
+  example control decrypt (100% right): MYDEARFRIENDIWASSOUERYGLADOFYOURLETTERANDTHENEWSTHATYOUAREAL...
+
+----------------------------------------------------------------------------------------------------
+PC: any key + period-3 letter shift   (2 members)
+----------------------------------------------------------------------------------------------------
+real statistic per seed: -11.074, -11.074, -11.087, -11.197, -11.171   median -11.087
+  vs pair-preserving  n=262, mean -11.118, 95th pct -10.886, max -10.590, p = 0.4106
+  vs plain shuffle    n=262, mean -11.378, 95th pct -11.096, max -10.865, p = 0.0494
+best real decrypt (seed with the highest statistic): score -11.074, words 8
+  [-11.074] forward, cycle restarts each line  shifts 0,0,0
+      GSRACTUALFMEDWEBEETSSENIFINMO
+      UEDTUALPAREERTNDUEMETHODWILLI
+      MOROTHORWHYNORETHDONASNOTANCA
+      segmented: gsractualfmeduebeetssenifinmouedtualp ARE ertnduemethod UILL imorothor UHY NOR ethdonas NOT anca
+  [-11.159] forward, cycle runs through  shifts 0,0,0
+      XLNOUTCOMPRESWEBEETLLEDAPADRI
+      CESTCOMFONEENTDSCERETHISWAMMA
+      RINITHINWHYDINETHSIDOLDITODUO
+      segmented: xln OUT compresuebeetlledapadr ICE stcomf ONE entdscere THIS uammarinithin UHY di NET hsid OLD itoduo
+members most often winning in pair-preserving copies: forward, cycle restarts each line (147x); forward, cycle runs through (115x)
+controls, 0 misread symbols: n=20, median stat -9.353, true member found 20/20, median letters right 100%, above null 95th pct 18/20
+controls, 2 misread symbols: n=20, median stat -9.806, true member found 20/20, median letters right 93%, above null 95th pct 16/20
+  example control decrypt (100% right): MYDEARFRIENDIWASSOUERYGLADOFYOURLETTERANDTHENEWSTHATYOUAREAL...
+
+----------------------------------------------------------------------------------------------------
+PD: any key + period-3 symbol turns   (10 members)
+----------------------------------------------------------------------------------------------------
+real statistic per seed: -11.020, -11.107, -11.086, -11.086, -11.206   median -11.086
+  vs pair-preserving  n=521, mean -11.037, 95th pct -10.815, max -10.461, p = 0.6437
+  vs plain shuffle    n=521, mean -11.166, 95th pct -10.923, max -10.605, p = 0.2778
+best real decrypt (seed with the highest statistic): score -11.020, words 4
+  [-11.020] forward, cycle runs through  turns none | rot5+loop2 | none
+      GSSANTHERYOECKEDIETSWEPLYWIFT
+      HEDTHERBESEISTPCHIFELONDULARL
+      ONSTTOTSURKITSELOCTIASINLAINA
+      segmented: gssant HER yoeccedietsueplyuif THE dt HER beseistpchifelondularlonsttotsurc ITS eloctiasinlaina
+  [-11.107] fully reversed, cycle runs through  turns none | rot5+loop2 | none
+      IHAILHASIATBOLESTADMYSTOTTSHO
+      LMILYWHOLECANBUTSAESEPMENTWEN
+      TCARFLUERSTEAWEDBEOFMENTHISSG
+      segmented: ihail HAS iatbolestadmystottsholmily UHO le CAN BUT saesepmentuent CAR fluers TEA uedbeofmen THIS sg
+  [-11.196] boustrophedon A, cycle runs through  turns none | mirror+rot6+loop2 | none
+      WNRIDAYALPRETHEDTEANCEIMPOSHE
+      GHOLLOFTENATHECTSURETRIMLICAT
+      TYREANERFQBSEREUNTESINSGUISDI
+      segmented: unri DAY alpre THE d TEA nceimpo SHE gholl OFTEN a THE ctsuretrimlicattyreanerfqbsereuntesinsguisdi
+  [-11.242] forward, cycle restarts each line  turns none | none | none
+      KUNOWTHOLDMESBEFEETUUERADARMI
+      HESTHOLGONEENTRSHEMETYISBALLA
+      MINITYINBYPRINETYSIROURITORWO
+      segmented: cun OUT h OLD mesbefeetuuerad ARM ihesthol GONE entr SHE metyisb ALL aminityinbypri NET y SIR OUR itoruo
+  [-11.332] fully reversed, cycle restarts each line  turns none | none | rot3+loop1
+      IBDITBELYEAGOTISADFORSANTALAN
+      TYYTCHBOTINDSHEASDISIFYISTHIM
+      ANDUPTEDULTIDWICHINPOIMABILLG
+      segmented: ibditbelyea GOT i SAD FOR santalantyytchbotind SHE asdisifyist HIM AND uptedultiduichinpoimabillg
+members most often winning in pair-preserving copies: forward, cycle restarts each line (110x); forward, cycle runs through (100x); fully reversed, cycle runs through (58x)
+controls, 0 misread symbols: n=20, median stat -9.289, true member found 19/20, median letters right 100%, above null 95th pct 19/20
+controls, 2 misread symbols: n=20, median stat -9.598, true member found 18/20, median letters right 94%, above null 95th pct 15/20
+  example control decrypt (100% right): MYDEARFRIENDIWASSOUERYGLADOFYOURLETTERANDTHENEWSTHATYOUAREAL...
+
+----------------------------------------------------------------------------------------------------
+PE: three independent alphabets in turn   (10 members)
+----------------------------------------------------------------------------------------------------
+real statistic per seed: -9.168, -9.317, -9.183, -9.390, -9.415   median -9.317
+  vs pair-preserving  n=1039, mean -9.213, 95th pct -9.037, max -8.774, p = 0.8654
+  vs plain shuffle    n=1036, mean -9.320, 95th pct -9.159, max -8.991, p = 0.4754
+best real decrypt (seed with the highest statistic): score -9.168, words 33
+  [-9.168] forward, cycle runs through
+      FORTRANDERSSHISWASSOMETHRUNCE
+      WELANDEDDREARSTINAUENTALLIFEI
+      SPLEAUERYCOMERENTHENTONANDMRD
+      segmented: FOR tr AND erss HIS UAS SOME th RUN ceuel AND eddr EAR stinauental LIFE isp LEAUE ry COME ren THEN ton AND mrd
+  [-9.221] each line reversed, cycle runs through
+      BULLIKETFOREICEWHENITANDMYSOM
+      INETHERSANDTHINPERSITSASTANDS
+      TOALLARIEDMEAPPRETALFORTANDAS
+      segmented: bul LICE t FOR e ICE UHEN it AND mysomi NET HER s AND thinpers ITS ast AND sto ALL ariedmeappretal FOR t AND as
+  [-9.420] fully reversed, cycle runs through
+      GAUGHTOONOTHTHESTUDISSTINTAIR
+      DANDBUTTHECLOUERSLESSMASONUER
+      TYOFWHEEFORELLEDHERWASONANSOF
+      segmented: gaugh TOO NOT h THE studisstint AIR d AND BUT THE cl OUER slessmasonuertyofuhee FOR elled HER UAS onansof
+  [-9.427] fully reversed, cycle restarts each line
+      EPRETILLALOUSTERORMYFROMDOYOU
+      SINSTHISTEHINGFORIERELIENDHEC
+      OURWASLITATENCETHEHADEDOUEYAR
+      segmented: epretillalousterormy FROM do YOU sins THIS tehing FOR iereli END hec OUR UAS lita TEN ce THE HAD edoueyar
+  [-9.471] boustrophedon A, cycle runs through
+      ASSOMEFULWHISPICTITSMILYWITHE
+      WHILLIASENTTHINGROSITSOFLONES
+      TOBEENESEARRESIONSETOSTYOURMU
+      segmented: as SOME fulu HIS pict ITS mily UITH euhilliasent THING ros ITS ofl ONE sto BEEN es EAR resion SET ost YOUR mu
+members most often winning in pair-preserving copies: forward, cycle restarts each line (188x); forward, cycle runs through (142x); fully reversed, cycle restarts each line (118x)
+controls, 0 misread symbols: n=20, median stat -9.268, true member found 5/20, median letters right 7%, above null 95th pct 1/20
+controls, 2 misread symbols: n=20, median stat -9.227, true member found 9/20, median letters right 8%, above null 95th pct 3/20
+  example control decrypt (74% right): COMPLEANDSTOFWITHASISTHESALLERWHENTHEFORDENINATITSWESTANDWEM...
+
+Run log (last 20):
+  PA shuffle x16 in 1.02s  (2080/3000)
+  PB doublet x16 in 7.86s  (1048/1500)
+  PB shuffle x16 in 8.02s  (1048/1500)
+  T3 doublet x1 in 40.16s  (1033/1500)
+  T3 shuffle x1 in 40.02s  (1033/1500)
+  TE doublet x16 in 0.04s  (2080/3000)
+  TE shuffle x16 in 0.03s  (2080/3000)
+  PE doublet x3 in 12.09s  (1036/1500)
+  PE shuffle x3 in 12.18s  (1036/1500)
+  T3 doublet x1 in 39.64s  (1034/1500)
+  T3 shuffle x1 in 39.57s  (1034/1500)
+  TB doublet x1 in 1m 42.9s  (311/450)
+  TB shuffle x1 in 1m 42.4s  (311/450)
+  T3 doublet x1 in 40.47s  (1035/1500)
+  T3 shuffle x1 in 39.18s  (1035/1500)
+  T3 doublet x1 in 39.97s  (1036/1500)
+  T3 shuffle x1 in 39.99s  (1036/1500)
+  PD doublet x3 in 2m 50.0s  (521/750)
+  PD shuffle x3 in 2m 59.3s  (521/750)
+  PE doublet x3 in 12.79s  (1039/1500)

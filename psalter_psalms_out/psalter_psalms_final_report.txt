@@ -1,0 +1,92 @@
+DORABELLA QUOTATION TEST REPORT  (source folder: Bible_Psalter_Psalms)
+written 2026-10-07 01:21:03   compute time 9h 47m 33.9s   sessions 2
+phrases of 12-30 letters: 204,464; eligible after the rule: 204,464
+
+source files (words, new phrases):  Bible_Psalter_Psalms (45653, 204464)
+
+====================================================================================================
+HEADLINE (p vs PAIR-PRESERVING copies; line to beat p < 0.025)
+====================================================================================================
+Q1 best completion   real -11.972   pair n=1000 p=0.4995   shuffle n=1000 p=0.0749   power 97%
+Q2 long phrases fit  real 21   pair mean 21.87   p=0.4186
+
+----------------------------------------------------------------------------------------------------
+REAL CIPHER
+----------------------------------------------------------------------------------------------------
+Q1 per seed: -11.972 (TROUBLEDWHEN), -11.972 (TROUBLEDWHEN), -11.972 (TROUBLEDWHEN), -11.972 (TROUBLEDWHEN), -11.972 (TROUBLEDWHEN)
+placements tried: 1462
+  [-11.972] phrase TROUBLEDWHEN (Bible_Psalter_Psalms) in fully reversed
+      EISEWASFESARYWONASMYSNAYWANAU
+      ILLITRAYWOUODRSWNOONEPLEDWROD
+      AUSICITOFFWOOGOTROUBLEDWHENFC
+      words: eise WAS fesary WON asmys NAY wa NAU ILL i TRAY wouodrsw NOON ep LED w ROD au SIC it OFF woogo TROUBLED WHEN fc
+  [-11.972] phrase TROUBLEDWHEN (Bible_Psalter_Psalms) in fully reversed
+      EISEWASFESARYWONASMYSNAYWANAU
+      ILLITRAYWOUODRSWNOONEPLEDWROD
+      AUSICITOFFWOOGOTROUBLEDWHENFB
+      words: eise WAS fesary WON asmys NAY wa NAU ILL i TRAY wouodrsw NOON ep LED w ROD au SIC it OFF woogo TROUBLED WHEN fb
+  [-11.986] phrase FOREUERSIHON (Bible_Psalter_Psalms) in forward
+      GFLAYTHACUSONDOMOOTFFOREUERSI
+      HONTHACKALOOLTRNHOSOTWINDECCE
+      SILITWILDWBRILOTWNIDAFRITAREA
+      words: gf LAY thacu SON DOM ootf FOREUER si HON t HACK a LOO ltrnhoso TWIN DEC CES i LIT WILD wbri LOT wnida FRI t AREA
+  [-12.014] phrase FOREUERSIHON (Bible_Psalter_Psalms) in forward
+      UFDAYCHALUSONTOWOOCFFOREUERSI
+      HONCEALMADOODCRNHOSOCKINTELLE
+      SIDICKIDRKPRIDOCKNITAFRICATEA
+      words: uf DAY chalus ONTO woocf FOREUER sih ONCE alm ADO odcrnho SOC k INTEL LES i DICK idrkpri DOC KNIT AFRICA TEA
+  [-12.020] phrase THEWAYOFLYING (Bible_Psalter_Psalms) in forward
+      URSIBLYINTWOFCOPOOLRROCHTHEWA
+      YOFLYINGISOOSLEFYOWOLDAFCHNNH
+      WASALDASEDMEASOLDFACIREALICHI
+      words: ursiblyin TWO fco POOL rroch THE WAY o FLYING ISO oslefyow OLD afchnnh WAS al DAS edmea SOLD faci REAL i CHI
+
+long phrases (14+ letters) that fit the real cipher's pattern: 21
+  NOTHEARMEBUTGOD                  1 place(s)   from Bible_Psalter_Psalms
+  OFTHYMERCIESAND                  1 place(s)   from Bible_Psalter_Psalms
+  SALUATIONWHENMY                  3 place(s)   from Bible_Psalter_Psalms
+  AMTHYSALUATION                   1 place(s)   from Bible_Psalter_Psalms
+  ANDBROUGHTTHEM                   1 place(s)   from Bible_Psalter_Psalms
+  ANDWALKNOTINMY                   1 place(s)   from Bible_Psalter_Psalms
+  BACKNEITHEROUR                   1 place(s)   from Bible_Psalter_Psalms
+  DOWEGIUETHANKS                   2 place(s)   from Bible_Psalter_Psalms
+  FIGHTMYHOPEAND                   2 place(s)   from Bible_Psalter_Psalms
+  GODANDWOULDNOT                   1 place(s)   from Bible_Psalter_Psalms
+  HISHOLYNAMEFOR                   1 place(s)   from Bible_Psalter_Psalms
+  IACOBWHOTURNED                   2 place(s)   from Bible_Psalter_Psalms
+  LABOURSOFTHINE                   2 place(s)   from Bible_Psalter_Psalms
+  LORDHAUEIPUTMY                   3 place(s)   from Bible_Psalter_Psalms
+  MEANDFIGHTTHOU                   1 place(s)   from Bible_Psalter_Psalms
+  MERCYISGREATER                   2 place(s)   from Bible_Psalter_Psalms
+  METHOUARTMYSON                   1 place(s)   from Bible_Psalter_Psalms
+  PLAGUECOMENIGH                   1 place(s)   from Bible_Psalter_Psalms
+  STONYROCKANDMY                   1 place(s)   from Bible_Psalter_Psalms
+  THEGROUNDWHICH                   1 place(s)   from Bible_Psalter_Psalms
+  UPMIGHTYWATERS                   3 place(s)   from Bible_Psalter_Psalms
+Q1 vs pair-preserving  n=1000, mean -11.959, 95th pct -11.518, max -11.080
+Q1 vs plain shuffle    n=1000, mean -12.328, 95th pct -11.918, max -11.055
+controls: n=60, median -9.637, planted phrase found 9/60, median letters right 97%
+  example: planted WEWALKEDUPTHEHILLAFTERLUNCHANDTHEUIEWOUERTHEUALLEYWASLOU
+           found   WEWALKEDUPTHEHILLAFTERLUNCHANDTHEUIEWOUERTHEUALLEYWASLOU
+
+Run log (last 20):
+  doublet in 27.95s  (991/1000)
+  shuffle in 29.63s  (991/1000)
+  doublet in 23.02s  (992/1000)
+  shuffle in 26.86s  (992/1000)
+  doublet in 7.82s  (993/1000)
+  shuffle in 33.33s  (993/1000)
+  doublet in 10.33s  (994/1000)
+  shuffle in 21.19s  (994/1000)
+  doublet in 21.57s  (995/1000)
+  shuffle in 18.28s  (995/1000)
+  doublet in 10.37s  (996/1000)
+  shuffle in 15.25s  (996/1000)
+  doublet in 10.14s  (997/1000)
+  shuffle in 16.72s  (997/1000)
+  doublet in 22.19s  (998/1000)
+  shuffle in 16.99s  (998/1000)
+  doublet in 18.11s  (999/1000)
+  shuffle in 15.66s  (999/1000)
+  doublet in 17.53s  (1000/1000)
+  shuffle in 15.38s  (1000/1000)

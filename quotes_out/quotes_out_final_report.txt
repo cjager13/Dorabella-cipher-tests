@@ -1,0 +1,75 @@
+DORABELLA QUOTATION TEST REPORT  (source folder: quotes)
+written 2026-10-06 13:04:42   compute time 3h 53m 15.0s   sessions 1
+phrases of 12-30 letters: 44,485; eligible after the rule: 44,485
+
+source files (words, new phrases):  As_I_Laye_a-Thynkynge (278, 1104); Bavarian_Dance (616, 2823); Is_She_Not_Passing_Fair (165, 691); King_Olaf (3667, 14691); Like_to_the_Damask_Rose (363, 1663); Love_Alone_Will_Stay (51, 210); My_Love_Dwelt_in_a_Northern_Land (160, 705); O_Happy_Eyes (117, 586); Queen_Marys_Song (172, 712); Rondel (354, 970); Spanish_Serenade (90, 316); The_Banner_of_St_George (1117, 4974); The_Black_Knight (643, 2724); The_Light_of_Life (1904, 8928); The_Shepherds_Song (314, 1370); The_Wind_at_Dawn (140, 689); The_snow (127, 635); Through_the_Long_Days (171, 694)
+
+====================================================================================================
+HEADLINE (p vs PAIR-PRESERVING copies; line to beat p < 0.025)
+====================================================================================================
+Q1 best completion   real -12.464   pair n=1025 p=0.7466   shuffle n=1025 p=0.2924   power 98%
+Q2 long phrases fit  real 4   pair mean 5.15   p=0.5331
+
+----------------------------------------------------------------------------------------------------
+REAL CIPHER
+----------------------------------------------------------------------------------------------------
+Q1 per seed: -12.464 (AWORLDOFCARE), -12.464 (AWORLDOFCARE), -12.464 (AWORLDOFCARE), -12.464 (AWORLDOFCARE), -12.464 (AWORLDOFCARE)
+placements tried: 360
+  [-12.464] phrase AWORLDOFCARE (The_Banner_of_St_George) in boustrophedon B
+      ISTYARMECCLEEXEMPESAWORLDOFCA
+      REPLYOWNOFEEFLTPRESELUIPMYWWY
+      SIOYTOLITCOMIPULEFITBUTFIULIF
+      words: IST y ARM ecc LEE xempesa WORLD ofca REPLY OWN o FEE fltp RES el UIP mywwys IOY to LIT COM ipule FIT BUT f IUL if
+  [-12.501] phrase GLANCEASWORD (The_Banner_of_St_George) in fully reversed
+      LKILNSOFLISCUNETSOQUITSUNSTSW
+      RGGRICSUNEWEACONTEETLYGLANCEA
+      SWORDRIEFFNEEMEICEWHGLANKLTFD
+      words: lkilnsofliscu NET so QUIT SUNS tswrgg RIC su NEW ea CON TEE tly GLANCE a SWORD r IEFF neeme ICE whg LANK ltfd
+  [-12.501] phrase GLANCEASWORD (The_Banner_of_St_George) in fully reversed
+      LKILNSOFLISCUNETSOQUITSUNSTSW
+      RGGRICSUNEWEACONTEETLYGLANCEA
+      SWORDRIEFFNEEMEICEWHGLANKLTFH
+      words: lkilnsofliscu NET so QUIT SUNS tswrgg RIC su NEW ea CON TEE tly GLANCE a SWORD r IEFF neeme ICE whg LANK ltfh
+  [-12.677] phrase ARMANDHOPETO (The_Banner_of_St_George) in fully reversed
+      OTSOEISFORIMUEALISCURLIUEILIN
+      KHHKRMIUEANAPMSELAALOWHOPEMAP
+      INSKYPRAFFEAAGARMANDHOPETOLFD
+      words: otsoeisfo RIM ue ALI s CURL i UEIL INK hhkrmiue ANA pmselaa LOW HOPE ma PINS kypraffeaag ARM AND HOPE tolfd
+  [-12.682] phrase WITHMOURNFUL (The_Black_Knight) in each line reversed
+      CHADBRATSSNTTYTWITHMOURNFULSB
+      CHDOODWICENTHTRIANLTTLUGOURNI
+      TRUDAUNCASUACIENTLCAPEALCENCL
+      words: CHAD b RATS snttyt WITH MOURNFUL sbchdoodwi CENT htr IAN lttlug OUR nitrudaun CAS uaci ENT lca PEAL cencl
+
+long phrases (14+ letters) that fit the real cipher's pattern: 4
+  FADESTHEMORNING                  1 place(s)   from Like_to_the_Damask_Rose
+  BELOWINTRIUMPH                   1 place(s)   from Bavarian_Dance
+  OFTHEINSULTAND                   1 place(s)   from King_Olaf
+  WEUICTORSWOULD                   1 place(s)   from Bavarian_Dance
+Q1 vs pair-preserving  n=1025, mean -12.283, 95th pct -11.779, max -11.260
+Q1 vs plain shuffle    n=1025, mean -12.610, 95th pct -12.147, max -11.487
+controls: n=60, median -9.792, planted phrase found 13/60, median letters right 95%
+  example: planted ITWASKINDOFYOUTOREMEMBERMYBIRTHDAYANDTHELITTLEBOOKYOUSEN
+           found   ITWASKINDOFYOUTOREMEMBERMYBIRTHDAYANDTHELITTLEBOOKYOUSEN
+
+Run log (last 20):
+  doublet in 19.43s  (1016/1500)
+  shuffle in 4.50s  (1016/1500)
+  doublet in 7.92s  (1017/1500)
+  shuffle in 4.33s  (1017/1500)
+  doublet in 8.35s  (1018/1500)
+  shuffle in 15.48s  (1018/1500)
+  doublet in 5.25s  (1019/1500)
+  shuffle in 9.54s  (1019/1500)
+  doublet in 8.31s  (1020/1500)
+  shuffle in 10.70s  (1020/1500)
+  doublet in 6.27s  (1021/1500)
+  shuffle in 5.96s  (1021/1500)
+  doublet in 8.34s  (1022/1500)
+  shuffle in 6.93s  (1022/1500)
+  doublet in 5.81s  (1023/1500)
+  shuffle in 5.01s  (1023/1500)
+  doublet in 5.29s  (1024/1500)
+  shuffle in 8.65s  (1024/1500)
+  doublet in 7.89s  (1025/1500)
+  shuffle in 12.25s  (1025/1500)

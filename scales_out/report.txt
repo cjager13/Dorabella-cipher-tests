@@ -1,0 +1,155 @@
+DORABELLA SCALES REPORT  (a musical key as the cipher key)
+written 2026-10-10 16:26:52   compute time 6h 05m 47.2s   sessions 1
+settings: real seeds 5 (median used), annealing 6 restarts x 10000 steps per setting
+cipher: Dorabella_transcription.csv
+Bonferroni line for one of 3 families: p < 0.0167
+
+========================================================================================================
+HEADLINE (statistic = best quadgram score over the family's date settings; real = median of seeds;
+          p_rand = real cipher with the DATE keys vs the real cipher with RANDOM keys of the same size;
+          power = planted controls above the 95th percentile of the pair-preserving copies)
+========================================================================================================
+fam  settings     real n_pair  p_pair n_shuf  p_shuf n_rand  p_rand  power  verdict
+DE        172  -14.952   5000  0.4123   5000  0.4001   5000  0.9544   100%  chance level
+DA        156  -11.581    600  0.8619    300  0.3189    300  0.4917    90%  chance level
+DT         16  -11.787   1000  0.7163    500  0.6487    500  0.7964    95%  chance level
+
+A family matters only if the real cipher beats the pair-preserving copies AND the
+random-number keys past the Bonferroni line, its controls show it can find a message,
+and the decrypt reads as English.
+
+--------------------------------------------------------------------------------------------------------
+DE: Elgar's key + scales-key shifts, turns and transpositions (no search)   (172 settings)
+--------------------------------------------------------------------------------------------------------
+real statistic per seed: -14.952   median -14.952
+  vs pair-preserving     n=5000, mean -14.996, 95th pct -14.478, max -13.672, p = 0.4123
+  vs plain shuffle       n=5000, mean -15.012, 95th pct -14.462, max -13.582, p = 0.4001
+  vs random-number keys  n=5000, mean -14.746, 95th pct -14.365, max -14.024, p = 0.9544
+best real decrypts (seed with the highest statistic):
+  [-14.952] 2212212 (Mixolydian steps) | columnar width 7
+      TXNYNAMOUTNLAEMLDINUYOGMEBANN
+      OREERHODDLRFDIQDHYOTACAUNXMTI
+      MOSEDCNEYENNSTHHOISLUATNREDOA
+      words: txny NAM OUT nlaemldinuyogme BAN NOR eerh ODD lrfdiqdhyotacaunxm TIM osedcne YEN nsthhoisl UAT n RED oa
+  [-14.982] 2122122 (natural minor steps) | columnar width 7
+      LRFDIQDHYOTACCNEYENNSTHHOBANN
+      OREERHODDTXNYNAMOUTNLAAUNXMTI
+      MOSEDEMLDINUYOGMEISLUATNREDOA
+      words: lrfdiqdhyot ACC ne YEN nsthho BAN NOR eerh ODD txny NAM OUT nlaaunxm TIM ose DEM ldinuyogmeisl UAT n RED oa
+  [-14.991] 2122212 (Dorian steps) | columnar width 7
+      LRFDIQDHYOTACEMLDINUYOGMEBANN
+      OREERHODDTXNYNAMOUTNLAAUNXMTI
+      MOSEDCNEYENNSTHHOISLUATNREDOA
+      words: lrfdiqdhyot ACE mldinuyogme BAN NOR eerh ODD txny NAM OUT nlaaunxm TIM osedcne YEN nsthhoisl UAT n RED oa
+  [-15.004] 1222122 (Phrygian steps) | columnar width 7
+      BANNOREERHODDCNEYENNSTHHOLRFD
+      IQDHYOTACTXNYNAMOUTNLAAUNXMTI
+      MOSEDEMLDINUYOGMEISLUATNREDOA
+      words: BAN NOR eerh ODD cne YEN nsthholrfdiqdhyot ACT xny NAM OUT nlaaunxm TIM ose DEM ldinuyogmeisl UAT n RED oa
+  [-15.019] 2122131 (harmonic minor steps) | columnar width 7
+      LRFDIQDHYOTACCNEYENNSTHHOISLU
+      ATNREDOABANNOREERHODDTXNYNAMO
+      UTNLAAUNXMTIMOSEDEMLDINUYOGME
+      words: lrfdiqdhyot ACC ne YEN nsthhoisl UAT n RED oa BAN NOR eerh ODD txny NAM OUT nlaaunxm TIM ose DEM ldinuyogme
+controls, 0 misread symbols: n=20, median stat -9.368, true setting found 20/20, median letters right 100%, above null 95th pct 20/20
+controls, 2 misread symbols: n=20, median stat -9.852, true setting found 20/20, median letters right 98%, above null 95th pct 20/20
+  example control (100% right): planted MYDEARFRIENDIWASSOUERYGLADOFYOURLETTERANDTHENEWSTHATYOUA
+                                   found   MYDEARFRIENDIWASSOUERYGLADOFYOURLETTERANDTHENEWSTHATYOUA
+
+--------------------------------------------------------------------------------------------------------
+DA: any key + scales-key letter shift / rotate / loop step   (156 settings)
+--------------------------------------------------------------------------------------------------------
+real statistic per seed: -11.629, -11.541, -11.594, -11.431, -11.581   median -11.581
+  vs pair-preserving     n=600, mean -11.407, 95th pct -11.128, max -10.705, p = 0.8619
+  vs plain shuffle       n=300, mean -11.635, 95th pct -11.366, max -11.164, p = 0.3189
+  vs random-number keys  n=300, mean -11.550, 95th pct -11.203, max -10.864, p = 0.4917
+best real decrypts (seed with the highest statistic):
+  [-11.431] 2122212 (Dorian steps) | loop step - | runs through
+      GQUIDWHICABEEMENEESQKESPAPSBO
+      TERSTILYIUEOUSSRHEMESFORMALLA
+      BOURSTRUMTHNOBESTEONDKNOWINGI
+      words: g QUID whica BEE MEN eesqke SPA psboters TIL yiueoussrhemes FORMAL LABOURS t RUM thno BEST eond KNOWING i
+  [-11.624] 2122212 (Dorian steps) | letter shift - | restarts each line
+      BEUNFIENDMISUPSASSHEDSBYMYBIR
+      ETTHEOCLOUSSWHAUESITHOSTPYDCY
+      KRUSHORWPORARUTHOURANEARINAFO
+      words: beun FIEND mi SUP SAS SHED sbymybiret THE oc LOU ssw HAUE SIT HOST pydcyk RUSH orw POR a RUTH OUR a NEAR inafo
+  [-11.698] 0,2,3,5,7,8,11,12 (harmonic minor notes) | loop step + | runs through
+      OKDOORIFLUNSENSHESTKZSHUPARDS
+      ISSTIFCCOMEEMTHEISNERBEENALLA
+      NENERBYMMGGHEDERBYSHOWRETOTFO
+      words: ok DOOR i FLU n SEN sh EST kzshu PAR dsisstifc COME em THE ISN er BEEN ALLAN enerbymmgghe DERBY SHOW retotfo
+  [-11.778] 2122122 (natural minor steps) | loop step - | restarts each line
+      CKSPCOMPLIGATHEREENDDEOWIIRGA
+      MATOUPFLYSEASOREMEHEOUTTHIFFW
+      HASTOUTSHUMRAGEOUEARYDRANPRCP
+      words: cksp COMP li GATHER e END deowiirga MAT oup FLY SEA SORE mehe OUT thiffw HAS t OUT shum RAGE ou EAR yd RAN prcp
+  [-11.790] 2122221 (melodic minor steps) | loop step - | restarts each line
+      CHSOUNDOFPLEISEREENWHENBPBRMA
+      GAINGOFFUSEESTREGELETDIIMBYFB
+      MASINDASSDGRASETDEAROWNATORUO
+      words: ch SOUND ofpleis ERE en WHEN bpbrm AGAIN g OFF u SEES t REG e LET d IIM byfbm ASIN DAS sd GRAS et DEAR ow NATO ruo
+controls, 0 misread symbols: n=20, median stat -9.313, true setting found 15/20, median letters right 100%, above null 95th pct 18/20
+controls, 2 misread symbols: n=20, median stat -9.694, true setting found 17/20, median letters right 91%, above null 95th pct 18/20
+  example control (100% right): planted MYDEARFRIENDIWASSOUERYGLADOFYOURLETTERANDTHENEWSTHATYOUA
+                                   found   MYDEARFRIENDIWASSOUERYGLADOFYOURLETTERANDTHENEWSTHATYOUA
+
+--------------------------------------------------------------------------------------------------------
+DT: any key + scales-key columnar transposition   (16 settings)
+--------------------------------------------------------------------------------------------------------
+real statistic per seed: -11.538, -11.787, -11.895, -11.780, -11.863   median -11.787
+  vs pair-preserving     n=1000, mean -11.685, 95th pct -11.400, max -10.986, p = 0.7163
+  vs plain shuffle       n=500, mean -11.711, 95th pct -11.402, max -11.045, p = 0.6487
+  vs random-number keys  n=500, mean -11.688, 95th pct -11.484, max -11.249, p = 0.7964
+best real decrypts (seed with the highest statistic):
+  [-11.538] 1222122 (Phrygian steps) | columnar width 7 (inverse)
+      KCARDLUYSEUERRANEDWASIRACEDIM
+      HOTELYOESTOPSHUUCYSRIOHNYROTH
+      EREAIFINASESNTERCOMEGOOFLIUIL
+      words: k CARD luys EUER RAN ed WAS i RACE DIM HOTEL yoe STOPS huucysr IOHN yro THERE ai FIN asesnter COME goofliuil
+  [-11.797] 2212212 (Mixolydian steps) | columnar width 7
+      APSHSURETASIUORILYSTHEFROMUSS
+      ENOONCELLINGLYBLCHEAUDUTSPRAY
+      REWOLDSOHOSSWACCEYWITUASNOLEU
+      words: apsh SURE tasiuorilys THE FROM usse NOON CELL ING lybl CHE AUD ut SPRAY re WOLDS ohossw ACC ey WIT u ASN o LEU
+  [-11.916] 2122212 (Dorian steps) | columnar width 7 (inverse)
+      NCURWHASBEAREROUEHUPSRLUNHELD
+      GITWEBEISTKISADANSBRILDORBIDT
+      ERUELLYOUESSTOERINGMEIIWYLLAW
+      words: nc URW HAS BEAR eroueh UPS rlun HELD GIT WEB e IST k ISA DANS brildor BID teruell YOU ess TOE RING meiiwyl LAW
+  [-11.967] 2122122 (natural minor steps) | columnar width 7 (inverse)
+      DPATHWINESISTTRASHCANTLADSHLF
+      MOUSWESONUOGNIFIDENTOLFRETOFU
+      STSALLBRANSNURSTDOMYSOOBWLLIW
+      words: d PATH WINES IST TRASH CANT l ADS hlfmouswe SON uognifid ENT ol FRET o FUST s ALL b RAN snurst DOM ysoobwlliw
+  [-11.973] 2122131 (harmonic minor steps) | columnar width 7
+      DMYLICLWHENAFFTOHOTTRNWWEIRDS
+      ANTMOLEABATTEMOOMWELLNGTHTAUE
+      SNTDAASTGUNIUEROLOUDLITSHEPUO
+      words: dmylicl WHEN affto HOT trnw WEIRD s ANT m OLE a BAT temoom WELL ngtht AUE sntdaastg UNIU ero LOUD LIT SHE puo
+controls, 0 misread symbols: n=20, median stat -9.374, true setting found 15/20, median letters right 99%, above null 95th pct 20/20
+controls, 2 misread symbols: n=20, median stat -9.814, true setting found 16/20, median letters right 90%, above null 95th pct 18/20
+  example control (100% right): planted MYDEARFRIENDIWASSOUERYGLADOFYOURLETTERANDTHENEWSTHATYOUA
+                                   found   MYDEARFRIENDIWASSOUERYGLADOFYOURLETTERANDTHENEWSTHATYOUA
+
+Run log (last 20):
+  DT doublet x1 in 1.45s  (995/1000)
+  DT randkey x1 in 1.52s  (498/500)
+  DT shuffle x1 in 1.44s  (498/500)
+  DA doublet x1 in 14.29s  (598/600)
+  DT doublet x1 in 1.47s  (996/1000)
+  DT doublet x1 in 1.41s  (997/1000)
+  DT randkey x1 in 1.54s  (499/500)
+  DT shuffle x1 in 1.47s  (499/500)
+  DA doublet x1 in 14.33s  (599/600)
+  DA randkey x1 in 14.32s  (300/300)
+  DA shuffle x1 in 14.51s  (300/300)
+  DT doublet x1 in 1.41s  (998/1000)
+  DT doublet x1 in 1.48s  (999/1000)
+  DT randkey x1 in 1.52s  (500/500)
+  DT shuffle x1 in 1.48s  (500/500)
+  DA doublet x1 in 14.40s  (600/600)
+  DE doublet x8 in 0.01s  (5000/5000)
+  DE randkey x8 in 0.01s  (5000/5000)
+  DE shuffle x8 in 0.01s  (5000/5000)
+  DT doublet x1 in 1.40s  (1000/1000)

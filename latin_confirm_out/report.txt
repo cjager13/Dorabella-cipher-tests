@@ -1,0 +1,65 @@
+DORABELLA LANGUAGES REPORT
+written 2026-10-10 07:13:12   compute time 1h 31m 10.1s   sessions 1
+settings: real seeds 9 (median used), annealing 12 restarts x 20000 steps per reading order, 5 reading orders, 9 uncertain symbols solved in the search
+texts: LC latin_church.txt (469,424 letters)
+Bonferroni line for one of the 4 new languages: p < 0.0500
+
+========================================================================================================
+HEADLINE (statistic = best quadgram score in that language's own model; real = median over seeds;
+          power = planted held-back text above the 95th percentile of the pair-preserving copies)
+Scores are on each language's own scale: compare a language only with its own copies.
+========================================================================================================
+language                   real n_pair  p_pair n_shuf  p_shuf  power ctrl med  verdict
+LC Latin, Church (confirmation of LA)  -11.046   1000  0.0490   1000  0.0030   100%    -9.22  BEATS both nulls past Bonferroni: read the decrypts by eye
+
+A language matters only if the real cipher beats the PAIR-PRESERVING copies past the
+Bonferroni line, its controls show it can find a message, and the decrypt reads as that language.
+
+--------------------------------------------------------------------------------------------------------
+LC: Latin, Church (confirmation of LA)  (latin_church.txt)
+--------------------------------------------------------------------------------------------------------
+real statistic per seed: -11.046, -11.158, -10.916, -11.209, -11.046, -10.916, -10.997, -11.238, -11.227   median -11.046
+  vs pair-preserving  n=1000, mean -11.320, 95th pct -11.054, max -10.763, p = 0.0490
+  vs plain shuffle    n=1000, mean -11.786, 95th pct -11.423, max -11.021, p = 0.0030
+best real decrypts (from the seed with the highest statistic, -10.916):
+  [-10.916] fully reversed  alternate readings used at [10, 23, 25, 67, 85, 86]
+      AORAUICFACISQUETICHQCTIQUITIM
+      OLLORSIQUEMENSCUTEETABLANUSEN
+      IMCOPOREFFUEEGERSEMPLANUDATFP
+      words: aorauic FACIS quetichqcti QUI timollorsi QUEM enscuteetablanus ENIM cop ORE ffueegersemplanu DAT fp
+  [-11.269] each line reversed  alternate readings used at [10, 25, 67]
+      EMROPORISSUIIHICTIMPLANUFADSP
+      EMOLLOCTEQUIMINTRUDIIDABLANUT
+      INAFRAUERSARETQUIDERGQRDEQUED
+      words: emrop ORIS SUI i HIC timplanufad SPEM ollocteq UIM intru DII dablanutinafr AUE rsaretq UIDE rgqrdequed
+  [-11.384] forward  alternate readings used at [23, 24, 25, 67, 78, 85, 86]
+      HLTOFACORXDENSEGEEALLESCHPUDI
+      CENACORBOTEETAUNCEDEAMINSPRRP
+      DITIAMITUMQUITEAMNISOLUIAOSPO
+      words: hltofa COR xdensegeealleschpu DIC ena COR boteetaunced EAM insprrpdit IAM itum QUI t EAM ni SOL UIA ospo
+controls, 0 misread symbols: n=30, median stat -9.065, right reading order 27/30, median symbols decoded right 99%, above null 95th pct 30/30
+controls, 2 misread symbols: n=30, median stat -9.437, right reading order 26/30, median symbols decoded right 95%, above null 95th pct 30/30
+  example control (100% right): planted NNESETDIXITNONPOTESTHOMOACCIPEREQUIDQUAMNISIFUERITEIDATU
+                                   found   NNESETDIXITNONPOTESTHOMOACCIPEREQUIDQUAMNISIFUERITEIDATU
+
+Run log (last 20):
+  LC doublet x4 in 10.56s  (964/1000)
+  LC shuffle x4 in 10.52s  (964/1000)
+  LC doublet x4 in 10.31s  (968/1000)
+  LC shuffle x4 in 10.66s  (968/1000)
+  LC doublet x4 in 10.35s  (972/1000)
+  LC shuffle x4 in 10.17s  (972/1000)
+  LC doublet x4 in 10.48s  (976/1000)
+  LC shuffle x4 in 10.48s  (976/1000)
+  LC doublet x4 in 10.70s  (980/1000)
+  LC shuffle x4 in 10.50s  (980/1000)
+  LC doublet x4 in 10.30s  (984/1000)
+  LC shuffle x4 in 10.67s  (984/1000)
+  LC doublet x4 in 10.52s  (988/1000)
+  LC shuffle x4 in 10.54s  (988/1000)
+  LC doublet x4 in 10.51s  (992/1000)
+  LC shuffle x4 in 10.39s  (992/1000)
+  LC doublet x4 in 10.43s  (996/1000)
+  LC shuffle x4 in 10.14s  (996/1000)
+  LC doublet x4 in 10.47s  (1000/1000)
+  LC shuffle x4 in 10.26s  (1000/1000)

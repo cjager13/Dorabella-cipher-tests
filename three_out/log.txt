@@ -1,0 +1,4 @@
+[2026-10-01 21:04:35] START session 1, workers 8, cipher from Dorabella_transcription.csv, keep-awake on
+[2026-10-03 23:35:03] START session 2, workers 8, cipher from Dorabella_transcription.csv, keep-awake on
+[2026-10-05 00:17:49] all targets met; raising the null targets by 50% and carrying on
+[2026-10-05 03:04:37] END session, 27h 29m 34.3s this session
