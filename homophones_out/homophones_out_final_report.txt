@@ -1,0 +1,153 @@
+DORABELLA HOMOPHONES REPORT  (several symbols may stand for one letter)
+written 2026-10-11 03:13:26   compute time 3h 04m 04.5s   sessions 1
+settings: real seeds 5 (median used), annealing 6 restarts x 60000 steps per reading order
+cipher: Dorabella_transcription.csv
+Bonferroni line for one of 3 families: p < 0.0167
+
+========================================================================================================
+HEADLINE (statistic = best quadgram score over the 5 reading orders; real = median of seeds;
+          power = planted homophonic controls above the 95th percentile of the pair-preserving copies)
+========================================================================================================
+fam      real n_pair  p_pair n_shuf  p_shuf  power  verdict
+H2     -9.573   1000  0.3746    500  0.0399    62%  chance level
+H3     -9.314   1000  0.6314    500  0.1078    78%  chance level
+HF     -9.339   1000  0.2997    500  0.0459    65%  chance level
+
+A family matters only if the real cipher beats the pair-preserving copies past the
+Bonferroni line, its controls show it can find a message, and the decrypt reads as English.
+
+--------------------------------------------------------------------------------------------------------
+H2: any key, up to 2 symbols per letter
+--------------------------------------------------------------------------------------------------------
+real statistic per seed: -9.573, -9.574, -9.624, -9.573, -9.573   median -9.573
+  vs pair-preserving  n=1000, mean -9.603, 95th pct -9.427, max -9.130, p = 0.3746
+  vs plain shuffle    n=500, mean -9.889, 95th pct -9.591, max -9.223, p = 0.0399
+best real decrypts, one per reading order (seed with the highest statistic):
+  [-9.573] fully reversed   letters with several symbols: T x2, S x2, R x2, O x2, N x2, H x2, E x2, A x2
+      OHSOTESSOSEHATERESCANREATERER
+      INNINHEATERETHSTREEROUNOTTHET
+      ERSIAISESSTEEMENHERANOTTHORSO
+      words: ohsotessose HATE re SCAN r EATER er INN in HEATER eths TREE rou NOT THE tersiaisess TEE MEN h ERA NOT THOR so
+  [-9.574] forward   letters with several symbols: T x2, S x2, R x2, N x2, I x2, H x2, E x2, A x2
+      ASSINALITTHEDHEREEASSENOTONHE
+      LEDALITWISEESANDLEHEAREDHOTTO
+      HESEARESHRINESEARDENISNEAINNI
+      words: as SIN a LIT THE d HERE eas SEN o TON he LED a LIT WISE e SAND le HEAR ed HOT tohe SEA RES hrines EAR DEN ISN ea INN i
+  [-9.660] each line reversed   letters with several symbols: T x2, S x2, R x2, O x2, N x2, E x2, C x2
+      ERNACANESSTEEMETIERCLOSTFORSH
+      ERALLATIENTERESINTREEROCLOSTI
+      ESOFNOTENSONEINTERENONTRENTER
+      words: e RNA CAN ess TEE me TIER c LOST FOR s HER ALL ATI ENTER e SIN TREE roc LOS TIES of NOTE ns ONE INTER e NON tr ENTER
+  [-9.995] boustrophedon B   letters with several symbols: T x2, S x2, O x2, N x2, I x2, F x2, E x2, D x2
+      ELSIDISESSTEEMEDIELDTONTFORSO
+      NEITNOTFOREERTSINELETNEIDITTI
+      LEOFSOTESSOSEINTERESANDRENTER
+      words: elsi DIS ess TEE me DIE ld TON t FOR s ONE it NOT FOR eert SIN e LET neidit TILE ofsotessose INTER e SAND r ENTER
+  [-10.048] boustrophedon A   letters with several symbols: T x2, S x2, R x2, O x2, N x2, L x2, I x2, E x2, A x2
+      OFSAYINALLSETTEREEIFFERALARSE
+      ESALLATTENIESENTRISEESAILANIT
+      ENSEINESTNORESEINTERAFREIARYA
+      words: of SAY in ALL SET t ERE eiffer ALA r SEES al LAT TEN ie SENT RISE e SAIL ani TEN sei NEST no RES e INTER afre IAR ya
+controls, 0 misread symbols: n=20, median stat -9.379, reading order found 15/20, median letters right 38%, above null 95th pct 11/20
+controls, 2 misread symbols: n=20, median stat -9.351, reading order found 14/20, median letters right 67%, above null 95th pct 14/20
+  example control (99% right; homophones E x2, A x2, R x2, O x2, L x2, T x2):
+      planted MYDEARFRIENDIWASSOUERYGLADOFYOURLETTERANDTHENEWSTHATYOUARE
+      found   MYDEARFRIENDIWASSOUERYGLADOFYOURLETTERANDTHENEWSTHATYOUARE
+
+--------------------------------------------------------------------------------------------------------
+H3: any key, up to 3 symbols per letter
+--------------------------------------------------------------------------------------------------------
+real statistic per seed: -9.344, -9.325, -9.314, -9.273, -9.273   median -9.314
+  vs pair-preserving  n=1000, mean -9.278, 95th pct -9.093, max -8.848, p = 0.6314
+  vs plain shuffle    n=500, mean -9.512, 95th pct -9.242, max -8.984, p = 0.1078
+best real decrypts, one per reading order (seed with the highest statistic):
+  [-9.273] forward   letters with several symbols: T x3, H x3, E x3, A x3, R x2
+      HEORWHAREASTTHTITTHEETERAREST
+      ATTHAREPROTTOHETATSTHATTHREER
+      STOTHATOHAUETOTHATTEREETHREWR
+      words: heorwh AREAS tthtit THEE te RARE STAT th ARE PROT tohetats THAT THREE rsto THAT o HAUE to THAT t ERE e THREW r
+  [-9.375] fully reversed   letters with several symbols: T x3, R x3, E x3, S x2, I x2, H x2
+      OFSOHESTOSEETHERESITSRETHERER
+      INNISEETHERETESHREEROUNOTHEET
+      ERSIAISETTHEERESEERANOTHFORTH
+      words: ofsoh EST o SEE THERE SITS re THERE r INN i SEE THERE teshreerouno THEE tersiai SET THEE RES e ERA NOT h FORTH
+  [-9.485] each line reversed   letters with several symbols: T x3, S x3, H x3, E x3, R x2, A x2
+      ERSISISEEETEEMETHERSTASTYAREH
+      ERITTITHEATERESHSTREERANTASTH
+      ESAYSATESEASEHATERESHATREATER
+      words: ersisi SEE e TEE MET HERS tasty ARE HER itti THEATER eshs TREE r ANT as THE SAYS ATE s EASE HATE RES HAT r EATER
+  [-9.728] boustrophedon B   letters with several symbols: T x3, S x3, O x2, I x2, H x2, E x2, D x2
+      ASNOTONESSEEEUEITESTTIREDISSO
+      RETERITHISEESENTRESEEHATIOTTO
+      SAIDNIEANSINATHEESANDHISAHEAS
+      words: ASN o TONES SEE EUE i TEST TIRED is SORE teri THIS ee SENT re SEE h ATI otto SAID n IEANS ina THEE SAND h ISA heas
+  [-9.729] boustrophedon A   letters with several symbols: S x3, E x3, A x3, T x2, R x2, N x2, I x2
+      USEAREHADSATASTITTESSTTISITAR
+      RAIDDISAREETATHATEETTEANDAHEA
+      THEREERESENTRETEEARTASTREATRA
+      words: USE ARE h ADS ATA stittessttisi TAR RAID d ISA REET at HATE ette AND a HEATHER e ERE SENT re TEE ART as TREAT ra
+controls, 0 misread symbols: n=20, median stat -8.944, reading order found 13/20, median letters right 38%, above null 95th pct 16/20
+controls, 2 misread symbols: n=20, median stat -8.994, reading order found 12/20, median letters right 27%, above null 95th pct 15/20
+  example control (95% right; homophones T x2, H x2, E x2, A x2):
+      planted IFOUNDTHEOLDLETTERSINABOXINTHEATTICANDREADTHEMALLAGAINWITH
+      found   IFOUNDTHEOLDLETTERSINANOTINTHEATTINANDREADTHEMALLAGAINWITH
+
+--------------------------------------------------------------------------------------------------------
+HF: homophones for common letters only (ETAO up to 3, INSHR up to 2, others 1)
+--------------------------------------------------------------------------------------------------------
+real statistic per seed: -9.303, -9.339, -9.339, -9.338, -9.349   median -9.339
+  vs pair-preserving  n=1000, mean -9.392, 95th pct -9.201, max -8.900, p = 0.2997
+  vs plain shuffle    n=500, mean -9.617, 95th pct -9.350, max -9.061, p = 0.0459
+best real decrypts, one per reading order (seed with the highest statistic):
+  [-9.303] forward   letters with several symbols: T x3, E x3, A x3, H x2
+      MEONWHINEASTTHTATTHEETERAREST
+      ITTHINEDNOTTOHETITSTHATTHREER
+      STOTHATOHAUETOTHATTENEETHNEWN
+      words: meonwhin EAST thtat THEE t ERA REST it THIN ed NOT tohet ITS THAT THREE rsto THAT o HAUE to THAT TEN eeth NEW n
+  [-9.426] fully reversed   letters with several symbols: T x3, E x3, S x2, R x2, N x2, I x2, H x2
+      OFSOHESTOSEETHERESITSRETHEREN
+      INNISEETHENETESHREEROUNOTHEET
+      ENSIDISETTHEERESEENDNOTHFORTH
+      words: ofsoh EST o SEE THERE SITS re THERE n INN i SEE THEN eteshreerouno THEE TEN sidi SET THEE re SEEN d NOT h FORTH
+  [-9.476] each line reversed   letters with several symbols: T x3, O x3, E x3, S x2, R x2, N x2, H x2
+      ERSONOSESSTEEMETHERNNOTTOORSH
+      ERONNOTHEATERETHSTREEROUNOTTH
+      ETOOSOTESSOSEHATERESEATREATER
+      words: erso NOSES s TEE MET HER n NOT TOO rs HERO nno THEATER eths TREE rou NOT THE TOO sotessose HATE re SEAT r EATER
+  [-9.548] boustrophedon B   letters with several symbols: T x3, O x3, E x3, S x2, R x2, H x2, A x2
+      RATINITTHHATTOTHETANDERASEEHO
+      RTEAREDSEETTEATERTATATREHIDDI
+      ARESTEARTHETRETATERTOTHERTARE
+      words: ra TIN itth HAT to THETA nd ERA SEE hor TEAR ed SEE tt EATER t ATA tre HID dia REST EARTH etre TATE rt OTHER t ARE
+  [-9.647] boustrophedon A   letters with several symbols: T x3, E x3, A x3, S x2, R x2, O x2, N x2
+      ISEAREHADTOTANTATTESSTTOTOTOR
+      ROODDONAREETOTHATEETTEANDAHEA
+      THEREERENESTRETEEARTASTREATRA
+      words: ise ARE HAD tot ANT attessttototorrood DON a REET ot HATE ette AND a HEATHER e ERE NEST re TEE ART as TREAT ra
+controls, 0 misread symbols: n=20, median stat -9.099, reading order found 9/20, median letters right 10%, above null 95th pct 15/20
+controls, 2 misread symbols: n=20, median stat -9.167, reading order found 9/20, median letters right 9%, above null 95th pct 11/20
+  example control (99% right; homophones E x3, A x2, R x2, O x2, T x2):
+      planted MYDEARFRIENDIWASSOUERYGLADOFYOURLETTERANDTHENEWSTHATYOUARE
+      found   MYDEARFRIENDIWASSOUERYGLADOFYOURLETTERANDTHENEWSTHATYOUARE
+
+Run log (last 20):
+  H3 doublet x4 in 10.28s  (984/1000)
+  HF doublet x4 in 9.57s  (984/1000)
+  H2 doublet x4 in 9.45s  (988/1000)
+  H2 shuffle x4 in 9.96s  (496/500)
+  H3 doublet x4 in 10.13s  (988/1000)
+  H3 shuffle x4 in 10.23s  (496/500)
+  HF doublet x4 in 9.43s  (988/1000)
+  HF shuffle x4 in 9.62s  (496/500)
+  H2 doublet x4 in 9.98s  (992/1000)
+  H3 doublet x4 in 10.24s  (992/1000)
+  HF doublet x4 in 9.70s  (992/1000)
+  H2 doublet x4 in 10.20s  (996/1000)
+  H2 shuffle x4 in 10.25s  (500/500)
+  H3 doublet x4 in 10.25s  (996/1000)
+  H3 shuffle x4 in 10.28s  (500/500)
+  HF doublet x4 in 9.63s  (996/1000)
+  HF shuffle x4 in 9.70s  (500/500)
+  H2 doublet x4 in 9.90s  (1000/1000)
+  H3 doublet x4 in 10.15s  (1000/1000)
+  HF doublet x4 in 9.50s  (1000/1000)

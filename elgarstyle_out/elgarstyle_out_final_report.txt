@@ -1,0 +1,153 @@
+DORABELLA 'ELGAR'S PRIVATE ENGLISH' REPORT
+written 2026-10-10 10:16:51   compute time 8h 16m 31.6s   sessions 2
+settings: real seeds 9 (median used), annealing 12 restarts x 20000 steps per reading order, 5 reading orders, 9 uncertain symbols solved in the search
+Bonferroni line for one of the 3 new styles (E1-E3): p < 0.0167
+
+========================================================================================================
+HEADLINE (statistic = best quadgram score in that style's own model; real = median over seeds;
+          p_words = word score vs pair-preserving copies; power = planted controls above the
+          95th percentile of the pair-preserving copies)
+========================================================================================================
+style                          real n_pair  p_pair n_shuf  p_shuf p_words  power ctrl med  verdict
+E0 standard (reference)     -11.016   1000  0.3646   1000  0.0100   0.413   100%    -9.46  chance level
+E1 no AND (& unwritten)     -10.960   1000  0.2647   1000  0.0090   0.453   100%    -9.53  chance level
+E2 Elgar shorthand          -10.951   1000  0.3576   1000  0.0060   0.530    99%    -9.54  chance level
+E3 Elgar's own voice        -10.921   1000  0.3017   1000  0.0050   0.454    99%    -9.52  chance level
+
+A style matters only if the real cipher beats the PAIR-PRESERVING copies past the
+Bonferroni line, its controls show it can find a message (power near 100%), and the
+decrypt reads as English written in that style. Words are shown as STYLED[original].
+
+--------------------------------------------------------------------------------------------------------
+E0: standard (reference)
+--------------------------------------------------------------------------------------------------------
+real statistic per seed: -11.114, -11.016, -10.856, -10.844, -11.105, -10.718, -11.085, -11.041, -10.856   median -11.016;  word score per seed: 51, 39, 43, 35, 36, 37, 37, 38, 43
+  vs pair-preserving  n=1000, mean -11.060, 95th pct -10.824, max -10.572, p = 0.3646
+  vs plain shuffle    n=1000, mean -11.517, 95th pct -11.163, max -10.614, p = 0.0100
+  word score vs pair-preserving: real median 38, copies mean 36.2, 95th pct 52, p = 0.4126
+best real decrypts (from the seed with the highest statistic, -10.718):
+  [-10.718] fully reversed  alternate readings used at [10, 23, 78, 85]
+      OCTOSAYDOTAHUSELAYBUTLAUSALAR
+      INNITHAUSEREWHYSLEELOPNOWSHEW
+      ARYIFITEDDSEEMETHERKNOWSCOLDK
+      words: OCT o SAY DOT ah USE LAY BUT l AUS ALA r INN itha USER e WHY s LEE lop NOW SHE WAR yifi TED d SEEM et HER KNOWS COLD k
+  [-11.001] each line reversed  alternate readings used at [25, 34, 67, 86]
+      ORNIFINESSTEEMEWHERPLACTBADSF
+      ORILLIWHOUTERECHNTDEEDAYLAITH
+      ECAINATONSANOHUTEDONGUNDOUTOD
+      words: orni FINE ss TEE mewh ERP l ACT b ADS FOR ILL iwh OUTER echnt DEE DAY lai THE cai NATO n SAN ohute DON g UNDO utod
+  [-11.119] forward  alternate readings used at [10, 25, 34, 67]
+      GFLIDSUINGWERCEBEESFFETOGOTWA
+      UERSOINMILEELSTRUEWESHARCONNO
+      WALASHALTHYTALESHRATIFTASITDI
+      words: gfl IDS u ING werce BEE sffeto GOT WAUE rsoin MILE els TRUE weshar CON NOW ALAS HALT hy TALES hr ATI fta SIT di
+controls, 0 misread symbols: n=50, median stat -9.273, right reading order 47/50, median letters right 99%, above null 95th pct 50/50
+controls, 2 misread symbols: n=50, median stat -9.621, right reading order 46/50, median letters right 94%, above null 95th pct 50/50
+  example control (100% right): planted MYDEARFRIENDIWASSOUERYGLADOFYOURLETTERANDTHE
+                                  found   MYDEARFRIENDIWASSOUERYGLADOFYOURLETTERANDTHE
+
+--------------------------------------------------------------------------------------------------------
+E1: no AND (& unwritten)
+--------------------------------------------------------------------------------------------------------
+real statistic per seed: -10.974, -10.936, -10.960, -10.949, -11.002, -10.890, -10.934, -11.027, -11.027   median -10.960;  word score per seed: 23, 39, 30, 45, 48, 37, 53, 33, 33
+  vs pair-preserving  n=1000, mean -11.036, 95th pct -10.800, max -10.460, p = 0.2647
+  vs plain shuffle    n=1000, mean -11.481, 95th pct -11.163, max -10.718, p = 0.0090
+  word score vs pair-preserving: real median 37, copies mean 36.6, 95th pct 54, p = 0.4525
+best real decrypts (from the seed with the highest statistic, -10.890):
+  [-10.890] fully reversed  alternate readings used at [10, 23, 78, 85, 86]
+      IATISONLITOHUSEDONBUTDOUSODOW
+      AFFATHOUSEWERHNSDEEDIGFIRSHER
+      OWNACATELLSEEMETHEWYFIRSPIDLY
+      words: i ATI SON LIT oh USED on BUT douso DOW af FAT HOUSE werhns DEE DIG f IRS HERO wnaca TELLS eeme THE wyf IRS pidly
+  [-11.201] each line reversed  alternate readings used at [25, 67, 78, 85, 86]
+      HMIUQUIESSTEEPERWEMYCONTGODSQ
+      HMUCCURWHATEMENWITDEEDOFCONTW
+      ENOUROTHISORHWATEDHILAIDHATHD
+      words: hmiu QUI es STEEP erwemy CON t GODS qhmucc URW HATE MEN WIT DEE dof CON twen OUR o THIS orhwa TED hi LAID HAT hd
+  [-11.215] forward  alternate readings used at [25]
+      NGSUBTFULYWEACEMEETGGERONORWI
+      FEATFULDUSEESTRAFEWETHIACOLLO
+      WISITHISCHPRISETHAIRUGRITURBU
+      words: ng SUB tfulywe ACE MEET ggero NOR wi FEAT fuldu SEES trafe WET hia COL LOW isi THIS chp RISE t HAIR u GRIT urbu
+controls, 0 misread symbols: n=50, median stat -9.271, right reading order 48/50, median letters right 100%, above null 95th pct 50/50
+controls, 2 misread symbols: n=50, median stat -9.818, right reading order 44/50, median letters right 91%, above null 95th pct 50/50
+  example control (100% right): planted MYDEARFRIENDIWASSOUERYGLADOFYOURLETTERTHENEW
+                                  found   MYDEARFRIENDIWASSOUERYGLADOFYOURLETTERTHENEW
+
+--------------------------------------------------------------------------------------------------------
+E2: Elgar shorthand
+--------------------------------------------------------------------------------------------------------
+real statistic per seed: -10.951, -11.019, -10.829, -10.966, -11.052, -10.951, -11.011, -10.777, -10.930   median -10.951;  word score per seed: 35, 41, 35, 30, 42, 42, 40, 35, 34
+  vs pair-preserving  n=1000, mean -10.991, 95th pct -10.764, max -10.532, p = 0.3576
+  vs plain shuffle    n=1000, mean -11.453, 95th pct -11.105, max -10.881, p = 0.0060
+  word score vs pair-preserving: real median 35, copies mean 36.0, 95th pct 51, p = 0.5305
+best real decrypts (from the seed with the highest statistic, -10.777):
+  [-10.777] fully reversed  alternate readings used at [10, 34, 67, 86]
+      AINATONSANOHUTEDONGUNDOUTODOR
+      ILLIWHOUTERECHNTDEEDAYLAITHEC
+      ORNIFINESSTEEMEWHERPLACTBADSP
+      words: ai NATO n SAN ohute DON g UNDO utodor ILL iwh OUTER echnt DEE DAY lai THE CORN i FINE ss TEE mewh ERP l ACT b ADS p
+  [-11.054] forward  alternate readings used at [23, 24, 25, 34, 67, 78]
+      LDSOWNMOFCHEAREBEENDDERMLYTHI
+      MEANYOFPOSEESNTAMEHENGIARYFFY
+      HISINGISTGUTISENGAIRODTINOTWO
+      words: ld SOWN mofc HEAR e BEEN d DER mlythi MEAN yofpo SEES ntameh ENG IAR yffyhi SING IST gutis ENG ai ROD TIN o TWO
+  [-11.330] each line reversed  alternate readings used at [24, 67, 78, 86]
+      HFEUPREODDSOOKOCTOFPLARSBANDW
+      HFULLUCTHISOFORTESNOONAGLARST
+      ORAUEASHEDACHTISONHEMIENHISHN
+      words: hfeu PRE ODDS ook OCT ofplars BAND wh FULL uc THIS o FORT es NOON aglarstor AUE a SHED achti SON hemien HIS hn
+controls, 0 misread symbols: n=50, median stat -9.423, right reading order 46/50, median letters right 99%, above null 95th pct 49/50
+controls, 2 misread symbols: n=50, median stat -9.704, right reading order 44/50, median letters right 93%, above null 95th pct 50/50
+  example control (100% right): planted MYDEARFRIENDIWASSOUERYGLADOFYOURLETTERTHENEW
+                                  found   MYDEARFRIENDIWASSOUERYGLADOFYOURLETTERTHENEW
+
+--------------------------------------------------------------------------------------------------------
+E3: Elgar's own voice
+--------------------------------------------------------------------------------------------------------
+real statistic per seed: -10.857, -10.847, -10.921, -10.857, -10.987, -10.969, -10.965, -10.966, -10.847   median -10.921;  word score per seed: 37, 39, 33, 37, 35, 51, 37, 31, 39
+  vs pair-preserving  n=1000, mean -10.985, 95th pct -10.753, max -10.515, p = 0.3017
+  vs plain shuffle    n=1000, mean -11.452, 95th pct -11.128, max -10.609, p = 0.0050
+  word score vs pair-preserving: real median 37, copies mean 36.5, 95th pct 53, p = 0.4535
+best real decrypts (from the seed with the highest statistic, -10.847):
+  [-10.847] each line reversed  alternate readings used at [10, 23, 24, 25, 67, 78, 85, 86]
+      TRAUYDWELLSEEMEWHERYGODSPONLY
+      TRUGGUWHTISEREDHASNEENOFGODSH
+      EDOUWOSTALOWTHISENTABIANTISTN
+      words: trauyd WELLS eemew HER y GODS p ONLY t RUG guwhtise RED HASN eenof GOD SHED ouwosta LOW THIS en TAB i ANTI stn
+  [-10.968] fully reversed  alternate readings used at [10, 24, 25, 67, 86]
+      AINASONYANOHUSETONGUNTOUSOTOR
+      ILLIWHOUSEREDHNSTEETABLADSHED
+      ORNICDNEYYSEEMEWHERCLADSFATYC
+      words: AIN a SONY anoh USE TON g UNTO usotor ILL iw HOUSE RED hns TEE TAB LAD SHED ornicdneyy SEEM ew HER CLAD s FAT yc
+  [-11.166] forward  alternate readings used at [34, 67, 86]
+      CYUAPRMALDWETHEBEERYYESIDISWO
+      METRIALFAUEEURSTMEWERNOTHILLI
+      WOUORNOUSNGSOUERNTOSAYSORASIA
+      words: cyu APR maldwe THE BEER y YES i DIS w OME TRIAL f AUE EUR stmewer NOT HILL iwouor NOU sngs OUER nto SAYS or ASIA
+controls, 0 misread symbols: n=50, median stat -9.406, right reading order 46/50, median letters right 99%, above null 95th pct 50/50
+controls, 2 misread symbols: n=50, median stat -9.682, right reading order 42/50, median letters right 92%, above null 95th pct 49/50
+  example control (100% right): planted YOURFATHERWASHEREYESTERDAYTOLDUSALLABOUTTHEC
+                                  found   YOURFATHERWASHEREYESTERDAYTOLDUSALLABOUTTHEC
+
+Run log (last 20):
+  E2 doublet x4 in 10.59s  (992/1000)
+  E2 shuffle x4 in 10.37s  (992/1000)
+  E3 doublet x4 in 10.36s  (992/1000)
+  E3 shuffle x4 in 10.43s  (992/1000)
+  E0 doublet x4 in 10.23s  (996/1000)
+  E0 shuffle x4 in 10.22s  (996/1000)
+  E1 doublet x4 in 10.35s  (996/1000)
+  E1 shuffle x4 in 10.21s  (996/1000)
+  E2 doublet x4 in 10.34s  (996/1000)
+  E2 shuffle x4 in 10.60s  (996/1000)
+  E3 doublet x4 in 10.55s  (996/1000)
+  E3 shuffle x4 in 10.44s  (996/1000)
+  E0 doublet x4 in 10.43s  (1000/1000)
+  E0 shuffle x4 in 10.38s  (1000/1000)
+  E1 doublet x4 in 10.44s  (1000/1000)
+  E1 shuffle x4 in 10.54s  (1000/1000)
+  E2 doublet x4 in 10.42s  (1000/1000)
+  E2 shuffle x4 in 10.29s  (1000/1000)
+  E3 doublet x4 in 10.28s  (1000/1000)
+  E3 shuffle x4 in 10.27s  (1000/1000)

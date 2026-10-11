@@ -1,0 +1,76 @@
+DORABELLA QUOTATION TEST REPORT  (source folder: Elgar_letters_quotes)
+written 2026-10-10 14:50:38   compute time 4h 33m 30.2s   sessions 1
+phrases of 12-30 letters: 69,608; eligible after the rule: 69,608
+
+source files (words, new phrases):  elgar_letters_amp_as_and (13309, 61941); elgar_letters_amp_unwritten (12902, 7667)
+
+====================================================================================================
+HEADLINE (p vs PAIR-PRESERVING copies; line to beat p < 0.025)
+====================================================================================================
+Q1 best completion   real -12.239   pair n=1000 p=0.4805   shuffle n=1000 p=0.1119   power 97%
+Q2 long phrases fit  real 5   pair mean 7.42   p=0.6304
+
+----------------------------------------------------------------------------------------------------
+REAL CIPHER
+----------------------------------------------------------------------------------------------------
+Q1 per seed: -12.239 (FORTHESINGER), -12.239 (FORTHESINGER), -12.239 (FORTHESINGER), -12.239 (FORTHESINGER), -12.239 (FORTHESINGER)
+placements tried: 372
+  [-12.239] phrase FORTHESINGER (elgar_letters_amp_as_and, elgar_letters_amp_unwritten) in boustrophedon A
+      YNFIURWILYDOHSOPOORNNOSAYAGDE
+      EDALLASHETRODOWHGRFOOFIMLIARH
+      OWFERTEFGTZGEFORTHESINGERISAI
+      words: ynfiur WILY dohso POOR nno SAY ag DEE DALLAS hetro DOW hgr FOO fiml IAR HOW fertefgtzge FORTH e SINGER ISA i
+  [-12.442] phrase MRSHANSONAND (elgar_letters_amp_as_and) in fully reversed
+      TCHTONMYTHNESOLANMRSHANSONAND
+      CUUCHENSOLDLIEMOALLATBUTIOELI
+      NDMCPIMLYYOLLGLHELDPUTIOFTAYW
+      words: tch TON MYTH neso LAN mr SHAN SON AND cuu CHEN SOLD LIE moal LAT BUT IOEL IND mcpimlyyollgl HELD PUT ioftayw
+  [-12.443] phrase HOMEIAMTRULY (elgar_letters_amp_as_and, elgar_letters_amp_unwritten) in fully reversed
+      ONDOETUPOUTIBEASTUFBUSTBETSTR
+      LHHLDITBEARAMIUESAASOWHOMEIAM
+      TRULYLUAPPEAACADIARYHOMENOSPX
+      words: on DOE tup OUT i BEAST uf BUS t BET STR lhhldit BEAR amiuesaasow HOME IAM TRULY lu APP eaaca DIARY HOME nospx
+  [-12.443] phrase HOMEIAMTRULY (elgar_letters_amp_as_and, elgar_letters_amp_unwritten) in fully reversed
+      ONDOETUPOUTIBEASTUFBUSTBETSTR
+      LHHLDITBEARAMIUESAASOWHOMEIAM
+      TRULYLUAPPEAACADIARYHOMENOSPY
+      words: on DOE tup OUT i BEAST uf BUS t BET STR lhhldit BEAR amiuesaasow HOME IAM TRULY lu APP eaaca DIARY HOME no SPY
+  [-12.481] phrase THEUICARMADE (elgar_letters_amp_as_and, elgar_letters_amp_unwritten) in forward
+      KLDAYIHARKWEUSEBEEILLEOCKCOWT
+      HEUICARMADEEDIOUHEWEINTUSCRRC
+      WTDTINTDONGOTDEINUTSALOTIASCA
+      words: kl DAY i HARK we USE BEE il LEO ck COW THE ui CAR MADE ediouhewe INT USC rrcwtdt INT DON GOT dei NUTS ALOT iasca
+
+long phrases (14+ letters) that fit the real cipher's pattern: 5
+  HUMBLYASKPARDON                  1 place(s)   from elgar_letters_amp_as_and, elgar_letters_amp_unwritten
+  BUTPLAINNICELY                   1 place(s)   from elgar_letters_amp_as_and, elgar_letters_amp_unwritten
+  OFTHEUICARMADE                   1 place(s)   from elgar_letters_amp_as_and, elgar_letters_amp_unwritten
+  THENFLYOUTWITH                   1 place(s)   from elgar_letters_amp_as_and, elgar_letters_amp_unwritten
+  USFORALONGTIME                   2 place(s)   from elgar_letters_amp_as_and, elgar_letters_amp_unwritten
+Q1 vs pair-preserving  n=1000, mean -12.236, 95th pct -11.787, max -11.404
+Q1 vs plain shuffle    n=1000, mean -12.541, 95th pct -12.115, max -11.225
+controls: n=60, median -9.718, planted phrase found 14/60, median letters right 97%
+  example: planted MYDEARFRIENDIWASSOUERYGLADOFYOURLETTERANDTHENEWSTHATYOUA
+           found   MYDEARFRIENDIWASSOUERYGLADOFYOURLETTERANDTHENEWSTHATYOUA
+
+Run log (last 20):
+  doublet in 12.33s  (991/1000)
+  shuffle in 14.23s  (991/1000)
+  doublet in 11.57s  (992/1000)
+  shuffle in 15.46s  (992/1000)
+  doublet in 6.07s  (993/1000)
+  shuffle in 15.20s  (993/1000)
+  doublet in 6.41s  (994/1000)
+  shuffle in 8.99s  (994/1000)
+  doublet in 10.31s  (995/1000)
+  shuffle in 8.43s  (995/1000)
+  doublet in 5.82s  (996/1000)
+  shuffle in 7.82s  (996/1000)
+  doublet in 6.59s  (997/1000)
+  shuffle in 9.18s  (997/1000)
+  doublet in 10.92s  (998/1000)
+  shuffle in 8.70s  (998/1000)
+  doublet in 8.88s  (999/1000)
+  shuffle in 7.04s  (999/1000)
+  doublet in 8.79s  (1000/1000)
+  shuffle in 7.81s  (1000/1000)

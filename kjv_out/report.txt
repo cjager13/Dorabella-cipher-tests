@@ -1,0 +1,111 @@
+DORABELLA QUOTATION TEST REPORT  (source folder: Bible_KJV)
+written 2026-10-09 05:31:48   compute time 9h 12m 03.1s   sessions 1
+phrases of 14-30 letters: 2,914,078; eligible after the rule: 2,914,078
+
+source files (words, new phrases):  Bible_KJV (790420, 2914078)
+
+====================================================================================================
+HEADLINE (p vs PAIR-PRESERVING copies; line to beat p < 0.025)
+====================================================================================================
+Q1 best completion   real -12.343   pair n=1000 p=0.6553   shuffle n=1000 p=0.1848   power 98%
+Q2 long phrases fit  real 265   pair mean 250.44   p=0.3606
+
+----------------------------------------------------------------------------------------------------
+REAL CIPHER
+----------------------------------------------------------------------------------------------------
+Q1 per seed: -12.343 (ANDTHEIRIUDGES), -12.343 (ANDTHEIRIUDGES), -12.343 (ANDTHEIRIUDGES), -12.343 (ANDTHEIRIUDGES), -12.343 (ANDTHEIRIUDGES)
+placements tried: 530
+  [-12.343] phrase ANDTHEIRIUDGES (Bible_KJV) in fully reversed
+      OANOETGLONTDHEISTGQHNSTHETSTR
+      ACCANDTHEIRIUDGESIISOFCOUEDIU
+      TRGAPANILLEIIMINDIRYCOUEBOSLY
+      words: oanoetglontdhe IST gqhns THE t STR ACC AND THEIR IUDGES i ISO f COUE DIU trga PAN ILL eii MIND iry COUE bo SLY
+  [-12.354] phrase ANDTHEIRIUDGES (Bible_KJV) in each line reversed
+      TRGAPANILLEIIMINDIRYCOUEWOSLY
+      TRACCANDTHEIRIUDGESIISOFCOUED
+      IUOWNOETGLONTDHEISTGZHNSTHETS
+      words: trga PAN ILL eii MIND iry COUE wo SLY tr ACC AND THEIR IUDGES i ISO f COUE DIU OWN oetglontdhe IST gzhns THE ts
+  [-12.708] phrase WIUESTOHIMSELF (Bible_KJV) in forward
+      BFTLYHNLDPROMWOGOOHFFOWNBAERS
+      NOMHALDCLTOOTHEMNOROHISMWADDA
+      RSTSHISTWIUESTOHIMSELFESHLEAL
+      words: bftlyhnldp ROM wogoohffow NBA ersnomhaldcl TOOTH em NOR o HIS mw ADD arsts HIST WIUES to HIMSELF esh LEA l
+  [-12.725] phrase HOUSEANDTOMAKE (Bible_KJV) in fully reversed
+      HOTHUNTRHKNSGUEINTWGKINGUNIND
+      OYYOKSNGUEDEASTUIEEIHBYHOUSEA
+      NDTOMAKERRUEEZEKSEDMYHAUCHIRL
+      words: HOT HUNT rhknsg UEIN twg KING u NIND oyyoksngued EAST uieeihby HOUSE AND to MAKER rueezeksedmyhau CHI rl
+  [-12.772] phrase OFWORMSANDGAUE (Bible_KJV) in each line reversed
+      TRHYMYFOEEDOOPOFWORMSANDGAUEL
+      TRYSSYFWTIDORONWHDUOOUAKSANDW
+      ONAYHADTHEAFTWIDOUTHBIHUTIDTU
+      words: trhymyfoe EDOO pof WORMS AND GAUE l TRY ssyfwtido RON wh DUO ouak SAND wo NAY HAD THE aftwid OUT hbihutidtu
+
+long phrases (14+ letters) that fit the real cipher's pattern: 265
+  MYFIRSTHUSBANDFOR                1 place(s)   from Bible_KJV
+  ANDMAKETHCOLLOPS                 1 place(s)   from Bible_KJV
+  DAYOFTROUBLEWHEN                 2 place(s)   from Bible_KJV
+  KINGCOMEFORTHAND                 1 place(s)   from Bible_KJV
+  OUTANDELISHACAME                 1 place(s)   from Bible_KJV
+  SIGHTANDFOLLOWED                 1 place(s)   from Bible_KJV
+  SKINSBROUGHTTHEM                 1 place(s)   from Bible_KJV
+  UPANDFOLLOWEDHIM                 1 place(s)   from Bible_KJV
+  ABIDEWITHYOUFOR                  2 place(s)   from Bible_KJV
+  ALWAYSBEFOREHIM                  3 place(s)   from Bible_KJV
+  AMANSAYILOUEGOD                  3 place(s)   from Bible_KJV
+  AMONGTHEPRINCES                  1 place(s)   from Bible_KJV
+  ANDHAUINGRENTMY                  1 place(s)   from Bible_KJV
+  ANDIBROUGHTTHEM                  1 place(s)   from Bible_KJV
+  ANDISGUILTYORIF                  1 place(s)   from Bible_KJV
+  AREWROUGHTBYHIS                  3 place(s)   from Bible_KJV
+  BRAKEINUPONTHEM                  1 place(s)   from Bible_KJV
+  BYTHEIRHANDSBUT                  1 place(s)   from Bible_KJV
+  CALFANDTHEYOUNG                  1 place(s)   from Bible_KJV
+  CHERUBIMSLIFTUP                  1 place(s)   from Bible_KJV
+  COMPANIEDWITHUS                  1 place(s)   from Bible_KJV
+  DAYSOFHARUESTIN                  1 place(s)   from Bible_KJV
+  DOWNBYCOMPANIES                  1 place(s)   from Bible_KJV
+  FATHERSANDIACOB                  1 place(s)   from Bible_KJV
+  FIRSTHUSBANDFOR                  1 place(s)   from Bible_KJV
+  FIUEDAYSNEITHER                  1 place(s)   from Bible_KJV
+  FOUNDTHEPRINCES                  1 place(s)   from Bible_KJV
+  FOURWINGSANDTHE                  1 place(s)   from Bible_KJV
+  GODSUNTOHIMSELF                  1 place(s)   from Bible_KJV
+  GRAUEIAMCOUNTED                  1 place(s)   from Bible_KJV
+  HEISMYREFUGEAND                  1 place(s)   from Bible_KJV
+  HESAIDUNTOBALAK                  1 place(s)   from Bible_KJV
+  HOLYPLACEHAUING                  1 place(s)   from Bible_KJV
+  KEPTSILENCETHOU                  1 place(s)   from Bible_KJV
+  KINGSHOUSEANDIT                  1 place(s)   from Bible_KJV
+  LAMBSOFTHEFIRST                  1 place(s)   from Bible_KJV
+  MIGHTBESAUEDFOR                  1 place(s)   from Bible_KJV
+  NEIGHBOURTOSLAY                  1 place(s)   from Bible_KJV
+  NOTHEARMEISTAND                  1 place(s)   from Bible_KJV
+  OFMYBURYINGHATH                  2 place(s)   from Bible_KJV
+Q1 vs pair-preserving  n=1000, mean -12.221, 95th pct -11.731, max -11.452
+Q1 vs plain shuffle    n=1000, mean -12.580, 95th pct -12.104, max -11.473
+controls: n=60, median -9.591, planted phrase found 13/60, median letters right 97%
+  example: planted MYDEARFRIENDIWASSOUERYGLADOFYOURLETTERANDTHENEWSTHATYOUA
+           found   MYDEARFRIENDIWASSOUERYGLADOFYOURLETTERANDTHENEWSTHATYOUA
+
+Run log (last 20):
+  doublet in 24.73s  (991/1000)
+  shuffle in 24.17s  (991/1000)
+  doublet in 27.52s  (992/1000)
+  shuffle in 25.90s  (992/1000)
+  doublet in 10.39s  (993/1000)
+  shuffle in 30.79s  (993/1000)
+  doublet in 13.26s  (994/1000)
+  shuffle in 18.72s  (994/1000)
+  doublet in 20.19s  (995/1000)
+  shuffle in 16.68s  (995/1000)
+  doublet in 13.74s  (996/1000)
+  shuffle in 15.87s  (996/1000)
+  doublet in 11.78s  (997/1000)
+  shuffle in 17.68s  (997/1000)
+  doublet in 15.43s  (998/1000)
+  shuffle in 19.78s  (998/1000)
+  doublet in 17.56s  (999/1000)
+  shuffle in 14.63s  (999/1000)
+  doublet in 12.97s  (1000/1000)
+  shuffle in 15.17s  (1000/1000)

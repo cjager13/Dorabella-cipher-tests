@@ -1,0 +1,5 @@
+[2026-10-09 10:55:22] START session 1, workers 8, keep-awake on
+[2026-10-09 16:08:25] END session, 5h 13m 03.6s this session
+[2026-10-10 07:13:12] START session 2, workers 8, keep-awake on
+[2026-10-10 10:16:51] all targets met; stopping (--stop-when-done)
+[2026-10-10 10:16:51] END session, 3h 03m 38.6s this session
