@@ -1,0 +1,89 @@
+DORABELLA QUOTATION TEST REPORT  (source folder: Bible_KJV_Psalms)
+written 2026-10-07 10:28:22   compute time 9h 06m 57.0s   sessions 1
+phrases of 12-30 letters: 187,943; eligible after the rule: 187,943
+
+source files (words, new phrases):  Bible_KJV_Psalms (42690, 187943)
+
+====================================================================================================
+HEADLINE (p vs PAIR-PRESERVING copies; line to beat p < 0.025)
+====================================================================================================
+Q1 best completion   real -11.986   pair n=1000 p=0.4695   shuffle n=1000 p=0.0849   power 95%
+Q2 long phrases fit  real 18   pair mean 20.44   p=0.4815
+
+----------------------------------------------------------------------------------------------------
+REAL CIPHER
+----------------------------------------------------------------------------------------------------
+Q1 per seed: -11.986 (FOREUERSIHON), -11.986 (FOREUERSIHON), -11.997 (HIMFALLANDMY), -11.986 (FOREUERSIHON), -11.986 (FOREUERSIHON)
+placements tried: 1345
+  [-11.986] phrase FOREUERSIHON (Bible_KJV_Psalms) in forward
+      GFLAYTHACUSONDOMOOTFFOREUERSI
+      HONTHACKALOOLTRNHOSOTWINDECCE
+      SILITWILDWBRILOTWNIDAFRITAREA
+      words: gf LAY thacu SON DOM ootf FOREUER si HON t HACK a LOO ltrnhoso TWIN DEC CES i LIT WILD wbri LOT wnida FRI t AREA
+  [-11.997] phrase HIMFALLANDMY (Bible_KJV_Psalms) in each line reversed
+      MFRAGANOHHSOOCONDOFILEUSBETHI
+      MFALLANDMYSOFOUDRSTOOTEPLEASD
+      OUEARESMRHERMDYSOTMRWYNTMYSMT
+      words: mf RAG anohhsoo CONDO FILE us BETH imf ALLAN dmysofoudrs TOO tep LEAS DOUE a RES mr HER mdysotmrwyntmysmt
+  [-12.005] phrase FOREUERSIHON (Bible_KJV_Psalms) in forward
+      UFLAYTHACUSONDOMOOTFFOREUERSI
+      HONTHACKALOOLTRNHOSOTWINDECCE
+      SILITWILDWBRILOTWNIDAFRITAREA
+      words: uf LAY thacu SON DOM ootf FOREUER si HON t HACK a LOO ltrnhoso TWIN DEC CES i LIT WILD wbri LOT wnida FRI t AREA
+  [-12.020] phrase THEWAYOFLYING (Bible_KJV_Psalms) in forward
+      URSIBLYINTWOFCOPOOLRROCHTHEWA
+      YOFLYINGISOOSLEFYOWOLDAFCHNNH
+      WASALDASEDMEASOLDFACIREALICHI
+      words: ursiblyin TWO fco POOL rroch THE WAY o FLYING ISO oslefyow OLD afchnnh WAS al DAS edmea SOLD faci REAL i CHI
+  [-12.044] phrase THEWAYOFLYING (Bible_KJV_Psalms) in forward
+      TUSIBLYINTWOFROCOOLUUORYTHEWA
+      YOFLYINGISOOSLEFYOWOLDAFRHNNH
+      WASALDASEDMEASOLDFARIUEALIEHI
+      words: TUS iblyin TWO FRO COOL uuory THE WAY o FLYING ISO oslefyow OLD afrhnnh WAS al DAS edmea SOLD FAR iuea LIE hi
+
+long phrases (14+ letters) that fit the real cipher's pattern: 18
+  BRAKEINUPONTHEM                  1 place(s)   from Bible_KJV_Psalms
+  GRAUEIAMCOUNTED                  1 place(s)   from Bible_KJV_Psalms
+  HEISMYREFUGEAND                  1 place(s)   from Bible_KJV_Psalms
+  KEPTSILENCETHOU                  1 place(s)   from Bible_KJV_Psalms
+  SALUATIONWHENMY                  3 place(s)   from Bible_KJV_Psalms
+  UNTOMYGODWHILEI                  2 place(s)   from Bible_KJV_Psalms
+  WICKEDBORROWETH                  1 place(s)   from Bible_KJV_Psalms
+  AMTHYSALUATION                   1 place(s)   from Bible_KJV_Psalms
+  ANDWALKNOTINMY                   1 place(s)   from Bible_KJV_Psalms
+  BEINSTRUCTEDYE                   1 place(s)   from Bible_KJV_Psalms
+  COMPANYOFTHOSE                   1 place(s)   from Bible_KJV_Psalms
+  DOWEGIUETHANKS                   2 place(s)   from Bible_KJV_Psalms
+  HISHOLYNAMEFOR                   1 place(s)   from Bible_KJV_Psalms
+  ISHOULDWALKFOR                   1 place(s)   from Bible_KJV_Psalms
+  METHOUARTMYSON                   1 place(s)   from Bible_KJV_Psalms
+  OFHISTEMPLEAND                   3 place(s)   from Bible_KJV_Psalms
+  PLAGUECOMENIGH                   1 place(s)   from Bible_KJV_Psalms
+  UNTOMYGODWHILE                   2 place(s)   from Bible_KJV_Psalms
+Q1 vs pair-preserving  n=1000, mean -11.985, 95th pct -11.583, max -11.080
+Q1 vs plain shuffle    n=1000, mean -12.344, 95th pct -11.914, max -11.473
+controls: n=60, median -9.535, planted phrase found 11/60, median letters right 97%
+  example: planted WEWALKEDUPTHEHILLAFTERLUNCHANDTHEUIEWOUERTHEUALLEYWASLOU
+           found   WEWALKEDUPTHEHILLAFTERLUNCHANDTHEUIEWOUERTHEUALLEYWASLOU
+
+Run log (last 20):
+  doublet in 26.31s  (991/1000)
+  shuffle in 26.06s  (991/1000)
+  doublet in 21.63s  (992/1000)
+  shuffle in 21.66s  (992/1000)
+  doublet in 6.97s  (993/1000)
+  shuffle in 27.49s  (993/1000)
+  doublet in 9.52s  (994/1000)
+  shuffle in 19.07s  (994/1000)
+  doublet in 18.64s  (995/1000)
+  shuffle in 16.15s  (995/1000)
+  doublet in 9.29s  (996/1000)
+  shuffle in 13.38s  (996/1000)
+  doublet in 9.19s  (997/1000)
+  shuffle in 14.81s  (997/1000)
+  doublet in 19.84s  (998/1000)
+  shuffle in 15.21s  (998/1000)
+  doublet in 15.43s  (999/1000)
+  shuffle in 13.24s  (999/1000)
+  doublet in 14.82s  (1000/1000)
+  shuffle in 12.24s  (1000/1000)

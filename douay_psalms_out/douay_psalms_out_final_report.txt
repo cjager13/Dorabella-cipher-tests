@@ -1,0 +1,98 @@
+DORABELLA QUOTATION TEST REPORT  (source folder: Bible_Douay_Psalms)
+written 2026-10-08 13:44:57   compute time 10h 19m 48.1s   sessions 3
+phrases of 12-30 letters: 232,056; eligible after the rule: 232,056
+
+source files (words, new phrases):  Bible_Douay_Psalms (53300, 232056)
+
+====================================================================================================
+HEADLINE (p vs PAIR-PRESERVING copies; line to beat p < 0.025)
+====================================================================================================
+Q1 best completion   real -11.947   pair n=1000 p=0.5065   shuffle n=1000 p=0.0829   power 100%
+Q2 long phrases fit  real 27   pair mean 22.73   p=0.3167
+
+----------------------------------------------------------------------------------------------------
+REAL CIPHER
+----------------------------------------------------------------------------------------------------
+Q1 per seed: -11.947 (OFTHEUINTAGE), -11.947 (OFTHEUINTAGE), -11.947 (OFTHEUINTAGE), -11.947 (OFTHEUINTAGE), -11.947 (OFTHEUINTAGE)
+placements tried: 1584
+  [-11.947] phrase OFTHEUINTAGE (Bible_Douay_Psalms) in boustrophedon B
+      TSAMYWAILLUIIDIFHISBROWUPONLY
+      WIHUMORCONIINUAHWISIUETHFMRRM
+      STOMFOUTALOFTHEUINTAGEANTEUTN
+      words: ts AMY WAIL l UII dif HIS BROW up ONLY wi HUMOR CON iinuahwisi UET hfmrrms TOM f OUT ALOFT he UINTAGE ANT eutn
+  [-11.993] phrase ORINTHEMIDST (Bible_Douay_Psalms) in fully reversed
+      OADOHIDWORINTHEMIDSTRMITHIMIL
+      AYYARNITHELEUNDHMEEMOFYOUHNEU
+      ILDAPAREWWHEEBERNELPYOUHCOMWP
+      words: o ADO HID WOR in THE MIDST r MIT HIM i LAY YARN i THE le UND hmeemof YOU hn EUIL dap ARE wwheebernelp YOU h COM wp
+  [-12.122] phrase FRAMESTLABOUR (Bible_Douay_Psalms) in forward
+      DUMOKSWONDHELBEGEESUUERIDIRHA
+      WELSIONCOMEEMSRLWEHESTALBINNI
+      HAMASTAMBTFRAMESTLABOURASORIO
+      words: dumoks WON dhel BEG eesu UER i DIR h AWE ls ION COME emsrlweh EST alb INN iha MAST ambt FRAMES t LABOUR aso RIO
+  [-12.129] phrase PROUIDENCEBE (Bible_Douay_Psalms) in forward
+      IMSOFPROUIDENCEBEEPMMECRITHDA
+      RENPROUGOSEESPHNREDEPLANCTUUT
+      DASAPLASHLYHASEPLNAHOMHAPOCTO
+      words: imsof PROUIDENCE BEE pmmecrith DARE n PRO ugo SEES phn RED e PLAN ctuutda SAP LASH lyha SEP lnahomhap OCT o
+  [-12.133] phrase ALLAREINUITED (Bible_Douay_Psalms) in boustrophedon B
+      ERDABADOFFTOOGOUSORBLICTNIMFB
+      COSTAILYIMOOMTDSCOROTHESUALLA
+      REINUITEDFIUESHTOMEDWHUMEHTEM
+      words: erda BAD OFF TOO gous ORB l ICT nimfb COSTA ilyimoomt DSC oro THE su ALL ARE INUITED FIUE shto MED w HUM ehtem
+
+long phrases (14+ letters) that fit the real cipher's pattern: 27
+  OFTHYMERCIESAND                  1 place(s)   from Bible_Douay_Psalms
+  SHOULDWALKINTHE                  1 place(s)   from Bible_Douay_Psalms
+  WICKEDTOWASHAND                  1 place(s)   from Bible_Douay_Psalms
+  WITHMYLIPSIHAUE                  1 place(s)   from Bible_Douay_Psalms
+  AMTHYSALUATION                   1 place(s)   from Bible_Douay_Psalms
+  ANDBROUGHTTHEM                   1 place(s)   from Bible_Douay_Psalms
+  ANDWALKNOTINMY                   1 place(s)   from Bible_Douay_Psalms
+  BEMINDFULOFTHY                   3 place(s)   from Bible_Douay_Psalms
+  CHILDRENSOHATH                   1 place(s)   from Bible_Douay_Psalms
+  EXITUISRAELGOD                   1 place(s)   from Bible_Douay_Psalms
+  GODOFMYIUSTICE                   1 place(s)   from Bible_Douay_Psalms
+  HISHANDTOREPAY                   1 place(s)   from Bible_Douay_Psalms
+  IACOBWHOTURNED                   2 place(s)   from Bible_Douay_Psalms
+  IFITAKEMYWINGS                   1 place(s)   from Bible_Douay_Psalms
+  ISHOULDWALKFOR                   1 place(s)   from Bible_Douay_Psalms
+  LOUETHMERCYAND                   2 place(s)   from Bible_Douay_Psalms
+  METHOUARTMYSON                   1 place(s)   from Bible_Douay_Psalms
+  METHYKNOWLEDGE                   1 place(s)   from Bible_Douay_Psalms
+  OROFTHENOONDAY                   3 place(s)   from Bible_Douay_Psalms
+  PSALMEUIDENTLY                   1 place(s)   from Bible_Douay_Psalms
+  THOUARTMYGODIN                   1 place(s)   from Bible_Douay_Psalms
+  TOMEDAILYWHERE                   1 place(s)   from Bible_Douay_Psalms
+  UPONTHEIUSTAND                   1 place(s)   from Bible_Douay_Psalms
+  WINGSFORTHOUMY                   3 place(s)   from Bible_Douay_Psalms
+  WITHMYOWNHEART                   2 place(s)   from Bible_Douay_Psalms
+  WRATHGOINGUPTO                   1 place(s)   from Bible_Douay_Psalms
+  YEHISANGELSYOU                   2 place(s)   from Bible_Douay_Psalms
+Q1 vs pair-preserving  n=1000, mean -11.934, 95th pct -11.526, max -10.848
+Q1 vs plain shuffle    n=1000, mean -12.307, 95th pct -11.893, max -11.473
+controls: n=60, median -9.735, planted phrase found 12/60, median letters right 97%
+  example: planted WEWALKEDUPTHEHILLAFTERLUNCHANDTHEUIEWOUERTHEUALLEYWASLOU
+           found   WEWALKEDUPTHEHILLAFTERLUNCHANDTHEUIEWOUERTHEUALLEYWASLOU
+
+Run log (last 20):
+  doublet in 30.20s  (991/1000)
+  shuffle in 32.81s  (991/1000)
+  doublet in 25.68s  (992/1000)
+  shuffle in 29.41s  (992/1000)
+  doublet in 8.46s  (993/1000)
+  shuffle in 35.37s  (993/1000)
+  doublet in 11.07s  (994/1000)
+  shuffle in 25.08s  (994/1000)
+  doublet in 24.04s  (995/1000)
+  shuffle in 20.55s  (995/1000)
+  doublet in 10.56s  (996/1000)
+  shuffle in 16.67s  (996/1000)
+  doublet in 11.91s  (997/1000)
+  shuffle in 18.67s  (997/1000)
+  doublet in 26.14s  (998/1000)
+  shuffle in 16.38s  (998/1000)
+  doublet in 19.97s  (999/1000)
+  shuffle in 15.47s  (999/1000)
+  doublet in 18.52s  (1000/1000)
+  shuffle in 14.87s  (1000/1000)

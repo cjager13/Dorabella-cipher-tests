@@ -1,0 +1,7 @@
+[2026-10-07 10:28:42] START session 1, workers 8, 232,056 phrases
+[2026-10-07 10:39:04] END session, 10m 22.6s this session
+[2026-10-08 03:34:43] START session 2, workers 8, 232,056 phrases
+[2026-10-08 03:35:35] END session, 51.47s this session
+[2026-10-08 03:35:59] START session 3, workers 8, 232,056 phrases
+[2026-10-08 13:44:57] all targets met; stopping (--stop-when-done)
+[2026-10-08 13:44:57] END session, 10h 08m 58.6s this session
