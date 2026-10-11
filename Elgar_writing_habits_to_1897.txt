@@ -1,0 +1,35 @@
+ELGAR'S PRIVATE WRITING HABITS, 1879 - 14 JULY 1897
+Derived from his own letters, postcards and sketches in J.N. Moore, Letters of a Lifetime, pp. 1-59
+(about 13,300 words of private writing before the cipher). Counts and short phrases only:
+
+1. "&" INSTEAD OF "AND"
+   Private letters: "&" 429 times, "and" written out 50 times  ->  about 9 in 10 "and"s are "&".
+   His one newspaper article (1886): "&" 0 times, "and" 36 times. So "&" is his PRIVATE habit.
+   Elgar's cipher alphabet has 24 symbols and none for "&". If he wrote the Dorabella note the way he
+   wrote his letters, its plain text may hold very few "AND"s - unless "&" was written some other way
+   (the cipher's single dot? an omitted word?). Our English scoring model expects "AND" to be one of
+   the commonest words, which slightly penalises a decrypt that leaves it out.
+
+2. ABBREVIATIONS HE USES REPEATEDLY
+   wd. (would, 11x)   Xmas (11x)   yrs. / Yrs.   wh (which)   cd. (could)   shd.   recd.   accts.
+   tho' / thro' / altho'   'tis  'twill  'twould   'em   'till   o'c (o'clock)   &c.
+   Months and days:  Jany.  Augt.  Septr  Novr.  Decr.  Wedy  Saty
+   Places:  Birm.  Worcr.  Wrstr.     Signatures:  Ted.  Ed: Elgar  Edwd.  E.E.  E.W.E.  E.
+
+3. PLAY WITH WORDS AND LETTERS (relevant to a puzzle written for Dora)
+   To Dora Penny, 4 March 1897 - the only letter to her before the cipher:
+     "warbling wigorously in Worcester wunce a week (alliteration archaically Norse)"
+     - deliberate misspelling for a sound joke (v -> w, o -> wu), and the same letter shows him
+     "die-sinking": cutting his own wax seal with an "E" so his works "may be E-sily distinguished".
+   Elsewhere: "the Scotish (with one t) lay", "Cantanthem (new word)", "Sintax!", "pro-ey",
+   "japed together", "B.O.F.", "God wot!", "Selah!", "fax" (facts), "acquent" (acquainted).
+
+4. FAVOURITE QUOTATIONS HE REPEATS
+   Much Ado About Nothing, used twice (1889, 1892), slightly reworded each time:
+     "call the rest of the watch together & thank the Lord you are rid of a knave"
+   Pepys, twice: "& so home, as Pepys hath it" / "as old Pepys says".
+   Burns: "the best laid schemes of mice & men aft gang agley".
+
+5. FORMULAS (open and close of almost every letter)
+   "My dear doctor", "glad to get your cheery letter", "please give my kind regards to Mrs.Buck",
+   "Believe me / Sincerely yours", "Yours ever", "With much love".

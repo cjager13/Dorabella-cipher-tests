@@ -1,0 +1,220 @@
+words read: 19,776   distinct 7/8-letter key strings after reduction: 11,515
+keyword letter = 1-loop letter;  ^ = set read up, v = set read down
+
+==============================================================================
+yours: allowed letters {A,C} {D,F} {G,I/J} {K,M} {N,P} {Q,S} {T,W} {X,Z}
+==============================================================================
+Your test words (letter: which set it could come from):
+
+  DORABELLA:
+    as-is    DORABELLA    no fit             D:DEF^  O:middle-or-missing  R:middle-or-missing  A:ABC^  B:middle-or-missing  E:middle-or-missing  L:middle-or-missing  L:middle-or-missing  A:ABC^
+    doubles  DORABELA     no fit             D:DEF^  O:middle-or-missing  R:middle-or-missing  A:ABC^  B:middle-or-missing  E:middle-or-missing  L:middle-or-missing  A:ABC^
+    keyword  DORABEL      no fit             D:DEF^  O:middle-or-missing  R:middle-or-missing  A:ABC^  B:middle-or-missing  E:middle-or-missing  L:middle-or-missing
+
+  DORA:
+    as-is    DORA         no fit             D:DEF^  O:middle-or-missing  R:middle-or-missing  A:ABC^
+
+  PENNY:
+    as-is    PENNY        no fit             P:NOPv  E:middle-or-missing  N:NOP^  N:NOP^  Y:middle-or-missing
+
+  EDWARD:
+    as-is    EDWARD       no fit             E:middle-or-missing  D:DEF^  W:TUWv  A:ABC^  R:middle-or-missing  D:DEF^
+
+  ELGAR:
+    as-is    ELGAR        no fit             E:middle-or-missing  L:middle-or-missing  G:GHI^  A:ABC^  R:middle-or-missing
+
+FULL fits (all 8 letters, one per set): 0
+
+NEAR fits (7 of 8), most common words first: 6
+  WICKEDNS  [keyword] from WICKEDNESS                     W=TUWv I=GHIv C=ABCv K=KLM^ E=(misfit) D=DEF^ N=NOP^ S=QRSv
+  MANIFEST  [as-is  ] from MANIFEST                       M=KLMv A=ABC^ N=NOP^ I=GHIv F=DEFv E=(misfit) S=QRSv T=TUW^
+  TRANSFIX  [as-is  ] from TRANSFIX                       T=TUW^ R=(misfit) A=ABC^ N=NOP^ S=QRSv F=DEFv I=GHIv X=XYZ^
+  PIKESTAF  [doubles] from PIKESTAFF                      P=NOPv I=GHIv K=KLM^ E=(misfit) S=QRSv T=TUW^ A=ABC^ F=DEFv
+  FITZAMES  [keyword] from FITZJAMES                      F=DEFv I=GHIv T=TUW^ Z=XYZv A=ABC^ M=KLMv E=(misfit) S=QRSv
+  EXCITMNS  [keyword] from EXCITEMENTS                    E=(misfit) X=XYZ^ C=ABCv I=GHIv T=TUW^ M=KLMv N=NOP^ S=QRSv
+
+keys decoded: 192.  Best by n-gram score:
+
+  NEAR TRANSFIX [as-is] from TRANSFIX; start d5 anticlockwise; filled KLM^   score -16.478  words 1
+     BGLCAUSCXOMEFKEWEEUGGETNONTMD
+     SESUSCXYCLEELUTFSEMEURDFKNXXNMD
+     LDURDLKRQTDLEURFDTCGTDUCKAC
+     bglcauscxomefceueeug GET nontmdsesuscxycleelutfsemeurdfcnxxnmdldurdlcrqtdleurfdtcgtduccac
+
+  NEAR TRANSFIX [as-is] from TRANSFIX; start d5 anticlockwise; filled KLMv   score -16.895  words 1
+     BGLCAUSCXOKEFMEWEEUGGETNONTKD
+     SESUSCXYCLEELUTFSEKEURDFMNXXNKD
+     LDURDLMRQTDLEURFDTCGTDUCMAC
+     bglcauscxocefmeueeug GET nontcdsesuscxycleelutfseceurdfmnxxncdldurdlmrqtdleurfdtcgtducmac
+
+  NEAR EXCITMNS [keyword] from EXCITEMENTS; start d1 clockwise; filled DEF^   score -16.926  words 2
+     BPHACUDAMYGRSIRWRRUPPRTXYXTGQ
+     DRDUDAMLAHRRHUTSDRGRUEQSIXMMXGQ
+     HQUEQHIEFTQHRUESQTAPTQUAICA
+     bphacudamygr SIR urrupprtxyxtgqdrdudamlahrrhutsdrgrueq SIX mmxgqhqueqhieftqhruesqtaptquaica
+
+  NEAR EXCITMNS [keyword] from EXCITEMENTS; start d3 anticlockwise; filled DEFv   score -16.988  words 4
+     EWRDFOCDMYQHISHPHHOWWHNXYXNQG
+     CHCOCDMLDRHHRONICHQHOBGISXMMXQG
+     RGOBGRSBANGRHOBIGNDWNGODSFD
+     eurdfocdmyq HIS hph HOU uhnxyxnqgchcocdmldrhhronichqhobgisxmmxqgrgobgrsbangrho BIG ndun GOD sfd
+
+  NEAR WICKEDNS [keyword] from WICKEDNESS; start d7 clockwise; filled XYZv   score -16.989  words 2
+     YTEXZOCXSLFHIDHPHHOTTHNKLKNFG
+     CHCOCXSRXEHHEONICHFHOBGIDKSSKFG
+     EGOBGEDBANGEHOBIGNXTNGOXDZX
+     ytexsocxslfhidhph HOT thnclcnfgchcocxsrxehheonichfhobgidcsscfgegobgedbangeho BIG nxtngoxdsx
+
+  NEAR WICKEDNS [keyword] from WICKEDNESS; start d7 clockwise; filled XYZ^   score -16.989  words 2
+     YTEZXOCZSLFHIDHPHHOTTHNKLKNFG
+     CHCOCZSRZEHHEONICHFHOBGIDKSSKFG
+     EGOBGEDBANGEHOBIGNZTNGOZDXZ
+     ytesxocsslfhidhph HOT thnclcnfgchcocssrsehheonichfhobgidcsscfgegobgedbangeho BIG nstngosdxs
+
+  NEAR MANIFEST [as-is] from MANIFEST; start d4 anticlockwise; filled XYZ^   score -17.030  words 1
+     BZLCAUICSOKEFMEWEEUZZETNONTKD
+     IEIUICSRCLEELUTFIEKEUHDFMNSSNKD
+     LDUHDLMHGTDLEUHFDTCZTDUCMAC
+     bslcauicsocefmeueeus SET nontcdieiuicsrcleelutfieceuhdfmnssncdlduhdlmhgtdleuhfdtcstducmac
+
+  NEAR MANIFEST [as-is] from MANIFEST; start d4 anticlockwise; filled XYZv   score -17.030  words 0
+     BXLCAUICSOKEFMEWEEUXXETNONTKD
+     IEIUICSRCLEELUTFIEKEUHDFMNSSNKD
+     LDUHDLMHGTDLEUHFDTCXTDUCMAC
+     bxlcauicsocefmeueeuxxetnontcdieiuicsrcleelutfieceuhdfmnssncdlduhdlmhgtdleuhfdtcxtducmac
+
+  Most words: 6 (FITZAMES [keyword], score -17.436): unhu TEA usyglmildllennlfsysfgcalaeausruhllhefmalglebc MISS ssgchcebchibcfchlebmc FUN fceuitu
+
+==============================================================================
+standard: allowed letters {A,C} {D,F} {G,I/J} {I/J,L} {M,O} {P,R} {S,U/V} {W,Y}
+==============================================================================
+Your test words (letter: which set it could come from):
+
+  DORABELLA:
+    as-is    DORABELLA    no fit             D:DEF^  O:MNOv  R:PQRv  A:ABC^  B:middle-or-missing  E:middle-or-missing  L:JKLv  L:JKLv  A:ABC^
+    doubles  DORABELA     no fit             D:DEF^  O:MNOv  R:PQRv  A:ABC^  B:middle-or-missing  E:middle-or-missing  L:JKLv  A:ABC^
+    keyword  DORABEL      no fit             D:DEF^  O:MNOv  R:PQRv  A:ABC^  B:middle-or-missing  E:middle-or-missing  L:JKLv
+
+  DORA:
+    as-is    DORA         no fit             D:DEF^  O:MNOv  R:PQRv  A:ABC^
+
+  PENNY:
+    as-is    PENNY        no fit             P:PQR^  E:middle-or-missing  N:middle-or-missing  N:middle-or-missing  Y:WXYv
+
+  EDWARD:
+    as-is    EDWARD       no fit             E:middle-or-missing  D:DEF^  W:WXY^  A:ABC^  R:PQRv  D:DEF^
+
+  ELGAR:
+    as-is    ELGAR        no fit             E:middle-or-missing  L:JKLv  G:GHI^  A:ABC^  R:PQRv
+
+FULL fits (all 8 letters, one per set): 0
+
+NEAR fits (7 of 8), most common words first: 52
+  LADYSHIP  [as-is  ] from LADYSHIP                       L=JKLv A=ABC^ D=DEF^ Y=WXYv S=STU^ H=(misfit) I=GHIv P=PQR^
+  SOLITARY  [as-is  ] from SOLITARY                       S=STU^ O=MNOv L=JKLv I=GHIv T=(misfit) A=ABC^ R=PQRv Y=WXYv
+  GRADULY   [keyword] from GRADUALLY                      G=GHI^ R=PQRv A=ABC^ D=DEF^ U=STUv L=JKLv Y=WXYv
+  GRADUALY  [doubles] from GRADUALLY                      G=GHI^ R=PQRv A=ABC^ D=DEF^ U=STUv A=(misfit) L=JKLv Y=WXYv
+  DISPLAYE  [keyword] from DISPLAYED                      D=DEF^ I=GHIv S=STU^ P=PQR^ L=JKLv A=ABC^ Y=WXYv E=(misfit)
+  DISPLAY   [as-is  ] from DISPLAY                        D=DEF^ I=GHIv S=STU^ P=PQR^ L=JKLv A=ABC^ Y=WXYv
+  DISPOSAL  [as-is  ] from DISPOSAL                       D=DEF^ I=GHIv S=STU^ P=PQR^ O=MNOv S=(misfit) A=ABC^ L=JKLv
+  DISPOAL   [keyword] from DISPOSAL                       D=DEF^ I=GHIv S=STU^ P=PQR^ O=MNOv A=ABC^ L=JKLv
+  SIMPLCTY  [keyword] from SIMPLICITY                     S=STU^ I=GHIv M=MNO^ P=PQR^ L=JKLv C=ABCv T=(misfit) Y=WXYv
+  RIDCULOS  [keyword] from RIDICULOUS                     R=PQRv I=GHIv D=DEF^ C=ABCv U=STUv L=JKLv O=MNOv S=(misfit)
+  PAINFULY  [doubles] from PAINFULLY                      P=PQR^ A=ABC^ I=GHIv N=(misfit) F=DEFv U=STUv L=JKLv Y=WXYv
+  FORCIBLY  [as-is  ] from FORCIBLY                       F=DEFv O=MNOv R=PQRv C=ABCv I=GHIv B=(misfit) L=JKLv Y=WXYv
+  DRAWINGS  [as-is  ] from DRAWINGS                       D=DEF^ R=PQRv A=ABC^ W=WXY^ I=JKL^ N=(misfit) G=GHI^ S=STU^
+  CORDIALY  [doubles] from CORDIALLY                      C=ABCv O=MNOv R=PQRv D=DEF^ I=GHIv A=(misfit) L=JKLv Y=WXYv
+  MERCIFUL  [as-is  ] from MERCIFUL                       M=MNO^ E=(misfit) R=PQRv C=ABCv I=GHIv F=DEFv U=STUv L=JKLv
+  FURIOSLY  [keyword] from FURIOUSLY                      F=DEFv U=STUv R=PQRv I=GHIv O=MNOv S=(misfit) L=JKLv Y=WXYv
+  FAUORBLY  [keyword] from FAVOURABLY                     F=DEFv A=ABC^ U=STUv O=MNOv R=PQRv B=(misfit) L=JKLv Y=WXYv
+  DOWAGERS  [as-is  ] from DOWAGERS                       D=DEF^ O=MNOv W=WXY^ A=ABC^ G=GHI^ E=(misfit) R=PQRv S=STU^
+  ASIDUOLY  [keyword] from ASSIDUOUSLY                    A=ABC^ S=STU^ I=GHIv D=DEF^ U=(misfit) O=MNOv L=JKLv Y=WXYv
+  ADMIRBLY  [keyword] from ADMIRABLY                      A=ABC^ D=DEF^ M=MNO^ I=GHIv R=PQRv B=(misfit) L=JKLv Y=WXYv
+  SIMPLIFY  [as-is  ] from SIMPLIFY                       S=STU^ I=GHIv M=MNO^ P=PQR^ L=JKLv I=(misfit) F=DEFv Y=WXYv
+  SIMPLFY   [keyword] from SIMPLIFY                       S=STU^ I=GHIv M=MNO^ P=PQR^ L=JKLv F=DEFv Y=WXYv
+  SIMLARTY  [keyword] from SIMILARITY                     S=STU^ I=GHIv M=MNO^ L=JKLv A=ABC^ R=PQRv T=(misfit) Y=WXYv
+  ORDINALY  [keyword] from ORDINARILY                     O=MNOv R=PQRv D=DEF^ I=GHIv N=(misfit) A=ABC^ L=JKLv Y=WXYv
+  FAMILRY   [keyword] from FAMILIARLY                     F=DEFv A=ABC^ M=MNO^ I=GHIv L=JKLv R=PQRv Y=WXYv
+  DUPLICTY  [keyword] from DUPLICITY                      D=DEF^ U=STUv P=PQR^ L=JKLv I=GHIv C=ABCv T=(misfit) Y=WXYv
+  SIMLARY   [keyword] from SIMILARLY                      S=STU^ I=GHIv M=MNO^ L=JKLv A=ABC^ R=PQRv Y=WXYv
+  PYRAMIDS  [as-is  ] from PYRAMIDS                       P=PQR^ Y=WXYv R=(misfit) A=ABC^ M=MNO^ I=GHIv D=DEF^ S=STU^
+  LUDICROS  [keyword] from LUDICROUS                      L=JKLv U=STUv D=DEF^ I=GHIv C=ABCv R=PQRv O=MNOv S=(misfit)
+  HOLIDAYS  [as-is  ] from HOLIDAYS                       H=(misfit) O=MNOv L=JKLv I=GHIv D=DEF^ A=ABC^ Y=WXYv S=STU^
+  FAUORING  [keyword] from FAVOURING                      F=DEFv A=ABC^ U=STUv O=MNOv R=PQRv I=JKL^ N=(misfit) G=GHI^
+  FAMILRTY  [keyword] from FAMILIARITY                    F=DEFv A=ABC^ M=MNO^ I=GHIv L=JKLv R=PQRv T=(misfit) Y=WXYv
+  DREAMILY  [as-is  ] from DREAMILY                       D=DEF^ R=PQRv E=(misfit) A=ABC^ M=MNO^ I=GHIv L=JKLv Y=WXYv
+  DILATORY  [as-is  ] from DILATORY                       D=DEF^ I=GHIv L=JKLv A=ABC^ T=(misfit) O=MNOv R=PQRv Y=WXYv
+  CURIOSLY  [keyword] from CURIOUSLY                      C=ABCv U=STUv R=PQRv I=GHIv O=MNOv S=(misfit) L=JKLv Y=WXYv
+  CROWDING  [as-is  ] from CROWDING                       C=ABCv R=PQRv O=MNOv W=WXY^ D=DEF^ I=JKL^ N=(misfit) G=GHI^
+  UNFAIRLY  [as-is  ] from UNFAIRLY                       U=STUv N=(misfit) F=DEFv A=ABC^ I=GHIv R=PQRv L=JKLv Y=WXYv
+  SUPICOLY  [keyword] from SUSPICIOUSLY                   S=STU^ U=(misfit) P=PQR^ I=GHIv C=ABCv O=MNOv L=JKLv Y=WXYv
+  SUMARILY  [doubles] from SUMMARILY                      S=STU^ U=(misfit) M=MNO^ A=ABC^ R=PQRv I=GHIv L=JKLv Y=WXYv
+  SOLDIERY  [keyword] from SOLDIERLY                      S=STU^ O=MNOv L=JKLv D=DEF^ I=GHIv E=(misfit) R=PQRv Y=WXYv
+  OCUPYING  [doubles] from OCCUPYING                      O=MNOv C=ABCv U=STUv P=PQR^ Y=WXYv I=JKL^ N=(misfit) G=GHI^
+  MYRIADS   [as-is  ] from MYRIADS                        M=MNO^ Y=WXYv R=PQRv I=GHIv A=ABC^ D=DEF^ S=STU^
+  MULTIPCY  [keyword] from MULTIPLICITY                   M=MNO^ U=STUv L=JKLv T=(misfit) I=GHIv P=PQR^ C=ABCv Y=WXYv
+  HYDROCLI  [keyword] from HYDROCHLORIC                   H=(misfit) Y=WXYv D=DEF^ R=PQRv O=MNOv C=ABCv L=JKLv I=GHIv
+  FUROWING  [doubles] from FURROWING                      F=DEFv U=STUv R=PQRv O=MNOv W=WXY^ I=JKL^ N=(misfit) G=GHI^
+  FLORIDAS  [as-is  ] from FLORIDAS                       F=DEFv L=JKLv O=MNOv R=PQRv I=GHIv D=(misfit) A=ABC^ S=STU^
+  DISMLAR   [keyword] from DISSIMILAR                     D=DEF^ I=GHIv S=STU^ M=MNO^ L=JKLv A=ABC^ R=PQRv
+  DISAUOWL  [keyword] from DISAVOWAL                      D=DEF^ I=GHIv S=STU^ A=ABC^ U=(misfit) O=MNOv W=WXY^ L=JKLv
+  DIAGRMS   [keyword] from DIAGRAMS                       D=DEF^ I=JKL^ A=ABC^ G=GHI^ R=PQRv M=MNO^ S=STU^
+  DIAGRAMS  [as-is  ] from DIAGRAMS                       D=DEF^ I=JKL^ A=ABC^ G=GHI^ R=PQRv A=(misfit) M=MNO^ S=STU^
+  CURSOILY  [keyword] from CURSORILY                      C=ABCv U=STUv R=PQRv S=(misfit) O=MNOv I=GHIv L=JKLv Y=WXYv
+  ADMIRLTY  [keyword] from ADMIRALTY                      A=ABC^ D=DEF^ M=MNO^ I=GHIv R=PQRv L=JKLv T=(misfit) Y=WXYv
+
+keys decoded: 2,336.  Best by n-gram score:
+
+  NEAR GRADULY [keyword] from GRADUALLY; start d8 anticlockwise; filled MNO^   score -14.519  words 6
+     KPTILEMIAXSHGUHFHHEPPHDYXYDSI
+     MHMEMIABITHHTEDGMHSHENIGUYAAYSI
+     TIENITUNODITHENGIDIPDIEIULI
+     cptilemiaxshguhfhhepphdyxydsimhmemiabithhtedgmh SHE niguyaay SIT ienitunodi THEN gidipdieiuli
+
+  NEAR GRADULY [keyword] from GRADUALLY; start d8 anticlockwise; filled MNOv   score -15.133  words 6
+     KPTILEOIAXSHGUHFHHEPPHDYXYDSI
+     OHOEOIABITHHTEDGOHSHENIGUYAAYSI
+     TIENITUNMDITHENGIDIPDIEIULI
+     cptileoiaxshguhfhhepphdyxydsiohoeoiabithhtedgoh SHE niguyaay SIT ienitunmdi THEN gidipdieiuli
+
+  NEAR HYDROCLI [keyword] from HYDROCHLORIC; start d6 clockwise; filled STU^   score -15.433  words 4
+     BWKACHRASNIEDLEGEEHWWEIONOIIF
+     RERHRASTAKEEKHIDREIEHQFDLOSSOIF
+     KFHQFKLQPIFKEHQDFIAWIFHALCA
+     bucachrasniedlegeehuueionoiifrerhras TACE echidreiehqfdlossoifcfhqfclqpifcehqdfiauifhalca
+
+  NEAR SOLDIERY [keyword] from SOLDIERLY; start d5 anticlockwise; filled ABCv   score -15.467  words 5
+     KPNILTIIYEMBCOBUBBTPPBSDEDSMA
+     IBITIIYXINBBNTSCIBMBTHACODYYDMA
+     NATHANOHGSANBTHCASIPSATIOLI
+     cpniltiiyembcobubbtppbsdedsmaibitiiyxinbbntscibmbthacodyyd MAN a THAN ohgsanbthcasipsatioli
+
+  NEAR DISPOSAL [as-is] from DISPOSAL; start d8 clockwise; filled WXY^   score -15.559  words 1
+     QINRPTIRAXMEDOEUEETIIESWXWSMF
+     IEITIRABRNEENTSDIEMETHFDOWAAWMF
+     NFTHFNOHGSFNETHDFSRISFTROPR
+     qinrptiraxmedoeueetiiesuxusmfieitirabrneentsdiemethfdouaaumfnfthfnohgsf NET hdfsrisftropr
+
+  NEAR DISPOSAL [as-is] from DISPOSAL; start d8 clockwise; filled WXYv   score -15.635  words 1
+     QINRPTIRAXMEDOEUEETIIESYXYSMF
+     IEITIRABRNEENTSDIEMETHFDOYAAYMF
+     NFTHFNOHGSFNETHDFSRISFTROPR
+     qinrptiraxmedoeueetiiesyxysmfieitirabrneentsdiemethfdoyaaymfnfthfnohgsf NET hdfsrisftropr
+
+  NEAR DISAUOWL [keyword] from DISAVOWAL; start d8 clockwise; filled PQR^   score -15.691  words 10
+     BITCANICWQSEDUEMEENIIEOPQPOSF
+     IEINICWXCTEETNODIESENHFDUPWWPSF
+     TFNHFTUHGOFTENHDFOCIOFNCUAC
+     bit CAN icuqseduemeeniieopqposfieinicuxcteetnodiesenhfdupuupsftfnhftuhg OFTEN hdfociofncuac
+
+  NEAR HOLIDAYS [as-is] from HOLIDAYS; start d1 clockwise; filled PQRv   score -15.694  words 11
+     KWHILERIANGTSITFTTEWWTDONODGU
+     RTRERIABIHTTHEDSRTGTEQUSIOAAOGU
+     HUEQUHIQPDUHTEQSUDIWDUEIILI
+     c UHILE riangt SIT ftteuutdonodgurtreriabiht THE dsrtgtequsioaaoguhuequhiqpduhteqsudiudueiili
+
+  Most words: 15 (DILATORY [as-is], score -15.883): BUT CAN icrcuedsemeenuueolcloufieinicrqcteetnodi EUEN hfdslrrluftfnhftshg OFTEN hdfocuofncsac
+
+How to read: a real key would give a decrypt scoring near -10 that reads as English.
+Decoding many keywords will always turn up a few short words by chance; look for
+whole phrases, not isolated THE/AND/SEE.

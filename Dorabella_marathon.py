@@ -629,6 +629,23 @@ def verdict(p, n):
     return 'no evidence against this null'
 
 
+
+_BIGSEG = []
+
+
+def show_words(text):
+    """Words in a decrypt, for DISPLAY ONLY (scores never use this): the big ~11,700-word list
+    built from english.txt (as in the styles test), longer words preferred; falls back to the
+    small built-in list if that cannot be built."""
+    if not _BIGSEG:
+        try:
+            import Dorabella_styles as S
+            d = S.StyleDict(S.base_dictionary('english.txt'), 'S0')
+            _BIGSEG.append(lambda t: d.segment(S.fold(t)))
+        except Exception:
+            _BIGSEG.append(lambda t: H.segment(t.translate(H.TOL)))
+    return _BIGSEG[0](text)
+
 def build_report(state):
     L = []
     P = state['params']
@@ -729,7 +746,7 @@ def build_report(state):
         L.append(f"\n  [{cfg_label(t['cfg'])}]  z={t['z']:.2f}  raw={t['raw']:.4f}  words={t['words']}")
         for a, b in H.LINE_SPANS:
             L.append("     " + t['text'][a:b])
-        L.append("     " + H.segment(t['text'].translate(H.TOL)))
+        L.append("     " + show_words(t['text']))
 
     # ---------------- held-out detail
     L.append("\n" + "-" * 78)
