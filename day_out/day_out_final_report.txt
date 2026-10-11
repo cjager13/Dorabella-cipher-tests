@@ -1,0 +1,76 @@
+DORABELLA QUOTATION TEST REPORT  (source folder: Day_14July1897)
+written 2026-10-07 13:42:42   compute time 3h 03m 11.8s   sessions 1
+phrases of 12-30 letters: 31,776; eligible after the rule: 31,776
+
+source files (words, new phrases):  1662_evening_1_Ecclesiastes_8 (515, 2439); 1662_evening_2_2Thessalonians_1 (291, 1248); 1662_morning_1_Ecclesiastes_7 (617, 2875); 1662_morning_2_John_2 (510, 2293); 1871_evening_1_Job_40 (361, 1702); 1871_evening_2_Matthew_6v19-7v7 (550, 2524); 1871_morning_1_Job_38v39-39 (528, 2358); 1871_morning_2_Acts_18v1-24 (553, 2472); psalm_007_date_numbers_coverdale (350, 1607); psalm_014_date_numbers_coverdale (234, 1017); psalm_071_day14_coverdale (509, 2465); psalm_072_day14_coverdale (365, 1622); psalm_073_day14_coverdale (453, 2082); psalm_074_day14_coverdale (441, 1929); psalm_097_date_numbers_coverdale (225, 971); psalm_098_date_numbers_coverdale (173, 740); trinity4_collect (59, 234); trinity4_epistle_Romans_8v18-23 (131, 519); trinity4_gospel_Luke_6v36-42 (196, 679)
+
+====================================================================================================
+HEADLINE (p vs PAIR-PRESERVING copies; line to beat p < 0.025)
+====================================================================================================
+Q1 best completion   real -12.463   pair n=1000 p=0.7323   shuffle n=1000 p=0.2657   power 95%
+Q2 long phrases fit  real 5   pair mean 3.27   p=0.2607
+
+----------------------------------------------------------------------------------------------------
+REAL CIPHER
+----------------------------------------------------------------------------------------------------
+Q1 per seed: -12.463 (THESALUATION), -12.463 (THESALUATION), -12.463 (THESALUATION), -12.463 (THESALUATION), -12.463 (THESALUATION)
+placements tried: 218
+  [-12.463] phrase THESALUATION (psalm_098_date_numbers_coverdale) in each line reversed
+      IDOLBLUENNTEEMEUHEDBYASTWARNP
+      IDLYYLUHIFTEDESHOTREERACYASTH
+      ESALUATIONAUIHFTERIOKFORIFTIR
+      words: IDOL BLUE nn TEE meuhedbyast WARN pidlyyluhifte DES ho TREE RACY as THE SALUATION AUI hfte RIO kfo RIFT ir
+  [-12.641] phrase THESALUATION (psalm_098_date_numbers_coverdale) in each line reversed
+      IROCKSUENNTEEMEUHERKWASTLADNK
+      IRCWWCUHIFTERESHOTDEEDAYWASTH
+      ESALUATIONAUIHFTEDIOPFODIFTID
+      words: i ROCKS uenn TEE meu HER k WAS t LAD nk IRC wwcuhift ERE SHOT DEED ay WAS THE SALUATION AUI hf TED iopfodiftid
+  [-12.676] phrase ITUPTHENSAID (1662_morning_2_John_2) in boustrophedon A
+      GLITBEATPCKSNOSWSSELLSOACHYKD
+      DKHPPHONDRESKSANYEISSITUPTHEN
+      SAIDERDIORMYDISERNDOTLYDETOBT
+      words: g LIT BEAT pcksnosws SELLS oachykddkhpp HON dr ESK s ANY eis SIT up THEN SAID erdiormydi SER n DOT lydetobt
+  [-12.705] phrase WASGRIEUEDAT (psalm_073_day14_coverdale) in fully reversed
+      YEDYOGITYIGWHOANGICHINGHOGNGR
+      ELLEDWGHOARASWIONAANYFLYSOWAS
+      GRIEUEDATTOAAMADWARPLYSOBYNTU
+      words: yedyo GIT yig WHOA ngi CHIN ghogngr ELLE dwghoarasw ION a ANY FLY so WAS GRIEUED attoaa MAD WAR ply SOB yntu
+  [-12.740] phrase EUILTHINGFOR (1662_evening_1_Ecclesiastes_8) in forward
+      GEUILTHINGFORCOMOOTEEOCHBYSFA
+      HORTHINDIUOOUTSRHOFOTPARCYNNY
+      FAUATPAUSPKSAUOTPRACIESATISLI
+      words: g EUIL THING FOR COM oo TEE ochbysfahor THIN DIU o OUT srhofotp ARC ynnyfa UAT p AUS pksauotpraciesa TIS li
+
+long phrases (14+ letters) that fit the real cipher's pattern: 5
+  THESUNFORWISDOM                  1 place(s)   from 1662_morning_1_Ecclesiastes_7
+  HEANDHISMOTHER                   3 place(s)   from 1662_morning_2_John_2
+  LORDHAUEIPUTMY                   3 place(s)   from psalm_071_day14_coverdale
+  UPMIGHTYWATERS                   3 place(s)   from psalm_074_day14_coverdale
+  WHICHYETMYSOUL                   1 place(s)   from 1662_morning_1_Ecclesiastes_7
+Q1 vs pair-preserving  n=1000, mean -12.287, 95th pct -11.834, max -11.199
+Q1 vs plain shuffle    n=1000, mean -12.615, 95th pct -12.152, max -11.631
+controls: n=60, median -9.639, planted phrase found 14/60, median letters right 97%
+  example: planted WEWALKEDUPTHEHILLAFTERLUNCHANDTHEUIEWODWELLTHEREINLETTHE
+           found   WEWALKEDUPTHEHILLAFTERLUNCHANDTHEUIEWODWELLTHEREINLETTHE
+
+Run log (last 20):
+  doublet in 6.49s  (991/1000)
+  shuffle in 7.07s  (991/1000)
+  doublet in 6.63s  (992/1000)
+  shuffle in 6.83s  (992/1000)
+  doublet in 3.87s  (993/1000)
+  shuffle in 7.85s  (993/1000)
+  doublet in 4.81s  (994/1000)
+  shuffle in 5.53s  (994/1000)
+  doublet in 5.74s  (995/1000)
+  shuffle in 5.05s  (995/1000)
+  doublet in 4.66s  (996/1000)
+  shuffle in 5.18s  (996/1000)
+  doublet in 4.57s  (997/1000)
+  shuffle in 5.89s  (997/1000)
+  doublet in 6.71s  (998/1000)
+  shuffle in 5.99s  (998/1000)
+  doublet in 6.09s  (999/1000)
+  shuffle in 5.79s  (999/1000)
+  doublet in 5.48s  (1000/1000)
+  shuffle in 5.66s  (1000/1000)

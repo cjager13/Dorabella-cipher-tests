@@ -1,0 +1,198 @@
+DORABELLA CRIB TEST REPORT
+written 2026-10-10 16:17:06   compute time 18h 28m 20.6s   sessions 3
+eligible cribs (63): MYDEARDORA, DEARDORA, DEARESTDORA, DEARMISSPENNY, MISSPENNY, DEAREST, YOURSUERYTRULY, YOURSSINCERELY, YOURSEUER, EUERYOURS, AFFECTIONATELY, BELIEUEME, KINDREGARDS, GOODBYE, THANKYOUSOMUCH, MANYTHANKS, DELIGHTFUL, TOMORROW, YESTERDAY, PUZZLE, WOLUERHAMPTON, RECTORY, THERECTORY, HIGHFIELD, WORCESTER, BROADHEATH, LONDON, DORAPENNY, DORAMARYPENNY, DORABELLA, PENNY, ALFREDPENNY, MRSPENNY, MARYFRANCES, MEATHBAKER, WILLIAMMEATHBAKER, TOWNSHEND, EDWARD, EDWARDELGAR, MRSELGAR, CAROLINEALICE, ROBERTS, CARICE, WILLIAMHENRY, ANNGREENING, GREENING, HARRY, POLLIE, HELENAGNES, FREDERICK, SINCLAIR, TROYTE, GRIFFITH, FITTON, WINIFRED, NORBURY, NEUINSON, STEUARTPOWELL, MARCOELGAR, AUERYOLDCYPHER, DOYOUGOTOLONDONTOMORROW, LONDONTOMORROW, GOTOLONDON
+
+========================================================================================================
+HEADLINE (p vs PAIR-PRESERVING copies is the one that matters)
+========================================================================================================
+C1 any key, crib fixed           real  -11.328  pair n=1289 p= 0.3682  shuffle n=1289 p= 0.0155  power 98%
+C2 Elgar-style grouped keys      real  -99.000  pair n= 652 p= 1.0000  shuffle n= 644 p= 1.0000  power 97%
+C3 loop-group keys               real  -99.000  pair n=1288 p= 1.0000  shuffle n=1288 p= 1.0000  power 100%
+H1 MY DEAR DORA (found by looking) real  -12.078  pair n=1289 p= 0.0047  (41 of 1289 copies had a DEAR DORA fit at all)
+
+Line to beat: p < 0.0167 for C1, C2 or C3 (three tests); H1 is exploratory whatever its p.
+A real message would also show as a completed text that READS as English beyond the crib.
+
+--------------------------------------------------------------------------------------------------------
+C1 any key, crib fixed
+--------------------------------------------------------------------------------------------------------
+real per seed: -11.328 (GRIFFITH), -11.328 (GRIFFITH), -11.328 (GRIFFITH), -11.328 (GRIFFITH), -11.328 (GRIFFITH)
+placements tried on the real cipher: 311
+  [-11.328] crib GRIFFITH in each line reversed
+      GRUICITELLNEEMETHERYFAWNBADLY
+      GRIFFITHGONEREWHUNDEEDASFAINH
+      EWAITANGULAUGHONEDGUPOUDGONGD
+      words: gr UIC i TELL nee MET HER yfawn BADLY grif FIT h GONE rewhun DEE DAS f AIN he WAIT angu LAUGH ONE dgupoudgongd
+  [-11.470] crib DEAREST in each line reversed
+      TWIACAROMMSOOFORHOWCLEDSPENMY
+      TWALLARHTUSOWODHISNOONEBLEASH
+      ODEARESTIMEITHUSONTIQUINTUSTN
+      words: twiaca ROM msoo FOR HOW cl EDS PEN myt WALL arh TUS owod HIS NOON eble ASH o DEAREST imei THUS onti QUI n TUS tn
+  [-11.528] crib EDWARD in forward
+      ALNOFTWOMAGESUEBEETLLEDWARDGI
+      WESTROMPONEENTDSWEGETHISURMMR
+      GINITHINDHYDINETHSIDOLDITOURO
+      words: alnof TWO m AGES ue BEE tll EDWARD gi WEST ROM p ONE ENT dswege THIS urmmrgini THIN dhy DINE ths IDOL di TOUR o
+  [-11.584] crib EDWARD in forward
+      ULSOFTWOMAGENCEBEETLLEDWARDGI
+      WENTROMPOSEESTDNWEGETHINCRMMR
+      GISITHISCHYDISETHNICOLDITODRO
+      words: ul SOFT woma GEN ce BEE tll EDWARD gi WENT ROM POSE e STD nwege THIN CRM mr GIS i THIS chy DIS ETHNIC OLD itodro
+  [-11.587] crib DEAREST in each line reversed
+      TFRAMAROUUSOOKOCHOFPLEDSWENUP
+      TFALLACHTISOFODHRSNOONEBLEASH
+      ODEARESTRUERTHISONTRYIRNTISTN
+      words: tfra MAR ouusooko CHO fpl EDS wenupt FALL acht ISO fod HRS NOON eble ASH o DEAREST r UER THIS on TRY irnt IST n
+  H1 best completion (-12.150):
+      TLETORESTERUDONAREYDEARDORARG
+      LIILBURDONGNHUEOANNATPITHOUNH
+      RGELWHENSSONNMNBUNGWITHOFTASK
+      words: tle TORE STE ru DON ARE y DEAR DORA rgliilbur DON gn HUE o ANNA tpi THOU nhr GEL WHEN s SON nmnbung WITH of TASK
+  vs pair-preserving  n=1289, mean -11.387, 95th pct -11.098, max -10.643
+  vs plain shuffle    n=1289, mean -11.797, 95th pct -11.441, max -11.094
+controls: n=60, median stat -9.693, planted crib found 47/60, median letters right 97%
+  example: planted ITWASKINDOFYOUTOREMEMBERMDORAMARYPENNYYBIRTHDAYAND
+           found   ITWASKINDOFYOUTOREMEMBERMDORAMARYPENNYYBIRTHDAYAND
+
+--------------------------------------------------------------------------------------------------------
+C2 Elgar-style grouped keys
+--------------------------------------------------------------------------------------------------------
+real: best -99.000 with crib (no crib fits any key of this kind); crib-consistent keys found: 0
+crib-consistent keys in pair-preserving copies: mean 2,087, p (real has as many or more) = 1.0000
+  vs pair-preserving  n=652, mean -57.313, 95th pct -14.592, max -13.466
+  vs plain shuffle    n=644, mean -51.651, 95th pct -14.970, max -13.958
+controls: n=60, median stat -9.637, planted crib found 42/60, median letters right 100%
+  example: planted MYDEARFRIENDIWASSOUERYGLADOFYOURLETTERANDTHENEWSTH
+           found   MYDEARFRIENDIWASSOUERYGLADOFYOURLETTERANDTHENEWSTH
+
+--------------------------------------------------------------------------------------------------------
+C3 loop-group keys
+--------------------------------------------------------------------------------------------------------
+real: best -99.000 with crib (no crib fits any key of this kind); crib-consistent keys found: 0
+crib-consistent keys in pair-preserving copies: mean 1, p (real has as many or more) = 1.0000
+  vs pair-preserving  n=1288, mean -90.838, 95th pct -16.780, max -15.915
+  vs plain shuffle    n=1288, mean -87.805, 95th pct -16.887, max -15.777
+controls: n=60, median stat -9.551, planted crib found 49/60, median letters right 100%
+  example: planted MYDEARFRIENDIWASSOUERYGLADOFYOURLETTERANDTHENEWSTH
+           found   MYDEARFRIENDIWASSOUERYGLADOFYOURLETTERANDTHENEWSTH
+
+--------------------------------------------------------------------------------------------------------
+ELIGIBILITY (decided on 100 pair-preserving copies, never on the real cipher)
+--------------------------------------------------------------------------------------------------------
+  USED    MYDEARDORA                   greetings and sign-offs    fits per copy    0.0
+  USED    DEARDORA                     greetings and sign-offs    fits per copy    0.1
+  USED    DEARESTDORA                  greetings and sign-offs    fits per copy    0.0
+  USED    DEARMISSPENNY                greetings and sign-offs    fits per copy    0.0
+  USED    MISSPENNY                    greetings and sign-offs    fits per copy    0.4
+  skipped MYDEAR                       greetings and sign-offs    fits per copy  295.1
+  USED    DEAREST                      greetings and sign-offs    fits per copy   19.3
+  USED    YOURSUERYTRULY               greetings and sign-offs    fits per copy    0.0
+  USED    YOURSSINCERELY               greetings and sign-offs    fits per copy    0.0
+  USED    YOURSEUER                    greetings and sign-offs    fits per copy    0.1
+  USED    EUERYOURS                    greetings and sign-offs    fits per copy    0.0
+  USED    AFFECTIONATELY               greetings and sign-offs    fits per copy    0.0
+  USED    BELIEUEME                    greetings and sign-offs    fits per copy    0.1
+  USED    KINDREGARDS                  greetings and sign-offs    fits per copy    0.1
+  USED    GOODBYE                      greetings and sign-offs    fits per copy   13.3
+  skipped THANKYOU                     greetings and sign-offs    fits per copy  144.2
+  USED    THANKYOUSOMUCH               greetings and sign-offs    fits per copy    0.0
+  USED    MANYTHANKS                   greetings and sign-offs    fits per copy    0.6
+  USED    DELIGHTFUL                   the visit                  fits per copy    4.7
+  USED    TOMORROW                     the visit                  fits per copy    0.2
+  USED    YESTERDAY                    the visit                  fits per copy    1.1
+  skipped BICYCLE                      the visit                  fits per copy   22.6
+  skipped UISIT                        the visit                  fits per copy   36.0
+  USED    PUZZLE                       the visit                  fits per copy   16.1
+  skipped CIPHER                       the visit                  fits per copy  295.1
+  skipped CYPHER                       the visit                  fits per copy  295.1
+  USED    WOLUERHAMPTON                the visit                  fits per copy    0.7
+  USED    RECTORY                      the visit                  fits per copy   15.9
+  USED    THERECTORY                   the visit                  fits per copy    0.0
+  USED    HIGHFIELD                    the visit                  fits per copy    0.7
+  skipped HASFIELD                     the visit                  fits per copy  144.2
+  skipped FORLI                        the visit                  fits per copy  375.1
+  skipped MALUERN                      the visit                  fits per copy  215.7
+  USED    WORCESTER                    the visit                  fits per copy    1.1
+  USED    BROADHEATH                   the visit                  fits per copy    0.3
+  USED    LONDON                       the visit                  fits per copy    2.7
+  skipped IULY                         the visit                  fits per copy  441.6
+  skipped DORA                         the Penny family           fits per copy  441.6
+  USED    DORAPENNY                    the Penny family           fits per copy    7.6
+  USED    DORAMARYPENNY                the Penny family           fits per copy    0.0
+  USED    DORABELLA                    the Penny family           fits per copy    0.5
+  USED    PENNY                        the Penny family           fits per copy   19.2
+  skipped ALFRED                       the Penny family           fits per copy  295.1
+  USED    ALFREDPENNY                  the Penny family           fits per copy    0.5
+  USED    MRSPENNY                     the Penny family           fits per copy   10.0
+  USED    MARYFRANCES                  the Penny family           fits per copy    0.4
+  skipped HEALE                        the Penny family           fits per copy   30.5
+  skipped BAKER                        the Penny family           fits per copy  375.1
+  USED    MEATHBAKER                   the Penny family           fits per copy    0.5
+  USED    WILLIAMMEATHBAKER            the Penny family           fits per copy    0.0
+  USED    TOWNSHEND                    the Penny family           fits per copy    6.3
+  USED    EDWARD                       the Elgar family           fits per copy   18.9
+  USED    EDWARDELGAR                  the Elgar family           fits per copy    0.0
+  skipped ELGAR                        the Elgar family           fits per copy  375.1
+  skipped EDOO                         the Elgar family           fits per copy   21.0
+  skipped ALICE                        the Elgar family           fits per copy  375.1
+  USED    MRSELGAR                     the Elgar family           fits per copy   11.8
+  skipped CAROLINE                     the Elgar family           fits per copy  144.2
+  USED    CAROLINEALICE                the Elgar family           fits per copy    0.0
+  USED    ROBERTS                      the Elgar family           fits per copy   14.9
+  USED    CARICE                       the Elgar family           fits per copy   18.8
+  USED    WILLIAMHENRY                 the Elgar family           fits per copy    0.1
+  USED    ANNGREENING                  the Elgar family           fits per copy    0.0
+  USED    GREENING                     the Elgar family           fits per copy    0.1
+  USED    HARRY                        the Elgar family           fits per copy   19.2
+  skipped LUCY                         the Elgar family           fits per copy  441.6
+  USED    POLLIE                       the Elgar family           fits per copy   16.1
+  skipped FRANK                        the Elgar family           fits per copy  375.1
+  USED    HELENAGNES                   the Elgar family           fits per copy    0.1
+  USED    FREDERICK                    the Elgar family           fits per copy    1.9
+  skipped MARCO                        pets                       fits per copy  375.1
+  skipped MEG                          pets                       fits per copy  491.5
+  skipped MINA                         pets                       fits per copy  441.6
+  skipped DAN                          pets                       fits per copy  491.5
+  skipped IAEGER                       Elgar's circle             fits per copy   29.7
+  skipped NIMROD                       Elgar's circle             fits per copy  295.1
+  skipped AUGUST                       Elgar's circle             fits per copy   29.6
+  USED    SINCLAIR                     Elgar's circle             fits per copy   10.4
+  USED    TROYTE                       Elgar's circle             fits per copy   18.8
+  USED    GRIFFITH                     Elgar's circle             fits per copy    0.7
+  skipped YSOBEL                       Elgar's circle             fits per copy  295.1
+  skipped ISABEL                       Elgar's circle             fits per copy  295.1
+  USED    FITTON                       Elgar's circle             fits per copy   16.1
+  USED    WINIFRED                     Elgar's circle             fits per copy   19.6
+  USED    NORBURY                      Elgar's circle             fits per copy   19.3
+  USED    NEUINSON                     Elgar's circle             fits per copy    1.3
+  USED    STEUARTPOWELL                Elgar's circle             fits per copy    0.0
+  skipped ARNOLD                       Elgar's circle             fits per copy  295.1
+  skipped LYGON                        Elgar's circle             fits per copy  375.1
+  USED    MARCOELGAR                   the 1920 notebook          fits per copy    0.7
+  USED    AUERYOLDCYPHER               the 1920 notebook          fits per copy    0.0
+  skipped UERYOLD                      the 1920 notebook          fits per copy  215.7
+  USED    DOYOUGOTOLONDONTOMORROW      the 1920 notebook          fits per copy    0.0
+  USED    LONDONTOMORROW               the 1920 notebook          fits per copy    0.0
+  USED    GOTOLONDON                   the 1920 notebook          fits per copy    0.1
+
+Run log (last 20):
+  C1 shuffle in 12.62s  (1280/1500)
+  C1 doublet in 9.26s  (1281/1500)
+  C1 shuffle in 13.76s  (1281/1500)
+  C1 doublet in 9.87s  (1282/1500)
+  C1 shuffle in 8.68s  (1282/1500)
+  C1 doublet in 9.77s  (1283/1500)
+  C1 shuffle in 8.17s  (1283/1500)
+  C1 doublet in 10.12s  (1284/1500)
+  C1 shuffle in 10.13s  (1284/1500)
+  C1 doublet in 9.04s  (1285/1500)
+  C1 shuffle in 7.29s  (1285/1500)
+  C1 doublet in 8.03s  (1286/1500)
+  C1 shuffle in 8.81s  (1286/1500)
+  C1 doublet in 8.64s  (1287/1500)
+  C1 shuffle in 8.89s  (1287/1500)
+  C1 doublet in 10.08s  (1288/1500)
+  C1 shuffle in 10.06s  (1288/1500)
+  C1 doublet in 9.04s  (1289/1500)
+  C1 shuffle in 10.25s  (1289/1500)
+  C2 doublet in 3m 33.7s  (652/750)

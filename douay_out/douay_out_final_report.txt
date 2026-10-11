@@ -1,0 +1,111 @@
+DORABELLA QUOTATION TEST REPORT  (source folder: Bible_Douay)
+written 2026-10-10 16:18:28   compute time 11h 52m 53.0s   sessions 3
+phrases of 14-30 letters: 3,699,977; eligible after the rule: 3,699,977
+
+source files (words, new phrases):  Bible_Douay (989725, 3699977)
+
+====================================================================================================
+HEADLINE (p vs PAIR-PRESERVING copies; line to beat p < 0.025)
+====================================================================================================
+Q1 best completion   real -12.278   pair n=1000 p=0.5754   shuffle n=1000 p=0.1399   power 100%
+Q2 long phrases fit  real 395   pair mean 329.22   p=0.2957
+
+----------------------------------------------------------------------------------------------------
+REAL CIPHER
+----------------------------------------------------------------------------------------------------
+Q1 per seed: -12.278 (OFYOURWIUESAND), -12.278 (OFYOURWIUESAND), -12.278 (OFYOURWIUESAND), -12.278 (OFYOURWIUESAND), -12.278 (OFYOURWIUESAND)
+placements tried: 738
+  [-12.278] phrase OFYOURWIUESAND (Bible_Douay) in fully reversed
+      OCTOREAPOTEWGRIMEALGAMEGREMES
+      NYYNTWEGRISIUWARMIIMOFYOURWIU
+      ESANDUTIPPRIIXITWISHYOURCOMPH
+      words: oc TORE a POT ewgri MEAL GAME gremesnyyntwegrisiu WARM IIM of YOUR WIUES AND u TIP priixit WISH YOUR COMP h
+  [-12.333] phrase OFYOURWIUESAND (Bible_Douay) in fully reversed
+      OCTOREAPOTEWGRIMEALGAMEGREMES
+      NYYNTWEGRISIUWARMIIMOFYOURWIU
+      ESANDUTIPPRIIXITWISHYOURCOMPD
+      words: oc TORE a POT ewgri MEAL GAME gremesnyyntwegrisiu WARM IIM of YOUR WIUES AND u TIP priixit WISH YOUR COMP d
+  [-12.517] phrase MESPEAKFORIWOULD (Bible_Douay) in boustrophedon B
+      NATHDRSELLIEEMESPEAKFORIWOULD
+      REPIROFCOUEEUITPREAEIGNPSHFFH
+      ANOWSOINTLOSNPGIEUNTYGSUNGINU
+      words: NAT hdr SELL ieeme SPEAK FOR i WOULD REP irof COUE euit PRE aeignpshffha NOW so INTL osnpgieuntyg SUNG inu
+  [-12.517] phrase SPEAKFORIWOULD (Bible_Douay) in boustrophedon B
+      NATHDRSELLIEEMESPEAKFORIWOULD
+      REPIROFCOUEEUITPREAEIGNPSHFFH
+      ANOWSOINTLOSNPGIEUNTYGSUNGINU
+      words: NAT hdr SELL ieeme SPEAK FOR i WOULD REP irof COUE euit PRE aeignpshffha NOW so INTL osnpgieuntyg SUNG inu
+  [-12.618] phrase WIFEANDTHESONS (Bible_Douay) in fully reversed
+      IYSIDESWIFEANDTHESONSHENDEHER
+      UBBUFAENDTRTLASDHTTHIMBILDATL
+      ERSUGUSTWWDTTPTFATRKBILDYIHWK
+      words: iy SIDES WIFE AND THE SONS h END ehe RUB BUF a END trt LAS dhtt HIM bil DAT lersugustwwdttpt FAT rkbildyihwk
+
+long phrases (14+ letters) that fit the real cipher's pattern: 395
+  ANDBROUGHTTHEMUPAS               1 place(s)   from Bible_Douay
+  ANDBROUGHTTHEMUP                 1 place(s)   from Bible_Douay
+  BYWHOMTHESCANDAL                 2 place(s)   from Bible_Douay
+  FROMSTUMBLINGAND                 2 place(s)   from Bible_Douay
+  KINGCOMEFORTHAND                 1 place(s)   from Bible_Douay
+  MESPEAKFORIWOULD                 3 place(s)   from Bible_Douay
+  OUTSPREADHISFAME                 1 place(s)   from Bible_Douay
+  SAIDOFTHISPRINCE                 1 place(s)   from Bible_Douay
+  SILASBROUGHTTHEM                 1 place(s)   from Bible_Douay
+  THESECONDTIMEBYA                 1 place(s)   from Bible_Douay
+  UPANDFOLLOWEDHIM                 1 place(s)   from Bible_Douay
+  UPANDFOLLOWEDHIS                 1 place(s)   from Bible_Douay
+  ABIDEWITHYOUFOR                  2 place(s)   from Bible_Douay
+  ABSOLUTEINPOWER                  1 place(s)   from Bible_Douay
+  ALWAYSBEFOREHIM                  3 place(s)   from Bible_Douay
+  AMONGTHEPRINCES                  1 place(s)   from Bible_Douay
+  ANDHAUINGRENTMY                  1 place(s)   from Bible_Douay
+  ANDIBROUGHTTHEM                  1 place(s)   from Bible_Douay
+  ANDMYLOCKSOFTHE                  1 place(s)   from Bible_Douay
+  AREWROUGHTBYHIS                  3 place(s)   from Bible_Douay
+  BEARCHILDRENWHY                  1 place(s)   from Bible_Douay
+  BEFOREHIMANDASA                  2 place(s)   from Bible_Douay
+  BROUGHTTHEMUPAS                  1 place(s)   from Bible_Douay
+  BYMYFATHERWHOIS                  1 place(s)   from Bible_Douay
+  CHAPTERIACOBAND                  1 place(s)   from Bible_Douay
+  CHILDRENOFEGYPT                  1 place(s)   from Bible_Douay
+  COMPANIEDWITHUS                  1 place(s)   from Bible_Douay
+  DAYINMOUNTHEBAL                  1 place(s)   from Bible_Douay
+  DOINGAWORKONTHE                  1 place(s)   from Bible_Douay
+  DONELUKECHAPTER                  1 place(s)   from Bible_Douay
+  DOWNBYCOMPANIES                  1 place(s)   from Bible_Douay
+  FOUNDTHEPRINCES                  1 place(s)   from Bible_Douay
+  FOURWINGSANDTHE                  1 place(s)   from Bible_Douay
+  FROMYIELDINGHER                  1 place(s)   from Bible_Douay
+  GIUEMEOFTHISRED                  1 place(s)   from Bible_Douay
+  GODSUNTOHIMSELF                  1 place(s)   from Bible_Douay
+  GODSWITHFIREAND                  1 place(s)   from Bible_Douay
+  GODUPONITSBASES                  2 place(s)   from Bible_Douay
+  HISWAYSFOREUERY                  1 place(s)   from Bible_Douay
+  HUSBANDFOLLOWED                  1 place(s)   from Bible_Douay
+Q1 vs pair-preserving  n=1000, mean -12.214, 95th pct -11.776, max -11.455
+Q1 vs plain shuffle    n=1000, mean -12.541, 95th pct -12.093, max -11.655
+controls: n=60, median -9.681, planted phrase found 12/60, median letters right 95%
+  example: planted ITWASKINDOFYOUTOREMEMBERMYBIRTSLEWTHEMASTHEYFLEDBYTHEDES
+           found   ITWASKINDOFYOUTOREMEMBERMYBIRTSLEWTHEMASTHEYFLEDBYTHEDES
+
+Run log (last 20):
+  doublet in 13.70s  (991/1000)
+  shuffle in 14.78s  (991/1000)
+  doublet in 16.12s  (992/1000)
+  shuffle in 16.75s  (992/1000)
+  doublet in 6.64s  (993/1000)
+  shuffle in 17.62s  (993/1000)
+  doublet in 6.88s  (994/1000)
+  shuffle in 12.10s  (994/1000)
+  doublet in 12.37s  (995/1000)
+  shuffle in 10.28s  (995/1000)
+  doublet in 7.68s  (996/1000)
+  shuffle in 9.53s  (996/1000)
+  doublet in 6.71s  (997/1000)
+  shuffle in 11.54s  (997/1000)
+  doublet in 10.08s  (998/1000)
+  shuffle in 14.10s  (998/1000)
+  doublet in 11.04s  (999/1000)
+  shuffle in 10.16s  (999/1000)
+  doublet in 8.87s  (1000/1000)
+  shuffle in 9.88s  (1000/1000)

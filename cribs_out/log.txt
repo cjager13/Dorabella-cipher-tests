@@ -1,0 +1,7 @@
+[2026-10-05 14:38:51] START session 1, workers 8, 63 eligible cribs
+[2026-10-05 21:23:15] END session, 6h 44m 24.5s this session
+[2026-10-05 21:23:20] START session 2, workers 8, 63 eligible cribs
+[2026-10-05 21:23:40] END session, 19.46s this session
+[2026-10-05 21:26:21] START session 3, workers 8, 63 eligible cribs
+[2026-10-06 05:22:06] all targets met; raising copy targets by 50% and carrying on
+[2026-10-06 09:10:07] END session, 11h 43m 46.1s this session

@@ -1,0 +1,94 @@
+DORABELLA CIRCLE-AND-CROSS KEYS REPORT  (every 'eight sets of three' picture as the key)
+written 2026-10-11 00:09:05   compute time 37m 39.0s   sessions 1
+keys: 589,824 x 5 reading orders; no search; cipher: Dorabella_transcription.csv
+one pre-registered family, so the line is p < 0.05
+
+Directions are numbered 1-8 in 45-degree steps as in all the other scripts; 'ABC@3v' means
+the letters ABC sit on direction 3 running 'down' (1 loop = C, 3 loops = A); '^' = 'up'.
+
+========================================================================================================
+fam      real n_pair  p_pair n_shuf  p_shuf  power  verdict
+CK    -14.230   2000  0.3513   1000  0.4925   100%  chance level
+========================================================================================================
+  vs pair-preserving  n=2000, mean -14.281, 95th pct -13.967, max -13.627, p = 0.3513
+  vs plain shuffle    n=1000, mean -14.216, 95th pct -13.791, max -13.137, p = 0.4925
+  Elgar's own key, read forwards, scores -15.212 (it is one of the 589,824 keys)
+
+best real decrypts:
+  [-14.230] fully reversed | Elgar groups | ABC@6^ DEF@4^ GHI@8^ JKL@2^ MNO@1^ PQR@3^ STU@5^ WXY@7v
+      RPSRTISWRSIGNTHEISONDEINTIEIF
+      IAAIDGINTHFHMGSTEHHERBARMTGHM
+      IFSIKISHWWTHHUHDGHFKARMTPREWQ
+      words: rpsrtiswr SIGN THE i SON dein TIE ifia AID g INT hfhmg STE h HERB ARM tghmifsikishwwthhuhdghfk ARM t PRE wq
+  [-14.326] fully reversed | Elgar groups | ABC@6^ DEF@4^ GHI@8^ JKL@2^ MNO@1^ PQR@3^ STU@5^ WXY@7^
+      RPSRTISYRSIGNTHEISONDEINTIEIF
+      IAAIDGINTHFHMGSTEHHERBARMTGHM
+      IFSIKISHYYTHHUHDGHFKARMTPREYQ
+      words: rpsrtisyr SIGN THE i SON dein TIE ifia AID g INT hfhmg STE h HERB ARM tghmifsikishyythhuhdghfk ARM t PREY q
+  [-14.397] boustrophedon B | Elgar groups | ABC@7v DEF@5^ GHI@1v JKL@3^ MNO@8^ PQR@6^ STU@4^ WXY@2v
+      OUDYXYDNAAENNFNSMNUXPLIEILTAK
+      INMEILPQLTNNTEDMINUNEHOMSYPPY
+      UOLIDLEODALDOMHENTODGHSTOHEOT
+      words: oudyxy DNA aennfnsmnuxp LIE ilta KIN meilpqltnn TED MIN UNE homsyppy UOL IDLE odal DOM h ENT odghstoheot
+  [-14.409] boustrophedon B | Elgar groups | ABC@7v DEF@5^ GHI@1v JKL@3^ MNO@8^ PQR@6v STU@4^ WXY@2v
+      OUDYXYDNAAENNFNSMNUXRLIEILTAK
+      INMEILRQLTNNTEDMINUNEHOMSYRRY
+      UOLIDLEODALDOMHENTODGHSTOHEOT
+      words: oudyxy DNA aennfnsmnuxr LIE ilta KIN meilrqltnn TED MIN UNE homsyrry UOL IDLE odal DOM h ENT odghstoheot
+  [-14.439] fully reversed | Elgar groups | ABC@2^ DEF@4^ GHI@8^ JKL@6v MNO@1^ PQR@3^ STU@5^ WXY@7v
+      RPSRTISWRSIGNTHEISONDEINTIEIF
+      ALLADGINTHFHMGSTEHHERKLRMTGHM
+      IFSABASHWWTHHUHDGHFBLRMTPREWQ
+      words: rpsrtiswr SIGN THE i SON dein TIE i FALL adg INT hfhmg STE h HER klrmtghmifsab ASH wwthhuhdghfblrmt PRE wq
+  [-14.447] boustrophedon A | Elgar groups | ABC@3v DEF@5^ GHI@1v JKL@7v MNO@4^ PQR@2v STU@8v WXY@6^
+      BINACEIAWQOTUMTFTTEIITDRQRDOS
+      SORWWRMUSHETOTIUDENTTNAXWAIEU
+      TINSEHSNMHGDSNTEHUSDAIDSEADCA
+      words: BIN ACE IAW qotum TFT teiitdrqr DOS sorwwrmu SHE totiud ENT tnaxwaieut INS ehsnmhgdsnteh USD AIDS EAD ca
+  [-14.448] each line reversed | Elgar groups | ABC@6^ DEF@4^ GHI@8^ JKL@2^ MNO@1v PQR@3^ STU@5^ WXY@7v
+      IFSIKISHWWTHHUHDGHFKAROTPREWQ
+      IFIAAIDGINTHFHOGSTEHHERBAROTG
+      HORPSRTISWRSIGNTHEISMNDEINTIE
+      words: ifsikishwwthhuhdghfkarot PRE wqifia AID g INT hfhog STE h HERB arotghorpsrtiswr SIGN THE ismndein TIE
+  [-14.450] boustrophedon B | Elgar groups | ABC@7v DEF@5v GHI@1v JKL@3^ MNO@8^ PQR@6^ STU@4^ WXY@2v
+      OUFYXYFNAAENNDNSMNUXPLIEILTAK
+      INMEILPQLTNNTEFMINUNEHOMSYPPY
+      UOLIFLEOFALFOMHENTOFGHSTOHEOT
+      words: oufyxyfnaaenn DNS mnuxp LIE ilta KIN meilpqltnntef MIN UNE homsyppy UOL if LEO falfomh ENT ofghstoheot
+  [-14.455] fully reversed | Elgar groups | ABC@2^ DEF@4^ GHI@8^ JKL@6v MNO@1^ PQR@3^ STU@5^ WXY@7^
+      RPSRTISYRSIGNTHEISONDEINTIEIF
+      ALLADGINTHFHMGSTEHHERKLRMTGHM
+      IFSABASHYYTHHUHDGHFBLRMTPREYQ
+      words: rpsrtisyr SIGN THE i SON dein TIE i FALL adg INT hfhmg STE h HER klrmtghmifsab ASH yythhuhdghfblrmt PREY q
+  [-14.461] each line reversed | Elgar groups | ABC@6^ DEF@4^ GHI@8^ JKL@2^ MNO@1^ PQR@3^ STU@5^ WXY@7v
+      IFSIKISHWWTHHUHDGHFKARMTPREWQ
+      IFIAAIDGINTHFHMGSTEHHERBARMTG
+      HMRPSRTISWRSIGNTHEISONDEINTIE
+      words: ifsikishwwthhuhdghfk ARM t PRE wqifia AID g INT hfhmg STE h HERB ARM tghmrpsrtiswr SIGN THE i SON dein TIE
+
+controls, 0 misread symbols: n=20, median stat -9.252, true key and order found 15/20, median letters right 100%, above null 95th pct 20/20
+controls, 2 misread symbols: n=20, median stat -9.799, true key and order found 9/20, median letters right 98%, above null 95th pct 20/20
+  example control (100% right): planted MYDEARFRIENDIWASSOUERYGLADOFYOURLETTERANDTHENEWSTHATYOUA
+                                   found   MYDEARFRIENDIWASSOUERYGLADOFYOURLETTERANDTHENEWSTHATYOUA
+
+Run log (last 20):
+  CK shuffle x8 in 5.51s  (952/1000)
+  CK doublet x8 in 5.43s  (1904/2000)
+  CK doublet x8 in 5.38s  (1912/2000)
+  CK shuffle x8 in 5.43s  (960/1000)
+  CK doublet x8 in 5.40s  (1920/2000)
+  CK doublet x8 in 5.44s  (1928/2000)
+  CK shuffle x8 in 5.46s  (968/1000)
+  CK doublet x8 in 5.55s  (1936/2000)
+  CK doublet x8 in 5.72s  (1944/2000)
+  CK shuffle x8 in 5.70s  (976/1000)
+  CK doublet x8 in 5.60s  (1952/2000)
+  CK doublet x8 in 5.51s  (1960/2000)
+  CK shuffle x8 in 5.64s  (984/1000)
+  CK doublet x8 in 5.52s  (1968/2000)
+  CK doublet x8 in 5.60s  (1976/2000)
+  CK shuffle x8 in 5.46s  (992/1000)
+  CK doublet x8 in 5.42s  (1984/2000)
+  CK doublet x8 in 5.38s  (1992/2000)
+  CK shuffle x8 in 5.33s  (1000/1000)
+  CK doublet x8 in 5.58s  (2000/2000)
