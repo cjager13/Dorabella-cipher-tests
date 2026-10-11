@@ -2,7 +2,7 @@
 
 Fair statistical tests of Edward Elgar's 1897 Dorabella cipher.
 
-**Result: no key tested turns the Dorabella into readable text.** About 30 tests in round 1 and 52 pre-registered test families in round 2 all land at chance. Known text put through the same tests is recovered almost every time.
+**Result: no key tested turns the Dorabella into readable text.** About 30 tests in round 1 and 55 pre-registered test families in round 2 all land at chance. Known text put through the same tests is recovered almost every time.
 
 The cipher is not random: it has strong habits in which symbol follows which. But scrambled copies that keep those habits do as well as the real cipher in every test, in every language and writing style tried.
 
@@ -36,6 +36,7 @@ p-values are (1 + copies at least as good) / (copies + 1), so they can never go 
 | Elgar's key through transpositions or period-3 shifts and turns (TE, PA, PB) | `Dorabella_three.py` | 0.99, 0.46, 0.47 | 100% | Chance |
 | Any key plus a period-3 shift or symbol turn (PC, PD) | `Dorabella_three.py` | 0.41, 0.64 | 85% | Chance |
 | Three alphabets used in turn (PE) | `Dorabella_three.py` | 0.87 | 10% | Inconclusive: too much freedom |
+| Loop counts alone, read in threes: repeats, counting keys, any key (L1, L2, L3) | `Dorabella_looptrits.py` | 0.048, 0.26, 0.31 | 83%, 100%, 48% | Chance; any-key test low power |
 | 63 cribs (greetings, names, places), any key | `Dorabella_cribs.py` | 0.37 | 98% | Chance |
 | Cribs with sets-of-three or loop-group keys | `Dorabella_cribs.py` | 1.00, 1.00 | 97-100% | Chance |
 | Quotation from words Elgar set (18 songs and cantatas) | `Dorabella_quotes.py` | 0.75 | 98% | Chance |
@@ -60,6 +61,7 @@ Where a row gives several p-values, they are the row's families in the order nam
 
 - **Latin, p = 0.049 twice.** The confirmation rule was written into the script first: confirmed only if p < 0.05 *and* the decrypt reads as Latin. The decrypt ("AORAUIC FACIS QUETICHQCTI QUI TIMOLLORSI QUEM ... ENIM ... DAT") does not read, while planted Latin came back 95-99% right.
 - **Birthdays with any key, p = 0.048.** It misses the corrected line (0.0167), and random numbers of the same size did as well (p = 0.35).
+- **Loop-count repeats, p = 0.048.** The 29 loop-count triples repeat a little more than copies' do (232 appears five times), but this misses the line (0.0167), and no counting key turns them into text (p = 0.26, power 100%).
 - **MY DEAR DORA, p = 0.0047.** DEAR DORA fits the start of line 3 read backwards, but it was noticed by looking, so it was reported as exploratory from the start. The text completed around it does not read.
 - **Homophones and three alphabets** are the two tests too weak to rule their ideas out: at 87 symbols, that much freedom lets many keys produce equally English-looking text.
 
@@ -124,7 +126,7 @@ The Dorabella *does* beat plain shuffles (p = 0.0020 in 1,016), so its symbol or
 | `Dorabella_heldout_check.py` | Reruns one held-out configuration over many seeds and copies |
 | `Dorabella_keyword2.py` | Keyword test with direction order and up/down set by the keyword's first or third letters (output `keyword_out.txt`) |
 | `Dorabella_language.py` | "Is it language?": were the symbols chosen by a message or by the hand? Compares the cipher's statistics with English passages and hand-made fakes (output `language_out/`) |
-| `Dorabella_looptrits.py` | Do the loop counts alone, read three at a time, spell a message? (output `looptrits_out/`) |
+| `Dorabella_looptrits.py` | Do the loop counts alone, read three at a time, spell a message? Run in round 2 (output `looptrits_out/`) |
 
 ### Outputs
 
@@ -178,6 +180,7 @@ These are public-domain texts, included so every run can be reproduced exactly. 
 | `python Dorabella_scales.py --set scales` (or `numbers`, `notes`) `--stop-when-done` | 6-7.5 h each |
 | `python Dorabella_circlekeys.py --stop-when-done` | 38 min |
 | `python Dorabella_homophones.py --stop-when-done` | 3.1 h |
+| `python Dorabella_looptrits.py --workers 8` (not resumable; runs a fixed number of copies) | 6 min |
 | `python Dorabella_hillclimb.py --selftest --corpus english.txt` | 10 s |
 | `python Dorabella_verify.py` | 20 min |
 | `python Dorabella_numbers.py` | 1.6 h |
@@ -203,7 +206,7 @@ Two round-2 tests used Elgar's own letters before 14 July 1897, transcribed from
 
 ## Open threads
 
-- **Homophones and three alternating alphabets** cannot be ruled out by statistical search at this length (power 62-78% and 10%).
+- **Homophones, three alternating alphabets and any-key loop triples** cannot be ruled out by statistical search at this length (power 62-78%, 10% and 48%).
 - **A blind re-reading of the uncertain symbols**, by someone who has not seen these results, would settle positions 32 and 67.
 - **Not yet tested:** names of God and Jesus as cribs, street names and addresses as cribs, and the cipher's single dot as "&".
 

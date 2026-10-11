@@ -1,0 +1,43 @@
+[2026-10-11 13:19:49] START looptrits  workers 8
+loop counts: 232312131232112322233211211331212131232222211123222311111133232232123132222131331323113
+29 triples (base 3, first digit most significant): 16 19 6 16 1 22 17 9 9 24 10 6 16 13 9 5 13 18 0 8 16 16 5 7 13 6 24 23 2
+distinct triples: 17; most common: 232 x5, 131 x3, 211 x3, 222 x3, 331 x2
+[13:19:50] L1 done in 0.20s
+[13:19:52] L2 done in 1.66s
+[13:25:48] L3 done in 5m 56.3s
+
+==========================================================================================
+RESULTS  (p vs pair-preserving copies is the one that matters; Bonferroni line p < 0.0167)
+==========================================================================================
+
+L1  letter-likeness (IC of triples)
+  real 0.0517
+  pair-preserving: n=2000, mean 0.0347, 95th pct 0.0493, max 0.0862, p = 0.0480
+  plain shuffle:   n=2000, mean 0.0357, max 0.0911, p = 0.0565
+  planted English: median 0.0591; power (above null 95th pct) 83%
+  real distinct triples 17; pair-preserving mean distinct 18.2
+  diagnostic, triples starting at symbol 2: IC 0.0397, p vs pair-preserving 0.3153 (a real message in frame 1 should look random here)
+  diagnostic, triples starting at symbol 3: IC 0.0238, p vs pair-preserving 0.9500 (a real message in frame 1 should look random here)
+  verdict: below 0.05, not past Bonferroni
+
+L2  counting keys (270 readings)
+  real -14.6183
+  pair-preserving: n=2000, mean -14.8574, 95th pct -14.0710, max -12.6652, p = 0.2569
+  plain shuffle:   n=2000, mean -14.8301, max -12.4359, p = 0.2779
+  planted English: median -9.2703; power (above null 95th pct) 100%
+  best real reading: [forward, first digit most significant, alphabet rotated 2] SVISDYTLL_MISPLHPUCKSSHJPI_ZE   words 0
+  word score p vs pair-preserving: 1.0000
+  example control: planted WE_REACHED_THE_STATION_WITH_O  ->  found WE_REACHED_THE_STATION_WITH_O
+  verdict: chance level
+
+L3  any key (annealing)
+  real -9.2237  (seeds: -9.192, -9.277, -9.224, -9.308, -9.052)
+  pair-preserving: n=500, mean -9.3229, 95th pct -8.9649, max -8.5113, p = 0.3114
+  plain shuffle:   n=500, mean -9.3288, max -8.4510, p = 0.3094
+  planted English: median -8.9886; power (above null 95th pct) 48%
+  best real reading: [boustrophedon B] LWHIMSOFYOURMETHENGANDARECOMM   words 11
+  word score p vs pair-preserving: 0.2794
+  example control: planted TELLMEWHATYOUTHINKOFTHEENCLOS  ->  found TELLMEWHATYOUTHINGOFTHEENDLOR
+  verdict: chance level, LOW POWER: inconclusive
+
+[2026-10-11 13:25:49] END looptrits, 5m 59.7s
