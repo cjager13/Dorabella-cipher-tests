@@ -1,0 +1,3 @@
+[2026-10-08 22:24:09] START session 1, workers 8, languages EN FR DE LA IT
+[2026-10-09 10:55:21] all targets met; stopping (--stop-when-done)
+[2026-10-09 10:55:21] END session, 12h 31m 11.9s this session

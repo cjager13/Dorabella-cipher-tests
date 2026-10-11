@@ -1,0 +1,177 @@
+DORABELLA LANGUAGES REPORT
+written 2026-10-10 16:17:14   compute time 12h 31m 11.8s   sessions 1
+settings: real seeds 9 (median used), annealing 12 restarts x 20000 steps per reading order, 5 reading orders, 9 uncertain symbols solved in the search
+texts: EN english.txt (643,295 letters); FR french.txt (512,877 letters); DE german.txt (673,077 letters); LA latin.txt (548,833 letters); IT italian.txt (1,098,064 letters)
+Bonferroni line for one of the 4 new languages: p < 0.0125
+
+========================================================================================================
+HEADLINE (statistic = best quadgram score in that language's own model; real = median over seeds;
+          power = planted held-back text above the 95th percentile of the pair-preserving copies)
+Scores are on each language's own scale: compare a language only with its own copies.
+========================================================================================================
+language                   real n_pair  p_pair n_shuf  p_shuf  power ctrl med  verdict
+EN English (reference)  -10.928   1000  0.1608   1000  0.0040    97%    -9.51  chance level
+FR French               -11.072   1000  0.1379   1000  0.0050   100%    -9.18  chance level
+DE German               -11.552   1000  0.5255   1000  0.1389   100%    -9.22  chance level
+LA Latin                -10.886   1000  0.0490   1000  0.0010    98%    -9.99  below 0.05, not past Bonferroni (expected by chance among 4 languages)
+IT Italian              -11.132   1000  0.0749   1000  0.0080   100%    -9.11  chance level
+
+A language matters only if the real cipher beats the PAIR-PRESERVING copies past the
+Bonferroni line, its controls show it can find a message, and the decrypt reads as that language.
+
+--------------------------------------------------------------------------------------------------------
+EN: English (reference)  (english.txt)
+--------------------------------------------------------------------------------------------------------
+real statistic per seed: -11.029, -10.884, -11.076, -11.038, -10.860, -10.881, -10.928, -10.918, -10.965   median -10.928
+  vs pair-preserving  n=1000, mean -11.067, 95th pct -10.824, max -10.609, p = 0.1608
+  vs plain shuffle    n=1000, mean -11.519, 95th pct -11.193, max -10.828, p = 0.0040
+best real decrypts (from the seed with the highest statistic, -10.860):
+  [-10.860] fully reversed  alternate readings used at [10, 34, 67, 86]
+      AINATONSANOHUTEDONGUNDOUTODOR
+      ILLIWHOUTERECHNTDEEDAYLAITHEC
+      ORNIFINESSTEEMEWHERPLACTBADSP
+      words: AIN atonsanohute DON GUN d OUT odor ILL iwh OUTER echntdee DAY lai THE CORN i FINE s STE emew HER pl ACT BAD sp
+  [-11.037] each line reversed  alternate readings used at [10, 23, 25, 78, 85, 86]
+      ORWAYATELLSEEMETHERYFINSPIDLY
+      ORAFFATHOUSERENHWSDEEDIGFINSH
+      ENIATISOWLITOHUSEDOWBUTDOUSOD
+      words: or WAY a TELLS ee MET HER yfinspidlyoraffat HOUSE renhwsdeedigfin SHE niatisow LIT oh USED ow BUT dousod
+  [-11.067] forward  alternate readings used at [78, 86]
+      BYNACTUALFDERWEMEETYYESIFISDO
+      UERTUALPANEENTSRUEDETHORWILLI
+      DONOTHONWHGSONETHROWAYSOTASIA
+      words: byn ACTUAL fderwe MEET y YES ifisd OUER tualpaneentsruedethor WILL ido NOT HON whgs ONE THROW aysotasia
+controls, 0 misread symbols: n=30, median stat -9.306, right reading order 28/30, median symbols decoded right 99%, above null 95th pct 30/30
+controls, 2 misread symbols: n=30, median stat -9.706, right reading order 25/30, median symbols decoded right 93%, above null 95th pct 28/30
+  example control (100% right): planted UERESTIATNOONTHEPROFESSORTELLSMETHATTHISMORNINGATDAWNHEC
+                                   found   UERESTIATNOONTHEPROFESSORTELLSMETHATTHISMORNINGATDAWNHEC
+
+--------------------------------------------------------------------------------------------------------
+FR: French  (french.txt)
+--------------------------------------------------------------------------------------------------------
+real statistic per seed: -11.072, -11.070, -11.072, -11.066, -11.116, -10.975, -11.237, -11.112, -11.011   median -11.072
+  vs pair-preserving  n=1000, mean -11.216, 95th pct -10.987, max -10.635, p = 0.1379
+  vs plain shuffle    n=1000, mean -11.685, 95th pct -11.322, max -11.000, p = 0.0050
+best real decrypts (from the seed with the highest statistic, -10.975):
+  [-10.975] forward  alternate readings used at [10, 24, 67, 78]
+      YPNAFSLAMYDERCEGEESPPEULHOUDI
+      LERSLAMBANEENSURLEDESTIRCOMMO
+      DINISTINUTQUINESTRICAPUISAUFA
+      words: ypnafslamydercegeesp PEU lhoudilerslamba NEE n SUR led EST ircommodinistinutq UIN EST rica PUIS aufa
+  [-11.440] each line reversed  alternate readings used at [10, 25, 67, 78, 86]
+      OMSIBISETTUEEDEPREMBLACUFANTB
+      OMILLIPROQUEMECRSUNEENAGLACUR
+      ECAISAUOSTAPORQUENOSYQSNOQUON
+      words: omsibiset TUE edepremblacufantbomillipro QUE mecrsu NEE nagla CURE caisa UOS tapor QUE NOS yqsnoquon
+  [-11.460] fully reversed  alternate readings used at [10, 23, 25, 78]
+      OBLOUILFORITQUESILHQRSIQUISIM
+      ACCARTIQUEMENTLUSEESOYCONUTEN
+      IMLAPAREFFUEEDERTEMPCONUBOSFP
+      words: obl OUI lfo RIT QUE silhqrsiq UIS imac CAR ti QUE MENT l USE esoyconutenimla PAR effueedertempconubosfp
+controls, 0 misread symbols: n=30, median stat -9.011, right reading order 29/30, median symbols decoded right 99%, above null 95th pct 30/30
+controls, 2 misread symbols: n=30, median stat -9.312, right reading order 26/30, median symbols decoded right 97%, above null 95th pct 30/30
+  example control (100% right): planted EZUOUSCLAIREMENTSURCESDEUXFAITSPREMIEREMENTAUEZUOUSOUIOU
+                                   found   EZUOUSCLAIREMENTSURCESDEUXFAITSPREMIEREMENTAUEZUOUSOUIOU
+
+--------------------------------------------------------------------------------------------------------
+DE: German  (german.txt)
+--------------------------------------------------------------------------------------------------------
+real statistic per seed: -11.699, -11.511, -11.511, -11.577, -11.609, -11.552, -11.622, -11.507, -11.507   median -11.552
+  vs pair-preserving  n=1000, mean -11.534, 95th pct -11.287, max -11.049, p = 0.5255
+  vs plain shuffle    n=1000, mean -11.786, 95th pct -11.409, max -10.796, p = 0.1389
+best real decrypts (from the seed with the highest statistic, -11.507):
+  [-11.507] fully reversed  alternate readings used at [10, 23, 25, 67, 78, 85, 86]
+      IONITAUFINADLTERAUKLURALTARAM
+      OHHONDALTEMESDUTREERICHISTDES
+      AMUOPONEFFTEEBENDEMPHISTWIRFP
+      words: ionit AUF inadlterauklur ALT aramohhond ALTE mesdutreer ICH IST DES amuoponeffte EBEN DEM ph IST WIR fp
+  [-11.608] each line reversed  alternate readings used at [10, 24, 25, 67, 78, 86]
+      ANUODRUESSTEEWECHENDMIRTZIGSD
+      ANOMMOCHALTENERHUTGEEGIBMIRTH
+      ERIOUITAUSICAHLTEGAUFLUGALTAG
+      words: anuodruess TEE wechend MIR tzigsdanommoc HALTEN er HUT gee GIB MIR t HER iouit AUS icahlteg AUF lu GALT ag
+  [-11.797] forward  alternate readings used at [10, 23, 25, 67]
+      CTRIUNBILCHESWEGEENTTEWOCOMHA
+      BESNBILFIREERNMSBEHENDASWOLLO
+      HARANDARMDYMARENDSAMITMANIMUI
+      words: ctriunbilches WEGE enttewocom HABE snbilfireernmsb EHE n DAS wollohar AND ARM dymarendsa MIT MAN imui
+controls, 0 misread symbols: n=30, median stat -9.073, right reading order 29/30, median symbols decoded right 98%, above null 95th pct 30/30
+controls, 2 misread symbols: n=30, median stat -9.445, right reading order 28/30, median symbols decoded right 94%, above null 95th pct 30/30
+  example control (100% right): planted OHNDEINFREUNDDEINGELIEBTERNAHTSICHSEINEMENDELOTTEDASISTE
+                                   found   OHNDEINFREUNDDEINGELIEBTERNAHTSICHSEINEMENDELOTTEDASISTE
+
+--------------------------------------------------------------------------------------------------------
+LA: Latin  (latin.txt)
+--------------------------------------------------------------------------------------------------------
+real statistic per seed: -10.886, -10.886, -10.886, -10.886, -10.899, -10.957, -10.757, -10.977, -10.757   median -10.886
+  vs pair-preserving  n=1000, mean -11.158, 95th pct -10.888, max -10.677, p = 0.0490
+  vs plain shuffle    n=1000, mean -11.654, 95th pct -11.283, max -10.944, p = 0.0010
+best real decrypts (from the seed with the highest statistic, -10.757):
+  [-10.757] fully reversed  alternate readings used at [10, 25, 67, 86]
+      IOSITESDISEUNTARESYNSRENTEREM
+      OLLOQUENTAMACUSTRAARIFLICTUAC
+      EMSOPOSADDTAABAQUAMPLICTHIRDP
+      words: io SIT esdi SEU nta RES ynsrente REM ollo QUE n TAM acustraarifl ICTU acemsoposaddtaab AQUAM plicthirdp
+  [-10.915] forward  alternate readings used at [10, 34, 67, 86]
+      YCROXNDOSYBAMPAGAANCCAUILIUBE
+      DAMNIOSHORAARNUMDABANTEMPISSI
+      BERENTERUTQUERANTMEUOCUENOUIO
+      words: ycroxndosybampagaanccauiliubedamnios HORA ar NUM dab ANTE mpissiberen TER utqu ERANT meuocue NOUI o
+  [-11.160] each line reversed  alternate readings used at [10, 25, 67, 78]
+      ECNOPONISSUIIDIBRICPLATUGAMSP
+      ECOLLOBREQUICITRNUMIIMAFLATUR
+      ITAGNAUENSABERQUIMENHQNMEQUEM
+      words: ecnoponiss UII dibricplatugam SPE COLLO breq UICI tr NUM iimaf LATURI t AGNA uensaberq UIM enhqnme QUEM
+controls, 0 misread symbols: n=30, median stat -9.854, right reading order 25/30, median symbols decoded right 94%, above null 95th pct 30/30
+controls, 2 misread symbols: n=30, median stat -10.154, right reading order 22/30, median symbols decoded right 73%, above null 95th pct 29/30
+  example control (100% right): planted AECUBUMCELLISAUITISDUMCAPITOLIOREGINADEMENTISRUINASFUNUS
+                                   found   AECUBUMCELLISAUITISDUMCAPITOLIOREGINADEMENTISRUINASFUNUS
+
+--------------------------------------------------------------------------------------------------------
+IT: Italian  (italian.txt)
+--------------------------------------------------------------------------------------------------------
+real statistic per seed: -11.057, -11.096, -11.132, -11.254, -11.096, -11.057, -11.152, -11.152, -11.155   median -11.132
+  vs pair-preserving  n=1000, mean -11.368, 95th pct -11.096, max -10.811, p = 0.0749
+  vs plain shuffle    n=1000, mean -11.885, 95th pct -11.452, max -10.926, p = 0.0080
+best real decrypts (from the seed with the highest statistic, -11.057):
+  [-11.057] fully reversed  alternate readings used at [10, 25, 34, 67, 78, 86]
+      IONIUENTIPERQUASENZQNSEQUESEL
+      OHHOPREQUALADRNUSAASIGHIOURAD
+      ELNOCONATTUAAMAPRALCHIDUBISTC
+      words: ioni UENTI PER QUA SENZ qnse QUE selohhopre QUAL adrn USA asigh IOUR a DEL no CON at TUA am APRA l CHI dubistc
+  [-11.192] forward  alternate readings used at [34, 85, 86]
+      WGLIQUPICBDESTEMEEUGGEROBORDA
+      PESUOICHILEELURSPEDEUNASTOCCO
+      DALAUNALTNFRALEUNSARIGRAUITOI
+      words: w GLI qupicbd EST emeeugg ERO bordape SUOI CHI leelurspede UNA s TOCCO d ALA UNA ltn FRA leunsari GRAUI toi
+  [-11.399] boustrophedon A  alternate readings used at [10, 67, 86]
+      ZPTIBUSILZDECHEMEEUPPERAFARDO
+      ODALLAHCONUEDESCRUTEETIGLISUC
+      ESTOUNOTRNYROTEUNCORIPROUIRAI
+      words: zptib USI lzde CHE meeupp ERA FAR doo DALLA h CON UEDE scruteeti GLI suce STO UNO trnyroteun COR i PRO u IRA i
+controls, 0 misread symbols: n=30, median stat -8.924, right reading order 28/30, median symbols decoded right 99%, above null 95th pct 30/30
+controls, 2 misread symbols: n=30, median stat -9.423, right reading order 29/30, median symbols decoded right 95%, above null 95th pct 30/30
+  example control (100% right): planted IAPERONONDITRASCURANZAMADIPREOCCUPAZIONEGUARDAUAFISSOILC
+                                   found   IAPERONONDITRASCURANZAMADIPREOCCUPAZIONEGUARDAUAFISSOILC
+
+Run log (last 20):
+  DE doublet x4 in 17.86s  (996/1000)
+  DE shuffle x4 in 16.06s  (996/1000)
+  EN doublet x4 in 15.97s  (996/1000)
+  EN shuffle x4 in 17.21s  (996/1000)
+  FR doublet x4 in 17.19s  (996/1000)
+  FR shuffle x4 in 17.12s  (996/1000)
+  IT doublet x4 in 15.17s  (996/1000)
+  IT shuffle x4 in 22.38s  (996/1000)
+  LA doublet x4 in 22.19s  (996/1000)
+  LA shuffle x4 in 17.08s  (996/1000)
+  DE doublet x4 in 16.91s  (1000/1000)
+  DE shuffle x4 in 15.43s  (1000/1000)
+  EN doublet x4 in 22.07s  (1000/1000)
+  EN shuffle x4 in 16.24s  (1000/1000)
+  FR doublet x4 in 19.34s  (1000/1000)
+  FR shuffle x4 in 18.09s  (1000/1000)
+  IT doublet x4 in 17.76s  (1000/1000)
+  IT shuffle x4 in 17.59s  (1000/1000)
+  LA doublet x4 in 22.62s  (1000/1000)
+  LA shuffle x4 in 22.19s  (1000/1000)
