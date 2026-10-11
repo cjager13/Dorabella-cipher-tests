@@ -37,6 +37,7 @@ p-values are (1 + copies at least as good) / (copies + 1), so they can never go 
 | Any key plus a period-3 shift or symbol turn (PC, PD) | `Dorabella_three.py` | 0.41, 0.64 | 85% | Chance |
 | Three alphabets used in turn (PE) | `Dorabella_three.py` | 0.87 | 10% | Inconclusive: too much freedom |
 | Loop counts alone, read in threes: repeats, counting keys, any key (L1, L2, L3) | `Dorabella_looptrits.py` | 0.048, 0.26, 0.31 | 83%, 100%, 48% | Chance; any-key test low power |
+| Is it language? Nine visual habits vs English through Elgar's key (no search) | `Dorabella_language.py` | 0.18 vs English; 0.0002 vs random symbols | - | Looks like enciphered English, not random |
 | 63 cribs (greetings, names, places), any key | `Dorabella_cribs.py` | 0.37 | 98% | Chance |
 | Cribs with sets-of-three or loop-group keys | `Dorabella_cribs.py` | 1.00, 1.00 | 97-100% | Chance |
 | Quotation from words Elgar set (18 songs and cantatas) | `Dorabella_quotes.py` | 0.75 | 98% | Chance |
@@ -55,7 +56,7 @@ p-values are (1 + copies at least as good) / (copies + 1), so they can never go 
 | Every circle-and-cross key (589,824) | `Dorabella_circlekeys.py` | 0.35 | 100% | Chance |
 | Homophones: several symbols for one letter | `Dorabella_homophones.py` | 0.37, 0.63, 0.30 | 62-78% | No evidence; low power |
 
-Where a row gives several p-values, they are the row's families in the order named.
+Where a row gives several p-values, they are the row's families in the order named. The "is it language?" row is not a key search: it asks whether the cipher's visual habits (loop changes, turns, mirror pairs, doubled symbols, repeats) look like real English put through Elgar's key. They do (p = 0.18 against 200,000 English passages), and they clearly differ from random symbols. So the cipher is consistent with an enciphered message; what no test found is the key or text that makes it one.
 
 **The near-misses, and why none counts.**
 
@@ -212,7 +213,7 @@ Two round-2 tests used Elgar's own letters before 14 July 1897, transcribed from
 
 ## Images
 
-`Dorabella_cipher.jpg` is the 1897 cipher; `1920Notebook.gif` and `marco-elgar-cipher-enhanced.jpg` are images of other Elgar papers, reproduced from the sources credited below. The redrawings of the notebook page in the write-up are the investigator's own.
+`Dorabella_cipher.jpg` is the 1897 cipher. The redrawings of Elgar's 1920 notebook page in the write-up are the investigator's own; the notebook itself is not reproduced here.
 
 ## Sources
 
