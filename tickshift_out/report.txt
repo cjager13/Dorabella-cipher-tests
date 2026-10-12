@@ -1,0 +1,93 @@
+DORABELLA TICK-SHIFT REPORT  (Elgar's key, each group moved up or down by its ticks)
+written 2026-10-11 20:18:21   compute time 26.46s   sessions 2
+keys: 1,024 x 5 reading orders; no search; cipher: Dorabella_transcription.csv
+one pre-registered family, so the line is p < 0.05
+
+Labels: 'KLM+' = that group's ticks point out (letters moved forward), 'KLM-' = in (moved back).
+
+========================================================================================================
+fam      real n_pair  p_pair n_shuf  p_shuf  power  verdict
+TS    -15.603   5000  0.1012   2000  0.4758   100%  chance level
+========================================================================================================
+  vs pair-preserving  n=5000, mean -15.831, 95th pct -15.518, max -14.911, p = 0.1012
+  vs plain shuffle    n=2000, mean -15.599, 95th pct -15.116, max -14.466, p = 0.4758
+  for reference: Elgar's own key unshifted, read forwards, scores -15.212
+
+best real decrypts:
+  [-15.603] fully reversed | alphabet groups | move 1 | ticks ABC- DEF- GHI+ KLM+ NOP- QRS- TUW- XYZ+
+      ZBCZDOCNZCOMIDNTOCHISTOIDOTOU
+      ARRASMOIDNUNKMCDTNNTZQRZKDMNK
+      OUCAZACNNNDNNENSMNUZRZKDBZTNA
+      words: zbcz DOC nzco MID ntoc HIST oi DOT o UAR rasmoidnunkm CDT nntzqrzkdmnkoucaza CNN ndnnensmnuzrzkdbztna
+  [-15.603] fully reversed | alphabet groups | move 1 | ticks ABC+ DEF- GHI+ KLM- NOP- QRS- TUW- XYZ+
+      BDCBDOCLBCOMIDNTOCHISTOIDOTOU
+      ARRASMOIDNUNKMCDTNNTBQRBKDMNK
+      OUCAZACNLLDNNENSMNUZRBKDDBTLC
+      words: bdcb DOC lbco MID ntoc HIST oi DOT o UAR rasmoidnunkm CDT nntbqrbkdmnkoucazacnlldnnensmnuzrbkddbtlc
+  [-15.603] fully reversed | alphabet groups | move 1 | ticks ABC- DEF- GHI+ KLM- NOP- QRS- TUW- XYZ+
+      ZBCZDOCLZCOMIDNTOCHISTOIDOTOU
+      ARRASMOIDNUNKMCDTNNTZQRZKDMNK
+      OUCAZACNLLDNNENSMNUZRZKDBZTLA
+      words: zbcz DOC lzco MID ntoc HIST oi DOT o UAR rasmoidnunkm CDT nntzqrzkdmnkoucazacnlldnnensmnuzrzkdbztla
+  [-15.603] fully reversed | alphabet groups | move 1 | ticks ABC+ DEF- GHI+ KLM+ NOP- QRS- TUW- XYZ+
+      BDCBDOCNBCOMIDNTOCHISTOIDOTOU
+      ARRASMOIDNUNKMCDTNNTBQRBKDMNK
+      OUCAZACNNNDNNENSMNUZRBKDDBTNC
+      words: bdcb DOC NBC o MID ntoc HIST oi DOT o UAR rasmoidnunkm CDT nntbqrbkdmnkoucaza CNN ndnnensmnuzrbkddbtnc
+  [-15.642] fully reversed | alphabet groups | move 1 | ticks ABC- DEF- GHI+ KLM- NOP- QRS+ TUW- XYZ+
+      ZBCZDOCLZCOMIDNTOCHISTOIDOTOU
+      ATTASMOIDNUNKMCDTNNTZSTZKDMNK
+      OUCAZACNLLDNNENSMNUZTZKDBZTLA
+      words: zbcz DOC lzco MID ntoc HIST oi DOT o UAT tasmoidnunkm CDT nntzstzkdmnkoucazacnlldnnensmnuztzkdbztla
+  [-15.664] boustrophedon A | alphabet groups | move 1 | ticks ABC+ DEF+ GHI+ KLM- NOP- QRS+ TUW- XYZ+
+      CLTBDFKBTZUNMSNGNNFLLNEAZAEUO
+      OUATTASMOIFNUNKMEFTNNTBSTBKFM
+      NKTOFIOTSIHEOTNFIMOEBLEOFBEDB
+      words: cltbdfkbtzun MSN gn NFL lneazaeuoo UAT tasmoifnunkmeftnntbstbkfmnktofiotsiheotnfimoeb LEO f BED b
+  [-15.679] boustrophedon A | alphabet groups | move 1 | ticks ABC+ DEF+ GHI+ KLM- NOP- QRS- TUW- XYZ+
+      CLTBDFKBRZUNMSNGNNFLLNEAZAEUO
+      OUARRASMOIFNUNKMEFTNNTBQRBKFM
+      NKTOFIOTSIHEOTNFIMOEBLEOFBEDB
+      words: cltbdfkbrzun MSN gn NFL lneazaeuoo UAR rasmoifnunkmeftnntbqrbkfmnktofiotsiheotnfimoeb LEO f BED b
+  [-15.798] boustrophedon B | alphabet groups | move 1 | ticks ABC+ DEF- GHI+ KLM- NOP- QRS+ TUW- XYZ+
+      OUCAZACNLLDNNENSMNUZTBKDDBTLC
+      KNMDKBTSBTNNTDCMKNUNDIOMSATTA
+      UOBDCBDOCLBCOMIDNTOCHISTOIDOT
+      words: oucazacnlldnnensmnuztbkddbtlcknmdkbtsbtnntdcmkn UND iom SAT tauobdcb DOC lbco MID ntoc HIST oi DOT
+  [-15.798] boustrophedon B | alphabet groups | move 1 | ticks ABC+ DEF- GHI+ KLM+ NOP- QRS+ TUW- XYZ+
+      OUCAZACNNNDNNENSMNUZTBKDDBTNC
+      KNMDKBTSBTNNTDCMKNUNDIOMSATTA
+      UOBDCBDOCNBCOMIDNTOCHISTOIDOT
+      words: oucaza CNN ndnnensmnuztbkddbtncknmdkbtsbtnntdcmkn UND iom SAT tauobdcb DOC NBC o MID ntoc HIST oi DOT
+  [-15.807] boustrophedon B | alphabet groups | move 1 | ticks ABC+ DEF- GHI+ KLM+ NOP- QRS- TUW- XYZ+
+      OUCAZACNNNDNNENSMNUZRBKDDBTNC
+      KNMDKBRQBTNNTDCMKNUNDIOMSARRA
+      UOBDCBDOCNBCOMIDNTOCHISTOIDOT
+      words: oucaza CNN ndnnensmnuzrbkddbtncknmdkbrqbtnntdcmkn UND iomsarrauobdcb DOC NBC o MID ntoc HIST oi DOT
+
+controls, 0 misread symbols: n=50, median stat -9.286, true key and order found 41/50, median letters right 100%, above null 95th pct 50/50
+controls, 2 misread symbols: n=50, median stat -9.807, true key and order found 43/50, median letters right 98%, above null 95th pct 50/50
+  example control (100% right): planted MYDEARFRIENDIWASSOUERYGLADOFYOURLETTERANDTHENEWSTHATYOUA
+                                   found   MYDEARFRIENDIWASSOUERYGLADOFYOURLETTERANDTHENEWSTHATYOUA
+
+Run log (last 20):
+  TS shuffle x8 in 0.01s  (1960/2000)
+  TS doublet x8 in 0.01s  (4896/5000)
+  TS doublet x8 in 0.01s  (4904/5000)
+  TS shuffle x8 in 0.01s  (1968/2000)
+  TS doublet x8 in 0.01s  (4912/5000)
+  TS doublet x8 in 0.01s  (4920/5000)
+  TS doublet x8 in 0.01s  (4928/5000)
+  TS shuffle x8 in 0.01s  (1976/2000)
+  TS doublet x8 in 0.01s  (4936/5000)
+  TS doublet x8 in 0.01s  (4944/5000)
+  TS shuffle x8 in 0.01s  (1984/2000)
+  TS doublet x8 in 0.01s  (4952/5000)
+  TS doublet x8 in 0.01s  (4960/5000)
+  TS doublet x8 in 0.01s  (4968/5000)
+  TS shuffle x8 in 0.01s  (1992/2000)
+  TS doublet x8 in 0.01s  (4976/5000)
+  TS doublet x8 in 0.01s  (4984/5000)
+  TS shuffle x8 in 0.01s  (2000/2000)
+  TS doublet x8 in 0.01s  (4992/5000)
+  TS doublet x8 in 0.01s  (5000/5000)

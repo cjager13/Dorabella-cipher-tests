@@ -1,0 +1,5 @@
+[2026-10-11 20:16:54] START session 1, workers 8, cipher from Dorabella_transcription.csv
+[2026-10-11 20:17:18] END session, 24.75s this session
+[2026-10-11 20:18:19] START session 2, workers 8, cipher from Dorabella_transcription.csv
+[2026-10-11 20:18:21] all targets met; stopping (--stop-when-done)
+[2026-10-11 20:18:21] END session, 2.03s this session
