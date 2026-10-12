@@ -2,7 +2,7 @@
 
 Fair statistical tests of Edward Elgar's 1897 Dorabella cipher.
 
-**Result: no key tested turns the Dorabella into readable text.** About 30 tests in round 1 and 55 pre-registered test families in round 2 all land at chance. Known text put through the same tests is recovered almost every time.
+**Result: no key tested turns the Dorabella into readable text.** About 30 tests in round 1 and 56 pre-registered test families in round 2 all land at chance. Known text put through the same tests is recovered almost every time.
 
 The cipher is not random: it has strong habits in which symbol follows which. But scrambled copies that keep those habits do as well as the real cipher in every test, in every language and writing style tried.
 
@@ -54,6 +54,7 @@ p-values are (1 + copies at least as good) / (copies + 1), so they can never go 
 | Birthdays, ages, line lengths 29-31-27 | `Dorabella_scales.py --set numbers` | 0.63, 0.048, 0.12 | 90-100% | Chance: random numbers do as well |
 | Note names CDEFGAB as the key | `Dorabella_scales.py --set notes` | 0.66, 0.91, 0.41 | 95-100% | Chance |
 | Every circle-and-cross key (589,824) | `Dorabella_circlekeys.py` | 0.35 | 100% | Chance |
+| Ticks as shifts: Elgar's key with each group moved up or down by 1 or by the loop count (1,024 keys) | `Dorabella_tickshift.py` | 0.10 | 100% | Chance |
 | Homophones: several symbols for one letter | `Dorabella_homophones.py` | 0.37, 0.63, 0.30 | 62-78% | No evidence; low power |
 
 Where a row gives several p-values, they are the row's families in the order named. The "is it language?" row is not a key search: it asks whether the cipher's visual habits (loop changes, turns, mirror pairs, doubled symbols, repeats) look like real English put through Elgar's key. They do (p = 0.18 against 200,000 English passages), and they clearly differ from random symbols. So the cipher is consistent with an enciphered message; what no test found is the key or text that makes it one.
@@ -108,6 +109,7 @@ The Dorabella *does* beat plain shuffles (p = 0.0020 in 1,016), so its symbol or
 | `Dorabella_scales.py` | Built on `Dorabella_date.py`: `--set scales`, `--set numbers` (birthdays, ages, line lengths) or `--set notes` (note names) |
 | `Dorabella_languages.py` | French, German, Italian and Latin; `--confirm-latin` runs the pre-registered Church Latin confirmation |
 | `Dorabella_circlekeys.py` | All 589,824 circle-and-cross keys (no search, needs numpy) |
+| `Dorabella_tickshift.py` | Elgar's key with each group's letters moved forward (ticks out) or back (ticks in), by 1 or by the loop count: 1,024 keys, no search |
 | `Dorabella_homophones.py` | Keys where several symbols may share one letter |
 | `Dorabella_fixtext.py`, `Dorabella_pdf2txt.py` | Helpers: extract and repair text from PDFs (ligatures, long s, split words) |
 | `Dorabella_daytexts.py` | Helper: builds the folder of texts appointed for 14 July 1897 from a King James Bible and the Coverdale Psalter |
@@ -180,6 +182,7 @@ These are public-domain texts, included so every run can be reproduced exactly. 
 | `python Dorabella_languages.py --stop-when-done`, then `--confirm-latin --stop-when-done` | 12.5 h, then 1.5 h |
 | `python Dorabella_scales.py --set scales` (or `numbers`, `notes`) `--stop-when-done` | 6-7.5 h each |
 | `python Dorabella_circlekeys.py --stop-when-done` | 38 min |
+| `python Dorabella_tickshift.py --stop-when-done` | under 2 min |
 | `python Dorabella_homophones.py --stop-when-done` | 3.1 h |
 | `python Dorabella_looptrits.py --workers 8` (not resumable; runs a fixed number of copies) | 6 min |
 | `python Dorabella_hillclimb.py --selftest --corpus english.txt` | 10 s |
