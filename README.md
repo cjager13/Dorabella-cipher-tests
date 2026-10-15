@@ -2,9 +2,9 @@
 
 Fair statistical tests of Edward Elgar's 1897 Dorabella cipher.
 
-**Result: no key tested turns the Dorabella into readable text.** About 30 tests in round 1 and 56 pre-registered test families in round 2 all land at chance. Known text put through the same tests is recovered almost every time.
+**Result: no key tested turns the Dorabella into readable text.** About 30 tests in round 1 and 58 pre-registered test families in round 2 all but one land at chance. Known text put through the same tests is recovered almost every time. The one exception, a crib test, traces to a rare cluster of repeated symbols in line 1 and still does not read.
 
-The cipher is not random: it has strong habits in which symbol follows which. But scrambled copies that keep those habits do as well as the real cipher in every test, in every language and writing style tried.
+The cipher is not random: it has strong habits in which symbol follows which. But scrambled copies that keep those habits do as well as the real cipher in every test but one, in every language and writing style tried; the exception traces to a single rare cluster of symbols, not to readable text.
 
 The full write-up is [Testing the Dorabella Cipher.pdf](Testing%20the%20Dorabella%20Cipher.pdf).
 
@@ -40,6 +40,8 @@ p-values are (1 + copies at least as good) / (copies + 1), so they can never go 
 | Is it language? Nine visual habits vs English through Elgar's key (no search) | `Dorabella_language.py` | 0.18 vs English; 0.0002 vs random symbols | - | Looks like enciphered English, not random |
 | 63 cribs (greetings, names, places), any key | `Dorabella_cribs.py` | 0.37 | 98% | Chance |
 | Cribs with sets-of-three or loop-group keys | `Dorabella_cribs.py` | 1.00, 1.00 | 97-100% | Chance |
+| 238 more cribs: God, Jesus, prayers, churches, homes and streets (C1, C2, C3) | `Dorabella_morecribs.py` | 0.009, 0.77, 1.00 | 95-100% | C1 passes the line; decrypt unreadable |
+| Crib check: what the crib adds over no crib, Dracula English and Elgar's voice (D1, DE) | `Dorabella_cribcheck.py` | 0.034, 0.002 | 72%, 60% | DE passes; traced to one symbol cluster, decrypt unreadable |
 | Quotation from words Elgar set (18 songs and cantatas) | `Dorabella_quotes.py` | 0.75 | 98% | Chance |
 | Quotation from Elgar's own letters to 1897 | `Dorabella_quotes.py` | 0.48 | 97% | Chance |
 | Quotation from the Psalms: Coverdale, King James, Douay | `Dorabella_quotes.py` | 0.50, 0.47, 0.51 | 95-100% | Chance |
@@ -59,8 +61,9 @@ p-values are (1 + copies at least as good) / (copies + 1), so they can never go 
 
 Where a row gives several p-values, they are the row's families in the order named. The "is it language?" row is not a key search: it asks whether the cipher's visual habits (loop changes, turns, mirror pairs, doubled symbols, repeats) look like real English put through Elgar's key. They do (p = 0.18 against 200,000 English passages), and they clearly differ from random symbols. So the cipher is consistent with an enciphered message; what no test found is the key or text that makes it one.
 
-**The near-misses, and why none counts.**
+**The near-misses and the one pass, and why none counts.**
 
+- **Crib WELLS, p = 0.009, then 0.002 in the crib check.** The second crib list (238 eligible cribs) passed its line (0.0167) with WELLS: "...DORA F FAT HOUSE ... DEE DIG FIN SHE NORWAY A WELLS EE MET HER...". The follow-up `Dorabella_cribcheck.py` ran the same search with no crib on the same 1,000 copies. Without a crib the real cipher has no edge (p = 0.13); the crib simply costs it almost nothing (0.05 against 0.36 for copies). With Elgar's own voice as the scoring model that gap passes (p = 0.002, line 0.025), but the decrypt still does not read, and planted messages come back about 97% right. The cause, found by looking afterwards: line 1, symbols 15-23, has the pattern a b a a c d d a e (one symbol four times, two doubled pairs), which read backwards falls into English as WELLSEEME or EDDSEEME. Only 1 of the 1,000 pair-preserving copies has that pattern. Any search is drawn to "...SEE ME..." there, and WELLS fits it for free.
 - **Latin, p = 0.049 twice.** The confirmation rule was written into the script first: confirmed only if p < 0.05 *and* the decrypt reads as Latin. The decrypt ("AORAUIC FACIS QUETICHQCTI QUI TIMOLLORSI QUEM ... ENIM ... DAT") does not read, while planted Latin came back 95-99% right.
 - **Birthdays with any key, p = 0.048.** It misses the corrected line (0.0167), and random numbers of the same size did as well (p = 0.35).
 - **Loop-count repeats, p = 0.048.** The 29 loop-count triples repeat a little more than copies' do (232 appears five times), but this misses the line (0.0167), and no counting key turns them into text (p = 0.26, power 100%).
@@ -102,6 +105,8 @@ The Dorabella *does* beat plain shuffles (p = 0.0020 in 1,016), so its symbol or
 | --- | --- |
 | `Dorabella_three.py` | Transpositions built on 3 and keys that repeat every 3 symbols: 8 families |
 | `Dorabella_cribs.py` | 63 cribs fixed in place, with any key, sets-of-three keys or loop-group keys; MY DEAR DORA reported separately |
+| `Dorabella_morecribs.py` | Built on `Dorabella_cribs.py`: 343 religious, place and address cribs plus single words from multi-word cribs (238 eligible) |
+| `Dorabella_cribcheck.py` | What each crib is worth over the same search with no crib, in Dracula English and in Elgar's voice; reads `morecribs_out/state.json` and rebuilds its copies |
 | `Dorabella_quotes.py` | Quotation test: phrases from a folder of texts placed where they fit, the rest completed |
 | `Dorabella_styles.py` | Five playful spellings and standard English, each with its own scoring model |
 | `Dorabella_elgarstyle.py` | Elgar's private English: no AND, his abbreviations, his own letters (built on `Dorabella_styles.py`) |
@@ -175,6 +180,8 @@ These are public-domain texts, included so every run can be reproduced exactly. 
 | --- | --- |
 | `python Dorabella_three.py --stop-when-done` | 78 h |
 | `python Dorabella_cribs.py --stop-when-done` | 18.5 h |
+| `python Dorabella_morecribs.py --stop-when-done` | 34 h |
+| `python Dorabella_cribcheck.py --stop-when-done` (after morecribs; needs the private letters file) | 16.4 h |
 | `python Dorabella_quotes.py --source <folder> --out <name>_out --stop-when-done` (add `--min-len 14` for the BCP and the full Bibles) | 2.7-11.9 h per source |
 | `python Dorabella_styles.py --stop-when-done` | 18.5 h |
 | `python Dorabella_elgarstyle.py --stop-when-done` | 8.3 h |
@@ -197,7 +204,7 @@ These are public-domain texts, included so every run can be reproduced exactly. 
 
 ## Private material
 
-Two round-2 tests used Elgar's own letters before 14 July 1897, transcribed from Jerrold Northrop Moore, *Edward Elgar: Letters of a Lifetime* (Oxford, 1990), pages 1-59. **That transcription is not in this repository, for copyright reasons.** The write-up shares only derived counts (for example, "&" 429 times against "and" 50 times) and the few short phrases that appear in the reports. Without the file, `Dorabella_elgarstyle.py` runs its first three styles (`--only E0 E1 E2`), and the letters quotation test cannot be rerun.
+Three round-2 tests used Elgar's own letters before 14 July 1897, transcribed from Jerrold Northrop Moore, *Edward Elgar: Letters of a Lifetime* (Oxford, 1990), pages 1-59. **That transcription is not in this repository, for copyright reasons.** The write-up shares only derived counts (for example, "&" 429 times against "and" 50 times) and the few short phrases that appear in the reports. Without the file, `Dorabella_elgarstyle.py` runs its first three styles (`--only E0 E1 E2`), and the letters quotation test and `Dorabella_cribcheck.py` cannot be rerun.
 
 ## Notes on the logs
 
@@ -212,7 +219,7 @@ Two round-2 tests used Elgar's own letters before 14 July 1897, transcribed from
 
 - **Homophones, three alternating alphabets and any-key loop triples** cannot be ruled out by statistical search at this length (power 62-78%, 10% and 48%).
 - **A blind re-reading of the uncertain symbols**, by someone who has not seen these results, would settle positions 32 and 67.
-- **Not yet tested:** names of God and Jesus as cribs, street names and addresses as cribs, and the cipher's single dot as "&".
+- **Not yet tested:** the cipher's single dot as "&". (Names of God and Jesus, prayers, churches, and street names and addresses were tested as cribs in `Dorabella_morecribs.py`.)
 
 ## Images
 
