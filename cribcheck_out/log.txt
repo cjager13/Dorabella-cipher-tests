@@ -1,0 +1,5 @@
+[2026-10-14 14:17:15] START session 1, workers 8
+[2026-10-14 14:35:59] END session, 18m 44.1s this session
+[2026-10-14 17:48:30] START session 2, workers 8
+[2026-10-15 09:58:09] all targets met; stopping. Progress and report are saved.
+[2026-10-15 09:58:09] END session, 16h 09m 39.2s this session

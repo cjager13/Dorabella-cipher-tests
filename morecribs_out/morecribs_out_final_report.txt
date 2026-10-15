@@ -1,0 +1,446 @@
+DORABELLA MORE-CRIBS REPORT  (religious words, names of God and Jesus, streets and addresses)
+written 2026-10-14 11:54:54   compute time 34h 09m 00.0s   sessions 2
+eligible cribs (238): OURLORD, LORDGOD, THELORDGOD, GODALMIGHTY, ALMIGHTYGOD, THEALMIGHTY, IEHOUAH, HEAUENLYFATHER, OURFATHER, GODTHEFATHER, THECREATOR, PROUIDENCE, IESUSCHRIST, CHRISTIESUS, OURLORDIESUSCHRIST, OURSAUIOUR, THESAUIOUR, SAUIOUR, REDEEMER, THEREDEEMER, EMMANUEL, IMMANUEL, MESSIAH, LAMBOFGOD, SONOFGOD, SONOFMAN, GOODSHEPHERD, LIGHTOFTHEWORLD, PRINCEOFPEACE, KINGOFKINGS, IESUSOFNAZARETH, CHRISTUS, HOLYGHOST, HOLYSPIRIT, TRINITY, HOLYTRINITY, BLESSEDTRINITY, UIRGINMARY, BLESSEDUIRGIN, MOTHEROFGOD, HOLYMOTHER, HOLYFAMILY, SAINTGEORGE, SAINTPETER, SAINTCECILIA, SAINTIOSEPH, IESUSHOMINUMSALUATOR, IESUSSAUIOUROFMEN, INHOCSIGNO, INHOCSIGNOUINCES, IESUSNAZARENUSREXIUDAEORUM, IESUSOFNAZARETHKINGOFTHEIEWS, ADMAIOREMDEIGLORIAM, TOTHEGREATERGLORYOFGOD, DEOGRATIAS, SOLIDEOGLORIA, DEOUOLENTE, ALLELUIA, HALLELUIAH, HOSANNA, HOSANNAINTHEHIGHEST, GLORIAINEXCELSIS, GLORIAINEXCELSISDEO, GLORYBETOGOD, GLORYTOGOD, GLORYTOGODINTHEHIGHEST, GLORYBETOTHEFATHER, PRAISETHELORD, PRAISEBETOGOD, THANKSBETOGOD, GODBLESSYOU, GODBLESS, GODSPEED, GODWILLING, GODSAUETHEQUEEN, OURFATHERWHICHARTINHEAUEN, HALLOWEDBETHYNAME, THYKINGDOMCOME, THYWILLBEDONE, GIUEUSTHISDAY, DELIUERUSFROMEUIL, FOREUERANDEUER, WORLDWITHOUTEND, THELORDBEWITHYOU, ANDWITHTHYSPIRIT, LIFTUPYOURHEARTS, LORDHAUEMERCY, CHRISTHAUEMERCY, KYRIEELEISON, CHRISTEELEISON, DONANOBISPACEM, SANCTUS, BENEDICTUS, PAXUOBISCUM, DOMINUSUOBISCUM, ETCUMSPIRITUTUO, REQUIESCATINPACE, RESTINPEACE, MAGNIFICAT, NUNCDIMITTIS, MISERERE, DEPROFUNDIS, AUEMARIA, HAILMARY, FULLOFGRACE, SALUEREGINA, TANTUMERGO, OSALUTARIS, PRAISETOTHEHOLIEST, AUEUERUMCORPUS, AUEMARISSTELLA, ECCESACERDOSMAGNUS, OSALUTARISHOSTIA, TEDEUMANDBENEDICTUS, THELIGHTOFLIFE, LUXCHRISTI, THEBANNEROFSAINTGEORGE, THEDREAMOFGERONTIUS, SAINTGEORGES, SAINTGEORGESCHURCH, SANSOMEPLACE, WORCESTERCATHEDRAL, THREECHOIRS, THREECHOIRSFESTIUAL, HEREFORD, GLOUCESTER, SAINTPETERS, SAINTPETERSCHURCH, COLLEGIATECHURCH, THERECTOR, REUEREND, CHURCH, CATHEDRAL, SERUICE, EUENSONG, UESPERS, PRAYER, BLESSING, BROADHEATH, LOWERBROADHEATH, EDGARSTREET, COLLEGEPRECINCTS, HIGHSTREET, TENHIGHSTREET, HIGHSTREETWORCESTER, ELGARBROTHERS, LORETTAUILLA, CHESTNUTWALK, FIELDTERRACE, BATHROAD, MARLOESROAD, WESTKENSINGTON, KENSINGTON, SAETERMO, THELEES, GREATMALUERN, OAKLANDS, FOUNTAINROAD, UPPERNORWOOD, AUONMOREROAD, ALEXANDRAROAD, MALUERNLINK, FORLIMALUERNLINK, FORLIALEXANDRAROAD, WATERLOOROAD, THERECTORY, RECTORYWATERLOOROAD, PAULSTREET, WOLUERHAMPTON, STAFFORDSHIRE, WANDERERS, WOLUERHAMPTONWANDERERS, FOOTBALL, BRITISHCAMP, HEREFORDSHIREBEACON, WORCESTERSHIREBEACON, MALUERNHILLS, MALUERNWELLS, WELLSROAD, NORTHHILL, MALUERNPRIORY, HEAUENLY, CREATOR, SHEPHERD, NAZARETH, BLESSED, GEORGE, CECILIA, HOMINUM, SALUATOR, NAZARENUS, IUDAEORUM, MAIOREM, GREATER, GRATIAS, EXCELSIS, BLESS, WILLING, QUEEN, HALLOWED, DELIUER, WITHOUT, UOBISCUM, REQUIESCAT, DIMITTIS, SALUTARIS, STELLA, SACERDOS, BANNER, GEORGES, WORCESTER, THREE, COLLEGIATE, STREET, COLLEGE, PRECINCTS, BROTHERS, LORETTA, UILLA, CHESTNUT, TERRACE, FOUNTAIN, UPPER, NORWOOD, AUONMORE, ALEXANDRA, WATERLOO, RECTORY, HEREFORDSHIRE, WORCESTERSHIRE, HILLS, WELLS, SINCERELY, BELIEUE, REGARDS, WILLIAM, STEUART, POWELL
+
+========================================================================================================
+HEADLINE (p vs PAIR-PRESERVING copies is the one that matters)
+========================================================================================================
+C1 any key, crib fixed           real  -10.866  pair n=1000 p= 0.0090  shuffle n=1000 p= 0.0010  power 95%
+C2 Elgar-style grouped keys      real  -15.983  pair n= 500 p= 0.7745  shuffle n= 500 p= 0.8363  power 97%
+C3 loop-group keys               real  -99.000  pair n=1000 p= 1.0000  shuffle n=1000 p= 1.0000  power 100%
+
+Line to beat: p < 0.0167 for C1, C2 or C3 (three tests).
+A real message would also show as a completed text that READS as English beyond the crib.
+
+--------------------------------------------------------------------------------------------------------
+C1 any key, crib fixed
+--------------------------------------------------------------------------------------------------------
+real per seed: -10.866 (WELLS), -10.866 (WELLS), -10.866 (WELLS), -10.866 (WELLS), -10.866 (WELLS)
+placements tried on the real cipher: 907
+  [-10.866] crib WELLS in each line reversed
+      AMNOBOWELLSEEFEWHEMBRITSPIDLY
+      AMORROWHAUSEMETHNSDEEDICRITSH
+      ETIONISANLINAHUSEDANGUNDAUSAD
+      words: amnobo WELLS ee FEW hembr ITS pidlya MORROW ha USE MET hns DEE dicrit SHE TION i SAN linah USED ang UND au SAD
+  [-11.037] crib WELLS in fully reversed
+      IATISOWLITOHUSEDOWBUTDOUSODOR
+      AFFATHOUSERENHWSDEEDIGFINSHEN
+      ORWAYAWELLSEEMETHERYFINSPIDLY
+      words: iat ISO w LIT oh USED ow BUT douso DORA f FAT HOUSE renhws DEE DIG FIN SHE NORWAY a WELLS ee MET HER yf INS pidly
+  [-11.057] crib WELLS in each line reversed
+      ORWAYAWELLSEEMETHERYFINSPIDLY
+      ORAFFATHOUSERENHWSDEEDIGFINSH
+      ENIATISOWLITOHUSEDOWBUTDOUSOD
+      words: or WAY a WELLS ee MET HER yf INS pidlyoraf FAT HOUSE renhws DEE DIG FIN SHE niat ISO w LIT oh USED ow BUT dousod
+  [-11.099] crib WELLS in fully reversed
+      IOTISATLITAHUSEDATBUTDAUSADAN
+      OFFOWHAUSENERHTSDEEDICFIRSHER
+      ANTOGOWELLSEEMEWHENGFIRSPIDLY
+      words: ioti SAT LIT ah USED at BUT da USA DAN OFF owhau SEN erhts DEE dicf IRS HER ANT ogo WELLS eeme WHEN gf IRS pidly
+  [-11.113] crib WILLING in fully reversed
+      AINATOFSAFOGUTEDOFBUNDOUTODOW
+      ILLINGOUTEWERGFTDEEDAYLARTGER
+      OWFICINESSTEEMENGEWCLARTHADSP
+      words: ai NATO fsa FOG u TED ofb UNDO utodo WILLING OUT ewergft DEE DAY l ART ge ROW ficiness TEE m ENG ewcl ART h ADS p
+  vs pair-preserving  n=1000, mean -11.326, 95th pct -11.035, max -10.710
+  vs plain shuffle    n=1000, mean -11.723, 95th pct -11.411, max -11.131
+controls: n=60, median stat -9.741, planted crib found 34/60, median letters right 97%
+  example: planted ITWASKINDOFYOUTOREMEMBERMTANTUMERGOYBIRTHDAYANDTHE
+           found   ITWASKINDOFYOUTOREMEMBERMTANTUMERGOYBIRTHDAYANDTHE
+
+--------------------------------------------------------------------------------------------------------
+C2 Elgar-style grouped keys
+--------------------------------------------------------------------------------------------------------
+real: best -15.983 with crib POWELL; crib-consistent keys found: 3,120
+  key: yours grouping, forward, ABC^d2 DEFvd4 GHI^d7 KLM^d8 NOPvd6 QRSvd5 TUW^d3 XYZ^d1
+      UIEWTRXWPBDLKFLQLLRIILSABASDM
+      XLKRXWPOWELLERSKXLDLRYMKFAPPA
+      DMEMRYMEFYZSMELRYKMSWISMRWSTW
+      words: UIEW trxwpbdlkflqllriilsabasdmxlkrxw POWELL erskxldlrymkfap PAD MEM rymefyzs MEL rykmswismrwstw
+crib-consistent keys in pair-preserving copies: mean 8,585, p (real has as many or more) = 0.6188
+  vs pair-preserving  n=500, mean -30.103, 95th pct -14.521, max -14.048
+  vs plain shuffle    n=500, mean -24.885, 95th pct -14.407, max -13.580
+controls: n=60, median stat -9.662, planted crib found 43/60, median letters right 100%
+  example: planted MYDEARFRIENDIWASSOUERYGLADOFYOURLETTERANDTHENEWSTH
+           found   MYDEARFRIENDIWASSOUERYGLADOFYOURLETTERANDTHENEWSTH
+
+--------------------------------------------------------------------------------------------------------
+C3 loop-group keys
+--------------------------------------------------------------------------------------------------------
+real: best -99.000 with crib (no crib fits any key of this kind); crib-consistent keys found: 0
+crib-consistent keys in pair-preserving copies: mean 6, p (real has as many or more) = 1.0000
+  vs pair-preserving  n=1000, mean -71.747, 95th pct -15.992, max -15.369
+  vs plain shuffle    n=1000, mean -62.174, 95th pct -15.767, max -14.763
+controls: n=60, median stat -9.628, planted crib found 45/60, median letters right 100%
+  example: planted MYDEARFRIENDIWASSOUERYGLADOFYOURLETTERANDTHENEWSTH
+           found   MYDEARFRIENDIWASSOUERYGLADOFYOURLETTERANDTHENEWSTH
+
+--------------------------------------------------------------------------------------------------------
+ELIGIBILITY (decided on 100 pair-preserving copies, never on the real cipher)
+--------------------------------------------------------------------------------------------------------
+  skipped GOD                          names of God               fits per copy  491.5
+  skipped THELORD                      names of God               fits per copy  215.7
+  USED    OURLORD                      names of God               fits per copy    1.1
+  USED    LORDGOD                      names of God               fits per copy    1.0
+  USED    THELORDGOD                   names of God               fits per copy    0.4
+  USED    GODALMIGHTY                  names of God               fits per copy    2.4
+  USED    ALMIGHTYGOD                  names of God               fits per copy    1.8
+  USED    THEALMIGHTY                  names of God               fits per copy    0.1
+  skipped ALMIGHTY                     names of God               fits per copy  144.2
+  USED    IEHOUAH                      names of God               fits per copy   14.7
+  USED    HEAUENLYFATHER               names of God               fits per copy    0.0
+  USED    OURFATHER                    names of God               fits per copy    7.9
+  USED    GODTHEFATHER                 names of God               fits per copy    0.0
+  USED    THECREATOR                   names of God               fits per copy    0.1
+  USED    PROUIDENCE                   names of God               fits per copy    7.0
+  skipped DEUS                         names of God               fits per copy  441.6
+  skipped DOMINUS                      names of God               fits per copy  215.7
+  skipped DOMINE                       names of God               fits per copy  295.1
+  skipped DEO                          names of God               fits per copy  491.5
+  skipped IESUS                        names of Jesus             fits per copy   35.3
+  skipped IESU                         names of Jesus             fits per copy  441.6
+  skipped CHRIST                       names of Jesus             fits per copy  295.1
+  USED    IESUSCHRIST                  names of Jesus             fits per copy    0.0
+  USED    CHRISTIESUS                  names of Jesus             fits per copy    0.0
+  USED    OURLORDIESUSCHRIST           names of Jesus             fits per copy    0.0
+  USED    OURSAUIOUR                   names of Jesus             fits per copy    0.0
+  USED    THESAUIOUR                   names of Jesus             fits per copy    6.0
+  USED    SAUIOUR                      names of Jesus             fits per copy   19.3
+  USED    REDEEMER                     names of Jesus             fits per copy    0.0
+  USED    THEREDEEMER                  names of Jesus             fits per copy    0.0
+  USED    EMMANUEL                     names of Jesus             fits per copy    0.4
+  USED    IMMANUEL                     names of Jesus             fits per copy   10.1
+  USED    MESSIAH                      names of Jesus             fits per copy   12.1
+  USED    LAMBOFGOD                    names of Jesus             fits per copy    9.7
+  USED    SONOFGOD                     names of Jesus             fits per copy    1.2
+  USED    SONOFMAN                     names of Jesus             fits per copy    1.5
+  USED    GOODSHEPHERD                 names of Jesus             fits per copy    0.0
+  USED    LIGHTOFTHEWORLD              names of Jesus             fits per copy    0.0
+  USED    PRINCEOFPEACE                names of Jesus             fits per copy    0.0
+  USED    KINGOFKINGS                  names of Jesus             fits per copy    0.0
+  USED    IESUSOFNAZARETH              names of Jesus             fits per copy    0.0
+  USED    CHRISTUS                     names of Jesus             fits per copy   15.1
+  USED    HOLYGHOST                    the Spirit, Mary and the saints fits per copy    1.2
+  USED    HOLYSPIRIT                   the Spirit, Mary and the saints fits per copy    8.7
+  USED    TRINITY                      the Spirit, Mary and the saints fits per copy    1.7
+  USED    HOLYTRINITY                  the Spirit, Mary and the saints fits per copy    0.0
+  USED    BLESSEDTRINITY               the Spirit, Mary and the saints fits per copy    0.0
+  USED    UIRGINMARY                   the Spirit, Mary and the saints fits per copy    0.5
+  USED    BLESSEDUIRGIN                the Spirit, Mary and the saints fits per copy    0.0
+  skipped OURLADY                      the Spirit, Mary and the saints fits per copy  215.7
+  USED    MOTHEROFGOD                  the Spirit, Mary and the saints fits per copy    0.2
+  USED    HOLYMOTHER                   the Spirit, Mary and the saints fits per copy    0.3
+  USED    HOLYFAMILY                   the Spirit, Mary and the saints fits per copy    1.1
+  USED    SAINTGEORGE                  the Spirit, Mary and the saints fits per copy    0.2
+  USED    SAINTPETER                   the Spirit, Mary and the saints fits per copy    0.6
+  USED    SAINTCECILIA                 the Spirit, Mary and the saints fits per copy    0.0
+  USED    SAINTIOSEPH                  the Spirit, Mary and the saints fits per copy    0.4
+  skipped ANGELS                       the Spirit, Mary and the saints fits per copy  295.1
+  USED    IESUSHOMINUMSALUATOR         monograms spelled out      fits per copy    0.0
+  USED    IESUSSAUIOUROFMEN            monograms spelled out      fits per copy    0.0
+  USED    INHOCSIGNO                   monograms spelled out      fits per copy    0.1
+  USED    INHOCSIGNOUINCES             monograms spelled out      fits per copy    0.0
+  USED    IESUSNAZARENUSREXIUDAEORUM   monograms spelled out      fits per copy    0.0
+  USED    IESUSOFNAZARETHKINGOFTHEIEWS monograms spelled out      fits per copy    0.0
+  USED    ADMAIOREMDEIGLORIAM          monograms spelled out      fits per copy    0.0
+  USED    TOTHEGREATERGLORYOFGOD       monograms spelled out      fits per copy    0.0
+  USED    DEOGRATIAS                   monograms spelled out      fits per copy    6.0
+  skipped LAUSDEO                      monograms spelled out      fits per copy  215.7
+  USED    SOLIDEOGLORIA                monograms spelled out      fits per copy    0.0
+  USED    DEOUOLENTE                   monograms spelled out      fits per copy    0.1
+  skipped AMEN                         prayers and liturgy        fits per copy  441.6
+  USED    ALLELUIA                     prayers and liturgy        fits per copy    0.1
+  USED    HALLELUIAH                   prayers and liturgy        fits per copy    0.0
+  USED    HOSANNA                      prayers and liturgy        fits per copy    0.7
+  USED    HOSANNAINTHEHIGHEST          prayers and liturgy        fits per copy    0.0
+  skipped GLORIA                       prayers and liturgy        fits per copy  295.1
+  USED    GLORIAINEXCELSIS             prayers and liturgy        fits per copy    0.0
+  USED    GLORIAINEXCELSISDEO          prayers and liturgy        fits per copy    0.0
+  USED    GLORYBETOGOD                 prayers and liturgy        fits per copy    0.0
+  USED    GLORYTOGOD                   prayers and liturgy        fits per copy    0.0
+  USED    GLORYTOGODINTHEHIGHEST       prayers and liturgy        fits per copy    0.0
+  USED    GLORYBETOTHEFATHER           prayers and liturgy        fits per copy    0.0
+  USED    PRAISETHELORD                prayers and liturgy        fits per copy    0.0
+  USED    PRAISEBETOGOD                prayers and liturgy        fits per copy    0.2
+  USED    THANKSBETOGOD                prayers and liturgy        fits per copy    0.2
+  skipped THANKGOD                     prayers and liturgy        fits per copy  144.2
+  USED    GODBLESSYOU                  prayers and liturgy        fits per copy    0.3
+  USED    GODBLESS                     prayers and liturgy        fits per copy   10.4
+  USED    GODSPEED                     prayers and liturgy        fits per copy    0.9
+  USED    GODWILLING                   prayers and liturgy        fits per copy    0.1
+  USED    GODSAUETHEQUEEN              prayers and liturgy        fits per copy    0.0
+  USED    OURFATHERWHICHARTINHEAUEN    prayers and liturgy        fits per copy    0.0
+  USED    HALLOWEDBETHYNAME            prayers and liturgy        fits per copy    0.0
+  USED    THYKINGDOMCOME               prayers and liturgy        fits per copy    0.0
+  USED    THYWILLBEDONE                prayers and liturgy        fits per copy    0.1
+  USED    GIUEUSTHISDAY                prayers and liturgy        fits per copy    0.0
+  USED    DELIUERUSFROMEUIL            prayers and liturgy        fits per copy    0.0
+  USED    FOREUERANDEUER               prayers and liturgy        fits per copy    0.0
+  USED    WORLDWITHOUTEND              prayers and liturgy        fits per copy    0.0
+  USED    THELORDBEWITHYOU             prayers and liturgy        fits per copy    0.0
+  USED    ANDWITHTHYSPIRIT             prayers and liturgy        fits per copy    0.0
+  USED    LIFTUPYOURHEARTS             prayers and liturgy        fits per copy    0.0
+  USED    LORDHAUEMERCY                prayers and liturgy        fits per copy    0.1
+  USED    CHRISTHAUEMERCY              prayers and liturgy        fits per copy    0.0
+  USED    KYRIEELEISON                 prayers and liturgy        fits per copy    0.0
+  USED    CHRISTEELEISON               prayers and liturgy        fits per copy    0.0
+  skipped AGNUSDEI                     prayers and liturgy        fits per copy  144.2
+  USED    DONANOBISPACEM               prayers and liturgy        fits per copy    0.0
+  USED    SANCTUS                      prayers and liturgy        fits per copy   16.5
+  USED    BENEDICTUS                   prayers and liturgy        fits per copy    8.4
+  USED    PAXUOBISCUM                  prayers and liturgy        fits per copy    2.1
+  USED    DOMINUSUOBISCUM              prayers and liturgy        fits per copy    0.0
+  USED    ETCUMSPIRITUTUO              prayers and liturgy        fits per copy    0.0
+  USED    REQUIESCATINPACE             prayers and liturgy        fits per copy    0.0
+  USED    RESTINPEACE                  prayers and liturgy        fits per copy    0.2
+  skipped TEDEUM                       prayers and liturgy        fits per copy   29.6
+  USED    MAGNIFICAT                   prayers and liturgy        fits per copy    0.8
+  USED    NUNCDIMITTIS                 prayers and liturgy        fits per copy    0.0
+  USED    MISERERE                     prayers and liturgy        fits per copy    0.0
+  USED    DEPROFUNDIS                  prayers and liturgy        fits per copy    2.4
+  USED    AUEMARIA                     prayers and liturgy        fits per copy    1.3
+  USED    HAILMARY                     prayers and liturgy        fits per copy   10.3
+  USED    FULLOFGRACE                  prayers and liturgy        fits per copy    0.3
+  USED    SALUEREGINA                  prayers and liturgy        fits per copy    0.4
+  USED    TANTUMERGO                   prayers and liturgy        fits per copy    6.9
+  USED    OSALUTARIS                   prayers and liturgy        fits per copy    0.4
+  USED    PRAISETOTHEHOLIEST           prayers and liturgy        fits per copy    0.0
+  USED    AUEUERUMCORPUS               Elgar's sacred music and texts to 1897 fits per copy    0.0
+  USED    AUEMARISSTELLA               Elgar's sacred music and texts to 1897 fits per copy    0.0
+  USED    ECCESACERDOSMAGNUS           Elgar's sacred music and texts to 1897 fits per copy    0.0
+  USED    OSALUTARISHOSTIA             Elgar's sacred music and texts to 1897 fits per copy    0.0
+  USED    TEDEUMANDBENEDICTUS          Elgar's sacred music and texts to 1897 fits per copy    0.0
+  USED    THELIGHTOFLIFE               Elgar's sacred music and texts to 1897 fits per copy    0.0
+  USED    LUXCHRISTI                   Elgar's sacred music and texts to 1897 fits per copy    7.0
+  USED    THEBANNEROFSAINTGEORGE       Elgar's sacred music and texts to 1897 fits per copy    0.0
+  skipped GERONTIUS                    Elgar's sacred music and texts to 1897 fits per copy   86.0
+  USED    THEDREAMOFGERONTIUS          Elgar's sacred music and texts to 1897 fits per copy    0.0
+  USED    SAINTGEORGES                 churches, clergy and services fits per copy    0.0
+  USED    SAINTGEORGESCHURCH           churches, clergy and services fits per copy    0.0
+  USED    SANSOMEPLACE                 churches, clergy and services fits per copy    0.1
+  USED    WORCESTERCATHEDRAL           churches, clergy and services fits per copy    0.0
+  USED    THREECHOIRS                  churches, clergy and services fits per copy    0.0
+  USED    THREECHOIRSFESTIUAL          churches, clergy and services fits per copy    0.0
+  USED    HEREFORD                     churches, clergy and services fits per copy    1.1
+  USED    GLOUCESTER                   churches, clergy and services fits per copy    6.0
+  USED    SAINTPETERS                  churches, clergy and services fits per copy    0.0
+  USED    SAINTPETERSCHURCH            churches, clergy and services fits per copy    0.0
+  USED    COLLEGIATECHURCH             churches, clergy and services fits per copy    0.0
+  USED    THERECTOR                    churches, clergy and services fits per copy    0.0
+  USED    REUEREND                     churches, clergy and services fits per copy    0.3
+  USED    CHURCH                       churches, clergy and services fits per copy    1.9
+  skipped CHAPEL                       churches, clergy and services fits per copy  295.1
+  USED    CATHEDRAL                    churches, clergy and services fits per copy    7.7
+  skipped SUNDAY                       churches, clergy and services fits per copy  295.1
+  USED    SERUICE                      churches, clergy and services fits per copy   16.1
+  USED    EUENSONG                     churches, clergy and services fits per copy    1.0
+  skipped MATINS                       churches, clergy and services fits per copy  295.1
+  USED    UESPERS                      churches, clergy and services fits per copy    1.0
+  skipped ORGAN                        churches, clergy and services fits per copy  375.1
+  skipped ORGANIST                     churches, clergy and services fits per copy  144.2
+  skipped CHOIR                        churches, clergy and services fits per copy  375.1
+  skipped ANTHEM                       churches, clergy and services fits per copy  295.1
+  skipped HYMN                         churches, clergy and services fits per copy  441.6
+  skipped PSALM                        churches, clergy and services fits per copy  375.1
+  USED    PRAYER                       churches, clergy and services fits per copy   18.9
+  USED    BLESSING                     churches, clergy and services fits per copy    8.2
+  skipped SERMON                       churches, clergy and services fits per copy  295.1
+  skipped THEFIRS                      Elgar's homes to 1897      fits per copy  215.7
+  USED    BROADHEATH                   Elgar's homes to 1897      fits per copy    0.3
+  USED    LOWERBROADHEATH              Elgar's homes to 1897      fits per copy    0.0
+  USED    EDGARSTREET                  Elgar's homes to 1897      fits per copy    0.0
+  USED    COLLEGEPRECINCTS             Elgar's homes to 1897      fits per copy    0.0
+  USED    HIGHSTREET                   Elgar's homes to 1897      fits per copy    0.0
+  USED    TENHIGHSTREET                Elgar's homes to 1897      fits per copy    0.0
+  USED    HIGHSTREETWORCESTER          Elgar's homes to 1897      fits per copy    0.0
+  USED    ELGARBROTHERS                Elgar's homes to 1897      fits per copy    0.0
+  USED    LORETTAUILLA                 Elgar's homes to 1897      fits per copy    0.0
+  USED    CHESTNUTWALK                 Elgar's homes to 1897      fits per copy    0.9
+  USED    FIELDTERRACE                 Elgar's homes to 1897      fits per copy    0.0
+  USED    BATHROAD                     Elgar's homes to 1897      fits per copy   10.4
+  USED    MARLOESROAD                  Elgar's homes to 1897      fits per copy    0.0
+  USED    WESTKENSINGTON               Elgar's homes to 1897      fits per copy    0.0
+  USED    KENSINGTON                   Elgar's homes to 1897      fits per copy    0.6
+  USED    SAETERMO                     Elgar's homes to 1897      fits per copy   17.9
+  USED    THELEES                      Elgar's homes to 1897      fits per copy    1.2
+  USED    GREATMALUERN                 Elgar's homes to 1897      fits per copy    0.0
+  USED    OAKLANDS                     Elgar's homes to 1897      fits per copy   15.2
+  USED    FOUNTAINROAD                 Elgar's homes to 1897      fits per copy    0.0
+  USED    UPPERNORWOOD                 Elgar's homes to 1897      fits per copy    0.0
+  USED    AUONMOREROAD                 Elgar's homes to 1897      fits per copy    0.0
+  skipped FORLI                        Elgar's homes to 1897      fits per copy  375.1
+  USED    ALEXANDRAROAD                Elgar's homes to 1897      fits per copy    0.0
+  USED    MALUERNLINK                  Elgar's homes to 1897      fits per copy    0.2
+  USED    FORLIMALUERNLINK             Elgar's homes to 1897      fits per copy    0.0
+  USED    FORLIALEXANDRAROAD           Elgar's homes to 1897      fits per copy    0.0
+  USED    WATERLOOROAD                 Dora's home and Wolverhampton fits per copy    0.0
+  USED    THERECTORY                   Dora's home and Wolverhampton fits per copy    0.0
+  USED    RECTORYWATERLOOROAD          Dora's home and Wolverhampton fits per copy    0.0
+  skipped MOLINEUX                     Dora's home and Wolverhampton fits per copy  144.2
+  USED    PAULSTREET                   Dora's home and Wolverhampton fits per copy    0.6
+  USED    WOLUERHAMPTON                Dora's home and Wolverhampton fits per copy    0.7
+  USED    STAFFORDSHIRE                Dora's home and Wolverhampton fits per copy    0.0
+  USED    WANDERERS                    Dora's home and Wolverhampton fits per copy    0.3
+  USED    WOLUERHAMPTONWANDERERS       Dora's home and Wolverhampton fits per copy    0.0
+  USED    FOOTBALL                     Dora's home and Wolverhampton fits per copy    0.6
+  USED    BRITISHCAMP                  the Malvern hills          fits per copy    4.4
+  USED    HEREFORDSHIREBEACON          the Malvern hills          fits per copy    0.0
+  USED    WORCESTERSHIREBEACON         the Malvern hills          fits per copy    0.0
+  USED    MALUERNHILLS                 the Malvern hills          fits per copy    0.0
+  USED    MALUERNWELLS                 the Malvern hills          fits per copy    0.0
+  USED    WELLSROAD                    the Malvern hills          fits per copy    6.4
+  USED    NORTHHILL                    the Malvern hills          fits per copy    0.1
+  skipped PRIORY                       the Malvern hills          fits per copy   25.2
+  USED    MALUERNPRIORY                the Malvern hills          fits per copy    0.2
+  USED    HEAUENLY                     single words from the phrases above fits per copy   15.2
+  skipped FATHER                       single words from the phrases above fits per copy  295.1
+  USED    CREATOR                      single words from the phrases above fits per copy   16.1
+  USED    SHEPHERD                     single words from the phrases above fits per copy    1.5
+  skipped LIGHT                        single words from the phrases above fits per copy  375.1
+  skipped WORLD                        single words from the phrases above fits per copy  375.1
+  skipped PRINCE                       single words from the phrases above fits per copy  295.1
+  skipped PEACE                        single words from the phrases above fits per copy   30.5
+  skipped KINGS                        single words from the phrases above fits per copy  375.1
+  USED    NAZARETH                     single words from the phrases above fits per copy   19.6
+  skipped GHOST                        single words from the phrases above fits per copy  375.1
+  skipped SPIRIT                       single words from the phrases above fits per copy   29.7
+  USED    BLESSED                      single words from the phrases above fits per copy    0.9
+  skipped UIRGIN                       single words from the phrases above fits per copy   25.2
+  skipped MOTHER                       single words from the phrases above fits per copy  295.1
+  skipped FAMILY                       single words from the phrases above fits per copy  295.1
+  skipped SAINT                        single words from the phrases above fits per copy  375.1
+  USED    GEORGE                       single words from the phrases above fits per copy    1.9
+  skipped PETER                        single words from the phrases above fits per copy   36.0
+  USED    CECILIA                      single words from the phrases above fits per copy    1.7
+  skipped IOSEPH                       single words from the phrases above fits per copy  295.1
+  USED    HOMINUM                      single words from the phrases above fits per copy   14.7
+  USED    SALUATOR                     single words from the phrases above fits per copy   15.2
+  skipped SIGNO                        single words from the phrases above fits per copy  375.1
+  skipped UINCES                       single words from the phrases above fits per copy  295.1
+  USED    NAZARENUS                    single words from the phrases above fits per copy    0.7
+  USED    IUDAEORUM                    single words from the phrases above fits per copy    7.7
+  USED    MAIOREM                      single words from the phrases above fits per copy   16.5
+  skipped GLORIAM                      single words from the phrases above fits per copy  215.7
+  USED    GREATER                      single words from the phrases above fits per copy    1.7
+  skipped GLORY                        single words from the phrases above fits per copy  375.1
+  USED    GRATIAS                      single words from the phrases above fits per copy   19.3
+  skipped UOLENTE                      single words from the phrases above fits per copy   20.9
+  skipped HIGHEST                      single words from the phrases above fits per copy   20.7
+  USED    EXCELSIS                     single words from the phrases above fits per copy    1.7
+  skipped PRAISE                       single words from the phrases above fits per copy  295.1
+  skipped THANKS                       single words from the phrases above fits per copy  295.1
+  skipped THANK                        single words from the phrases above fits per copy  375.1
+  USED    BLESS                        single words from the phrases above fits per copy   18.4
+  USED    WILLING                      single words from the phrases above fits per copy    0.9
+  USED    QUEEN                        single words from the phrases above fits per copy   19.2
+  skipped WHICH                        single words from the phrases above fits per copy   30.5
+  skipped HEAUEN                       single words from the phrases above fits per copy   25.2
+  USED    HALLOWED                     single words from the phrases above fits per copy    9.2
+  skipped KINGDOM                      single words from the phrases above fits per copy  215.7
+  USED    DELIUER                      single words from the phrases above fits per copy   14.3
+  USED    WITHOUT                      single words from the phrases above fits per copy   14.7
+  skipped HEARTS                       single words from the phrases above fits per copy  295.1
+  skipped MERCY                        single words from the phrases above fits per copy  375.1
+  skipped KYRIE                        single words from the phrases above fits per copy  375.1
+  skipped ELEISON                      single words from the phrases above fits per copy   26.0
+  skipped CHRISTE                      single words from the phrases above fits per copy  215.7
+  skipped AGNUS                        single words from the phrases above fits per copy  375.1
+  skipped NOBIS                        single words from the phrases above fits per copy  375.1
+  skipped PACEM                        single words from the phrases above fits per copy  375.1
+  USED    UOBISCUM                     single words from the phrases above fits per copy   11.8
+  skipped SPIRITU                      single words from the phrases above fits per copy   22.6
+  USED    REQUIESCAT                   single words from the phrases above fits per copy    3.2
+  USED    DIMITTIS                     single words from the phrases above fits per copy    0.2
+  skipped PROFUNDIS                    single words from the phrases above fits per copy   86.0
+  skipped MARIA                        single words from the phrases above fits per copy   30.5
+  skipped GRACE                        single words from the phrases above fits per copy  375.1
+  skipped SALUE                        single words from the phrases above fits per copy  375.1
+  skipped REGINA                       single words from the phrases above fits per copy  295.1
+  skipped TANTUM                       single words from the phrases above fits per copy   25.2
+  USED    SALUTARIS                    single words from the phrases above fits per copy    0.8
+  skipped HOLIEST                      single words from the phrases above fits per copy  215.7
+  skipped UERUM                        single words from the phrases above fits per copy   30.0
+  skipped CORPUS                       single words from the phrases above fits per copy  295.1
+  skipped MARIS                        single words from the phrases above fits per copy  375.1
+  USED    STELLA                       single words from the phrases above fits per copy   15.8
+  USED    SACERDOS                     single words from the phrases above fits per copy   12.6
+  skipped MAGNUS                       single words from the phrases above fits per copy  295.1
+  skipped HOSTIA                       single words from the phrases above fits per copy  295.1
+  skipped CHRISTI                      single words from the phrases above fits per copy   20.9
+  USED    BANNER                       single words from the phrases above fits per copy   16.1
+  skipped DREAM                        single words from the phrases above fits per copy  375.1
+  USED    GEORGES                      single words from the phrases above fits per copy    1.5
+  skipped SANSOME                      single words from the phrases above fits per copy   20.7
+  skipped PLACE                        single words from the phrases above fits per copy  375.1
+  USED    WORCESTER                    single words from the phrases above fits per copy    1.1
+  USED    THREE                        single words from the phrases above fits per copy   18.4
+  skipped CHOIRS                       single words from the phrases above fits per copy  295.1
+  skipped FESTIUAL                     single words from the phrases above fits per copy  144.2
+  skipped PETERS                       single words from the phrases above fits per copy   29.6
+  USED    COLLEGIATE                   single words from the phrases above fits per copy    0.3
+  skipped RECTOR                       single words from the phrases above fits per copy   22.4
+  skipped LOWER                        single words from the phrases above fits per copy  375.1
+  skipped EDGAR                        single words from the phrases above fits per copy  375.1
+  USED    STREET                       single words from the phrases above fits per copy    1.5
+  USED    COLLEGE                      single words from the phrases above fits per copy    2.3
+  USED    PRECINCTS                    single words from the phrases above fits per copy   10.0
+  skipped ELGAR                        single words from the phrases above fits per copy  375.1
+  USED    BROTHERS                     single words from the phrases above fits per copy   10.4
+  USED    LORETTA                      single words from the phrases above fits per copy   13.2
+  USED    UILLA                        single words from the phrases above fits per copy   19.2
+  USED    CHESTNUT                     single words from the phrases above fits per copy   15.1
+  skipped FIELD                        single words from the phrases above fits per copy  375.1
+  USED    TERRACE                      single words from the phrases above fits per copy    1.0
+  skipped MARLOES                      single words from the phrases above fits per copy  215.7
+  skipped GREAT                        single words from the phrases above fits per copy  375.1
+  skipped MALUERN                      single words from the phrases above fits per copy  215.7
+  USED    FOUNTAIN                     single words from the phrases above fits per copy   10.4
+  USED    UPPER                        single words from the phrases above fits per copy   19.9
+  USED    NORWOOD                      single words from the phrases above fits per copy    1.0
+  USED    AUONMORE                     single words from the phrases above fits per copy   14.1
+  USED    ALEXANDRA                    single words from the phrases above fits per copy    0.6
+  USED    WATERLOO                     single words from the phrases above fits per copy   10.4
+  USED    RECTORY                      single words from the phrases above fits per copy   15.9
+  skipped BRITISH                      single words from the phrases above fits per copy   22.6
+  USED    HEREFORDSHIRE                single words from the phrases above fits per copy    0.0
+  skipped BEACON                       single words from the phrases above fits per copy  295.1
+  USED    WORCESTERSHIRE               single words from the phrases above fits per copy    0.0
+  USED    HILLS                        single words from the phrases above fits per copy   19.2
+  USED    WELLS                        single words from the phrases above fits per copy   19.2
+  skipped NORTH                        single words from the phrases above fits per copy  375.1
+  skipped YOURS                        single words from the first crib list fits per copy  375.1
+  skipped TRULY                        single words from the first crib list fits per copy  375.1
+  USED    SINCERELY                    single words from the first crib list fits per copy   12.1
+  USED    BELIEUE                      single words from the first crib list fits per copy    1.8
+  USED    REGARDS                      single words from the first crib list fits per copy   14.9
+  skipped FRANCES                      single words from the first crib list fits per copy  215.7
+  skipped MEATH                        single words from the first crib list fits per copy  375.1
+  USED    WILLIAM                      single words from the first crib list fits per copy    0.9
+  skipped HENRY                        single words from the first crib list fits per copy  375.1
+  skipped HELEN                        single words from the first crib list fits per copy   36.0
+  skipped AGNES                        single words from the first crib list fits per copy  375.1
+  USED    STEUART                      single words from the first crib list fits per copy   16.1
+  USED    POWELL                       single words from the first crib list fits per copy   16.2
+
+Run log (last 20):
+  C1 doublet in 21.03s  (993/1000)
+  C1 shuffle in 23.30s  (993/1000)
+  C2 doublet in 6m 12.4s  (500/500)
+  C2 shuffle in 7m 11.3s  (500/500)
+  C3 doublet in 2.00s  (1000/1000)
+  C3 shuffle in 2.09s  (1000/1000)
+  C1 doublet in 17.14s  (994/1000)
+  C1 shuffle in 20.55s  (994/1000)
+  C1 doublet in 16.75s  (995/1000)
+  C1 shuffle in 18.76s  (995/1000)
+  C1 doublet in 13.38s  (996/1000)
+  C1 shuffle in 22.84s  (996/1000)
+  C1 doublet in 19.42s  (997/1000)
+  C1 shuffle in 22.12s  (997/1000)
+  C1 doublet in 19.66s  (998/1000)
+  C1 shuffle in 23.75s  (998/1000)
+  C1 doublet in 21.98s  (999/1000)
+  C1 shuffle in 23.39s  (999/1000)
+  C1 doublet in 20.50s  (1000/1000)
+  C1 shuffle in 13.77s  (1000/1000)
+

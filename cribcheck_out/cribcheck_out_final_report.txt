@@ -1,0 +1,92 @@
+DORABELLA CRIB CHECK REPORT  (is the more-cribs C1 result about the cribs?  and cribs + Elgar's voice)
+written 2026-10-15 09:58:09   compute time 16h 24m 10.0s   sessions 2   cribs 238 (the morecribs list)
+
+================================================================================================================
+HEADLINE: pre-registered gaps (crib score minus no-crib score), against PAIR-PRESERVING copies
+================================================================================================================
+D1 crib worth, Dracula English               real   -0.048   copies n=1000 mean   -0.364 95th   -0.085 max    0.172   p = 0.0340   power 72% of 60
+DE crib worth, Elgar's voice (E3)            real    0.047   copies n=1000 mean   -0.354 95th   -0.081 max    0.066   p = 0.0020   power 60% of 30
+Line to beat: p < 0.025 for D1 or DE (two tests). A pass also needs a completed text that
+READS as English beyond the crib; otherwise it is a statistical oddity, not a solution.
+
+----------------------------------------------------------------------------------------------------------------
+REPORTED, NOT TESTED
+----------------------------------------------------------------------------------------------------------------
+C1 crib score, Dracula (from morecribs)      real  -10.866   copies n=1000 mean  -11.326 95th  -11.035 max  -10.710   p = 0.0090
+N1 no-crib score, Dracula                    real  -10.818   copies n=1000 mean  -10.961 95th  -10.742 max  -10.597   p = 0.1329
+CE crib score, Elgar's voice                 real  -10.797   copies n=1000 mean  -11.244 95th  -10.950 max  -10.662   p = 0.0070
+NE no-crib score, Elgar's voice              real  -10.844   copies n=1000 mean  -10.890 95th  -10.680 max  -10.457   p = 0.3586
+plain-shuffle copies:
+  D1 vs plain shuffles                       real   -0.048   copies n= 200 mean   -0.319 95th   -0.083 max    0.048   p = 0.0448
+  DE vs plain shuffles                       real    0.047   copies n= 200 mean   -0.303 95th   -0.035 max    0.031   p = 0.0050
+  N1 vs plain shuffles                       real  -10.818   copies n= 200 mean  -11.392 95th  -11.094 max  -10.816   p = 0.0100
+  CE vs plain shuffles                       real  -10.797   copies n= 200 mean  -11.630 95th  -11.303 max  -11.018   p = 0.0050
+best crib in pair-preserving copies, morecribs C1: THREE 262, UILLA 143, HILLS 122, WELLS 102, UPPER 89, QUEEN 44
+best crib in pair-preserving copies, CE: THREE 255, UILLA 194, HILLS 114, WELLS 77, UPPER 72, QUEEN 42
+WELLS (found by looking, exploratory): fits the real cipher 9 times; pair-preserving copies mean 19.2, p (as many or more) = 0.9351
+
+----------------------------------------------------------------------------------------------------------------
+N1 best no-crib completions of the real cipher, Dracula English
+----------------------------------------------------------------------------------------------------------------
+per seed: -10.718, -10.818, -10.818, -10.818, -10.718
+  [-10.718] fully reversed
+      OCTOSAYDOTAHUSELAYBUTLAUSALAR
+      INNITHAUSEREWHYSLEELOPNOWSHEW
+      ARYIFITEDDSEEMETHERKNOWSCOLDK
+      words: OCT o SAY DOT ah USE LAY BUT l AUS ALA r INN itha USER e WHY s LEE lop NOW SHE WAR yifi TED d SEEM et HER KNOWS COLD k
+
+----------------------------------------------------------------------------------------------------------------
+NE best no-crib completions of the real cipher, Elgar's voice
+----------------------------------------------------------------------------------------------------------------
+per seed: -10.857, -10.847, -10.797, -10.667, -10.844
+  [-10.667] fully reversed
+      OCTOSAYDOTAHUSELAYBUTLAUSALAR
+      INNITHAUSEREWHYSLEELOGNOWSHEW
+      ARYIFITEDDSEEMETHERKNOWSCOLDK
+      words: OCT o SAY DOT ah USE LAY BUT l AUS ALA r INN itha USER e WHY s LEE LOG NOW SHE WAR yifi TED d SEEM et HER KNOWS COLD k
+
+----------------------------------------------------------------------------------------------------------------
+CE best crib completions of the real cipher, Elgar's voice
+----------------------------------------------------------------------------------------------------------------
+per seed: -10.797 (WELLS), -10.797 (WELLS), -10.797 (WELLS), -10.797 (WELLS), -10.937 (WELLS)
+  [-10.797] crib WELLS in each line reversed
+      TRAUCDWELLSEEMEWHERYGODSPONLY
+      TRUGGUWHTISEREDHASNEENOFGODSH
+      EDOUWOSTALOWTHISENTABIANTISTN
+      words: traucd WELLS eemew HER y GODS p ONLY t RUG guwhtise RED HASN eenof GOD SHED ouwosta LOW THIS en TAB i ANTI stn
+  [-10.937] crib WELLS in fully reversed
+      IATISOWLITOHUSENOWBUTNOUSONOR
+      ADDATHOUSEREFHWSNEENICDIFSHEF
+      ORWAYAWELLSEEMETHERYDIFSKINLY
+      words: iat ISO w LIT oh USE NOW BUT NOU so NOR ad DAT HOUSE REF hwsneenicdif SHE FOR WAY a WELLS ee MET HER ydif SKIN ly
+  [-10.957] crib WELLS in fully reversed
+      AINASONLANOHUSETONGUNTOUSOTOR
+      IFFIWHOUSEREDHNSTEETAKFADSHED
+      ORNICDWELLSEEMEWHERYFADSPATLY
+      words: AIN a SON LAN oh USE TON g UNTO usotoriffiw HOUSE RED hns TEE takfad SHED ornicd WELLS eemew HER yf ADS PAT ly
+
+CE controls: n=30, planted crib found 17/30, median letters right 97%
+
+copies are morecribs' own, rebuilt from its seeds; checked by placement counts at the start of every session
+
+Run log (last 20):
+  CE shuffle in 21.70s  (181/200)
+  CE shuffle in 19.86s  (182/200)
+  CE shuffle in 18.54s  (183/200)
+  CE shuffle in 15.40s  (184/200)
+  CE shuffle in 18.17s  (185/200)
+  CE shuffle in 20.38s  (186/200)
+  CE shuffle in 18.21s  (187/200)
+  CE shuffle in 18.95s  (188/200)
+  CE shuffle in 22.53s  (189/200)
+  CE shuffle in 13.28s  (190/200)
+  CE shuffle in 16.77s  (191/200)
+  CE shuffle in 20.90s  (192/200)
+  CE shuffle in 18.87s  (193/200)
+  CE shuffle in 24.38s  (194/200)
+  CE shuffle in 21.28s  (195/200)
+  CE shuffle in 18.90s  (196/200)
+  CE shuffle in 22.01s  (197/200)
+  CE shuffle in 19.29s  (198/200)
+  CE shuffle in 22.05s  (199/200)
+  CE shuffle in 23.27s  (200/200)
