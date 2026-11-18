@@ -2,9 +2,11 @@
 
 Fair statistical tests of Edward Elgar's 1897 Dorabella cipher.
 
-**Result: no key tested turns the Dorabella into readable text.** About 30 tests in round 1 and 58 pre-registered test families in round 2 all but one land at chance. Known text put through the same tests is recovered almost every time. The one exception, a crib test, traces to a rare cluster of repeated symbols in line 1 and still does not read.
+**Result: no key tested turns the Dorabella into readable text.** About 30 tests in round 1, 58 pre-registered test families in round 2 and 17 more in the November 2026 audit: all but three land at chance, and none of the three reads. Known text put through the same tests is recovered almost every time. The three exceptions trace to local quirks of the symbols (a cluster of repeats in line 1, and one symbol spaced like word gaps in line 3), not to a message. About 70 families at their own lines would be expected to give two or three such passes by chance.
 
-The cipher is not random: it has strong habits in which symbol follows which. But scrambled copies that keep those habits do as well as the real cipher in every test but one, in every language and writing style tried; the exception traces to a single rare cluster of symbols, not to readable text.
+The cipher is not random: it has strong habits in which symbol follows which. But scrambled copies that keep those habits do as well as the real cipher in almost every test, in every language, writing style and key tried. One habit is now firmly established: neighbouring symbols are far more often the same shape turned half round than in any enciphered English (p = 0.001), which replicates Hauer et al. (2021).
+
+**Audit, November 2026.** A review of every file found that the tests built on "Elgar's own key" had used the wrong key (a modern reconstruction, not the key in Elgar's notebook), that symbol 32 had been read differently from every published transcription, and that two ideas (a word-gap symbol, and the cipher as a tune) had never been tested. All of these were rerun or tested; see [Audit, November 2026](#audit-november-2026). Nothing changed the conclusion.
 
 The full write-up is [Testing the Dorabella Cipher.pdf](Testing%20the%20Dorabella%20Cipher.pdf).
 
@@ -28,16 +30,48 @@ Round 2 added four rules:
 
 p-values are (1 + copies at least as good) / (copies + 1), so they can never go below 1 / (copies + 1).
 
+## Audit, November 2026
+
+### What was wrong
+
+- **"Elgar's key" was not Elgar's key.** Rounds 1 and 2 took the key from the decrypt BLTACEIARWUNISNF... printed on Cipher Mysteries. That comes from a tidy pigpen-style reconstruction (ABC DEF GHI JKL on one cross, MNO PQR STU WXY on the other, some groups running backwards). Elgar's notebook, and the key table on `Dorabella_cipher.jpg`, write the alphabet straight round the eight directions: ABC opening right, DEF down-right, GHI down, KLM down-left, NOP left, QRS up-left, TUW up, XYZ up-right, 1 loop = first letter. That key gives the widely printed reading BPECAHTCKYFRQDRIRR... (reproduced here at 85 of 87 symbols). Every fixed-key test was affected: TE, PA, PB, the DE family of the date, scales, numbers and notes tests, tick-shift, and the main comparison of the "is it language?" test. Tests that search for ANY key were not affected, and the sets-of-three key spaces (`Dorabella_allkeys.py`, cribs C2) already contained the notebook layout.
+- **Symbol 32.** It was fixed as code 18 on 1 October 2026; every published reading, including the five-transcription consensus of Hauer et al. (2025), has code 11 (one loop, opening up), and no search ever tried 11 there. The reruns use the consensus reading (symbols 23, 32, 34, 85, 86 read 14, 11, 12, 14, 12); the word-gap test treats 32 as uncertain.
+- **The "is it language?" test missed the known oddity.** Its mirror features did not count neighbours that are the same shape turned half round, the excess Hauer et al. (2021) and Massey reported, and its main comparison used the wrong key.
+- **Never tested:** one symbol as the gap between words, and the cipher read directly as a tune.
+- **Checked and sound:** the pair-preserving shuffle, p-values, seeds, controls, and the privacy of the letters (no letters state file is in the repository). A calibration run showed planted English beats all of its own pair-preserving copies (10 of 10).
+
+### Results
+
+| Idea tested | Script | p vs pair-preserving copies | Power | Verdict |
+| --- | --- | --- | --- | --- |
+| Notebook key through every transposition, + period-3 letter shift, + period-3 symbol turns (TE, PA, PB) | `Dorabella_notebook.py three` | 0.82, 0.41, 0.29 | 100% | Chance |
+| Notebook key + the date, scales, birthdays/ages/line lengths, note names (DE family of each) | `Dorabella_notebook.py date` / `scales` / `numbers` / `notes` | 0.94, 0.27, 0.50, 0.78 | 100% | Chance; random numbers do as well |
+| Ticks as shifts on the notebook layout (512 keys) | `Dorabella_notebook.py tickshift` | 0.93 | 100% | Chance |
+| Every walk of the alphabet round the eight directions (4,096 keys; the notebook key is one) | `Dorabella_notebook.py spokes` | 0.39 | 100% | Chance |
+| Is it language? F1-F9 against English through the notebook key (P1) | `Dorabella_language2.py` | 0.033 (line 0.0167) | - | Not past the line |
+| Half-turn pairs, same loops (P2) / any loops (P3), against English through the notebook key | `Dorabella_language2.py` | 0.0064 / 0.0014 (vs any key: 0.001 / 0.0002) | - | **Real habit, replicates Hauer et al. 2021** |
+| The cipher as a tune: scale round the circle; any note assignment; any key (MS, MP, MK) | `Dorabella_melody.py` | 0.41, 0.19, 0.64 | 95-100% | Chance |
+| One symbol is the gap between words (WS) | `Dorabella_spaces.py` | 0.005 (line 0.05) | 100% | Passes, but unreadable: one symbol in line 3 |
+| Ordinary English with symbol 32 reopened (EN, reference) | `Dorabella_spaces.py` | 0.29 | 95% | Chance, as before |
+
+Fixed-key reruns use the consensus reading; any-key searches choose the uncertain symbols inside the search.
+
+**The word-gap pass.** The search chose symbol 38 (three loops, opening up-left) as the gap. It ends line 1 and line 2, and in line 3 it recurs every few symbols, cutting that line into "words" of 1, 2, 5, 5, 4 and 5 letters, a very English rhythm that pair-preserving copies rarely have. But lines 1 and 2 have no 38 inside them, so they would be single 28- and 30-letter words, and the decrypt does not read: "...SAUCUTELLNEEMETHESCRIPNFIDLY SURRUTH ONESEPHANDEEDIGRIPN... ALIT HONED ABOAD ON D". By the rule written into the script before the run, it is a statistical oddity, not a solution. The 38s were looked at after the run, so that explanation is exploratory.
+
+**Half-turn pairs.** 13 neighbouring pairs have the same loop count and face opposite ways (27 face opposite ways whatever their loops), against 5.8 and 15.3 on average for English through the notebook key. These features were counted during the audit, before the script was written, so this is a replication of the published result rather than a new discovery. It is a habit of the hand or a rule of the cipher that no test here models; it is not a decryption.
+
 ## Results, round 2 (1-11 October 2026)
+
+Rows marked * used the wrong base key ("Elgar's key" was the Cipher Mysteries reconstruction, not the notebook key); they were rerun in the audit above. The key-based verdicts stayed at chance; the "is it language?" verdict changed (see the audit).
 
 | Idea tested | Script | p vs pair-preserving copies | Power | Verdict |
 | --- | --- | --- | --- | --- |
 | Transpositions built on 3, then any key (T3, TB) | `Dorabella_three.py` | 0.35, 0.84 | 98% | Chance |
-| Elgar's key through transpositions or period-3 shifts and turns (TE, PA, PB) | `Dorabella_three.py` | 0.99, 0.46, 0.47 | 100% | Chance |
+| Elgar's key through transpositions or period-3 shifts and turns (TE, PA, PB) * | `Dorabella_three.py` | 0.99, 0.46, 0.47 | 100% | Chance |
 | Any key plus a period-3 shift or symbol turn (PC, PD) | `Dorabella_three.py` | 0.41, 0.64 | 85% | Chance |
 | Three alphabets used in turn (PE) | `Dorabella_three.py` | 0.87 | 10% | Inconclusive: too much freedom |
 | Loop counts alone, read in threes: repeats, counting keys, any key (L1, L2, L3) | `Dorabella_looptrits.py` | 0.048, 0.26, 0.31 | 83%, 100%, 48% | Chance; any-key test low power |
-| Is it language? Nine visual habits vs English through Elgar's key (no search) | `Dorabella_language.py` | 0.18 vs English; 0.0002 vs random symbols | - | Looks like enciphered English, not random |
+| Is it language? Nine visual habits vs English through Elgar's key (no search) * | `Dorabella_language.py` | 0.18 vs English; 0.0002 vs random symbols | - | Looks like enciphered English, not random |
 | 63 cribs (greetings, names, places), any key | `Dorabella_cribs.py` | 0.37 | 98% | Chance |
 | Cribs with sets-of-three or loop-group keys | `Dorabella_cribs.py` | 1.00, 1.00 | 97-100% | Chance |
 | 238 more cribs: God, Jesus, prayers, churches, homes and streets (C1, C2, C3) | `Dorabella_morecribs.py` | 0.009, 0.77, 1.00 | 95-100% | C1 passes the line; decrypt unreadable |
@@ -49,17 +83,17 @@ p-values are (1 + copies at least as good) / (copies + 1), so they can never go 
 | Quotation from the texts appointed for 14 July 1897 | `Dorabella_quotes.py` | 0.73 | 95% | Chance |
 | Playful spellings: no vowels, backwards, phonetic, initials, pig Latin | `Dorabella_styles.py` | 0.26-0.88 | 92-100% | Chance |
 | Elgar's private English: no AND, his abbreviations, his own letters | `Dorabella_elgarstyle.py` | 0.26-0.36 | 99-100% | Chance |
-| The date, July 14 97, as the key (Elgar's key; any key; transposition) | `Dorabella_date.py` | 0.15, 0.38, 0.77 | 88-100% | Chance |
+| The date, July 14 97, as the key (Elgar's key; any key; transposition) * | `Dorabella_date.py` | 0.15, 0.38, 0.77 | 88-100% | Chance |
 | French, German, Italian, Latin | `Dorabella_languages.py` | 0.14, 0.53, 0.075, 0.049 | 98-100% | Chance |
 | Latin confirmation (Church Latin, pre-registered) | `Dorabella_languages.py --confirm-latin` | 0.049 | 100% | Not confirmed: decrypt unreadable |
-| Musical scales as numbers | `Dorabella_scales.py --set scales` | 0.41, 0.86, 0.72 | 90-100% | Chance |
-| Birthdays, ages, line lengths 29-31-27 | `Dorabella_scales.py --set numbers` | 0.63, 0.048, 0.12 | 90-100% | Chance: random numbers do as well |
-| Note names CDEFGAB as the key | `Dorabella_scales.py --set notes` | 0.66, 0.91, 0.41 | 95-100% | Chance |
-| Every circle-and-cross key (589,824) | `Dorabella_circlekeys.py` | 0.35 | 100% | Chance |
-| Ticks as shifts: Elgar's key with each group moved up or down by 1 or by the loop count (1,024 keys) | `Dorabella_tickshift.py` | 0.10 | 100% | Chance |
+| Musical scales as numbers * | `Dorabella_scales.py --set scales` | 0.41, 0.86, 0.72 | 90-100% | Chance |
+| Birthdays, ages, line lengths 29-31-27 * | `Dorabella_scales.py --set numbers` | 0.63, 0.048, 0.12 | 90-100% | Chance: random numbers do as well |
+| Note names CDEFGAB as the key * | `Dorabella_scales.py --set notes` | 0.66, 0.91, 0.41 | 95-100% | Chance |
+| Every circle-and-cross key (589,824; does not include the notebook's walk-round layout, tested in the audit) | `Dorabella_circlekeys.py` | 0.35 | 100% | Chance |
+| Ticks as shifts: Elgar's key with each group moved up or down by 1 or by the loop count (1,024 keys) * | `Dorabella_tickshift.py` | 0.10 | 100% | Chance |
 | Homophones: several symbols for one letter | `Dorabella_homophones.py` | 0.37, 0.63, 0.30 | 62-78% | No evidence; low power |
 
-Where a row gives several p-values, they are the row's families in the order named. The "is it language?" row is not a key search: it asks whether the cipher's visual habits (loop changes, turns, mirror pairs, doubled symbols, repeats) look like real English put through Elgar's key. They do (p = 0.18 against 200,000 English passages), and they clearly differ from random symbols. So the cipher is consistent with an enciphered message; what no test found is the key or text that makes it one.
+Where a row gives several p-values, they are the row's families in the order named. The "is it language?" row is not a key search: it asks whether the cipher's visual habits (loop changes, turns, mirror pairs, doubled symbols, repeats) look like real English put through Elgar's key. They do (p = 0.18 against 200,000 English passages), and they clearly differ from random symbols. So the cipher is consistent with an enciphered message; what no test found is the key or text that makes it one. *(Audit: with Elgar's notebook key this test gives p = 0.033, and the half-turn pairs it never measured are far too many for enciphered English; see the audit.)*
 
 **The near-misses and the one pass, and why none counts.**
 
@@ -119,6 +153,15 @@ The Dorabella *does* beat plain shuffles (p = 0.0020 in 1,016), so its symbol or
 | `Dorabella_fixtext.py`, `Dorabella_pdf2txt.py` | Helpers: extract and repair text from PDFs (ligatures, long s, split words) |
 | `Dorabella_daytexts.py` | Helper: builds the folder of texts appointed for 14 July 1897 from a King James Bible and the Coverdale Psalter |
 
+### Audit scripts (November 2026)
+
+| Script | Purpose |
+| --- | --- |
+| `Dorabella_notebook.py` | Reruns every fixed-key test with Elgar's notebook key and the consensus reading: `three`, `date`, `scales`, `numbers`, `notes`, `tickshift`, plus the new `spokes` family. `--reading ours` repeats a test with this project's own readings |
+| `Dorabella_language2.py` | "Is it language?" with the notebook key, half-turn pairs added, symbol 32 treated as uncertain |
+| `Dorabella_spaces.py` | One symbol as the gap between words (any key), and run-together English again with symbol 32 reopened |
+| `Dorabella_melody.py` | The cipher read as a tune: direction = scale step or rest, loops = note length; three families against about 8,500 folk songs |
+
 ### Round 1 scripts
 
 | File | Purpose |
@@ -148,7 +191,7 @@ The Dorabella *does* beat plain shuffles (p = 0.0020 in 1,016), so its symbol or
 
 Each symbol is a two-digit code: **loop count (1-3), then direction (1-8)**. Direction 1 is the opening facing up, and directions step round in 45-degree turns. The common convention's direction 1 (opening to the right) is direction 3 here.
 
-Elgar's standard key, applied to these codes, reproduces the published decrypt (BLTACEIARWUNISNF...) at 78 to 80 of 87 positions, depending on the transcription; the mismatches fall on uncertain symbols.
+**Elgar's notebook key** in these codes: ABC on direction 3 (opening right), DEF 4, GHI 5, KLM 6, NOP 7, QRS 8, TUW 1, XYZ 2, with 1 loop = the first letter of the group (I/J and U/V share symbols). On the consensus reading it reproduces the widely printed decrypt BPECAHTCKYFRQDRIRR... at 85 of 87 positions. The key the round 1-2 scripts call `ELGAR_SETS` (giving BLTACEIARWUNISNF...) is a modern reconstruction, not Elgar's; see the audit.
 
 ## Running it
 
@@ -172,6 +215,8 @@ Put all scripts, `Dorabella_transcription.csv` and the corpora in one folder. **
 | `Bible_Psalter/`, `Bible_Psalter_Psalms/` | `Dorabella_quotes.py` | 1662 Book of Common Prayer and its Coverdale Psalter, from a scanned PDF repaired with `Dorabella_fixtext.py` |
 | `Day_14July1897/` | `Dorabella_quotes.py` | Built by `Dorabella_daytexts.py` |
 
+**Folk tunes for `Dorabella_melody.py` (not included).** The Essen folksong collection in ABC notation, from the music21 project: download https://github.com/cuthbertLab/music21 and copy its `music21/corpus/essenFolksong` folder next to the scripts. Its licence allows non-commercial use, so neither that folder nor the `melody.txt` built from it is in this repository.
+
 These are public-domain texts, included so every run can be reproduced exactly. `english.txt` is the exact file all round-2 scores came from. `Dorabella_languages.py` keeps every text between Project Gutenberg's START and END markers and drops the licence text. The English scorer reads `english.txt` as it is, so use the same file throughout.
 
 ### Commands and run times (8-core laptop)
@@ -192,6 +237,10 @@ These are public-domain texts, included so every run can be reproduced exactly. 
 | `python Dorabella_tickshift.py --stop-when-done` | under 2 min |
 | `python Dorabella_homophones.py --stop-when-done` | 3.1 h |
 | `python Dorabella_looptrits.py --workers 8` (not resumable; runs a fixed number of copies) | 6 min |
+| `python Dorabella_notebook.py three --stop-when-done` (or `date`, `scales`, `numbers`, `notes`, `tickshift`, `spokes`) | 20 min for `three`; about a minute each for the others |
+| `python Dorabella_language2.py` | a few minutes |
+| `python Dorabella_spaces.py --stop-when-done` | 3.5 h |
+| `python Dorabella_melody.py --build essenFolksong`, then `python Dorabella_melody.py MS --stop-when-done` (or `MP`, `MK`) | seconds, 16 min, 1.6 h |
 | `python Dorabella_hillclimb.py --selftest --corpus english.txt` | 10 s |
 | `python Dorabella_verify.py` | 20 min |
 | `python Dorabella_numbers.py` | 1.6 h |
@@ -209,7 +258,8 @@ Three round-2 tests used Elgar's own letters before 14 July 1897, transcribed fr
 ## Notes on the logs
 
 - **Two transcriptions were used in round 1.** The marathon, allkeys, loopgroups, numbers, phrase and keyword runs used the first transcription. The `Dorabella_v2.py` runs and all of round 2 used the rechecked one in `Dorabella_transcription.csv`, whose `first_transcription_code` column shows the differences.
-- **Position 32 was settled as 18 on 1 October 2026**, after a look at the highest-resolution scan; round 2 leaves 9 symbols uncertain and chooses them inside the search where the script allows it.
+- **Position 32 was settled as 18 on 1 October 2026**, after a look at the highest-resolution scan; round 2 leaves 9 symbols uncertain and chooses them inside the search where the script allows it. Every published transcription reads 11 there; the audit reruns use 11, and reopening it changed nothing (run-together English p = 0.29).
+- **`nb_*_out/` reports show only the families that were rerun.** The other families in those reports say "waiting for copies"; they search for any key and did not need rerunning.
 - **One `english.txt` for all of round 2.** Every round-2 report was scored with the same file, the current Gutenberg #345 release of *Dracula*. A different edition shifts raw scores by a few hundredths but not the p-values, since each run scores the cipher and its copies with the same file.
 - **Reports regenerated for display only.** On 10 October 2026 the reports were rewritten with `--report-only` so that every "words:" line uses the large display dictionary (about 11,700 words) instead of a 309-word list. The display never affects scores. Earlier versions are kept as `*_final_report_old.txt`, and every changed line was checked by eye: only the timestamp and word lines differ.
 - **Some early entries in `numbers_out/log.txt` should be ignored.** The runs before 14:15 on 2026-09-29 used an `english.txt` that had extra notes appended.
@@ -217,6 +267,8 @@ Three round-2 tests used Elgar's own letters before 14 July 1897, transcribed fr
 
 ## Open threads
 
+- **Half-turn pairs.** The cipher's one firm oddity. Whether it is a habit of Elgar's hand or a rule of the cipher (Hauer et al. suggest it might mark doubled letters) is untested.
+- **Symbol 38 in line 3**, spaced like word gaps, but absent inside lines 1 and 2.
 - **Homophones, three alternating alphabets and any-key loop triples** cannot be ruled out by statistical search at this length (power 62-78%, 10% and 48%).
 - **A blind re-reading of the uncertain symbols**, by someone who has not seen these results, would settle positions 32 and 67.
 - **Not yet tested:** the cipher's single dot as "&". (Names of God and Jesus, prayers, churches, and street names and addresses were tested as cribs in `Dorabella_morecribs.py`.)
@@ -230,6 +282,10 @@ Three round-2 tests used Elgar's own letters before 14 July 1897, transcribed fr
 - [Cipher Mysteries: Dorabella Cipher](https://ciphermysteries.com/other-ciphers/the-dorabella-cipher)
 - [Cipher Mysteries: The Dorabella cipher and Elgar's other little ciphertexts](https://ciphermysteries.com/2013/10/09/elgars-little-cipher)
 - [Wikipedia: Dorabella Cipher](https://en.wikipedia.org/wiki/Dorabella_Cipher)
+- Hauer, Choi, Sundar, Hindle, Smallwood and Kondrak, [Experimental Analysis of the Dorabella Cipher with Statistical Language Models](https://ecp.ep.liu.se/index.php/histocrypt/article/download/159/115) (HistoCrypt 2021)
+- Hauer, Choi, Hindle, Smallwood and Kondrak, [Dorabella Cipher as Musical Inspiration](https://arxiv.org/abs/2509.17950) (2025): the consensus transcription
+- [Benzedrine: Clues to the Dorabella Cipher](https://www.benzedrine.ch/dorabella.html) and [dCode](https://www.dcode.fr/dorabella-cipher): the notebook-key reading
+- [music21 corpus](https://github.com/cuthbertLab/music21): Essen folksong collection (ABC encodings by Seymour Shlien)
 - Jerrold Northrop Moore, *Edward Elgar: Letters of a Lifetime* (Oxford, 1990)
 - [Project Gutenberg #345: Dracula](https://www.gutenberg.org/ebooks/345) and [#10: The King James Bible](https://www.gutenberg.org/ebooks/10)
 - [eBible.org: Latin Clementine Vulgate](https://ebible.org/find/details.php?id=latVUC)
