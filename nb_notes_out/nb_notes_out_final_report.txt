@@ -1,0 +1,91 @@
+DORABELLA NOTES REPORT  (note names as the key, CDEFGAB)   [NOTEBOOK-KEY RERUN]
+KEY: Elgar's NOTEBOOK key (ABC DEF GHI KLM NOP QRS TUW XYZ round directions 3,4,5,6,7,8,1,2; 1 loop = first letter)
+TRANSCRIPTION: consensus reading (Hauer et al. 2025): symbols 23, 32, 34, 85, 86 read 14, 11, 12, 14, 12
+written 2026-11-17 10:45:20   compute time 37.21s   sessions 1
+settings: real seeds 5 (median used), annealing 6 restarts x 10000 steps per setting
+cipher: Dorabella_transcription.csv + consensus reading at 23, 32, 34, 85, 86
+Bonferroni line for one of 3 families: p < 0.0167
+
+========================================================================================================
+HEADLINE (statistic = best quadgram score over the family's date settings; real = median of seeds;
+          p_rand = real cipher with the DATE keys vs the real cipher with RANDOM keys of the same size;
+          power = planted controls above the 95th percentile of the pair-preserving copies)
+========================================================================================================
+fam  settings     real n_pair  p_pair n_shuf  p_shuf n_rand  p_rand  power  verdict
+DE        168  -16.227   5000  0.7758   5000  0.4837   5000  0.5023   100%  chance level
+DA        140        -      0       -      0       -      0       -      -  waiting for copies
+DT         28        -      0       -      0       -      0       -      -  waiting for copies
+
+A family matters only if the real cipher beats the pair-preserving copies AND the
+random-number keys past the Bonferroni line, its controls show it can find a message,
+and the decrypt reads as English.
+
+--------------------------------------------------------------------------------------------------------
+DE: Elgar's notebook key + notes-key shifts, turns and transpositions (no search)   (168 settings)
+--------------------------------------------------------------------------------------------------------
+real statistic per seed: -16.227   median -16.227
+  vs pair-preserving     n=5000, mean -16.043, 95th pct -15.611, max -14.839, p = 0.7758
+  vs plain shuffle       n=5000, mean -16.213, 95th pct -15.855, max -15.253, p = 0.4837
+  vs random-number keys  n=5000, mean -16.145, 95th pct -15.908, max -15.316, p = 0.5023
+best real decrypts (seed with the highest statistic):
+  [-16.227] 4560123 (E notes up) | rotate - | restarts each line
+      OZLCXBKPTEFOKTESYREIFENDYTAWF
+      GBAHTWAYMLROYYTAARCLYHCXDTDAK
+      PZRCOUPYTHFNSBLYHAZGZIXFRIDTW
+      words: ozlcxbkptefoktesyreif END ytawfg BAH t WAY ml ROY yta ARC lyhcxdtdakpzrcoupythfnsblyhazgzixf RID tw
+  [-16.269] 6012345 (G notes up) | loop step + | runs through
+      BPFBAIWCKZERRFRISQHNORDYXXHES
+      TSWHYBKLADRSDHGRWRDQHUQSDYMKX
+      DREQGUSFFUTISESGURRGCNISIBDXA
+      words: bpfbaiwckz ERR FRI sqh NOR dyxxh EST s WHY bk LAD rsdhgrwrdqhuqsdymkxdreqgusffutisesgurrgcnisibdxa
+  [-16.326] 5601234 (F notes up) | loop step + | runs through
+      APEACHUBKYDQQEQIRSGPNQDXZZGDR
+      TRUGXAMLCFQRFGGQUQFSGUSRFXLMX
+      FQDSITSEETWHRERITQQICPHRHAFXC
+      words: ap EACH ubkydqqeq IRS gpnqdxzzgdrt RUG xamlcfqrfggquqfsg USR fxlmxfqd SITS eetwhreritqqicphrhafxc
+  [-16.336] 6012345 (G notes up) | loop step + | restarts each line
+      BPFBAIWCKZERRFRISQHNORDYXXHES
+      TRUGXAMLCFQRFGGQUQFSGUSRFXLMX
+      FQESITSFFUWHRESGUQQICNISHAFXA
+      words: bpfbaiwckz ERR FRI sqh NOR dyxxh EST RUG xamlcfqrfggquqfsg USR fxlmxfqe SITS ffuwh RES guqqicnishafxa
+  [-16.528] 2106543 (C notes down) | letter shift - | restarts each line
+      ZOEWUDQAIYZMMAPHRLCLMPCXRRCCQ
+      RQTBRYGIBELMAEEPTLANESRQXRFGU
+      ESCRHONAASUGMZNESPSAXLDQGCXRY
+      words: zoewudqaiyzm MAP hrlclmpcxrrccqrqtbrygibel MAE ept LANES rqxrfguescr HON aasugmznespsaxldqgcxry
+controls, 0 misread symbols: n=20, median stat -9.252, true setting found 19/20, median letters right 100%, above null 95th pct 20/20
+controls, 2 misread symbols: n=20, median stat -9.811, true setting found 20/20, median letters right 98%, above null 95th pct 20/20
+  example control (100% right): planted MYDEARFRIENDIWASSOUERYGLADOFYOURLETTERANDTHENEWSTHATYOUA
+                                   found   MYDEARFRIENDIWASSOUERYGLADOFYOURLETTERANDTHENEWSTHATYOUA
+
+--------------------------------------------------------------------------------------------------------
+DA: any key + notes-key letter shift / rotate / loop step   (140 settings)
+--------------------------------------------------------------------------------------------------------
+real run not done yet
+
+--------------------------------------------------------------------------------------------------------
+DT: any key + notes-key columnar transposition   (28 settings)
+--------------------------------------------------------------------------------------------------------
+real run not done yet
+
+Run log (last 20):
+  DE randkey x32 in 0.03s  (4832/5000)
+  DE shuffle x32 in 0.02s  (4832/5000)
+  DE doublet x32 in 0.02s  (4864/5000)
+  DE randkey x32 in 0.03s  (4864/5000)
+  DE shuffle x32 in 0.02s  (4864/5000)
+  DE doublet x32 in 0.02s  (4896/5000)
+  DE randkey x32 in 0.03s  (4896/5000)
+  DE shuffle x32 in 0.02s  (4896/5000)
+  DE doublet x32 in 0.02s  (4928/5000)
+  DE randkey x32 in 0.03s  (4928/5000)
+  DE shuffle x32 in 0.02s  (4928/5000)
+  DE doublet x32 in 0.02s  (4960/5000)
+  DE randkey x32 in 0.03s  (4960/5000)
+  DE shuffle x32 in 0.03s  (4960/5000)
+  DE doublet x32 in 0.02s  (4992/5000)
+  DE randkey x32 in 0.03s  (4992/5000)
+  DE shuffle x32 in 0.02s  (4992/5000)
+  DE doublet x8 in 0.01s  (5000/5000)
+  DE randkey x8 in 0.01s  (5000/5000)
+  DE shuffle x8 in 0.01s  (5000/5000)

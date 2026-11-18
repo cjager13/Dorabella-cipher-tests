@@ -1,0 +1,95 @@
+DORABELLA WORD-GAP REPORT  (one symbol is the gap between words)
+written 2026-11-17 14:19:02   compute time 3h 31m 24.5s   sessions 1
+settings: real seeds 9 (median used), annealing 12 restarts x 20000 steps per reading order, 5 reading orders, 10 uncertain symbols solved in the search
+texts: WS english.txt (643,295 letters); EN english.txt (643,295 letters)
+Line to beat: p < 0.0500 for WS (one new test). EN is the run-together reference, not a new test.
+In WS the letter Z stands for the gap between words; the 'words:' line shows it as a space.
+Uncertain symbols: the CSV's 9 plus position 32 (18 or 11).
+
+========================================================================================================
+HEADLINE (statistic = best quadgram score in that language's own model; real = median over seeds;
+          power = planted held-back text above the 95th percentile of the pair-preserving copies)
+Scores are on each language's own scale: compare a language only with its own copies.
+========================================================================================================
+language                   real n_pair  p_pair n_shuf  p_shuf  power ctrl med  verdict
+WS English with a word-gap symbol  -12.048   1000  0.0050   1000  0.0040   100%    -8.52  BEATS both nulls past Bonferroni: read the decrypts by eye
+EN English, run together (reference)  -10.975   1000  0.2917   1000  0.0080    95%    -9.45  chance level
+
+A language matters only if the real cipher beats the PAIR-PRESERVING copies past the
+Bonferroni line, its controls show it can find a message, and the decrypt reads as that language.
+
+--------------------------------------------------------------------------------------------------------
+WS: English with a word-gap symbol  (english.txt)
+--------------------------------------------------------------------------------------------------------
+real statistic per seed: -12.048, -12.048, -12.119, -12.048, -12.157, -12.141, -12.048, -12.340, -12.048   median -12.048
+  vs pair-preserving  n=1000, mean -12.502, 95th pct -12.224, max -11.966, p = 0.0050
+  vs plain shuffle    n=1000, mean -12.831, 95th pct -12.357, max -11.944, p = 0.0040
+best real decrypts (from the seed with the highest statistic, -12.048):
+  [-12.048] each line reversed  alternate readings used at [23, 67, 78, 85]
+      ZSAUCUTELLNEEMETHESCRIPNFIDLY
+      ZSURRUTHZONESEPHANDEEDIGRIPNH
+      EPIFTINZALITZHONEDZABOADZONZD
+      words:  SAUCUTELLNEEMETHESCRIPNFIDLY SURRUTH ONESEPHANDEEDIGRIPNHEPIFTIN ALIT HONED ABOAD ON D
+  [-12.057] fully reversed  alternate readings used at [23, 67, 78, 85]
+      IFTINZALITZHONEDZABOADZONZDZS
+      URRUTHZONESEPHANDEEDIGRIPNHEP
+      ZSAUCUTELLNEEMETHESCRIPNFIDLY
+      words: IFTIN ALIT HONED ABOAD ON D SURRUTH ONESEPHANDEEDIGRIPNHEP SAUCUTELLNEEMETHESCRIPNFIDLY
+  [-12.106] forward  alternate readings used at [10, 23, 24, 25, 86]
+      BLTAYZHAMBRENCEDEEZLLECHBOURS
+      HENZHAMPATEETZUNHEREZISNCOMMO
+      RSTSZISTCIFUSTEZINSUALUSZAUOA
+      words: BLTAY HAMBRENCEDEE LLECHBOURSHEN HAMPATEET UNHERE ISNCOMMORSTS ISTCIFUSTE INSUALUS AUOA
+controls, 0 misread symbols: n=30, median stat -8.239, right reading order 30/30, median symbols decoded right 100%, above null 95th pct 30/30
+controls, 2 misread symbols: n=30, median stat -8.766, right reading order 29/30, median symbols decoded right 97%, above null 95th pct 30/30
+  example control (100% right): planted ERZWAYZANDZIZCANZDIEZIFZNEEDZBEZASZWELLZASZYOUNGERZMENZN
+                                   found   ERZWAYZANDZIZCANZDIEZIFZNEEDZBEZASZWELLZASZYOUNGERZMENZN
+
+--------------------------------------------------------------------------------------------------------
+EN: English, run together (reference)  (english.txt)
+--------------------------------------------------------------------------------------------------------
+real statistic per seed: -10.881, -11.038, -10.974, -10.988, -10.944, -10.960, -11.037, -10.975, -10.978   median -10.975
+  vs pair-preserving  n=1000, mean -11.051, 95th pct -10.806, max -10.490, p = 0.2917
+  vs plain shuffle    n=1000, mean -11.492, 95th pct -11.162, max -10.802, p = 0.0080
+best real decrypts (from the seed with the highest statistic, -10.881):
+  [-10.881] each line reversed  alternate readings used at [23, 67, 86]
+      AMNOBOWELLSEEFEWHEMBRITSPIDLY
+      AMORROWHAUSEMETHNSDEEDICRITSH
+      ETIONISANLINAHUSEDANGUNDAUSAD
+      words: amnobo WELL SEE FEW hembr ITS pidlya MORROW ha USE MET hnsdeedicrit SHE tionisanlinah USED an GUN dau SAD
+  [-10.988] fully reversed  alternate readings used at [23, 78, 85, 86]
+      AINAHOULANOTWHEDOUBWNDOWHODOR
+      IFFINTOWHERECTUHDEEDAYFACHTEC
+      ORUISINELLHEEPENTERSFACHMADLK
+      words: AIN ahoula NOT whedoubwndo WHO doriff INTO WHERE ctuhdee DAY fachtecoruisinellheep ENTER sfach MAD lk
+  [-11.320] forward  alternate readings used at [23, 24, 67, 78, 85, 86]
+      ZWMOUNSOFTHEAREBEENWWERSTYLHI
+      SEANSOFCOMEEMNLASEHENDIARYFFY
+      HIMINDIMLDGLIMENDAIROWLINORYO
+      words: zwmoun SOFT HEAR e BEEN wwerstylhi SEA nsof COME emnlasehen DIARY ffyhi MIND imldglim END AIR OWL i NOR yo
+controls, 0 misread symbols: n=30, median stat -9.268, right reading order 28/30, median symbols decoded right 99%, above null 95th pct 30/30
+controls, 2 misread symbols: n=30, median stat -9.718, right reading order 27/30, median symbols decoded right 94%, above null 95th pct 27/30
+  example control (100% right): planted HORTTIMETHANEUERTOTHEHYPNOTICSLEEPASBEFORECAMETHEANSWERD
+                                   found   HORTTIMETHANEUERTOTHEHYPNOTICSLEEPASBEFORECAMETHEANSWERD
+
+Run log (last 20):
+  EN doublet x4 in 11.88s  (984/1000)
+  EN shuffle x4 in 12.48s  (984/1000)
+  WS doublet x4 in 12.07s  (984/1000)
+  WS shuffle x4 in 12.58s  (984/1000)
+  EN doublet x4 in 12.62s  (988/1000)
+  EN shuffle x4 in 11.86s  (988/1000)
+  WS doublet x4 in 12.47s  (988/1000)
+  WS shuffle x4 in 12.44s  (988/1000)
+  EN doublet x4 in 12.20s  (992/1000)
+  EN shuffle x4 in 11.78s  (992/1000)
+  WS doublet x4 in 12.20s  (992/1000)
+  WS shuffle x4 in 12.61s  (992/1000)
+  EN doublet x4 in 12.63s  (996/1000)
+  EN shuffle x4 in 12.34s  (996/1000)
+  WS doublet x4 in 12.32s  (996/1000)
+  WS shuffle x4 in 12.50s  (996/1000)
+  EN doublet x4 in 11.73s  (1000/1000)
+  EN shuffle x4 in 12.28s  (1000/1000)
+  WS doublet x4 in 12.22s  (1000/1000)
+  WS shuffle x4 in 12.36s  (1000/1000)

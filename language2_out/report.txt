@@ -1,0 +1,102 @@
+DORABELLA 'IS IT LANGUAGE?' REPORT 2  (notebook key; half-turn pairs added)
+written 2026-11-17 10:46:43, 200,000 passages per reference set, seed 1897
+check: the notebook key on the consensus reading gives BPECAHTCKYFRQDRIRRHPPRDXYXGFST... (widely printed: BPECAHTCKYFRQDRIRRHPPRDXYXGFS)
+Dorabella: 1024 readings of the 10 uncertain symbols measured
+
+==============================================================================================================
+HEADLINE  (three pre-registered tests; line to beat p < 0.0167)
+==============================================================================================================
+P1 all of F1-F9 against English through the notebook key: distance 19.9 (typical English 8.0, 99th pct 26.4)
+     p = 0.03307   (range over readings 0.02694 to 0.11255; consensus reading 0.01349)
+P2 F10 half-turn pairs, same loops: Dorabella 13 (readings 13-14; CSV main 13; consensus 13)
+     English, notebook key: mean 5.82, p (as many or more) = 0.00639   | consensus reading p = 0.00639
+     English, random key:   mean 3.62, p = 0.00099   <- the Hauer et al. (2021) comparison: they report 13 against a mean of 3.64, p about 0.001
+     its own symbols shuffled: mean 5.06, p = 0.00131
+P3 F11 half-turn pairs, any loops: Dorabella 27 (readings 24-30; CSV main 26; consensus 27)
+     English, notebook key: mean 15.29, p (as many or more) = 0.00142   | consensus reading p = 0.00142
+     English, random key:   mean 10.85, p = 0.00016
+     its own symbols shuffled: mean 12.09, p = 0.00002
+Reading it: a small P1 says the cipher's visual habits as a whole are not those of English
+through Elgar's own key. A small P2 or P3 says its neighbours face opposite ways more often
+than any enciphered English does: a habit of the hand, or a rule of the cipher that these
+tests do not model. Neither is a decryption, and neither shows there is no message.
+
+==============================================================================================================
+FEATURE BY FEATURE  (Dorabella = median over readings [range];  each set: mean [2.5%-97.5%];
+two-sided p against R1 and R2, for description only)
+==============================================================================================================
+
+F1 same-loop rate:  Dorabella 0.314  [0.314-0.314]   (CSV main 0.314, consensus 0.314)
+    R1 English, notebook key   0.364 [0.267-0.465]   p = 0.39311 (Dorabella low)
+    R2 English, random key     0.328 [0.221-0.453]   p = 0.89961 (Dorabella low)
+    R3 random symbols          0.333 [0.233-0.430]
+    R4 Dorabella shuffled      0.330 [0.233-0.430]
+
+F2 longest loop-change run:  Dorabella 13  [13-13]   (CSV main 13, consensus 13)
+    R1 English, notebook key   9.126 [6-15]   p = 0.19451 (Dorabella high)
+    R2 English, random key     10.288 [6-18]   p = 0.39261 (Dorabella high)
+    R3 random symbols          10.227 [6-17]
+    R4 Dorabella shuffled      10.315 [6-18]
+
+F3 left-right mirror pairs:  Dorabella 1  [1-1]   (CSV main 1, consensus 1)
+    R1 English, notebook key   3.366 [0-7]   p = 0.29677 (Dorabella low)
+    R2 English, random key     2.708 [0-7]   p = 0.62115 (Dorabella low)
+    R3 random symbols          2.691 [0-6]
+    R4 Dorabella shuffled      2.021 [0-5]
+
+F4 up-down mirror pairs:  Dorabella 5  [4-6]   (CSV main 4, consensus 6)
+    R1 English, notebook key   1.288 [0-4]   p = 0.02920 (Dorabella high)
+    R2 English, random key     2.715 [0-7]   p = 0.34568 (Dorabella high)
+    R3 random symbols          2.686 [0-6]
+    R4 Dorabella shuffled      2.664 [0-6]
+
+F5 mean turn (eighths):  Dorabella 2.349  [2.256-2.442]   (CSV main 2.326, consensus 2.326)
+    R1 English, notebook key   2.118 [1.849-2.384]   p = 0.09544 (Dorabella high)
+    R2 English, random key     2.015 [1.709-2.314]   p = 0.03233 (Dorabella high)
+    R3 random symbols          2.000 [1.744-2.256]
+    R4 Dorabella shuffled      2.006 [1.733-2.279]
+
+F6 45-degree turn rate:  Dorabella 0.198  [0.140-0.244]   (CSV main 0.140, consensus 0.186)
+    R1 English, notebook key   0.234 [0.151-0.326]   p = 0.51874 (Dorabella low)
+    R2 English, random key     0.252 [0.151-0.360]   p = 0.38596 (Dorabella low)
+    R3 random symbols          0.250 [0.163-0.349]
+    R4 Dorabella shuffled      0.231 [0.151-0.326]
+
+F7 doubled-symbol rate:  Dorabella 0.047  [0.047-0.047]   (CSV main 0.047, consensus 0.047)
+    R1 English, notebook key   0.035 [0.000-0.070]   p = 0.69107 (Dorabella high)
+    R2 English, random key     0.035 [0.000-0.070]   p = 0.69020 (Dorabella high)
+    R3 random symbols          0.042 [0.000-0.093]
+    R4 Dorabella shuffled      0.059 [0.012-0.116]
+
+F8 index of coincidence:  Dorabella 0.059  [0.057-0.062]   (CSV main 0.059, consensus 0.059)
+    R1 English, notebook key   0.065 [0.054-0.081]   p = 0.30238 (Dorabella low)
+    R2 English, random key     0.065 [0.054-0.081]   p = 0.30667 (Dorabella low)
+    R3 random symbols          0.042 [0.036-0.049]
+    R4 Dorabella shuffled      0.059 [0.059-0.059]
+
+F9 repeated-pair excess:  Dorabella 18  [16-21]   (CSV main 19, consensus 19)
+    R1 English, notebook key   20.486 [12-30]   p = 0.67551 (Dorabella low)
+    R2 English, random key     20.477 [12-30]   p = 0.67576 (Dorabella low)
+    R3 random symbols          6.040 [2-11]
+    R4 Dorabella shuffled      11.138 [6-16]
+
+F10 half-turn pairs, same loops:  Dorabella 13  [13-14]   (CSV main 13, consensus 13)
+    R1 English, notebook key   5.816 [2-11]   p = 0.01278 (Dorabella high)
+    R2 English, random key     3.616 [0-9]   p = 0.00198 (Dorabella high)
+    R3 random symbols          3.591 [0-8]
+    R4 Dorabella shuffled      5.056 [1-10]
+
+F11 half-turn pairs, any loops:  Dorabella 27  [24-30]   (CSV main 26, consensus 27)
+    R1 English, notebook key   15.289 [9-22]   p = 0.00285 (Dorabella high)
+    R2 English, random key     10.846 [4-19]   p = 0.00033 (Dorabella high)
+    R3 random symbols          10.760 [5-17]
+    R4 Dorabella shuffled      12.092 [6-18]
+
+==============================================================================================================
+WHERE THE HALF-TURN PAIRS ARE (CSV main reading; positions of the first symbol of each pair)
+==============================================================================================================
+  line 1: 7 of 28 neighbours face opposite ways (same loops at [13, 28]); all at [1, 6, 9, 11, 13, 14, 28]
+  line 2: 10 of 30 neighbours face opposite ways (same loops at [39, 41, 50, 53, 55, 57, 59]); all at [33, 39, 41, 47, 48, 50, 53, 55, 57, 59]
+  line 3: 8 of 26 neighbours face opposite ways (same loops at [63, 72, 74, 79]); all at [61, 63, 65, 69, 71, 72, 74, 79]
+
+finished 2026-11-17 10:47:37

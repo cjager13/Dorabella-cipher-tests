@@ -1,0 +1,95 @@
+DORABELLA MELODY REPORT, family MS  (MS: the scale round the circle (96 keys x 5 reading orders), no search)
+TRANSCRIPTION: consensus reading (Hauer et al. 2025): symbols 23, 32, 34, 85, 86 read 14, 11, 12, 14, 12
+NOTES: d r m f s l t = do..ti, - = rest; CAPITAL = long, with ' = short. Line to beat: p < 0.0167 (three melody families).
+written 2026-11-17 14:19:12   compute time 6.22s   sessions 1
+keys: 96 x 5 reading orders; no search; cipher: Dorabella_transcription.csv + consensus reading at 23, 32, 34, 85, 86
+one pre-registered family, so the line is p < 0.05
+
+Directions are numbered 1-8 in 45-degree steps as in all the other scripts; 'ABC@3v' means
+the letters ABC sit on direction 3 running 'down' (1 loop = C, 3 loops = A); '^' = 'up'.
+
+========================================================================================================
+fam      real n_pair  p_pair n_shuf  p_shuf  power  verdict
+CK    -15.245   2000  0.4118   1000  0.5524   100%  chance level
+========================================================================================================
+  vs pair-preserving  n=2000, mean -15.274, 95th pct -14.983, max -14.567, p = 0.4118
+  vs plain shuffle    n=1000, mean -15.199, 95th pct -14.746, max -14.202, p = 0.5524
+
+best real decrypts:
+  [-15.245] forward | directions 1=r 2=m 3=f 4=s 5=l 6=t 7=- 8=d | loops 1,2,3 = short,plain,long
+      MZNUDOBUGLWIAEIXIIOZZIECLCFWR
+      BIBOCUGPUNIINOFABIWIOKRAECGGC
+      WRNROKRNEKSFRNIOKARFUZFROUECU
+      notes: f - s F f' l r' F t' m S d d' s' d L d d l - - d s' m' m m' l' S D r' d r' l m' F t' t F s d d s l l' d' r' d S d l r D d' s' m' t' t' m' S D s D l r D s s' r R l' D s d l r d' D l' F - l' D l F s' m' F
+  [-15.354] boustrophedon A | directions 1=r 2=m 3=f 4=s 5=l 6=t 7=- 8=d | loops 1,2,3 = short,plain,long
+      MZNUDOBUGLWIAEIXIIOZZIECLCFWR
+      RWCGGCEARKOIWIBAFONIINUPGUCOB
+      IBNROKRNEKSFRNIOKARFUZFROUECU
+      notes: f - s F f' l r' F t' m S d d' s' d L d d l - - d s' m' m m' l' S D D S m' t' t' m' s' d' D r l d S d r' d' l' l s d d s F t t' F m' l r' d r' s D l r D s s' r R l' D s d l r d' D l' F - l' D l F s' m' F
+  [-15.415] fully reversed | directions 1=s 2=f 3=m 4=r 5=d 6=- 7=t 8=l | loops 1,2,3 = long,plain,short
+      CUSCIFRGCRFXNIOKFRENSKFNIFKFB
+      UZZUSXFNIOBOWXRIKOOKCQZCUIWOW
+      FBRUMUSOGGIOOAOSXOBMZCWITCKGL
+      notes: m' F R m' d l' D t' m' D l' L s d l r l' D s' s R r l' s d l' r l' r' F - - F R L l' s d l r' l S L D d r l l r m' - - m' F d S l S l' r' D F f F R l t' t' d l l d' l R L l r' f - m' S d M m' r t' m
+  [-15.475] each line reversed | directions 1=s 2=f 3=m 4=r 5=d 6=- 7=t 8=l | loops 1,2,3 = long,plain,short
+      FBRUMUSOGGIOOAOSXOBMZCWITCKGL
+      FBUZZUSXFNIOBOWXRIKOOKCQZCUIW
+      OWCUSCIFRGCRFXNIOKFRENSKFNIFK
+      notes: l' r' D F f F R l t' t' d l l d' l R L l r' f - m' S d M m' r t' m l' r' F - - F R L l' s d l r' l S L D d r l l r m' - - m' F d S l S m' F R m' d l' D t' m' D l' L s d l r l' D s' s R r l' s d l' r
+  [-15.545] boustrophedon B | directions 1=s 2=f 3=m 4=r 5=d 6=- 7=t 8=l | loops 1,2,3 = long,plain,short
+      FBRUMUSOGGIOOAOSXOBMZCWITCKGL
+      WOWIUCZQCKOOKIRXWOBOINFXSUZZU
+      BFCUSCIFRGCRFXNIOKFRENSKFNIFK
+      notes: l' r' D F f F R l t' t' d l l d' l R L l r' f - m' S d M m' r t' m S l S d F m' - - m' r l l r d D L S l r' l d s l' L R F - - F r' l' m' F R m' d l' D t' m' D l' L s d l r l' D s' s R r l' s d l' r
+  [-15.553] fully reversed | directions 1=r 2=m 3=f 4=s 5=l 6=t 7=- 8=d | loops 1,2,3 = short,long,plain
+      MCEMXIFQMFIASXRWIFKSEWISXIWIN
+      CGGCEAISXRNRBAFXWRRWMYGMCXBRB
+      INFCTCERQQXRROREARNTGMBXDMWQU
+      notes: f m' s' f L d l' - f l' d d' R L D S d l' r R s' S d R L d S d s m' t' t' m' s' d' d R L D s D r' d' l' L S D D S f T t' f m' L r' D r' d s l' m' M m' s' D - - L D D l D s' d' D s M t' f r' L f' f S - F
+  [-15.617] boustrophedon A | directions 1=l 2=t 3=- 4=d 5=r 6=m 7=f 8=s | loops 1,2,3 = short,long,plain
+      ZMRQHSFQCYIWEAWKWWSMMWAGYGBIN
+      NIGCCGAENXSWIWFEBSRWWRQTCQGSF
+      WFRNSXNRAXOBNRWSXENBQMBNSQAGQ
+      notes: - f D - -' R l' - m' T d S s' d' S r S S R f f S d' t' T t' r' d s s d t' m' m' t' d' s' s L R S d S l' s' r' R D S S D - M m' - t' R l' S l' D s R L s D d' L l r' s D S R L s' s r' - f r' s R - d' t' -
+  [-15.636] forward | directions 1=s 2=f 3=m 4=r 5=d 6=- 7=t 8=l | loops 1,2,3 = short,plain,long
+      LYKTCIETHMSOFBOROOIYYOBDMDASX
+      EOEIDTHQTKOOKIAFEOSOINXFBDHHD
+      SXKXINXKBNWAXKOINFXATYAXITBDT
+      notes: m T r M m' d s' M -' f R l l' r' l D l l d T T l r' f' f f' d' R L s' l s' d f' M -' - M r l l r d d' l' s' l R l d s L l' r' f' -' -' f' R L r L d s L r r' s S d' L r l d s l' L d' M T d' L d M r' f' M
+  [-15.648] forward | directions 1=l 2=t 3=- 4=d 5=r 6=m 7=f 8=s | loops 1,2,3 = short,plain,long
+      QUIZHKFZCPRNEANSNNKUUNAGPGBRW
+      FNFKGZCLZINNIKBEFNRNKOWEAGCCG
+      RWIWKOWIAOXBWINKOEWBZUBWKZAGZ
+      notes: - F d - -' r l' - m' t D s s' d' s R s s r F F s d' t' t t' r' D S l' s l' r t' - m' m - d s s d r r' s' l' s D s r l S s' d' t' m' m' t' D S d S r l S d d' l L r' S d s r l s' S r' - F r' S r - d' t' -
+  [-15.658] fully reversed | directions 1=r 2=m 3=f 4=s 5=l 6=t 7=- 8=d | loops 1,2,3 = short,plain,long
+      UCEUORFZUFRAKOINRFSKENRKORNRW
+      CGGCEARKOIWIBAFONIINUPGUCOBIB
+      RWFCLCEIZZOIIXIEAIWLGUBODUNZM
+      notes: F m' s' F l D l' - F l' D d' r l d s D l' R r s' s D r l D s D S m' t' t' m' s' d' D r l d S d r' d' l' l s d d s F t t' F m' l r' d r' D S l' m' m m' s' d - - l d d L d s' d' d S m t' F r' l f' F s - f
+
+controls, 0 misread symbols: n=50, median stat -10.391, true key and order found 46/50, median letters right 100%, above null 95th pct 50/50
+controls, 2 misread symbols: n=50, median stat -10.513, true key and order found 40/50, median letters right 98%, above null 95th pct 50/50
+  example control (100% right): planted WIITAIIRKLUNLSZSCLNMLKINNRIKMLISRRAILKIWENRGILKIWUEOONML
+                                   found   WIITAIIRKLUNLSZSCLNMLKINNRIKMLISRRAILKIWENRGILKIWUEOONML
+
+Run log (last 20):
+  CK doublet x8 in 0.00s  (1904/2000)
+  CK doublet x8 in 0.00s  (1912/2000)
+  CK shuffle x8 in 0.01s  (960/1000)
+  CK doublet x8 in 0.00s  (1920/2000)
+  CK controls x4 in 0.00s  (100/100)
+  CK doublet x8 in 0.00s  (1928/2000)
+  CK shuffle x8 in 0.00s  (968/1000)
+  CK doublet x8 in 0.00s  (1936/2000)
+  CK doublet x8 in 0.00s  (1944/2000)
+  CK shuffle x8 in 0.00s  (976/1000)
+  CK doublet x8 in 0.00s  (1952/2000)
+  CK doublet x8 in 0.00s  (1960/2000)
+  CK shuffle x8 in 0.00s  (984/1000)
+  CK doublet x8 in 0.00s  (1968/2000)
+  CK doublet x8 in 0.00s  (1976/2000)
+  CK shuffle x8 in 0.00s  (992/1000)
+  CK doublet x8 in 0.00s  (1984/2000)
+  CK doublet x8 in 0.00s  (1992/2000)
+  CK shuffle x8 in 0.00s  (1000/1000)
+  CK doublet x8 in 0.00s  (2000/2000)

@@ -1,0 +1,2 @@
+[2026-11-17 16:42:30] START session 1, workers 8, cipher from Dorabella_transcription.csv + consensus reading at 23, 32, 34, 85, 86, keep-awake on
+[2026-11-17 17:02:46] END session, 20m 16.9s this session

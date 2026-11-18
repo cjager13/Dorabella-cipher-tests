@@ -1,0 +1,185 @@
+DORABELLA 'THREE' REPORT   [NOTEBOOK-KEY RERUN]
+KEY: Elgar's NOTEBOOK key (ABC DEF GHI KLM NOP QRS TUW XYZ round directions 3,4,5,6,7,8,1,2; 1 loop = first letter)
+TRANSCRIPTION: consensus reading (Hauer et al. 2025): symbols 23, 32, 34, 85, 86 read 14, 11, 12, 14, 12
+written 2026-11-17 17:02:46   compute time 20m 16.7s   sessions 1
+settings: real seeds 5 (median used), annealing restarts x steps: any-key 8x15000, PC screen 4x10000 per shift pair (best 24 re-searched), PD top 30 turn settings, three alphabets 12x40000
+cipher: Dorabella_transcription.csv + consensus reading at 23, 32, 34, 85, 86
+Bonferroni line for one of 8 families: p < 0.00625
+
+====================================================================================================
+HEADLINE  (statistic = best quadgram score in the family; real = median over seeds;
+           power = share of planted-English controls above the 95th percentile of the
+           pair-preserving copies; p floor = 1/(n+1))
+====================================================================================================
+fam  members     real n_pair  p_pair n_shuf  p_shuf p_words  power ctrl med  verdict
+T3       210        -      0       -      0       -       -      -        -  waiting for copies
+TB       546        -      0       -      0       -       -      -        -  waiting for copies
+TE       756  -16.457   2000  0.8186   2000  0.6812   0.416   100%    -9.58  chance level
+PA        10  -15.119   2000  0.4143   2000  0.2834   0.798   100%    -9.50  chance level
+PB        10  -14.744   1000  0.2917   1000  0.1818   0.162   100%    -9.59  chance level
+PC         2        -      0       -      0       -       -      -        -  waiting for copies
+PD        10        -      0       -      0       -       -      -        -  waiting for copies
+PE        10        -      0       -      0       -       -      -        -  waiting for copies
+
+Reading it: a family only matters if the real cipher beats the PAIR-PRESERVING copies
+past the Bonferroni line, the controls show the family can find a real message (power
+near 100%), and the winning decrypt reads as English. Beating plain shuffles alone is
+expected (the Dorabella has strong pair habits).
+
+----------------------------------------------------------------------------------------------------
+T3: transpositions built on 3 + any key   (210 members)
+----------------------------------------------------------------------------------------------------
+real run not done yet
+
+----------------------------------------------------------------------------------------------------
+TB: broad transpositions (widths 2-30 etc.) + any key   (546 members)
+----------------------------------------------------------------------------------------------------
+real run not done yet
+
+----------------------------------------------------------------------------------------------------
+TE: Elgar's notebook key through every transposition   (756 members)
+----------------------------------------------------------------------------------------------------
+real statistic per seed: -16.457   median -16.457
+  vs pair-preserving  n=2000, mean -16.329, 95th pct -16.059, max -15.701, p = 0.8186
+  vs plain shuffle    n=2000, mean -16.389, 95th pct -16.136, max -15.838, p = 0.6812
+best real decrypt (seed with the highest statistic): score -16.457, words 2
+  [-16.457] lines in order 2r 1r 3
+      SFXKKXDQSUHRFRTQGHERRECLKCXHT
+      RTSFGXYXDRPPHRRIRDQRFYKCTHACE
+      PBESHUSEDUWGSERHUQSGCPGSHCDXC
+      segmented: sfxkkxdqsuhrfrtqg HERR eclkcxhtrtsfgxyxdrpphrrirdqrfykcth ACE pbesh USED uwg SER huqsgcpgshcdxc
+  [-16.521] lines in order 1r 3 2r
+      SFGXYXDRPPHRRIRDQRFYKCTHACEPB
+      ESHUSEDUWGSERHUQSGCPGSHCDXCSF
+      XKKXDQSUHRFRTQGHERRECLKCXHTRT
+      segmented: sfgxyxdrpphrrirdqrfykcth ACE pbesh USED uwg SER huqsgcpgshcdxcsfxkkxdqsuhrfrtqg HERR eclkcxhtrt
+  [-16.545] lines in order 2 1r 3 (inverse)
+      SFXKKXDQSUHRFRTQGHERRECLKCXHT
+      BPECAHTCKYFRQDRIRRHPPRDXYXGFS
+      TRESHUSEDUWGSERHUQSGCPGSHCDXC
+      segmented: sfxkkxdqsuhrfrtqg HERR eclkcxhtbpecahtckyfrqdrirrhpprdxyxgfst RES h USED uwg SER huqsgcpgshcdxc
+  [-16.554] regular grid, anti-diagonals upward
+      BTPFRESTCEHASXHHCTUKCSLKECYDE
+      FURRWRQGEDSHREGIRQRHTRURHQFPS
+      RPGHRCUDPSXGQYSDXHXGCKFDKSXXC
+      segmented: btpf REST ce HAS xhhctukcslkecyde FUR rwrqg EDS h REG irqrhtrurhqfps RPG hrcudpsxgqysdxhxgckfdksxxc
+  [-16.558] lines in order 2r 3 1r
+      SFXKKXDQSUHRFRTQGHERRECLKCXHT
+      RTESHUSEDUWGSERHUQSGCPGSHCDXC
+      SFGXYXDRPPHRRIRDQRFYKCTHACEPB
+      segmented: sfxkkxdqsuhrfrtqg HERR eclkcxhtrtesh USED uwg SER huqsgcpgshcdxcsfgxyxdrpphrrirdqrfykcth ACE pb
+members most often winning in pair-preserving copies: regular grid, rows 132, columns L-R, snake (17x); regular grid, rows 231, columns L-R, snake (15x); regular grid, rows 132, columns R-L, snake (15x)
+controls, 0 misread symbols: n=20, median stat -9.252, true member found 19/20, median letters right 100%, above null 95th pct 20/20
+controls, 2 misread symbols: n=20, median stat -9.773, true member found 15/20, median letters right 98%, above null 95th pct 20/20
+  example control decrypt (100% right): MYDEARFRIENDIWASSOUERYGLADOFYOURLETTERANDTHENEWSTHATYOUAREAL...
+
+----------------------------------------------------------------------------------------------------
+PA: Elgar's notebook key + period-3 letter shift   (10 members)
+----------------------------------------------------------------------------------------------------
+real statistic per seed: -15.119   median -15.119
+  vs pair-preserving  n=2000, mean -15.137, 95th pct -14.809, max -14.041, p = 0.4143
+  vs plain shuffle    n=2000, mean -15.201, 95th pct -14.881, max -14.346, p = 0.2834
+best real decrypt (seed with the highest statistic): score -15.119, words 2
+  [-15.119] boustrophedon B, cycle restarts each line  shifts 8,11,21
+      BRDFKTMDMYTOAUOMCOOKGLFEIOBYN
+      CDQQIZSXZNDONTDZFOODEDENMIGSI
+      CBLIALTPPBZPENDTONEDEGANERQEB
+      segmented: brdfktmdmytoauom COOK glfe IOB yncdqqizsxzn DONT dz FOOD EDEN mig SIC bli ALT ppbzp END TONE deganerqeb
+  [-15.190] each line reversed, cycle restarts each line  shifts 8,11,21
+      BRDFKTMDMYTOAUOMCOOKGLFEIOBYN
+      BRTSWTMCPDTOODQZSENDONOHSOTQF
+      OCLIALTPPBZPENDTONEDEGANERQEB
+      segmented: brdfktmdmytoauom COOK glfe IOB ynbrtswtmcpd TOO dqz SEND onohsotqfocli ALT ppbzp END TONE deganerqeb
+  [-15.214] fully reversed, cycle runs through  shifts 22,11,16
+      AIUATKEBTEEHSTICEYTGUCEMFEWQR
+      OHWOBCKSTIDDLOSZCDICOCHOOFFIR
+      EXEIPUPINBZPDAPPHPRPHOLFMTCBS
+      segmented: ai UAT keb TEE hst ICE ytgucem FEW qrohwobckstidd LOS zcdico CHO of FIRE xeipu PIN bz PDA p PHP rpholfmt CBS
+  [-15.261] fully reversed, cycle restarts each line  shifts 8,11,21
+      LIALTPPBZPENDTONEDEGANERQEBBR
+      TSWTMCPDTOODQZSENDONOHSOTQFOC
+      BRDFKTMDMYTOAUOMCOOKGLFEIOBYN
+      segmented: li ALT ppbzp END TONE deganerq EBB rtswtmcpd TOO dqz SEND onohsotqfocbrdfktmdmytoauom COOK glfe IOB yn
+  [-15.354] forward, cycle restarts each line  shifts 22,11,21
+      ZBBAMEROGWROOPOGDOFBMPPTWIDDE
+      RDQFIZHXZCDOCTDOFODDESENBIGHI
+      CQCEESEBBGSEEBPTROEDABDQTZBIZ
+      segmented: zbbamerogwroopogdofbmpptwid DER dqfizhxzcd OCT dofod DES ENB IGH ICQ cees EBB g SEE bptroedabdqtz BIZ
+members most often winning in pair-preserving copies: fully reversed, cycle runs through (302x); each line reversed, cycle runs through (253x); fully reversed, cycle restarts each line (242x)
+controls, 0 misread symbols: n=20, median stat -9.252, true member found 19/20, median letters right 100%, above null 95th pct 20/20
+controls, 2 misread symbols: n=20, median stat -9.780, true member found 18/20, median letters right 98%, above null 95th pct 20/20
+  example control decrypt (100% right): MYDEARFRIENDIWASSOUERYGLADOFYOURLETTERANDTHENEWSTHATYOUAREAL...
+
+----------------------------------------------------------------------------------------------------
+PB: Elgar's notebook key + period-3 symbol turns   (10 members)
+----------------------------------------------------------------------------------------------------
+real statistic per seed: -14.744   median -14.744
+  vs pair-preserving  n=1000, mean -14.826, 95th pct -14.509, max -14.059, p = 0.2917
+  vs plain shuffle    n=1000, mean -14.892, 95th pct -14.557, max -14.040, p = 0.1818
+best real decrypt (seed with the highest statistic): score -14.744, words 7
+  [-14.744] each line reversed, cycle restarts each line  turns rot4+loop1 | rot4+loop2 | rot0+loop1
+      DRHLKYRDNATSFUSRFSQKLNIIOOFAN
+      DRYYZYRFQITSQDUEWISDSSOMYOYWI
+      SHNMENTQUBAUERITSSEHGGESEWWEF
+      segmented: drhlkyrd NAT sf USR fsqklniioo FAN DRY yzyrfq ITS q DUE wisdssomyoy WISH n MENT quba UER ITS sehggesewwef
+  [-14.826] forward, cycle restarts each line  turns rot0+loop1 | mirror+rot3 | mirror+rot2
+      CMRAXOUZKZWERTEGHEIMISTXZANDI
+      UHAIAWLOWFHEFRNRDEDHOWIDEAKLA
+      SQFIOWIREECHIRSRBRINAMNQRWEAW
+      segmented: cmraxouzkzwerteghei MIST xzan DIU ha IAW LOW fhefrnrded HOW IDEA k LAS qfio WIRE ech IRS rbri NAM nqrweaw
+  [-15.046] fully reversed, cycle restarts each line  turns rot4+loop1 | rot4+loop2 | rot0+loop1
+      NMENTQUBAUERITSSEHGGESEWWEFDR
+      YYZYRFQITSQDUEWISDSSOMYOYWISH
+      DRHLKYRDNATSFUSRFSQKLNIIOOFAN
+      segmented: n MENT quba UER ITS sehggesewwef DRY yzyrfq ITS q DUE wisdssomyoy WISH drhlkyrd NAT sf USR fsqklniioo FAN
+  [-15.112] boustrophedon B, cycle restarts each line  turns rot4+loop1 | rot4+loop2 | rot0+loop1
+      DRHLKYRDNATSFUSRFSQKLNIIOOFAN
+      HDUWMAYXASDSSTHEISQDIIERRMLYM
+      DDNMENTQUBAUERITSSEHGGESEWWEF
+      segmented: drhlkyrd NAT sf USR fsqklniioo FAN hduw MAY xasdss THE isqdii ERR mlymddn MENT quba UER ITS sehggesewwef
+  [-15.161] fully reversed, cycle runs through  turns rot4+loop1 | rot4+loop2 | rot0+loop1
+      NMENTQUBAUERITSSEHGGESEWWEFDR
+      YYZYRFQITSQDUEWISDSSOMYOYWISH
+      EDUMZLSSABIFDGFSRFRZYOUWPASBC
+      segmented: n MENT quba UER ITS sehggesewwef DRY yzyrfq ITS q DUE wisdssomyoy WISHED umzlssabifdgfsrfrz YOU w PAS bc
+members most often winning in pair-preserving copies: forward, cycle runs through (141x); forward, cycle restarts each line (139x); fully reversed, cycle runs through (116x)
+controls, 0 misread symbols: n=20, median stat -9.252, true member found 19/20, median letters right 100%, above null 95th pct 20/20
+controls, 2 misread symbols: n=20, median stat -9.799, true member found 20/20, median letters right 98%, above null 95th pct 20/20
+  example control decrypt (100% right): MYDEARFRIENDIWASSOUERYGLADOFYOURLETTERANDTHENEWSTHATYOUAREAL...
+
+----------------------------------------------------------------------------------------------------
+PC: any key + period-3 letter shift   (2 members)
+----------------------------------------------------------------------------------------------------
+real run not done yet
+
+----------------------------------------------------------------------------------------------------
+PD: any key + period-3 symbol turns   (10 members)
+----------------------------------------------------------------------------------------------------
+real run not done yet
+
+----------------------------------------------------------------------------------------------------
+PE: three independent alphabets in turn   (10 members)
+----------------------------------------------------------------------------------------------------
+real run not done yet
+
+Run log (last 20):
+  PA doublet x16 in 0.99s  (1952/2000)
+  PA shuffle x16 in 0.96s  (1952/2000)
+  TE doublet x16 in 0.03s  (1952/2000)
+  TE shuffle x16 in 0.04s  (1952/2000)
+  PA doublet x16 in 0.95s  (1968/2000)
+  PA shuffle x16 in 0.96s  (1968/2000)
+  PB doublet x16 in 7.28s  (992/1000)
+  PB shuffle x16 in 6.97s  (992/1000)
+  TE doublet x16 in 0.03s  (1968/2000)
+  TE shuffle x16 in 0.03s  (1968/2000)
+  PA doublet x16 in 0.96s  (1984/2000)
+  PA shuffle x16 in 1.02s  (1984/2000)
+  TE doublet x16 in 0.04s  (1984/2000)
+  TE shuffle x16 in 0.04s  (1984/2000)
+  PA doublet x16 in 1.00s  (2000/2000)
+  PA shuffle x16 in 1.02s  (2000/2000)
+  PB doublet x8 in 3.55s  (1000/1000)
+  PB shuffle x8 in 3.53s  (1000/1000)
+  TE doublet x16 in 0.03s  (2000/2000)
+  TE shuffle x16 in 0.03s  (2000/2000)
