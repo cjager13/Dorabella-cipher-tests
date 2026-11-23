@@ -1,0 +1,78 @@
+DORABELLA LINE 3 WORD-GAP REPORT  (roadmap G1)
+written 2026-11-20 17:05:59   compute time 39m 05.4s   sessions 3
+settings: real seeds 9 (median used), annealing 10 restarts x 15000 steps per reading order; uncertain symbols chosen in the search
+model: English with each word gap written as one letter (Z); decrypts are shown with the gaps as spaces
+three pre-registered tests: the line is p < 0.0167
+
+========================================================================================================
+G1A  line 3 alone (27 symbols), any key; the search picks the gap symbol
+========================================================================================================
+real -8.157 (seeds: -8.157, -8.157, -8.157, -8.395, -8.157, -8.157, -8.157, -8.540, -7.901)   p vs pair-preserving 0.0769 (n=1000)   p vs plain shuffle 0.0060 (n=500)   power 15%
+verdict: chance level, LOW POWER: inconclusive
+  vs pair-preserving  mean -8.548, 95th pct -8.087, max -7.762
+  vs plain shuffle    mean -9.536, 95th pct -8.707, max -8.035
+best real decrypts (one per seed, best first):
+  [-7.901] forwards:  S WE STENT SOWED THAT WHICH
+  [-8.157] backwards:  ADUAN THAT SINCE TRIUE IN E
+  [-8.395] backwards:  IFTIN THIS MANCE TRATE AN E
+controls, 0 misread symbols: n=20, right reading order 17/20, median letters right 31%, above null 95th pct 3/20
+controls, 2 misread symbols: n=20, right reading order 15/20, median letters right 35%, above null 95th pct 3/20
+  example control (96% right): planted NOTISE HER BUT ALAS WITH NO
+                                   found   NOTISE HER BUT ALAS WITH YO
+
+========================================================================================================
+G1B  line 3 alone, symbol 38 fixed as the word gap, the rest of the key searched
+========================================================================================================
+real -8.157 (seeds: -7.901, -7.901, -8.042, -8.157, -8.157, -8.157, -8.157, -8.157, -8.157)   p vs pair-preserving 0.0979 (n=1000)   p vs plain shuffle 0.0040 (n=500)   power 32%
+verdict: chance level, LOW POWER: inconclusive
+  vs pair-preserving  mean -8.495, 95th pct -8.028, max -7.717
+  vs plain shuffle    mean -10.080, 95th pct -8.704, max -8.016
+best real decrypts (one per seed, best first):
+  [-7.901] forwards:  S WE STENT SOWED THAT WHICH
+  [-8.042] forwards:  L WE LIENT LOWED THAT WHICH
+  [-8.157] backwards:  ADUAN THAT SINCE TRIUE IN E
+controls, 0 misread symbols: n=20, right reading order 17/20, median letters right 59%, above null 95th pct 7/20
+controls, 2 misread symbols: n=20, right reading order 15/20, median letters right 28%, above null 95th pct 6/20
+  example control (100% right): planted E SHALL HAUE READY THE PROF
+                                   found   E SHALL HAUE READY THE PROF
+
+========================================================================================================
+G1C  lines 1 and 2 (60 symbols), any key; the search picks the gap symbol
+========================================================================================================
+real -11.532 (seeds: -11.779, -11.950, -11.331, -11.652, -11.532, -11.331, -11.465, -11.743, -11.331)   p vs pair-preserving 0.1439 (n=1000)   p vs plain shuffle 0.1577 (n=500)   power 100%
+verdict: chance level
+  vs pair-preserving  mean -11.795, 95th pct -11.385, max -10.795
+  vs plain shuffle    mean -11.931, 95th pct -11.162, max -10.711
+best real decrypts (one per seed, best first):
+  [-11.331] backwards:  ONALLATHOUSENE HISPEEPYGLY SHE ONIAD TERRSEEMETHENDLY SCYPRX
+  [-11.331] backwards:  ONALLATHOUSENE HISPEEPYGLY SHE ONIAD TERRSEEMETHENDLY SCYPRF
+  [-11.465] backwards:  ORALLATHOUSERE HISPEEPYDLY SHE ORIAN TEXXSEEMETHERNLY SCYPXQ
+controls, 0 misread symbols: n=20, right reading order 17/20, median letters right 96%, above null 95th pct 20/20
+controls, 2 misread symbols: n=20, right reading order 18/20, median letters right 86%, above null 95th pct 20/20
+  example control (100% right): planted CTS BEFORE ME I DO BELIEUE THAT UNDER GOD S PROUIDENCE I HAU
+                                   found   CTS BEFORE ME I DO BELIEUE THAT UNDER GOD S PROUIDENCE I HAU
+
+A test matters only if the real part beats its PAIR-PRESERVING copies past the line, its controls
+show it can find a message, and the decrypt reads as English words.
+
+Run log (last 20):
+  G1C doublet x8 in 7.83s  (968/1000)
+  G1C shuffle x8 in 7.96s  (488/500)
+  G1A doublet x8 in 1.95s  (976/1000)
+  G1B doublet x8 in 1.69s  (976/1000)
+  G1C doublet x8 in 7.65s  (976/1000)
+  G1A doublet x8 in 1.91s  (984/1000)
+  G1A shuffle x8 in 1.81s  (496/500)
+  G1B doublet x8 in 1.65s  (984/1000)
+  G1B shuffle x8 in 1.73s  (496/500)
+  G1C doublet x8 in 7.52s  (984/1000)
+  G1C shuffle x8 in 7.97s  (496/500)
+  G1A doublet x8 in 1.81s  (992/1000)
+  G1B doublet x8 in 1.61s  (992/1000)
+  G1C doublet x8 in 7.61s  (992/1000)
+  G1A doublet x8 in 1.84s  (1000/1000)
+  G1A shuffle x4 in 1.87s  (500/500)
+  G1B doublet x8 in 1.61s  (1000/1000)
+  G1B shuffle x4 in 1.63s  (500/500)
+  G1C doublet x8 in 7.75s  (1000/1000)
+  G1C shuffle x4 in 7.90s  (500/500)

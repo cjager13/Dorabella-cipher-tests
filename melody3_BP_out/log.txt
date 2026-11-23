@@ -1,0 +1,6 @@
+[2026-11-19 18:12:26] START session 1, workers 8, cipher from Dorabella_transcription.csv + consensus reading at 23, 32, 34, 85, 86
+[2026-11-19 18:27:39] all targets met; stopping (--stop-when-done)
+[2026-11-19 18:27:39] END session, 15m 13.2s this session
+[2026-11-20 17:06:07] START session 2, workers 8, cipher from Dorabella_transcription.csv + consensus reading at 23, 32, 34, 85, 86
+[2026-11-20 17:06:07] all targets met; stopping (--stop-when-done)
+[2026-11-20 17:06:07] END session, 0.02s this session

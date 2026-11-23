@@ -1,0 +1,6 @@
+[2026-11-19 18:27:40] START session 1, workers 8, languages MU
+[2026-11-19 19:49:33] all targets met; stopping (--stop-when-done)
+[2026-11-19 19:49:33] END session, 1h 21m 53.5s this session
+[2026-11-20 17:06:07] START session 2, workers 8, languages MU
+[2026-11-20 17:06:07] all targets met; stopping (--stop-when-done)
+[2026-11-20 17:06:07] END session, 0.01s this session

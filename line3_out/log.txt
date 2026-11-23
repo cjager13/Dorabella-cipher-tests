@@ -1,0 +1,8 @@
+[2026-11-19 17:32:03] START session 1, workers 8
+[2026-11-19 17:33:25] END session, 1m 22.1s this session
+[2026-11-19 17:34:31] START session 2, workers 8
+[2026-11-19 18:12:15] all targets met; stopping (--stop-when-done)
+[2026-11-19 18:12:15] END session, 37m 43.6s this session
+[2026-11-20 17:05:59] START session 3, workers 8
+[2026-11-20 17:05:59] all targets met; stopping (--stop-when-done)
+[2026-11-20 17:05:59] END session, 0.02s this session

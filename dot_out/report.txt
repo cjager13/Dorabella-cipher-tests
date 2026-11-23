@@ -1,0 +1,97 @@
+DORABELLA DOT REPORT  (roadmap D1: the dot in line 3, between written positions 65 and 66)
+written 2026-11-23 09:47:35   compute time 17h 39m 12.3s   sessions 1
+TRANSCRIPTION: consensus reading (Hauer et al. 2025): symbols 23, 32, 34, 85, 86 read 14, 11, 12, 14, 12
+settings: real seeds 5 (median used), annealing 8 restarts x 15000 steps per reading order
+three pre-registered families: the line is p < 0.0167
+decrypts: in D1A the inserted 'and' is shown in small letters; in D1B the dot is shown as ' . '
+
+========================================================================================================
+D1A  the dot is "&": AND inserted at the dot, any key
+========================================================================================================
+real -11.136 (seeds: -11.283, -10.862, -10.862, -11.189, -11.136)   p vs pair-preserving 0.2455 (n=10369)   p vs plain shuffle 0.0058 (n=5179)   power 98%
+verdict: chance level
+  vs pair-preserving  mean -11.225, 95th pct -10.989, max -10.608
+  vs plain shuffle    mean -11.668, 95th pct -11.334, max -10.704
+best real decrypts (best first, repeats left out):
+  [-10.862] fully reversed
+      AINATOFSAFOGUTEDOFBUNDandOUTODORILLINGOUTEREWGFTDEEDAYLAITWEWORFICINESSTEEMENGERCLAWTHADSP
+      words: ai NATO fsa FOG u TED ofb UND AND OUT odor ILL ING OUTER ewgft DEE DAY laitwew ORF iciness TEE m ENG erc LAW th ADS p
+  [-11.136] each line reversed
+      IDSAPAROBBTOOFORGODPLEWTHEMBYIDALLARGINTODOWGSTMOOMECLEATWOWEARETISBESIGNTOMISUNRMandINTIM
+      words: id SAP a ROB b TOO FOR GOD plew THEM byid ALL ARG INTO DOW GST mo OME clea TWO WEAR etisbe SIGN TOM i SUN rm AND in TIM
+  [-11.189] each line reversed
+      ORNIGITEYYSEEMETHERGLAWSPADYFORILLITHOUSEREWHNSDEEDACLAISWEWAITASONYANOHUSEDONBUTDandOUSOD
+      words: orni GIT eyy SEEM et HER g LAWS PAD y FOR il LIT HOUSE rewhns DEE daclaiswe WAIT a SONY anoh USED on BUT d AND ousod
+controls, 0 misread symbols: n=20, right reading order 18/20, median letters right 99%, above null 95th pct 20/20
+controls, 2 misread symbols: n=20, right reading order 18/20, median letters right 95%, above null 95th pct 19/20
+  example control (100% right): planted ENTOUTIUSTASIWASWRITINGTHISANDIHADTOFINISHBYCANDLELIGHTSOYOU
+                                   found   ENTOUTIUSTASIWASWRITINGTHISANDIHADTOFINISHBYCANDLELIGHTSOYOU
+
+========================================================================================================
+D1B  the dot is a break: no four-letter group spans it, any key
+========================================================================================================
+real -11.100 (seeds: -11.049, -11.290, -11.261, -11.049, -11.100)   p vs pair-preserving 0.0957 (n=10369)   p vs plain shuffle 0.0027 (n=5179)   power 95%
+verdict: chance level
+  vs pair-preserving  mean -11.296, 95th pct -11.045, max -10.616
+  vs plain shuffle    mean -11.748, 95th pct -11.399, max -10.904
+best real decrypts (best first, repeats left out):
+  [-11.049] fully reversed
+      AINATOFSAFOGUTEDOFBUND . OUTODORILLINGOUTEREWGFTDEEDAYLAITWEWORFICINESSTEEMENGERCLAWTHADSP
+      words: ai NATO fsa FOG u TED ofb UNDO utodor ILL ING OUTER ewgft DEE DAY laitwew ORF iciness TEE m ENG erc LAW th ADS p
+  [-11.100] fully reversed
+      OITOSAYDOYAHUSELAYBUTL . AUSALARINNITHAUSEREWHYSLEELOPNOISWEWARYIFITEDDSEEMETHERFNOWSCOLDG
+      words: oito SAY doyah USE LAY BUT l AUS ALA r INN itha USER e WHY s LEE lopnoiswe WAR yifi TED d SEEM et HER f NOW s COLD g
+  [-11.261] fully reversed
+      AINATERFAREDSTOMERYSNM . ESTEMEPILLINDESTOPOWDRTMOOMAGLAITWOWEPRIUINOFFTOOCONDOPULAWTHAMFZ
+      words: AIN ATE r FARE dst OME rysnme STEM e PILL IND e STOP owdrtmoo MAG laitw OWE priuin OFF TOO CONDO pu LAW t HAM fz
+controls, 0 misread symbols: n=20, right reading order 20/20, median letters right 99%, above null 95th pct 18/20
+controls, 2 misread symbols: n=20, right reading order 16/20, median letters right 95%, above null 95th pct 20/20
+  example control (100% right): planted RETHEPARTYANDTHATHEWILLSEETOITHIMSELFIFTHEMANDOESNOTCOMEBYTU
+                                   found   RETHEPARTYANDTHATHEWILLSEETOITHIMSELFIFTHEMANDOESNOTCOMEBYTU
+
+========================================================================================================
+D1C  the dot ends the message: only the 65 symbols before it, any key
+========================================================================================================
+real -10.747 (seeds: -10.747, -10.731, -10.711, -10.867, -10.767)   p vs pair-preserving 0.4422 (n=10369)   p vs plain shuffle 0.0772 (n=5179)   power 85%
+verdict: chance level
+  vs pair-preserving  mean -10.780, 95th pct -10.418, max -9.793
+  vs plain shuffle    mean -11.102, 95th pct -10.687, max -10.200
+best real decrypts (best first, repeats left out):
+  [-10.711] fully reversed
+      OFTODORILLINGOFTEREWGUTDEEDAYLAITWEWORUICINESSTEEMENGERCLAWTHADSP
+      words: oftodor ILL ING oft ERE wgut DEE DAY laitwewor UIC iness TEE m ENG erc LAW th ADS p
+  [-10.731] fully reversed
+      OUSONORILLITHOUSEREWHYSNEENAPLAISWEWORYIFITEDDSEEMETHERFLAWSCANDB
+      words: ouso NOR il LIT HOUSE re WHY sneenaplaisweworyifi TED d SEEM et HER f LAW SCAN db
+  [-10.747] fully reversed
+      OFTODORILLINGOFTEREWGUTDEEDAYLAITWEWORUICINESSTEEMENGERCLAWTHADSB
+      words: oftodor ILL ING oft ERE wgut DEE DAY laitwewor UIC iness TEE m ENG erc LAW th ADS b
+controls, 0 misread symbols: n=20, right reading order 15/20, median letters right 97%, above null 95th pct 17/20
+controls, 2 misread symbols: n=20, right reading order 13/20, median letters right 81%, above null 95th pct 17/20
+  example control (100% right): planted ERIUERTELLMEWHATYOUTHINKOFTHEENCLOSEDANDWHETHERYOUCANMAKEANY
+                                   found   ERIUERTELLMEWHATYOUTHINKOFTHEENCLOSEDANDWHETHERYOUCANMAKEANY
+
+A family matters only if the real cipher beats the PAIR-PRESERVING copies past the line, its controls
+show it can find a message, and the decrypt reads as English.
+
+Run log (last 20):
+  D1B doublet x8 in 11.64s  (10337/11389)
+  D1C doublet x8 in 9.33s  (10337/11389)
+  D1A shuffle x8 in 11.89s  (5171/5692)
+  D1B shuffle x8 in 11.10s  (5171/5692)
+  D1C shuffle x8 in 9.14s  (5171/5692)
+  D1A doublet x8 in 12.04s  (10345/11389)
+  D1B doublet x8 in 11.85s  (10345/11389)
+  D1C doublet x8 in 9.68s  (10345/11389)
+  D1A doublet x8 in 11.79s  (10353/11389)
+  D1B doublet x8 in 11.72s  (10353/11389)
+  D1C doublet x8 in 8.96s  (10353/11389)
+  D1A shuffle x8 in 11.69s  (5179/5692)
+  D1B shuffle x8 in 11.79s  (5179/5692)
+  D1C shuffle x8 in 10.94s  (5179/5692)
+  D1A doublet x8 in 11.86s  (10361/11389)
+  D1B doublet x8 in 9.55s  (10361/11389)
+  D1C doublet x8 in 8.37s  (10361/11389)
+  D1A doublet x8 in 10.43s  (10369/11389)
+  D1B doublet x8 in 8.33s  (10369/11389)
+  D1C doublet x8 in 6.87s  (10369/11389)

@@ -1,0 +1,8 @@
+[2026-11-22 16:08:21] START session 1, workers 8
+[2026-11-22 17:33:53] all targets met; raising the copy targets by 50% and carrying on
+[2026-11-22 18:16:38] all targets met; raising the copy targets by 50% and carrying on
+[2026-11-22 19:28:39] all targets met; raising the copy targets by 50% and carrying on
+[2026-11-22 21:26:33] all targets met; raising the copy targets by 50% and carrying on
+[2026-11-23 00:23:14] all targets met; raising the copy targets by 50% and carrying on
+[2026-11-23 04:50:41] all targets met; raising the copy targets by 50% and carrying on
+[2026-11-23 09:47:35] END session, 17h 39m 13.4s this session

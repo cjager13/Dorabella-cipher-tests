@@ -1,0 +1,318 @@
+DORABELLA WORD GAPS IN OTHER LANGUAGES (G2) AND LANGUAGES WITH SYMBOL 32 REOPENED (T1)
+written 2026-11-22 05:03:02   compute time 14h 01m 49.0s   sessions 1
+settings: real seeds 9 (median used), annealing 12 restarts x 20000 steps per reading order, 5 reading orders, 10 uncertain symbols solved in the search
+texts: WF french.txt (512,877 letters); WD german.txt (673,077 letters); WI italian.txt (1,098,064 letters); WL latin.txt (548,833 letters); WE english.txt (617,375 letters); TF french.txt (512,877 letters); TD german.txt (673,077 letters); TI italian.txt (1,098,064 letters); TL latin.txt (548,833 letters); TC latin_church.txt (469,424 letters)
+Line to beat: p < 0.0050 (ten pre-registered families). Uncertain symbols: the CSV's 9 plus position 32 (18 or 11).
+Gap letters (shown as spaces on the 'words' lines): WD X, WE Z, WF W, WI K, WL W
+
+========================================================================================================
+HEADLINE (statistic = best quadgram score in that language's own model; real = median over seeds;
+          power = planted held-back text above the 95th percentile of the pair-preserving copies)
+Scores are on each language's own scale: compare a language only with its own copies.
+========================================================================================================
+language                   real n_pair  p_pair n_shuf  p_shuf  power ctrl med  verdict
+WF French with a word-gap symbol  -11.947   1000  0.1548   1000  0.0100   100%    -8.45  chance level
+WD German with a word-gap symbol  -12.441   1000  0.4705   1000  0.1738   100%    -8.58  chance level
+WI Italian with a word-gap symbol  -12.025   1000  0.4026   1000  0.0100   100%    -8.52  chance level
+WL Latin with a word-gap symbol  -11.788   1000  0.2857   1000  0.0110   100%    -9.55  chance level
+WE Elgar's own voice with a word-gap symbol  -12.213   1000  0.0679   1000  0.0230   100%    -8.67  chance level
+TF French, symbol 32 reopened  -11.104   1000  0.2068   1000  0.0060   100%    -9.14  chance level
+TD German, symbol 32 reopened  -11.570   1000  0.6593   1000  0.2008   100%    -9.22  chance level
+TI Italian, symbol 32 reopened  -11.196   1000  0.1578   1000  0.0060   100%    -9.27  chance level
+TL Latin, symbol 32 reopened  -10.886   1000  0.0460   1000  0.0030    95%   -10.03  below 0.05, not past Bonferroni (not past the line for ten families)
+TC Church Latin, symbol 32 reopened  -11.110   1000  0.1209   1000  0.0050   100%    -9.21  chance level
+
+A language matters only if the real cipher beats the PAIR-PRESERVING copies past the
+Bonferroni line, its controls show it can find a message, and the decrypt reads as that language.
+
+--------------------------------------------------------------------------------------------------------
+WF: French with a word-gap symbol  (french.txt)
+--------------------------------------------------------------------------------------------------------
+real statistic per seed: -11.970, -11.921, -11.947, -12.056, -11.994, -11.917, -11.947, -11.998, -11.921   median -11.947
+  vs pair-preserving  n=1000, mean -12.124, 95th pct -11.808, max -11.315, p = 0.1548
+  vs plain shuffle    n=1000, mean -12.588, 95th pct -12.153, max -11.485, p = 0.0100
+best real decrypts (from the seed with the highest statistic, -11.917):
+  [-11.917] forward  alternate readings used at [24, 25, 86]
+      HLSOYWCOMBRENTEGEEWLLEUCHAURI
+      CENWCOMPOSEESWUNCEREWDINTAMMA
+      RISIWDISTDQUISEWDNIUOLUIWOUAO
+      words: HLSOY COMBRENTEGEE LLEUCHAURICEN COMPOSEES UNCERE DINTAMMARISI DISTDQUISE DNIUOLUI OUAO
+  [-12.060] fully reversed  alternate readings used at [23, 25, 34, 78, 85, 86]
+      IONIUWCRINWTAUESWCHANSWAUWSWM
+      OLLONTWAUEMEZTCUSEESIBLIOUTEZ
+      WMCOFONERRUEEDENTEMPLIZUGISRF
+      words: IONIU CRIN TAUES CHANS AU S MOLLONT AUEMEZTCUSEESIBLIOUTEZ MCOFONERRUEEDENTEMPLIZUGISRF
+  [-12.402] each line reversed  alternate readings used at [10, 23, 25, 34, 78, 85]
+      WFCATANEUUREEPENDEFTLIMRGISUT
+      WFALLANDWOREFEMDCRSEESIBLIARD
+      EMIGNIRWCUINWDORESWCHONSWORWS
+      words:  FCATANEUUREEPENDEFTLIMRGISUT FALLAND OREFEMDCRSEESIBLIARDEMIGNIR CUIN DORES CHONS OR S
+controls, 0 misread symbols: n=30, median stat -8.198, right reading order 30/30, median symbols decoded right 99%, above null 95th pct 30/30
+controls, 2 misread symbols: n=30, median stat -8.598, right reading order 29/30, median symbols decoded right 97%, above null 95th pct 30/30
+  example control (100% right): planted TOUTWAWCOUPWFIXANTWSONTWREGARDWSURWLWAUOCATWGENERALWILWS
+                                   found   TOUTWAWCOUPWFIXANTWSONTWREGARDWSURWLWAUOCATWGENERALWILWS
+
+--------------------------------------------------------------------------------------------------------
+WD: German with a word-gap symbol  (german.txt)
+--------------------------------------------------------------------------------------------------------
+real statistic per seed: -12.578, -12.286, -12.519, -12.500, -12.475, -12.436, -12.286, -12.420, -12.441   median -12.441
+  vs pair-preserving  n=1000, mean -12.445, 95th pct -12.157, max -11.671, p = 0.4705
+  vs plain shuffle    n=1000, mean -12.678, 95th pct -12.249, max -11.813, p = 0.1738
+best real decrypts (from the seed with the highest statistic, -12.286):
+  [-12.286] boustrophedon B  alternate readings used at [23, 24, 25, 34, 78, 85]
+      ALUWCHTOSSXOOMOTNOLZIEHXGERSC
+      HONXWEIBEROORXUNHOLOXDANTWIIW
+      LAEGTEXAUSETANDXORAUFDTRADXAR
+      words: ALUWCHTOSS OOMOTNOLZIEH GERSCHON WEIBEROOR UNHOLO DANTWIIWLAEGTE AUSETAND ORAUFDTRAD AR
+  [-12.592] forward  alternate readings used at [24, 32, 34, 78, 85, 86]
+      WCRAMXSALZITUNTOTTXCCTHSZGHIE
+      STSXGALBARTTRXHUSTITXDEUNGLLG
+      IEREXDERNDPHERTXDUENACHEXANGA
+      words: WCRAM SALZITUNTOTT CCTHSZGHIESTS GALBARTTR HUSTIT DEUNGLLGIERE DERNDPHERT DUENACHE ANGA
+  [-12.681] boustrophedon A  alternate readings used at [24, 78]
+      CHAEDXMELWUNIGNPNNXHHNRMWORUT
+      TUOLLOGITSXNUNMIRXANNAEKLEMXI
+      NMATXSTAGSBRTANXSITGEHRTXERDE
+      words: CHAED MELWUNIGNPNN HHNRMWORUTTUOLLOGITS NUNMIR ANNAEKLEM INMAT STAGSBRTAN SITGEHRT ERDE
+controls, 0 misread symbols: n=30, median stat -8.304, right reading order 28/30, median symbols decoded right 100%, above null 95th pct 30/30
+controls, 2 misread symbols: n=30, median stat -8.687, right reading order 27/30, median symbols decoded right 95%, above null 95th pct 30/30
+  example control (100% right): planted FEHLENXUNDXWARTETEXNURXBISXDERXGRAFXUOMXGARSTIGENXGEWAES
+                                   found   FEHLENXUNDXWARTETEXNURXBISXDERXGRAFXUOMXGARSTIGENXGEWAES
+
+--------------------------------------------------------------------------------------------------------
+WI: Italian with a word-gap symbol  (italian.txt)
+--------------------------------------------------------------------------------------------------------
+real statistic per seed: -12.157, -11.914, -12.075, -12.114, -12.135, -12.025, -11.952, -12.025, -11.914   median -12.025
+  vs pair-preserving  n=1000, mean -12.079, 95th pct -11.671, max -11.330, p = 0.4026
+  vs plain shuffle    n=1000, mean -12.776, 95th pct -12.274, max -11.551, p = 0.0100
+best real decrypts (from the seed with the highest statistic, -11.914):
+  [-11.914] forward  alternate readings used at [23, 25, 67, 85, 86]
+      ZSLOHKCOMPRENDEGEEKSSEDIZITRA
+      CENKCOMBOLEELKTNCEREKUANDIMMI
+      RALAKUALTUYTALEKUNATOSTAKODIO
+      words: ZSLOH COMPRENDEGEE SSEDIZITRACEN COMBOLEEL TNCERE UANDIMMIRALA UALTUYTALE UNATOSTA ODIO
+  [-12.369] fully reversed  alternate readings used at [67, 86]
+      UOKUIAKFUKATRIELAKGRKLARIALAM
+      OCCOSTARIEMENTKILEELUBCUNITEN
+      AMKOPOKEFFIEEDESTEMPCUNIQULFW
+      words: UO UIA FU ATRIELA GR LARIALAMOCCOSTARIEMENT ILEELUBCUNITENAM OPO EFFIEEDESTEMPCUNIQULFW
+  [-12.717] each line reversed  alternate readings used at [24, 25, 78, 86]
+      RDIUGNIALLKAABASTADHCONKFOPLG
+      RDUCCUSTREKADANTIKPAAPOXCONKT
+      ANOUIOKRILOSRTEKAPRIMESPREKRP
+      words: RDIUGNIALL AABASTADHCON FOPLGRDUCCUSTRE ADANTI PAAPOXCON TANOUIO RILOSRTE APRIMESPRE RP
+controls, 0 misread symbols: n=30, median stat -8.120, right reading order 28/30, median symbols decoded right 100%, above null 95th pct 30/30
+controls, 2 misread symbols: n=30, median stat -8.698, right reading order 29/30, median symbols decoded right 96%, above null 95th pct 30/30
+  example control (100% right): planted MANIERAKDAKNONKPOTERKMAIKPIUKDIREKIOKGLIKPERDONOKSIKSIKD
+                                   found   MANIERAKDAKNONKPOTERKMAIKPIUKDIREKIOKGLIKPERDONOKSIKSIKD
+
+--------------------------------------------------------------------------------------------------------
+WL: Latin with a word-gap symbol  (latin.txt)
+--------------------------------------------------------------------------------------------------------
+real statistic per seed: -11.737, -11.788, -11.803, -11.846, -11.734, -11.897, -11.672, -11.808, -11.737   median -11.788
+  vs pair-preserving  n=1000, mean -11.893, 95th pct -11.608, max -11.217, p = 0.2857
+  vs plain shuffle    n=1000, mean -12.444, 95th pct -11.983, max -11.416, p = 0.0110
+best real decrypts (from the seed with the highest statistic, -11.672):
+  [-11.672] fully reversed  alternate readings used at [67]
+      ACRAWIRDARIUSWENIRKSRNISWINIM
+      OLLOQUISWEMETURWNEENABLATWUET
+      IMROPOREDDWEEXEQUEMPLATWCANDG
+      words: ACRA IRDARIUS ENIRKSRNIS INIMOLLOQUIS EMETUR NEENABLAT UETIMROPOREDD EEXEQUEMPLAT CANDG
+  [-11.846] forward  alternate readings used at [10, 24, 25, 32, 67, 78, 85]
+      YBRATWSALYDIONICIIWBBIUSYFUDE
+      SISWSALPARIIRWUOSIDIWMEONFLLF
+      DEREWMERUMQUERIWMOENABUEWANTA
+      words: YBRAT SALYDIONICII BBIUSYFUDESIS SALPARIIR UOSIDI MEONFLLFDERE MERUMQUERI MOENABUE ANTA
+  [-12.004] each line reversed  alternate readings used at [10, 24, 67, 86]
+      APROSTRIDDWIIBIQUIPFLETWCENDF
+      APOLLOQUAMWIPITURWNIINEGLETWU
+      ITEOREWARDERAUMWINARYMRNAMWAN
+      words: APROSTRIDD IIBIQUIPFLET CENDFAPOLLOQUAM IPITUR NIINEGLET UITEORE ARDERAUM INARYMRNAM AN
+controls, 0 misread symbols: n=30, median stat -9.507, right reading order 28/30, median symbols decoded right 98%, above null 95th pct 30/30
+controls, 2 misread symbols: n=30, median stat -9.814, right reading order 26/30, median symbols decoded right 91%, above null 95th pct 30/30
+  example control (100% right): planted EMWTOLERAREWPONDUSWCIRCAWUIRENTISWESTWANIMUSWTUAEWCAMPOS
+                                   found   EMWTOLERAREWPONDUSWCIRCAWUIRENTISWESTWANIMUSWTUAEWCAMPOS
+
+--------------------------------------------------------------------------------------------------------
+WE: Elgar's own voice with a word-gap symbol  (english.txt)
+--------------------------------------------------------------------------------------------------------
+real statistic per seed: -12.560, -12.228, -12.081, -12.159, -12.246, -11.976, -12.213, -12.324, -11.976   median -12.213
+  vs pair-preserving  n=1000, mean -12.477, 95th pct -12.181, max -11.735, p = 0.0679
+  vs plain shuffle    n=1000, mean -12.815, 95th pct -12.335, max -11.976, p = 0.0230
+best real decrypts (from the seed with the highest statistic, -11.976):
+  [-11.976] forward  alternate readings used at [23, 24, 86]
+      QLTAYZHAMBRENCEDEEZLLECHBOURS
+      HENZHAMPATEETZUNHEREZISNCOMMO
+      RSTSZISTCIFUSTEZINSUALUSZAUOA
+      words: QLTAY HAMBRENCEDEE LLECHBOURSHEN HAMPATEET UNHERE ISNCOMMORSTS ISTCIFUSTE INSUALUS AUOA
+  [-12.159] each line reversed  alternate readings used at [23, 34, 67, 78, 85]
+      ZSAUCUTELLNEEMETHESCRIPNFIDLY
+      ZSURRUTHZONESEPHANDEEDIGRIUNH
+      EPIFTINZALITZHONEDZABOADZONZD
+      words:  SAUCUTELLNEEMETHESCRIPNFIDLY SURRUTH ONESEPHANDEEDIGRIUNHEPIFTIN ALIT HONED ABOAD ON D
+  [-12.213] fully reversed  alternate readings used at [10, 23, 24, 32, 34, 67, 78, 85]
+      IPTINZALITZHONEDZABOADZONZDZR
+      UFFUTHZONERESHANDEEDICFIUNSES
+      ZRAUGSTELLNEEMETHERYFISNPIDLY
+      words: IPTIN ALIT HONED ABOAD ON D RUFFUTH ONERESHANDEEDICFIUNSES RAUGSTELLNEEMETHERYFISNPIDLY
+controls, 0 misread symbols: n=30, median stat -8.478, right reading order 30/30, median symbols decoded right 100%, above null 95th pct 30/30
+controls, 2 misread symbols: n=30, median stat -9.028, right reading order 30/30, median symbols decoded right 97%, above null 95th pct 30/30
+  example control (100% right): planted ALZITZBUTZINZTHISZWAYZSHEZISZGREATLYZCHANGEDZDURINGZTHEZ
+                                   found   ALZITZBUTZINZTHISZWAYZSHEZISZGREATLYZCHANGEDZDURINGZTHEZ
+
+--------------------------------------------------------------------------------------------------------
+TF: French, symbol 32 reopened  (french.txt)
+--------------------------------------------------------------------------------------------------------
+real statistic per seed: -11.152, -11.104, -11.022, -11.001, -10.975, -11.149, -11.152, -10.975, -11.294   median -11.104
+  vs pair-preserving  n=1000, mean -11.209, 95th pct -10.983, max -10.603, p = 0.2068
+  vs plain shuffle    n=1000, mean -11.671, 95th pct -11.322, max -10.922, p = 0.0060
+best real decrypts (from the seed with the highest statistic, -10.975):
+  [-10.975] forward  alternate readings used at [10, 24, 67, 78]
+      YPNAFSLAMYDERCEGEESPPEULHOUDI
+      LERSLAMBANEENSURLEDESTIRCOMMO
+      DINISTINUTQUINESTRICAPUISAUFA
+      words: ypnafslamydercegeesp PEU lhoudilerslamba NEE n SUR led EST ircommodinistinutq UIN EST rica PUIS aufa
+  [-11.336] fully reversed  alternate readings used at [10, 23, 67, 78, 85, 86]
+      EONEUITLENISQUARITFQTRIQUIRIC
+      OMMONSIQUACADSTURAAREZMEDUSAD
+      ICTOGONALLUAABANSACHMEDUPERLH
+      words: eone UIT lenisqua RIT fqtri QUI ricom MON siquacadsturaa REZ medusadictogonalluaa BAN SAC hme DUPE rlh
+  [-11.445] each line reversed  alternate readings used at [10, 32, 67, 86]
+      OMUQZQUESSIEECEBREMPLATIGANSP
+      OMQLLQBRODIEMETRUINEENAFLATIT
+      ETAQUAIOUSAUORDIENOUXDUNODION
+      words: omuqz QUE ssieecebrem PLAT ig ANS pomqllqbrodie MET rui NEE naflatiteta QUAI ousauordienouxdunodion
+controls, 0 misread symbols: n=30, median stat -8.925, right reading order 28/30, median symbols decoded right 99%, above null 95th pct 30/30
+controls, 2 misread symbols: n=30, median stat -9.302, right reading order 29/30, median symbols decoded right 95%, above null 95th pct 30/30
+  example control (100% right): planted EURUEUTUOIRILESTUNPEUTARDORDINAIREMENTLESSEANCESFINISSEN
+                                   found   EURUEUTUOIRILESTUNPEUTARDORDINAIREMENTLESSEANCESFINISSEN
+
+--------------------------------------------------------------------------------------------------------
+TD: German, symbol 32 reopened  (german.txt)
+--------------------------------------------------------------------------------------------------------
+real statistic per seed: -11.628, -11.709, -11.507, -11.516, -11.632, -11.568, -11.539, -11.570, -11.684   median -11.570
+  vs pair-preserving  n=1000, mean -11.499, 95th pct -11.231, max -10.814, p = 0.6593
+  vs plain shuffle    n=1000, mean -11.745, 95th pct -11.375, max -11.047, p = 0.2008
+best real decrypts (from the seed with the highest statistic, -11.507):
+  [-11.507] fully reversed  alternate readings used at [23, 67, 78, 85, 86]
+      IONITAUFINADLTERAUKLURALTARAM
+      OHHONDALTEMESDUTREERICHISTDES
+      AMUOPONEFFTEEBENDEMPHISTWIRFQ
+      words: ionit AUF inadlterauklur ALT aramohhond ALTE mesdutreer ICH IST DES amuoponeffte EBEN DEM ph IST WIR fq
+  [-11.601] each line reversed  alternate readings used at [10, 23, 67, 78, 85, 86]
+      UDOCKCHENNTEEBEHIEDZWARTFALNZ
+      UDCWWCHIUSTEDERIOTLEELAGWARTI
+      ERACHATUONAHUISTELUOMSOLUSTUL
+      words: udockchenn TEE behiedz WART falnzudcwwch IUST e DER iotlee LAG WAR TIER ac HAT uo NAH u IST el UOM so LUST ul
+  [-11.655] boustrophedon B  alternate readings used at [23, 24, 25, 67, 85]
+      ERNOCHWASSTAAPAWMARKLIHTZIGSC
+      HAMTHILFIGAAGTNMHARATUEMWOLLO
+      REIZWITENSINEMUTAGENDUNGEUTEG
+      words: er NOCH WAS staapawmarklihtzig SCHAM thilfigaagtnmhara TUE mwollo REIZ witensinemu TAGEN dungeuteg
+controls, 0 misread symbols: n=30, median stat -8.920, right reading order 30/30, median symbols decoded right 97%, above null 95th pct 30/30
+controls, 2 misread symbols: n=30, median stat -9.278, right reading order 27/30, median symbols decoded right 94%, above null 95th pct 30/30
+  example control (100% right): planted CHWACHLISPELNDEGRASDATRATMINONAHERUORINIHRERSCHOENHEITMI
+                                   found   CHWACHLISPELNDEGRASDATRATMINONAHERUORINIHRERSCHOENHEITMI
+
+--------------------------------------------------------------------------------------------------------
+TI: Italian, symbol 32 reopened  (italian.txt)
+--------------------------------------------------------------------------------------------------------
+real statistic per seed: -11.181, -11.096, -11.196, -11.323, -11.200, -11.155, -11.057, -11.304, -11.256   median -11.196
+  vs pair-preserving  n=1000, mean -11.350, 95th pct -11.080, max -10.666, p = 0.1578
+  vs plain shuffle    n=1000, mean -11.864, 95th pct -11.432, max -10.957, p = 0.0060
+best real decrypts (from the seed with the highest statistic, -11.057):
+  [-11.057] fully reversed  alternate readings used at [10, 25, 34, 67, 78, 86]
+      IONIUENTIPERQUASENZQNSEQUESEL
+      OHHOPREQUALADRNUSAASIGHIOURAD
+      ELNOCONATTUAAMAPRALCHIDUBISTC
+      words: ioni UENTI PER QUA SENZ qnse QUE selohhopre QUAL adrn USA asigh IOUR a DEL no CON at TUA am APRA l CHI dubistc
+  [-11.306] forward  alternate readings used at [10, 23, 25, 32, 67, 78]
+      PGLOFUTOMPRESCEDEEUGGECHPHIRA
+      TETUTOMBOLEELUISTEREUNASCHMMH
+      RALAUNALINZIALEUNSACOGIAUOIFO
+      words: pglofutompres CEDE euggechph IRA tetutomboleel UISTE re UNA schmmhr ALA un ALI nzialeunsaco GIA UOI fo
+  [-11.323] boustrophedon A  alternate readings used at [10, 32, 34, 67, 86]
+      ZPTIBUSILZDECHEMEEUPPERAFARDO
+      ODALLAHCONUEDESCRUTEETIGLIAUS
+      ESTOUNOTRNQROTEUNCORIPROUIRAI
+      words: zptib USI lzde CHE meeupp ERA FAR doo DALLA h CON UEDE scruteeti GLI ause STO UNO trnqroteun COR i PRO u IRA i
+controls, 0 misread symbols: n=30, median stat -9.020, right reading order 29/30, median symbols decoded right 99%, above null 95th pct 30/30
+controls, 2 misread symbols: n=30, median stat -9.464, right reading order 28/30, median symbols decoded right 94%, above null 95th pct 30/30
+  example control (100% right): planted OSIDICOSEUECCHIENESSUNOGLIDAFASTIDIOECOMELEHODETTOLUIPEN
+                                   found   OSIDICOSEUECCHIENESSUNOGLIDAFASTIDIOECOMELEHODETTOLUIPEN
+
+--------------------------------------------------------------------------------------------------------
+TL: Latin, symbol 32 reopened  (latin.txt)
+--------------------------------------------------------------------------------------------------------
+real statistic per seed: -10.886, -10.757, -10.757, -10.886, -10.757, -10.757, -10.886, -10.946, -10.886   median -10.886
+  vs pair-preserving  n=1000, mean -11.144, 95th pct -10.897, max -10.432, p = 0.0460
+  vs plain shuffle    n=1000, mean -11.629, 95th pct -11.249, max -10.864, p = 0.0030
+best real decrypts (from the seed with the highest statistic, -10.757):
+  [-10.757] fully reversed  alternate readings used at [10, 25, 67, 86]
+      IOSITESDISEUNTARESYNSRENTEREM
+      OLLOQUENTAMACUSTRAARIFLICTUAC
+      EMSOPOSADDTAABAQUAMPLICTHIRDP
+      words: io SIT esdi SEU nta RES ynsrente REM ollo QUE n TAM acustraarifl ICTU acemsoposaddtaab AQUAM plicthirdp
+  [-11.018] forward  alternate readings used at [10, 25, 67, 78]
+      PLNUFACUMPRISDIXIIALLITOPOTRE
+      CISACUMHUNIINATSCIRIABESDOMMO
+      RENEABENTBYTENIABSEDULTEAUTFU
+      words: plnufa CUM pris DIXI iallitopotrecisa CUM h UNI inatsc IRI abesdom MORE neabentbyteniab SED ulte AUT fu
+  [-11.202] each line reversed  alternate readings used at [10, 23, 25, 32, 78, 86]
+      EMROPOSACCUAAGASDAMPLITUBINCP
+      EMOLLOSDEQUAMATDRUNAANIFLITUT
+      ATIORIUERCISEDQUANERHQSNEQUEN
+      words: emroposaccuaagasdamplit UBI ncpemollosde QUAM atdr UNA anifli TUTA tioriuerci SED QUA nerhqs NEQUE n
+controls, 0 misread symbols: n=30, median stat -9.856, right reading order 26/30, median symbols decoded right 91%, above null 95th pct 29/30
+controls, 2 misread symbols: n=30, median stat -10.149, right reading order 24/30, median symbols decoded right 87%, above null 95th pct 28/30
+  example control (100% right): planted ARMINIBUSSTUPENSDEMITTITATRASBELUACENTICEPSAURISETINTORT
+                                   found   ARMINIBUSSTUPENSDEMITTITATRASBELUACENTICEPSAURISETINTORT
+
+--------------------------------------------------------------------------------------------------------
+TC: Church Latin, symbol 32 reopened  (latin_church.txt)
+--------------------------------------------------------------------------------------------------------
+real statistic per seed: -10.963, -11.104, -11.184, -11.110, -10.989, -11.214, -11.262, -11.260, -10.895   median -11.110
+  vs pair-preserving  n=1000, mean -11.294, 95th pct -11.035, max -10.749, p = 0.1209
+  vs plain shuffle    n=1000, mean -11.768, 95th pct -11.409, max -11.029, p = 0.0050
+best real decrypts (from the seed with the highest statistic, -10.895):
+  [-10.895] fully reversed  alternate readings used at [25, 32, 67, 86]
+      AIMATEMCAMEUSTOREMYSMRESTERED
+      ILLIQUESTODONUMTROORAFLANTNON
+      EDMIHIMOCCTOOGOQUODPLANTBARCH
+      words: aimatemca MEUS t ORE mysmres TER ed ILLI qu ESTO DONUM trooraflant NON ed MIHI mocctoogo QUOD plantbarch
+  [-11.262] forward  alternate readings used at [10, 23, 25, 67, 85, 86]
+      BLNOXTCOPBDESREGEETLLERABAUDI
+      CESTCOPHONEENTUSCEDETMISRAPPA
+      DINITMINUMQUINETMSIUOLUITORAO
+      words: bl NOX tcopbdesregeetllerab AUDI c EST cophoneentusce DET misrappadinitminum QUI netmsi UOLUIT orao
+  [-11.269] each line reversed  alternate readings used at [10, 25, 67]
+      EMROPORISSUIIHICTIMPLANUFADSP
+      EMOLLOCTEQUIMINTRUDIIDABLANUT
+      INAFRAUERSARETQUIDERGQRDEQUED
+      words: emrop ORIS SUI i HIC timplanufad SPEM ollocteq UIM intru DII dablanutinafr AUE rsaretq UIDE rgqrdequed
+controls, 0 misread symbols: n=30, median stat -9.003, right reading order 28/30, median symbols decoded right 99%, above null 95th pct 30/30
+controls, 2 misread symbols: n=30, median stat -9.589, right reading order 27/30, median symbols decoded right 96%, above null 95th pct 30/30
+  example control (100% right): planted ERUNTIESUIESUSAUTEMRESPONDITEISDICENSUENITHORAUTCLARIFIC
+                                   found   ERUNTIESUIESUSAUTEMRESPONDITEISDICENSUENITHORAUTCLARIFIC
+
+Run log (last 20):
+  TC doublet x4 in 9.62s  (1000/1000)
+  TC shuffle x4 in 9.44s  (1000/1000)
+  TD doublet x4 in 9.12s  (1000/1000)
+  TD shuffle x4 in 9.29s  (1000/1000)
+  TF doublet x4 in 9.62s  (1000/1000)
+  TF shuffle x4 in 9.32s  (1000/1000)
+  TI doublet x4 in 9.64s  (1000/1000)
+  TI shuffle x4 in 9.61s  (1000/1000)
+  TL doublet x4 in 9.54s  (1000/1000)
+  TL shuffle x4 in 9.25s  (1000/1000)
+  WD doublet x4 in 9.35s  (1000/1000)
+  WD shuffle x4 in 9.44s  (1000/1000)
+  WE doublet x4 in 9.31s  (1000/1000)
+  WE shuffle x4 in 9.38s  (1000/1000)
+  WF doublet x4 in 9.54s  (1000/1000)
+  WF shuffle x4 in 9.47s  (1000/1000)
+  WI doublet x4 in 9.63s  (1000/1000)
+  WI shuffle x4 in 9.28s  (1000/1000)
+  WL doublet x4 in 9.47s  (1000/1000)
+  WL shuffle x4 in 9.40s  (1000/1000)
