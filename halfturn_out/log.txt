@@ -1,0 +1,4 @@
+[2026-11-18 16:31:06] START session 1, workers 8
+[2026-11-18 16:31:09] H4 done in 2.74s: p = 0.00276
+[2026-11-18 17:13:03] all targets met; stopping (--stop-when-done)
+[2026-11-18 17:13:03] END session, 41m 56.6s this session

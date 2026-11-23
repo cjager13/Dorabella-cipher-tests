@@ -1,7 +1,7 @@
 DORABELLA MELODY REPORT, family MS  (MS: the scale round the circle (96 keys x 5 reading orders), no search)
 TRANSCRIPTION: consensus reading (Hauer et al. 2025): symbols 23, 32, 34, 85, 86 read 14, 11, 12, 14, 12
 NOTES: d r m f s l t = do..ti, - = rest; CAPITAL = long, with ' = short. Line to beat: p < 0.0167 (three melody families).
-written 2026-11-17 14:19:12   compute time 6.22s   sessions 1
+written 2026-11-19 14:55:45   compute time 6.22s   sessions 2
 keys: 96 x 5 reading orders; no search; cipher: Dorabella_transcription.csv + consensus reading at 23, 32, 34, 85, 86
 one pre-registered family, so the line is p < 0.05
 

@@ -1,0 +1,109 @@
+DORABELLA HALF-TURN REPORT  (roadmap H4 and H1)
+written 2026-11-18 17:13:03   compute time 41m 53.7s   sessions 1
+KEY: Elgar's NOTEBOOK key (ABC DEF GHI KLM NOP QRS TUW XYZ round directions 3,4,5,6,7,8,1,2; 1 loop = first letter)
+TRANSCRIPTION: consensus reading (Hauer et al. 2025): symbols 23, 32, 34, 85, 86 read 14, 11, 12, 14, 12
+three pre-registered tests (H4, H1A, H1B): the line is p < 0.0167
+
+========================================================================================================
+H4  THE TURN PROFILE  (86 neighbour pairs; English = 87-letter passages through the notebook key)
+========================================================================================================
+distance from English: 16.8 (typical English 3.4, 99th pct 13.4);  p = 0.00276  over 200,000 passages   (range over the 1,024 readings 0.00076 to 0.01239)
+verdict: PAST the line: the turn profile is not that of enciphered English
+
+turn (degrees)   Dorabella  readings  English mean  English 95% range  p (2-sided)
+none                    14     11-16         10.19               5-16      0.26290  (Dorabella high)
+45                      16     12-21         20.07              13-28      0.36464  (Dorabella low)
+90                      11      7-13         20.44              12-29      0.03441  (Dorabella low)
+135                     18     15-23         20.00              13-28      0.70597  (Dorabella low)
+180                     27     24-30         15.30               9-22      0.00292  (Dorabella high)
+half-turns that also share a loop count: 13 (English mean 5.81, p = 0.00663)
+
+the half-turned neighbours, read with the notebook key (per 1000 = how often English writes that pair):
+  same loops (13): QD@13 (0.0), FS@28 (0.48), ER@39 (16.48), RE@41 (12.98), HU@50 (0.96), QD@53 (0.0), XK@55 (0.0), KX@57 (0.0), FS@59 (0.48), HU@63 (0.96), ER@72 (16.48), HU@74 (0.96), CP@79 (0.0)
+  different loops (14): BP@1 (0.0), HT@6 (3.26), KY@9 (0.13), FR@11 (1.85), DR@14 (1.52), RD@22 (2.13), TH@32 (32.55), RF@47 (0.77), FR@48 (1.85), SE@60 (7.68), ES@61 (11.03), SE@65 (7.68), WG@69 (0.05), SE@71 (7.68)
+  (under the notebook key a half-turned symbol is the letter 12 places along: A-N, B-O, C-P, D-Q, E-R, F-S, G-T, H-U, I-W, K-X, L-Y, M-Z)
+  HONESTY NOTE: these counts were looked at while planning (18 Nov 2026); H4 states the habit exactly
+  and replicates Hauer et al. (2021); it is not an independent discovery.
+
+========================================================================================================
+H1A  notebook key, every second symbol transformed (2,304 settings x 10 configurations), no search
+========================================================================================================
+real -14.487   p vs pair-preserving 0.0018 (n=5000)   p vs plain shuffle 0.0005 (n=2000)   power 100%
+verdict: BEATS the copies past the line: read the decrypt by eye
+  vs pair-preserving  mean -15.250, 95th pct -14.856, max -14.263
+  vs plain shuffle    mean -15.386, 95th pct -15.044, max -14.624
+best real decrypts:
+  [-14.487] fully reversed, alternation restarts each line | first of each pair: rot3+loop1, second: mirror+rot7
+      KNOMSWRZKDATFECHADDROHARSWPAI
+      HAUNOTARSUNUETREPUCHKBUMHEEUE
+      AIRNINOUXZSUCFCGBUNOUMEELMPZM
+      words: knomswrzk DAT fe CHAD droharswpaihauno TAR SUN uetre PUC hkbumhe EUE AIR ni NOU xzsucfcgbu NOU meelmpzm
+  [-14.597] each line reversed, alternation restarts each line | first of each pair: rot3+loop1, second: mirror+rot7
+      AIRNINOUXZSUCFCGBUNOUMEELMPZM
+      AIHAUNOTARSUNUETREPUCHKBUMHEE
+      UEKNOMSWRZKDATFECHADDROHARSWP
+      words: AIR ni NOU xzsucfcgbu NOU meelmpz MAI hauno TAR SUN uetre PUC hkbumhe EUE knomswrzk DAT fe CHAD droharswp
+  [-15.199] fully reversed, alternation restarts each line | first of each pair: rot3+loop1, second: mirror+rot2
+      KXOWSFRIKNADFOCRANDBORABSFPAS
+      HKUXODABSENEEDROPECRKLUWHOEEE
+      ASRXIXOEXISECPCQBENYUWEOLWPIM
+      words: kxows FRI knadfoc RAND bor ABS fp ASH kuxod ABS e NEED ROPE crklu WHO eeeasr XIX oexi SEC pcq BEN yuweolwpim
+  [-15.270] each line reversed, alternation restarts each line | first of each pair: rot3+loop1, second: rot5
+      AWRNINOHXFSHCZCTBHNOUSEYLSPFM
+      AWHAUNOGALSHNHEGRYPHCUKBUSHYE
+      HEKNOSSIRFKXAGFYCUAXDLOUALSIP
+      words: awrninohxfshczctbhn OUSE ylspfmawhaunogalshnhegryphcuk BUSHY eheknos SIR fkxagfycuaxdl OUAL SIP
+  [-15.276] boustrophedon B, alternation restarts each line | first of each pair: rot3+loop1, second: mirror+rot7
+      AIRNINOUXZSUCFCGBUNOUMEELMPZM
+      EUEEHMUBKHCUPERTEUNUSRATONUAH
+      IAKNOMSWRZKDATFECHADDROHARSWP
+      words: AIR ni NOU xzsucfcgbu NOU meelmpzm EUE ehmubkhcu PER teun USR a TON uahiaknomswrzk DAT fe CHAD droharswp
+transforms most often winning in the copies: mirror+rot7 / rot3+loop1 (480x); rot3+loop1 / mirror+rot7 (439x); rot4+loop2 / mirror+rot2 (422x)
+controls, 0 misread symbols: n=50, setting found 46/50, median letters right 100%, above null 95th pct 50/50
+controls, 2 misread symbols: n=50, setting found 46/50, median letters right 98%, above null 95th pct 50/50
+  example control (100% right): planted MYDEARFRIENDIWASSOUERYGLADOFYOURLETTERANDTHENEWSTHATYOUA
+                                   found   MYDEARFRIENDIWASSOUERYGLADOFYOURLETTERANDTHENEWSTHATYOUA
+
+========================================================================================================
+H1B  any key, every second symbol transformed (48 transforms x 10 configurations), screened then annealed
+========================================================================================================
+real -11.291 (seeds: -10.979, -11.327, -11.291, -10.979, -11.459)   p vs pair-preserving 0.2696 (n=600)   p vs plain shuffle 0.0399 (n=300)   power 90%
+verdict: chance level
+  vs pair-preserving  mean -11.371, 95th pct -11.114, max -10.851
+  vs plain shuffle    mean -11.627, 95th pct -11.315, max -10.894
+best real decrypts:
+  [-10.979] fully reversed, alternation restarts each line | first of each pair: none, second: none
+      AINATOFSAFOGUTEDOFBUNDOUTODOR
+      ILLINGOUTEREWGFTDEEDAYLAITWEW
+      ORFICINESSTEEMENGERCLAWTHADSP
+      words: ai NATO fsa FOG u TED ofb UNDO utodor ILL ING OUTER ewgft DEE DAY laitwew ORF iciness TEE m ENG erc LAW th ADS p
+transforms most often winning in the copies: none / none (453x); none / rot3+loop1 (30x); none / mirror+rot6+loop1 (24x)
+controls, 0 misread symbols: n=20, setting found 16/20, median letters right 95%, above null 95th pct 19/20
+controls, 2 misread symbols: n=20, setting found 12/20, median letters right 68%, above null 95th pct 17/20
+  example control (100% right): planted MYDEARFRIENDIWASSOUERYGLADOFYOURLETTERANDTHENEWSTHATYOUA
+                                   found   MYDEARFRIENDIWASSOUERYGLADOFYOURLETTERANDTHENEWSTHATYOUA
+
+A family matters only if the real cipher beats the PAIR-PRESERVING copies past the line, its controls
+show it can find a message, and the decrypt reads as English.
+
+Run log (last 20):
+  H1A doublet x64 in 0.75s  (4608/5000)
+  H1B doublet x8 in 19.96s  (560/600)
+  H1A doublet x64 in 0.78s  (4672/5000)
+  H1A shuffle x64 in 0.80s  (1920/2000)
+  H1B doublet x8 in 19.49s  (568/600)
+  H1B shuffle x8 in 20.08s  (288/300)
+  H1A doublet x64 in 0.86s  (4736/5000)
+  H1B doublet x8 in 19.98s  (576/600)
+  H1A doublet x64 in 0.75s  (4800/5000)
+  H1A doublet x64 in 0.78s  (4864/5000)
+  H1A shuffle x64 in 0.77s  (1984/2000)
+  H1B doublet x8 in 19.59s  (584/600)
+  H1B shuffle x8 in 21.02s  (296/300)
+  H1A doublet x64 in 0.81s  (4928/5000)
+  H1B doublet x8 in 20.38s  (592/600)
+  H1A doublet x64 in 1.08s  (4992/5000)
+  H1B doublet x8 in 20.12s  (600/600)
+  H1B shuffle x4 in 16.18s  (300/300)
+  H1A shuffle x16 in 0.21s  (2000/2000)
+  H1A doublet x8 in 0.11s  (5000/5000)

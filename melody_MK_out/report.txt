@@ -1,6 +1,6 @@
 DORABELLA MELODY REPORT, family MK  (any key)
 NOTES: the letters stand for notes; d r m f s l t = do..ti, - = rest; CAPITAL = long, with ' = short.
-written 2026-11-17 16:09:00   compute time 1h 33m 25.4s   sessions 1
+written 2026-11-19 14:55:46   compute time 1h 33m 25.4s   sessions 2
 settings: real seeds 9 (median used), annealing 12 restarts x 20000 steps per reading order, 5 reading orders, 9 uncertain symbols solved in the search
 texts: MU melody.txt (468,402 letters)
 Line to beat: p < 0.0167 (three melody families)
