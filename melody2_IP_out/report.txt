@@ -1,0 +1,95 @@
+DORABELLA MELODY REPORT, family IP  (IP: direction is the move, loops are length, any assignment (241,920 keys x 5 reading orders), no search)
+TRANSCRIPTION: consensus reading (Hauer et al. 2025): symbols 23, 32, 34, 85, 86 read 14, 11, 12, 14, 12
+NOTES: the letters stand for moves: = same note, +1 up one step, -2 down two, L leap or rest; a trailing : = long, ' = short. Line to beat: p < 0.0167 (three melody families).
+written 2026-11-19 13:32:41   compute time 15m 24.0s   sessions 1
+keys: 241,920 x 5 reading orders; no search; cipher: Dorabella_transcription.csv + consensus reading at 23, 32, 34, 85, 86
+one pre-registered family, so the line is p < 0.05
+
+Directions are numbered 1-8 in 45-degree steps as in all the other scripts; 'ABC@3v' means
+the letters ABC sit on direction 3 running 'down' (1 loop = C, 3 loops = A); '^' = 'up'.
+
+========================================================================================================
+fam      real n_pair  p_pair n_shuf  p_shuf  power  verdict
+CK    -13.899   2000  0.1959   1000  0.1109   100%  chance level
+========================================================================================================
+  vs pair-preserving  n=2000, mean -14.026, 95th pct -13.763, max -13.457, p = 0.1959
+  vs plain shuffle    n=1000, mean -14.202, 95th pct -13.789, max -13.436, p = 0.1109
+
+best real decrypts:
+  [-13.899] fully reversed | directions 1== 2=+3 3=L 4=-2 5=+1 6=-3 7=+2 8=-1 | loops 1,2,3 = short,plain,long
+      WDGWKXBTWBXFIKOPXBRIGPXIKXPXY
+      DHHDGFXIKOYOAFBKPOOPWQHWDKAOA
+      XYBDMDGOTTKOOSOGFOYMHWAKEWPTN
+      moves: L: +3' -2' L: +1 -1: +1' +2: L: +1' -1: -1' = +1 -1 -2 -1: +1' =: = -2' -2 -1: = +1 -1: -2 -1: -2: +3' -3' -3' +3' -2' -1' -1: = +1 -1 -2: -1 =' -1' +1' +1 -2 -1 -1 -2 L: -3 -3' L: +3' +1 =' -1 =' -1: -2: +1' +3' +3 +3' -2' -1 +2: +2: +1 -1 -1 +1: -1 -2' -1' -1 -2: +3 -3' L: =' +1 L' L: -2 +2: L
+  [-13.973] fully reversed | directions 1== 2=+2 3=L 4=-2 5=+1 6=-3 7=+3 8=-1 | loops 1,2,3 = short,plain,long
+      WCGWKXBUWBXFIKOPXBRIGPXIKXPXY
+      CHHCGFXIKOYOAFBKPOOPWQHWCKAOA
+      XYBCLCGOUUKOOSOGFOYLHWAKEWPUN
+      moves: L: +2' -2' L: +1 -1: +1' +3: L: +1' -1: -1' = +1 -1 -2 -1: +1' =: = -2' -2 -1: = +1 -1: -2 -1: -2: +2' -3' -3' +2' -2' -1' -1: = +1 -1 -2: -1 =' -1' +1' +1 -2 -1 -1 -2 L: -3 -3' L: +2' +1 =' -1 =' -1: -2: +1' +2' +2 +2' -2' -1 +3: +3: +1 -1 -1 +1: -1 -2' -1' -1 -2: +2 -3' L: =' +1 L' L: -2 +3: L
+  [-13.987] fully reversed | directions 1== 2=+2 3=+3 4=-2 5=+1 6=-3 7=L 8=-1 | loops 1,2,3 = short,plain,long
+      UCGUKXBWUBXFIKOPXBRIGPXIKXPXY
+      CHHCGFXIKOYOAFBKPOOPUQHUCKAOA
+      XYBCLCGOWWKOOSOGFOYLHUAKDUPWM
+      moves: +3: +2' -2' +3: +1 -1: +1' L: +3: +1' -1: -1' = +1 -1 -2 -1: +1' =: = -2' -2 -1: = +1 -1: -2 -1: -2: +2' -3' -3' +2' -2' -1' -1: = +1 -1 -2: -1 =' -1' +1' +1 -2 -1 -1 -2 +3: -3 -3' +3: +2' +1 =' -1 =' -1: -2: +1' +2' +2 +2' -2' -1 L: L: +1 -1 -1 +1: -1 -2' -1' -1 -2: +2 -3' +3: =' +1 +3' +3: -2 L: +3
+  [-13.996] each line reversed | directions 1== 2=+3 3=L 4=-2 5=+1 6=-3 7=+2 8=-1 | loops 1,2,3 = short,plain,long
+      XYBDMDGOTTKOOSOGFOYMHWAKEWPTN
+      XYDHHDGFXIKOYOAFBKPOOPWQHWDKA
+      OAWDGWKXBTWBXFIKOPXBRIGPXIKXP
+      moves: -1: -2: +1' +3' +3 +3' -2' -1 +2: +2: +1 -1 -1 +1: -1 -2' -1' -1 -2: +3 -3' L: =' +1 L' L: -2 +2: L -1: -2: +3' -3' -3' +3' -2' -1' -1: = +1 -1 -2: -1 =' -1' +1' +1 -2 -1 -1 -2 L: -3 -3' L: +3' +1 =' -1 =' L: +3' -2' L: +1 -1: +1' +2: L: +1' -1: -1' = +1 -1 -2 -1: +1' =: = -2' -2 -1: = +1 -1: -2
+  [-14.033] fully reversed | directions 1=-2 2=+3 3=L 4== 5=+1 6=-3 7=+2 8=-1 | loops 1,2,3 = short,plain,long
+      WDAWKXBTWBXFPKOIXBYPAIXPKXIXR
+      DHHDAFXPKOROGFBKIOOIWQHWDKGOG
+      XRBDMDAOTTKOOSOAFORMHWGKEWITN
+      moves: L: +3' =' L: +1 -1: +1' +2: L: +1' -1: -1' -2 +1 -1 = -1: +1' -2: -2 =' = -1: -2 +1 -1: = -1: =: +3' -3' -3' +3' =' -1' -1: -2 +1 -1 =: -1 -2' -1' +1' +1 = -1 -1 = L: -3 -3' L: +3' +1 -2' -1 -2' -1: =: +1' +3' +3 +3' =' -1 +2: +2: +1 -1 -1 +1: -1 =' -1' -1 =: +3 -3' L: -2' +1 L' L: = +2: L
+  [-14.108] fully reversed | directions 1=-2 2=+2 3=L 4== 5=+1 6=-3 7=+3 8=-1 | loops 1,2,3 = short,plain,long
+      WCAWKXBUWBXFPKOIXBYPAIXPKXIXR
+      CHHCAFXPKOROGFBKIOOIWQHWCKGOG
+      XRBCLCAOUUKOOSOAFORLHWGKEWIUN
+      moves: L: +2' =' L: +1 -1: +1' +3: L: +1' -1: -1' -2 +1 -1 = -1: +1' -2: -2 =' = -1: -2 +1 -1: = -1: =: +2' -3' -3' +2' =' -1' -1: -2 +1 -1 =: -1 -2' -1' +1' +1 = -1 -1 = L: -3 -3' L: +2' +1 -2' -1 -2' -1: =: +1' +2' +2 +2' =' -1 +3: +3: +1 -1 -1 +1: -1 =' -1' -1 =: +2 -3' L: -2' +1 L' L: = +3: L
+  [-14.154] each line reversed | directions 1== 2=+2 3=L 4=-2 5=+1 6=-3 7=+3 8=-1 | loops 1,2,3 = short,plain,long
+      XYBCLCGOUUKOOSOGFOYLHWAKEWPUN
+      XYCHHCGFXIKOYOAFBKPOOPWQHWCKA
+      OAWCGWKXBUWBXFIKOPXBRIGPXIKXP
+      moves: -1: -2: +1' +2' +2 +2' -2' -1 +3: +3: +1 -1 -1 +1: -1 -2' -1' -1 -2: +2 -3' L: =' +1 L' L: -2 +3: L -1: -2: +2' -3' -3' +2' -2' -1' -1: = +1 -1 -2: -1 =' -1' +1' +1 -2 -1 -1 -2 L: -3 -3' L: +2' +1 =' -1 =' L: +2' -2' L: +1 -1: +1' +3: L: +1' -1: -1' = +1 -1 -2 -1: +1' =: = -2' -2 -1: = +1 -1: -2
+  [-14.186] each line reversed | directions 1=-2 2=+3 3=L 4== 5=+1 6=-3 7=+2 8=-1 | loops 1,2,3 = short,plain,long
+      XRBDMDAOTTKOOSOAFORMHWGKEWITN
+      XRDHHDAFXPKOROGFBKIOOIWQHWDKG
+      OGWDAWKXBTWBXFPKOIXBYPAIXPKXI
+      moves: -1: =: +1' +3' +3 +3' =' -1 +2: +2: +1 -1 -1 +1: -1 =' -1' -1 =: +3 -3' L: -2' +1 L' L: = +2: L -1: =: +3' -3' -3' +3' =' -1' -1: -2 +1 -1 =: -1 -2' -1' +1' +1 = -1 -1 = L: -3 -3' L: +3' +1 -2' -1 -2' L: +3' =' L: +1 -1: +1' +2: L: +1' -1: -1' -2 +1 -1 = -1: +1' -2: -2 =' = -1: -2 +1 -1: =
+  [-14.206] boustrophedon A | directions 1== 2=+3 3=+2 4=-2 5=+1 6=-3 7=L 8=-1 | loops 1,2,3 = short,plain,long
+      LWPTCKATHMYOFGOSOOKWWOGDMDBYX
+      XYDHHDGFXIKOYOAFBKPOOPTQHTDKA
+      OAPXKIXPGIRBXPOKIFXBTWBXKTGDT
+      moves: +2 L: -2 +2: +2' +1 =' +2: -3' +3 -2: -1 -1' -2' -1 +1: -1 -1 +1 L: L: -1 -2' +3' +3 +3' +1' -2: -1: -1: -2: +3' -3' -3' +3' -2' -1' -1: = +1 -1 -2: -1 =' -1' +1' +1 -2 -1 -1 -2 +2: -3 -3' +2: +3' +1 =' -1 =' -2 -1: +1 = -1: -2 -2' = =: +1' -1: -2 -1 +1 = -1' -1: +1' +2: L: +1' -1: +1 +2: -2' +3' +2:
+  [-14.223] each line reversed | directions 1== 2=+2 3=+3 4=-2 5=+1 6=-3 7=L 8=-1 | loops 1,2,3 = short,plain,long
+      XYBCLCGOWWKOOSOGFOYLHUAKDUPWM
+      XYCHHCGFXIKOYOAFBKPOOPUQHUCKA
+      OAUCGUKXBWUBXFIKOPXBRIGPXIKXP
+      moves: -1: -2: +1' +2' +2 +2' -2' -1 L: L: +1 -1 -1 +1: -1 -2' -1' -1 -2: +2 -3' +3: =' +1 +3' +3: -2 L: +3 -1: -2: +2' -3' -3' +2' -2' -1' -1: = +1 -1 -2: -1 =' -1' +1' +1 -2 -1 -1 -2 +3: -3 -3' +3: +2' +1 =' -1 =' +3: +2' -2' +3: +1 -1: +1' L: +3: +1' -1: -1' = +1 -1 -2 -1: +1' =: = -2' -2 -1: = +1 -1: -2
+
+controls, 0 misread symbols: n=50, median stat -10.253, true key and order found 21/50, median letters right 88%, above null 95th pct 50/50
+controls, 2 misread symbols: n=50, median stat -10.403, true key and order found 29/50, median letters right 98%, above null 95th pct 50/50
+  example control (100% right): planted WMITGIIRKKSKPXWWBILOOOONIWIKLOPSXWAILOOWEIUFKLOOWXBKIOOO
+                                   found   WMITGIIRKKSKPXWWBILOOOONIWIKLOPSXWAILOOWEIUFKLOOWXBKIOOO
+
+Run log (last 20):
+  CK doublet x8 in 2.45s  (1904/2000)
+  CK doublet x8 in 2.39s  (1912/2000)
+  CK shuffle x8 in 2.23s  (960/1000)
+  CK doublet x8 in 2.27s  (1920/2000)
+  CK controls x4 in 1.27s  (100/100)
+  CK doublet x8 in 2.26s  (1928/2000)
+  CK shuffle x8 in 2.33s  (968/1000)
+  CK doublet x8 in 2.27s  (1936/2000)
+  CK doublet x8 in 2.25s  (1944/2000)
+  CK shuffle x8 in 2.31s  (976/1000)
+  CK doublet x8 in 2.30s  (1952/2000)
+  CK doublet x8 in 2.29s  (1960/2000)
+  CK shuffle x8 in 2.33s  (984/1000)
+  CK doublet x8 in 2.27s  (1968/2000)
+  CK doublet x8 in 2.29s  (1976/2000)
+  CK shuffle x8 in 2.42s  (992/1000)
+  CK doublet x8 in 2.30s  (1984/2000)
+  CK doublet x8 in 2.29s  (1992/2000)
+  CK shuffle x8 in 2.26s  (1000/1000)
+  CK doublet x8 in 2.29s  (2000/2000)

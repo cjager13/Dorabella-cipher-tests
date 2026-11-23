@@ -1,0 +1,66 @@
+DORABELLA MELODY REPORT, family IK  (any key)
+NOTES: the letters stand for moves: = same note, +1 up one step, -2 down two, L leap or rest; a trailing : = long, ' = short.
+written 2026-11-19 14:55:44   compute time 1h 23m 02.3s   sessions 1
+settings: real seeds 9 (median used), annealing 12 restarts x 20000 steps per reading order, 5 reading orders, 9 uncertain symbols solved in the search
+texts: MU melody_steps.txt (468,402 letters)
+Line to beat: p < 0.0167 (three melody families)
+
+========================================================================================================
+HEADLINE (statistic = best quadgram score in that language's own model; real = median over seeds;
+          power = planted held-back text above the 95th percentile of the pair-preserving copies)
+Scores are on each language's own scale: compare a language only with its own copies.
+========================================================================================================
+language                   real n_pair  p_pair n_shuf  p_shuf  power ctrl med  verdict
+MU Melody (move x length tokens), any key  -11.002   1000  0.4935   1000  0.2597   100%    -9.58  chance level
+
+A language matters only if the real cipher beats the PAIR-PRESERVING copies past the
+Bonferroni line, its controls show it can find a message, and the decrypt reads as that language.
+
+--------------------------------------------------------------------------------------------------------
+MU: Melody (move x length tokens), any key  (melody_steps.txt)
+--------------------------------------------------------------------------------------------------------
+real statistic per seed: -10.890, -11.018, -11.108, -11.002, -11.007, -10.927, -11.042, -10.984, -10.862   median -11.002
+  vs pair-preserving  n=1000, mean -10.999, 95th pct -10.839, max -10.712, p = 0.4935
+  vs plain shuffle    n=1000, mean -11.089, 95th pct -10.849, max -10.535, p = 0.2597
+best real decrypts (from the seed with the highest statistic, -10.862):
+  [-10.862] fully reversed  alternate readings used at [10, 24, 67]
+      PTKPNOKSPKORWNILOKYWKLOWNOLOM
+      BFFBQROWNIMIXRKNLIILPCFPXNRIX
+      OMKBGXKISSNIIUIQRIMAFPXNTPLSA
+      moves: -2 +2: +1 -2 L -1 +1 +1: -2 +1 -1 =: L: L = +2 -1 +1 -2: L: +1 +2 -1 L: L -1 +2 -1 +3 +1' -1' -1' +1' -3 =: -1 L: L = +3 = -1: =: +1 L +2 = = +2 -2 +2' -1' -2 -1: L =: = -1: -1 +3 +1 +1' -2' -1: +1 = +1: +1: L = = +3: = -3 =: = +3 =' -1' -2 -1: L +2: -2 +2 +1: ='
+  [-11.193] boustrophedon B  alternate readings used at [25, 86]
+      ORXFAFXIEELIIUISPIRGBWMLTWNEA
+      MIPLMWBYWNIINLXPMIRILKOPSFBBF
+      ROWFXWLOXEWXOPKLINOXQKSNOKLON
+      moves: -1 =: -1: -1' =' -1' -1: = L' L' +2 = = +3: = +1: -2 = =: -2' +1' L: +3 +2 +2: L: L L' =' +3 = -2 +2 +3 L: +1' -2: L: L = = L +2 -1: -2 +3 = =: = +2 +1 -1 -2 +1: -1' +1' +1' -1' =: -1 L: -1' -1: L: +2 -1 -1: L' L: -1: -1 -2 +1 +2 = L -1 -1: -3 +1 +1: L -1 +1 +2 -1 L
+  [-11.228] each line reversed  alternate readings used at [24, 67]
+      SQPBDXPILLNIIUIYRIQDFOXNMOKLZ
+      SQBFFBYRSWNIQIXRPNKIIKOAFOXNR
+      IXOMPONSPLOPSRWNIKSPTWPKSWNSK
+      moves: +1: -3 -2 +1' +3' -1: -2 = +2 +2 L = = +3: = -2: =: = -3 +3' -1' -1 -1: L +3 -1 +1 +2 -3: +1: -3 +1' -1' -1' +1' -2: =: +1: L: L = -3 = -1: =: -2 L +1 = = +1 -1 =' -1' -1 -1: L =: = -1: -1 +3 -2 -1 L +1: -2 +2 -1 -2 +1: =: L: L = +1 +1: -2 +2: L: -2 +1 +1: L: L +1: +1
+controls, 0 misread symbols: n=30, median stat -9.271, right reading order 15/30, median symbols decoded right 26%, above null 95th pct 30/30
+controls, 2 misread symbols: n=30, median stat -9.735, right reading order 13/30, median symbols decoded right 17%, above null 95th pct 30/30
+  example control (88% right): planted KKKRERWNKKSPOOOKPRFRWNUAIIRNNSFKKXNNRFKKSNMXAOIXWRIOXLKX
+                                   found   XNNWPIISPMOXOIXNNIIUBOOXNNKKSNNSFKKXNNRFKKSNMXPOIXWRIOXB
+
+Run log (last 20):
+  MU doublet x4 in 9.80s  (964/1000)
+  MU shuffle x4 in 9.76s  (964/1000)
+  MU doublet x4 in 9.32s  (968/1000)
+  MU shuffle x4 in 9.64s  (968/1000)
+  MU doublet x4 in 9.39s  (972/1000)
+  MU shuffle x4 in 9.42s  (972/1000)
+  MU doublet x4 in 9.04s  (976/1000)
+  MU shuffle x4 in 9.49s  (976/1000)
+  MU doublet x4 in 9.40s  (980/1000)
+  MU shuffle x4 in 9.66s  (980/1000)
+  MU doublet x4 in 9.91s  (984/1000)
+  MU shuffle x4 in 9.49s  (984/1000)
+  MU doublet x4 in 9.40s  (988/1000)
+  MU shuffle x4 in 9.72s  (988/1000)
+  MU doublet x4 in 9.63s  (992/1000)
+  MU shuffle x4 in 9.65s  (992/1000)
+  MU doublet x4 in 9.48s  (996/1000)
+  MU shuffle x4 in 9.59s  (996/1000)
+  MU doublet x4 in 9.18s  (1000/1000)
+  MU shuffle x4 in 9.64s  (1000/1000)

@@ -1,0 +1,88 @@
+DORABELLA TWINS REPORT  (roadmap H2 and H3: twin symbols as doubled letters or shared letters)
+written 2026-11-19 13:17:02   compute time 54m 09.5s   sessions 1
+TRANSCRIPTION: consensus reading (Hauer et al. 2025): symbols 23, 32, 34, 85, 86 read 14, 11, 12, 14, 12
+settings: real seeds 5 (median used), annealing 8 restarts x 15000 steps per reading order, at most 6 shared pairs in H3
+two pre-registered families: the line is p < 0.0250
+twin neighbours in the cipher (13), position: codes  13: 18 14, 28: 34 38, 39: 24 28, 41: 28 24, 50: 25 21, 53: 18 14, 55: 12 16, 57: 16 12, 59: 34 38, 63: 25 21, 72: 24 28, 74: 25 21, 79: 33 37
+
+========================================================================================================
+H2  a twin after its symbol is the same letter again (doubled letters), any key
+========================================================================================================
+real -11.831 (seeds: -11.831, -11.831, -11.950, -12.041, -11.831)   p vs pair-preserving 0.1898 (n=1000)   p vs plain shuffle 0.2735 (n=500)   power 100%
+verdict: chance level
+  vs pair-preserving  mean -11.969, 95th pct -11.703, max -11.348
+  vs plain shuffle    mean -11.953, 95th pct -11.609, max -11.112
+best real decrypts (one per seed, best first):
+  [-11.831] forward
+      MPSAYTHADCLERREFEETPPENOCOULL
+      HEHTOADWASSEETURHELETTIRROODD
+      LLSITTISNGQUISSTTRIUAAUITANOA
+      words: mp SAY t HAD cl ERR e FEET p PEN ocoullhehtoad WAS SEE turhe LET tirro ODD ll SIT t ISN g QUI sst TRI ua AUI TAN oa
+  [-11.831] forward
+      MPSAYTHADCLERREFEETPPENOCOULL
+      HEHTOADWASSEETURHELETTIRROODD
+      LLSITTISNGQUISSTTRIUAAUITANOA
+      words: mp SAY t HAD cl ERR e FEET p PEN ocoullhehtoad WAS SEE turhe LET tirro ODD ll SIT t ISN g QUI sst TRI ua AUI TAN oa
+  [-11.831] forward
+      MPSAYTHADCLERREFEETPPENOCOULL
+      HEHTOADWASSEETURHELETTIRROODD
+      LLSITTISNGQUISSTTRIUAAUITANOA
+      words: mp SAY t HAD cl ERR e FEET p PEN ocoullhehtoad WAS SEE turhe LET tirro ODD ll SIT t ISN g QUI sst TRI ua AUI TAN oa
+controls, 0 misread symbols: n=20, right reading order 17/20, median letters right 97%, above null 95th pct 20/20
+controls, 2 misread symbols: n=20, right reading order 18/20, median letters right 86%, above null 95th pct 20/20
+  example control (100% right): planted WHENYOUNEXTWRITEDOTELLMEWHETHERTHEBICYCLEHASBEENMENDEDFO
+                                   found   WHENYOUNEXTWRITEDOTELLMEWHETHERTHEBICYCLEHASBEENMENDEDFO
+
+========================================================================================================
+H3  up to 6 twin pairs may share a letter (shape homophones), any key
+========================================================================================================
+real -10.942 (seeds: -10.827, -10.973, -10.899, -10.942, -11.026)   p vs pair-preserving 0.5295 (n=1000)   p vs plain shuffle 0.5369 (n=500)   power 88%
+verdict: chance level
+  vs pair-preserving  mean -10.920, 95th pct -10.669, max -10.219
+  vs plain shuffle    mean -10.931, 95th pct -10.578, max -10.318
+best real decrypts (one per seed, best first):
+  [-10.827] each line reversed | shared pairs: 11/15, 14/18, 21/25, 33/37
+      IRNAGASOEETOOPOSSORGLENTHEMED
+      IRALLASSITTORONSNTMOOMECLEATN
+      ONEASETINEENISTTOMINUTSMITTIM
+      words: i RNA GAS oee TOO POS sor GLEN THEME d IRA l LAS SIT tor ONS ntmo OME cl EAT NON EASE TIN een IST TOM i NUTS MIT TIM
+  [-10.899] each line reversed | shared pairs: 11/15, 14/18, 21/25, 22/26, 33/37
+      ILNADASOEETOOPOSSOLDRENTHEMEW
+      ILARRASSITTOLONSNTMOOMEDREATN
+      ONEASETINEENISTTOMINUTSMITTIM
+      words: ilna DAS oee TOO POS SOLD ren THEME wilarras SIT tol ONS ntmoo MED r EAT NON EASE TIN een IST TOM i NUTS MIT TIM
+  [-10.942] each line reversed | shared pairs: 11/15, 14/18, 21/25, 22/26, 33/37
+      IRNAWASOEETOOLOSSORWHENTBEMED
+      IRAHHASSITTORONSNTMOOMEWHEATN
+      ONEASETINEENISTTOMINUTSMITTIM
+      words: i RNA WAS oee TOO LOSS or WHEN tbe MED IRA h HAS SIT tor ONS ntmo OME WHEAT NON EASE TIN een IST TOM i NUTS MIT TIM
+shared pairs used by the copies' best keys: mean 4.6; by the real cipher's: 4.6
+controls, 0 misread symbols: n=20, right reading order 11/20, median letters right 39%, above null 95th pct 18/20
+controls, 2 misread symbols: n=20, right reading order 13/20, median letters right 60%, above null 95th pct 17/20
+  example control (99% right): planted MYDEARFRIENDIWASSOUERYGLADOFYOURLETTERANDTHENEWSTHATYOUA
+                                   found   MYDEARFRIENDIWASSOUERYGLADOFYOURLETTERANDTHENEWSTHATYOPA
+
+A family matters only if the real cipher beats the PAIR-PRESERVING copies past the line, its controls
+show it can find a message, and the decrypt reads as English.
+
+Run log (last 20):
+  H3 doublet x8 in 9.42s  (952/1000)
+  H3 shuffle x8 in 10.33s  (480/500)
+  H2 doublet x8 in 6.47s  (960/1000)
+  H3 doublet x8 in 9.42s  (960/1000)
+  H2 doublet x8 in 6.57s  (968/1000)
+  H2 shuffle x8 in 6.95s  (488/500)
+  H3 doublet x8 in 10.11s  (968/1000)
+  H3 shuffle x8 in 10.08s  (488/500)
+  H2 doublet x8 in 6.32s  (976/1000)
+  H3 doublet x8 in 9.53s  (976/1000)
+  H2 doublet x8 in 6.48s  (984/1000)
+  H2 shuffle x8 in 7.07s  (496/500)
+  H3 doublet x8 in 9.60s  (984/1000)
+  H3 shuffle x8 in 10.17s  (496/500)
+  H2 doublet x8 in 6.36s  (992/1000)
+  H3 doublet x8 in 9.73s  (992/1000)
+  H2 doublet x8 in 6.29s  (1000/1000)
+  H2 shuffle x4 in 5.35s  (500/500)
+  H3 doublet x8 in 9.28s  (1000/1000)
+  H3 shuffle x4 in 7.87s  (500/500)
