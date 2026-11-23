@@ -84,6 +84,7 @@ MELODY_FILE = 'melody.txt'
 HOLDOUT = 0.15
 CONSENSUS = {23: 14, 32: 11, 34: 12, 85: 14, 86: 12}
 SOLFA = ['d', 'r', 'm', 'f', 's', 'l', 't', '-']               # pitch 0-6 and rest
+LENGTH_NAMES = ('short', 'plain', 'long')                    # what the three loop counts stand for
 BONF = 0.05 / 3
 
 
@@ -196,18 +197,21 @@ def write_train_file():
     """The first 85% of melody.txt, as its own file for the no-search families' scorer."""
     with open(MELODY_FILE, encoding='utf-8') as fh:
         letters = ''.join(ch for ch in fh.read() if ch.isalpha())
-    path = 'melody_train.tmp'
+    path = os.path.splitext(MELODY_FILE)[0] + '_train.tmp'      # melody.txt -> melody_train.tmp
     with open(path, 'w', encoding='utf-8') as fh:
         fh.write(letters[:int(len(letters) * (1 - HOLDOUT))])
     return path
 
 
 # ---------------------------------------------------------------- no-search families (MS, MP)
-def setup_enumerated(fam):
+def setup_enumerated(fam, pitch_maps=None, desc=None):
+    """pitch_maps and desc let another script (Dorabella_melody2.py) define its own family."""
     import Dorabella_circlekeys as C
     M = C.M
     dur_perms = list(itertools.permutations(range(3)))
-    if fam == 'MP':
+    if pitch_maps is not None:
+        pitch_maps = np.asarray(pitch_maps, dtype=np.int32)
+    elif fam == 'MP':
         pitch_maps = np.array(list(itertools.permutations(range(8))), dtype=np.int32)       # [k][direction-1]
     else:
         pitch_maps = np.array([[((d - s) * sense) % 8 for d in range(8)]
@@ -215,8 +219,8 @@ def setup_enumerated(fam):
     C.NKEYS = len(pitch_maps) * len(dur_perms)
     C.BONF = BONF
     C.DEFAULT_TARGETS = {'CK': dict(shuffle=1000, doublet=2000, controls=100)}
-    C.FAMILY_DESC = {'CK': ('MS: the scale round the circle' if fam == 'MS' else
-                            'MP: direction is pitch, loops are length, any assignment')
+    C.FAMILY_DESC = {'CK': (desc or ('MS: the scale round the circle' if fam == 'MS' else
+                                     'MP: direction is pitch, loops are length, any assignment'))
                      + f" ({C.NKEYS:,} keys x 5 reading orders), no search"}
 
     def all_keys():
@@ -238,7 +242,7 @@ def setup_enumerated(fam):
         pm, dp = pitch_maps[pi].tolist(), dur_perms[di]
         dirs = ' '.join(f"{d + 1}={SOLFA[p]}" for d, p in enumerate(pm))
         return (f"directions {dirs} | loops 1,2,3 = "
-                + ','.join(('short', 'plain', 'long')[dp[k]] for k in range(3)))
+                + ','.join(LENGTH_NAMES[dp[k]] for k in range(3)))
 
     tunes = held_out_tunes()
 
@@ -323,9 +327,9 @@ def setup_enumerated(fam):
 
 
 # ---------------------------------------------------------------- any-key family (MK)
-def setup_anykey():
+def setup_anykey(fam='MK', title='Melody (pitch x length tokens), any key'):
     import Dorabella_languages as LG
-    LG.LANGS = [('MU', MELODY_FILE, 'Melody (pitch x length tokens), any key')]
+    LG.LANGS = [('MU', MELODY_FILE, title)]
     LG.NAME = {'MU': LG.LANGS[0][2]}
     LG.FILE = {'MU': MELODY_FILE}
     LG.NEW = ['MU']
@@ -340,7 +344,7 @@ def setup_anykey():
     old_report = LG.build_report
 
     def build_report(*a, **k):
-        t = old_report(*a, **k).replace('DORABELLA LANGUAGES REPORT', 'DORABELLA MELODY REPORT, family MK  (any key)')
+        t = old_report(*a, **k).replace('DORABELLA LANGUAGES REPORT', f'DORABELLA MELODY REPORT, family {fam}  (any key)')
         t = t.replace('      words: ', '      notes: ')
         t = t.replace(f"Bonferroni line for one of the 4 new languages: p < {BONF:.4f}",
                       f"Line to beat: p < {BONF:.4f} (three melody families)")
